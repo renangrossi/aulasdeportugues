@@ -1,0 +1,87 @@
+{
+  "id": "b2-registro-formal-e-informal",
+  "level": "B2",
+  "order": 9,
+  "skill": "functional",
+  "title": "Registro Formal e Informal",
+  "subtitle": "O mesmo idioma, duas roupas diferentes — quando usar cada uma.",
+  "objectives": [
+    "Reconhecer marcas de linguagem formal e informal no português brasileiro",
+    "Adaptar vocabulário e estrutura de frase conforme o contexto social",
+    "Escrever um e-mail formal e uma mensagem informal sobre o mesmo assunto"
+  ],
+  "content": {
+    "intro": "Depois de tanta gramática, esta lição fecha o B2 com uma habilidade prática essencial: saber quando soar formal e quando soar natural e descontraído.",
+    "explanation": "<p>O português falado no Brasil tem contrações e simplificações muito comuns na fala informal, mas evitadas na escrita formal: <strong>\"pra\"</strong> (para), <strong>\"tá\"</strong> (está), <strong>\"cê\"</strong> (você), <strong>\"num\"</strong> (não em/não um). Na escrita formal — e-mails profissionais, redações, documentos — essas formas são sempre evitadas em favor da forma completa.</p><p>Além do vocabulário, o registro também muda a <strong>estrutura da frase</strong> e o <strong>tratamento</strong>: em contextos muito formais ou com pessoas mais velhas/desconhecidas, usa-se <strong>o senhor / a senhora</strong> em vez de \"você\"; e-mails formais abrem com \"Prezado(a)\" e fecham com \"Atenciosamente\", enquanto mensagens informais usam \"Oi\"/\"E aí\" e se encerram de forma mais livre. Gírias, expressões idiomáticas (como as da lição do B1) e frases muito curtas são naturais na fala, mas soam deslocadas em um texto formal.</p>",
+    "rules": [
+      "Contrações informais (pra, tá, cê, num) só na fala e em mensagens muito informais — nunca na escrita formal",
+      "\"O senhor / a senhora\" para tratamento formal ou respeitoso com desconhecidos/mais velhos",
+      "E-mails formais: \"Prezado(a)\" + \"Atenciosamente\"; mensagens informais: \"Oi\"/\"E aí\" + despedida livre",
+      "Gírias e expressões idiomáticas pertencem majoritariamente ao registro informal",
+      "Frases mais longas e estruturadas (com conectores como os da lição anterior) marcam registro formal"
+    ],
+    "table": {
+      "caption": "Informal vs. formal",
+      "headers": ["Informal (fala)", "Formal (escrita)"],
+      "rows": [
+        ["Vou pra casa.", "Vou para casa."],
+        ["Cê tá bem?", "Você está bem?"],
+        ["Oi, tudo bem?", "Prezado(a), ..."],
+        ["Valeu!", "Agradeço."]
+      ]
+    },
+    "examples": [
+      "Prezado Sr. Almeida, venho por meio deste e-mail solicitar informações sobre o cargo.",
+      "Oi, cê viu a mensagem que eu mandei ontem?",
+      "A senhora poderia me ajudar com uma informação, por favor?",
+      "Valeu pela ajuda, hein!",
+      "Agradecemos antecipadamente pela atenção. Atenciosamente,"
+    ],
+    "commonMistakes": [
+      { "wrong": "Escrever um e-mail profissional usando \"cê\", \"tá\" e \"pra\"", "right": "usar as formas completas: você, está, para", "why": "Contrações informais soam despreparadas ou pouco profissionais em comunicação formal escrita." },
+      { "wrong": "Falar com um amigo próximo usando \"o senhor\" o tempo todo", "right": "usar \"você\" (ou \"tu\", regionalmente) entre amigos e familiares", "why": "\"O senhor/a senhora\" indica distância e formalidade — soa estranho ou até irônico entre pessoas próximas." },
+      { "wrong": "Achar que registro formal e informal são só sobre vocabulário", "right": "considerar também a estrutura da frase, o tratamento e a saudação/despedida", "why": "Registro é um conjunto de escolhas — vocabulário, gramática, tratamento e formato — não apenas palavras isoladas." }
+    ],
+    "tip": "Antes de escrever qualquer mensagem, pergunte-se: quem vai ler isso, e qual é a nossa relação? A resposta decide o registro certo — nem sempre o mais formal é o mais adequado."
+  },
+  "exercises": [
+    {
+      "id": "reg2-mc",
+      "type": "multiple-choice",
+      "title": "Formal ou Informal?",
+      "instructions": "Escolha o registro mais adequado para cada contexto.",
+      "items": [
+        { "id": "reg2a", "prompt": "Você está escrevendo um e-mail para o RH de uma empresa. Qual saudação usar?", "options": ["Oi, gente!", "Prezados,", "E aí, beleza?"], "answerIndex": 1, "explanation": "\"Prezados\" é a saudação padrão de e-mails formais." },
+        { "id": "reg2b", "prompt": "Você está mandando mensagem para um amigo próximo. Qual opção é mais natural?", "options": ["Prezado amigo, como vai?", "E aí, tudo certo?", "Vossa Senhoria está bem?"], "answerIndex": 1, "explanation": "Entre amigos, uma saudação informal e direta é a mais natural." }
+      ]
+    },
+    {
+      "id": "reg2-correction",
+      "type": "correction",
+      "title": "Formalize a Frase",
+      "instructions": "Reescreva cada frase informal em uma versão mais formal.",
+      "items": [
+        { "id": "reg2c", "incorrect": "Cê pode me ajudar com isso?", "answer": ["Você pode me ajudar com isso?", "Poderia me ajudar com isso?"], "explanation": "A forma completa \"você\" (ou \"poderia\", mais formal) substitui a contração \"cê\"." },
+        { "id": "reg2d", "incorrect": "Vou pra reunião agora, já volto.", "answer": ["Vou para a reunião agora, já retorno", "Vou para a reunião agora, já volto."], "explanation": "\"Pra\" vira \"para\" na escrita formal; \"retorno\" é uma alternativa mais formal a \"volto\", embora \"volto\" já esteja correto." }
+      ]
+    },
+    {
+      "id": "reg2-writing",
+      "type": "writing",
+      "title": "Escreva nos Dois Registros",
+      "instructions": "Escreva duas versões da mesma mensagem — pedindo para adiar uma reunião — uma formal (para um cliente) e uma informal (para um colega próximo).",
+      "items": [
+        { "id": "reg2e", "prompt": "Versão formal: um e-mail curto e educado. Versão informal: uma mensagem rápida de texto." }
+      ]
+    }
+  ],
+  "summary": [
+    "Contrações informais (pra, tá, cê) pertencem à fala e a mensagens informais, nunca à escrita formal.",
+    "O tratamento muda conforme a proximidade e o respeito: você/tu (informal) vs. o senhor/a senhora (formal).",
+    "Registro envolve vocabulário, estrutura de frase, saudações e despedidas — não só palavras isoladas."
+  ],
+  "related": [
+    { "lessonId": "b2-conectores-argumentativos", "label": "Conectores Argumentativos" },
+    { "lessonId": "b2-crase-aprofundada", "label": "Crase Aprofundada" }
+  ]
+}

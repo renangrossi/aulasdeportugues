@@ -1,0 +1,87 @@
+{
+  "id": "b2-voz-passiva-alternativas-estilisticas",
+  "level": "B2",
+  "order": 6,
+  "skill": "grammar",
+  "title": "Voz Passiva: Alternativas Estilísticas",
+  "subtitle": "Por que o português evita a passiva com \"ser\" mais do que o inglês.",
+  "objectives": [
+    "Diferenciar ser + particípio (ação) de estar + particípio (estado resultante)",
+    "Reconhecer alternativas mais naturais à voz passiva formal",
+    "Usar a nominalização como recurso estilístico avançado"
+  ],
+  "content": {
+    "intro": "A voz passiva com \"ser\" que você já domina é gramaticalmente correta, mas o português escrito de qualidade a usa com mais moderação do que o inglês. Esta lição mostra as alternativas que um texto bem escrito prefere.",
+    "explanation": "<p>Primeiro, uma distinção fina: <strong>ser</strong> + particípio descreve a <strong>ação</strong> passiva em si (\"a porta <strong>foi fechada</strong> pelo segurança\" — o ato de fechar); <strong>estar</strong> + particípio descreve o <strong>estado resultante</strong>, sem focar em quem praticou a ação (\"a porta <strong>está fechada</strong>\" — simplesmente descreve a condição atual).</p><p>Em vez da passiva formal, o português frequentemente prefere: o <strong>se apassivador</strong> que você já viu (\"vendem-se casas\" em vez de \"casas são vendidas\"), a <strong>voz ativa com sujeito indeterminado</strong> (\"dizem que vai chover\" em vez de \"é dito que vai chover\"), ou a <strong>nominalização</strong> — transformar o verbo em substantivo (\"a construção do prédio foi rápida\" em vez de \"o prédio foi construído rapidamente\"), um recurso comum em textos jornalísticos e acadêmicos.</p>",
+    "rules": [
+      "Ser + particípio = a ação passiva em si (foi construído = o ato de construir)",
+      "Estar + particípio = o estado resultante, sem foco no agente (está construído = a condição atual)",
+      "Se apassivador é mais natural que \"ser + particípio\" na fala e em textos menos formais",
+      "\"Dizem que\", \"as pessoas acham que\" substituem passivas formais como \"é dito que\"",
+      "Nominalização (verbo → substantivo) é um recurso estilístico de textos formais/acadêmicos"
+    ],
+    "table": {
+      "caption": "Voz passiva formal vs. alternativas mais naturais",
+      "headers": ["Passiva formal", "Alternativa mais natural"],
+      "rows": [
+        ["Casas são vendidas aqui.", "Vendem-se casas aqui."],
+        ["É dito que o projeto vai atrasar.", "Dizem que o projeto vai atrasar."],
+        ["O prédio foi construído rapidamente.", "A construção do prédio foi rápida."],
+        ["A porta foi fechada há uma hora.", "A porta está fechada há uma hora. (foco no estado)"]
+      ]
+    },
+    "examples": [
+      "A loja está fechada desde ontem. (estado atual)",
+      "A loja foi fechada pelo dono ontem à noite. (a ação de fechar)",
+      "Precisa-se de mais funcionários nesta empresa.",
+      "Dizem que a nova lei vai mudar tudo.",
+      "A demora na entrega irritou os clientes. (nominalização em vez de \"os clientes foram irritados pela demora\")"
+    ],
+    "commonMistakes": [
+      { "wrong": "\"A porta foi fechada\" quando a intenção é só descrever o estado atual", "right": "\"A porta está fechada\"", "why": "\"Foi fechada\" foca na ação de fechar (por alguém, em algum momento); \"está fechada\" descreve simplesmente a condição atual da porta." },
+      { "wrong": "Usar a passiva formal com \"ser\" em toda frase, mesmo em contextos informais", "right": "preferir o se apassivador ou a voz ativa em textos/falas mais informais", "why": "A passiva formal com \"ser\" soa burocrática/distante fora de textos jornalísticos, acadêmicos ou jurídicos." },
+      { "wrong": "Achar que nominalização é sempre a melhor escolha", "right": "usar nominalização com moderação, principalmente em textos formais", "why": "Excesso de nominalização torna o texto mais abstrato e menos direto — é um recurso, não uma regra obrigatória." }
+    ],
+    "tip": "Ao revisar um texto seu, procure toda ocorrência de \"foi/foram + particípio\" e pergunte-se: essa frase soaria mais natural com \"está\", com o se apassivador, ou simplesmente na voz ativa?"
+  },
+  "exercises": [
+    {
+      "id": "passalt-mc",
+      "type": "multiple-choice",
+      "title": "Ser ou Estar + Particípio?",
+      "instructions": "Escolha a forma correta conforme o foco da frase.",
+      "items": [
+        { "id": "passalta", "prompt": "Você quer descrever apenas o estado atual da loja, sem focar em quem a fechou. Qual frase usar?", "options": ["A loja foi fechada.", "A loja está fechada.", "A loja fecha."], "answerIndex": 1, "explanation": "\"Estar + particípio\" foca no estado resultante, não na ação." },
+        { "id": "passaltb", "prompt": "Você quer destacar a ação de construir o prédio, feita por uma empresa específica. Qual frase usar?", "options": ["O prédio está construído.", "O prédio foi construído pela empresa X.", "O prédio constrói."], "answerIndex": 1, "explanation": "\"Ser + particípio\" com o agente foca na ação em si." }
+      ]
+    },
+    {
+      "id": "passalt-fill",
+      "type": "fill-blank",
+      "title": "Reescreva com o Se Apassivador",
+      "instructions": "Reescreva cada frase passiva formal usando o se apassivador.",
+      "items": [
+        { "id": "passaltc", "prompt": "\"Apartamentos são alugados aqui.\" → ___-se apartamentos aqui.", "answers": [["Alugam"]], "explanation": "Se apassivador: alugam-se apartamentos." },
+        { "id": "passaltd", "prompt": "\"Carros usados são vendidos nesta loja.\" → ___-se carros usados nesta loja.", "answers": [["Vendem"]], "explanation": "Se apassivador: vendem-se carros usados." }
+      ]
+    },
+    {
+      "id": "passalt-writing",
+      "type": "writing",
+      "title": "Reescreva de Forma Mais Natural",
+      "instructions": "Reescreva as três frases abaixo, trocando a passiva formal com \"ser\" por uma alternativa mais natural (se apassivador, voz ativa, ou nominalização): 1) \"É dito que o time vai ganhar.\" 2) \"Livros são vendidos nesta livraria.\" 3) \"A festa foi organizada rapidamente por eles.\"",
+      "items": [
+        { "id": "passalte", "prompt": "Reescreva as três frases de forma mais natural, explicando brevemente sua escolha." }
+      ]
+    }
+  ],
+  "summary": [
+    "Ser + particípio foca na ação; estar + particípio foca no estado resultante.",
+    "O se apassivador, a voz ativa e a nominalização costumam soar mais naturais que a passiva formal.",
+    "A passiva formal com \"ser\" é mais comum em textos jornalísticos, acadêmicos e jurídicos."
+  ],
+  "related": [
+    { "lessonId": "b2-discurso-indireto-avancado", "label": "Discurso Indireto Avançado" },
+    { "lessonId": "b2-registro-formal-e-informal", "label": "Registro Formal e Informal" }
+  ]
+}

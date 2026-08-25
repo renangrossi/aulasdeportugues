@@ -1,0 +1,88 @@
+{
+  "id": "b2-oracoes-concessivas-finais-consecutivas",
+  "level": "B2",
+  "order": 2,
+  "skill": "grammar",
+  "title": "Orações Concessivas, Finais e Consecutivas",
+  "subtitle": "Embora, para que, de modo que — conectando ideias com mais precisão.",
+  "objectives": [
+    "Usar orações concessivas com embora, ainda que e mesmo que + subjuntivo",
+    "Usar orações finais com para que + subjuntivo",
+    "Usar orações consecutivas com tão/tanto...que + indicativo"
+  ],
+  "content": {
+    "intro": "Com o sistema do subjuntivo já dominado, é hora de usá-lo em três tipos de oração que dão muito mais sofisticação ao seu português.",
+    "explanation": "<p>Orações <strong>concessivas</strong> expressam uma ideia de contraste ou obstáculo que não impede o resultado: <strong>embora</strong>, <strong>ainda que</strong>, <strong>mesmo que</strong> + subjuntivo: \"<strong>embora</strong> chov<strong>a</strong>, eu vou sair\" (a chuva não impede a saída). Orações <strong>finais</strong> expressam a finalidade de uma ação: <strong>para que</strong>, <strong>a fim de que</strong> + subjuntivo: \"estudo <strong>para que</strong> eu <strong>passe</strong> no exame\".</p><p>Orações <strong>consecutivas</strong> expressam uma consequência, geralmente com uma ideia de intensidade: <strong>tão/tanto...que</strong>, <strong>de modo que</strong> + <strong>indicativo</strong> (diferente das outras duas!): \"ela estuda <strong>tanto que</strong> sempre <strong>passa</strong>\" — aqui não há dúvida, então o indicativo é usado normalmente.</p>",
+    "rules": [
+      "Concessivas (contraste): embora, ainda que, mesmo que + subjuntivo",
+      "Finais (finalidade): para que, a fim de que + subjuntivo",
+      "Consecutivas (consequência): tão/tanto...que, de modo que + indicativo",
+      "\"Para\" + infinitivo (sem \"que\") é usado quando o sujeito das duas orações é o mesmo",
+      "\"Para que\" + subjuntivo é usado quando os sujeitos são diferentes"
+    ],
+    "table": {
+      "caption": "Três tipos de oração e seu modo verbal",
+      "headers": ["Tipo", "Conectivo", "Modo verbal"],
+      "rows": [
+        ["Concessiva", "embora, ainda que, mesmo que", "subjuntivo"],
+        ["Final", "para que, a fim de que", "subjuntivo"],
+        ["Consecutiva", "tão/tanto...que, de modo que", "indicativo"]
+      ]
+    },
+    "examples": [
+      "Embora esteja cansada, ela vai à academia.",
+      "Ele trabalha muito para que a família tenha uma vida melhor.",
+      "Estudei tanto que passei com a melhor nota da turma.",
+      "Ainda que chova amanhã, o evento vai acontecer.",
+      "Ela fala tão rápido que às vezes não entendo nada."
+    ],
+    "commonMistakes": [
+      { "wrong": "\"Embora está cansada\" (indicativo em vez de subjuntivo)", "right": "\"Embora esteja cansada\"", "why": "Orações concessivas sempre exigem o subjuntivo, mesmo quando o fato é certo (ela realmente está cansada)." },
+      { "wrong": "\"Estudei tão que passei\" (usando \"tão\" sem o adjetivo/advérbio)", "right": "\"Estudei tanto que passei\"", "why": "\"Tão\" acompanha adjetivos/advérbios (tão rápido); \"tanto\" acompanha o verbo diretamente (estudei tanto)." },
+      { "wrong": "\"Ela estuda tanto que passe\" (subjuntivo em oração consecutiva)", "right": "\"Ela estuda tanto que passa\"", "why": "Orações consecutivas usam o indicativo, não o subjuntivo — a consequência é apresentada como um fato." }
+    ],
+    "tip": "Truque para lembrar: concessivas e finais têm uma ideia de incerteza/intenção embutida (por isso pedem subjuntivo); consecutivas apenas relatam um resultado que já é fato (por isso usam indicativo)."
+  },
+  "exercises": [
+    {
+      "id": "conc-fill",
+      "type": "fill-blank",
+      "title": "Complete com o Modo Verbal Certo",
+      "instructions": "Complete cada frase, escolhendo entre subjuntivo e indicativo conforme o conectivo.",
+      "items": [
+        { "id": "conca", "prompt": "Embora ele ___ (ter) pouco tempo, sempre ajuda os colegas.", "answers": [["tenha"]], "explanation": "Concessiva: subjuntivo, tenha." },
+        { "id": "concb", "prompt": "Ela fala tão bem que todos a ___ (entender) facilmente.", "answers": [["entendem"]], "explanation": "Consecutiva: indicativo, entendem." },
+        { "id": "concc", "prompt": "Nós explicamos tudo para que não ___ (haver) dúvidas.", "answers": [["haja"]], "explanation": "Final: subjuntivo, haja." }
+      ]
+    },
+    {
+      "id": "conc-mc",
+      "type": "multiple-choice",
+      "title": "Identifique o Tipo de Oração",
+      "instructions": "Identifique se a oração é concessiva, final ou consecutiva.",
+      "items": [
+        { "id": "concd", "prompt": "\"Ainda que ele discorde, vou seguir com o plano.\" Que tipo de oração é essa?", "options": ["Concessiva", "Final", "Consecutiva"], "answerIndex": 0, "explanation": "Expressa contraste/obstáculo que não impede o resultado — concessiva." },
+        { "id": "conce", "prompt": "\"Choveu tanto que a rua alagou.\" Que tipo de oração é essa?", "options": ["Concessiva", "Final", "Consecutiva"], "answerIndex": 2, "explanation": "Expressa uma consequência de intensidade — consecutiva, com indicativo." }
+      ]
+    },
+    {
+      "id": "conc-correction",
+      "type": "correction",
+      "title": "Corrija o Modo Verbal",
+      "instructions": "Cada frase usa o modo verbal errado. Escreva a versão correta.",
+      "items": [
+        { "id": "concf", "incorrect": "Embora ela está certa, ele não vai admitir.", "answer": ["Embora ela esteja certa, ele não vai admitir", "Embora ela esteja certa, ele não vai admitir."], "explanation": "Concessivas sempre usam o subjuntivo, mesmo com fatos certos." },
+        { "id": "concg", "incorrect": "Preparamos tudo para que a festa seja um sucesso.", "answer": ["Preparamos tudo para que a festa seja um sucesso", "Preparamos tudo para que a festa seja um sucesso."], "explanation": "Esta frase já está correta — \"para que\" com subjuntivo (seja) é o padrão certo." }
+      ]
+    }
+  ],
+  "summary": [
+    "Concessivas (embora, ainda que, mesmo que) e finais (para que) sempre usam o subjuntivo.",
+    "Consecutivas (tão/tanto...que) usam o indicativo, pois relatam um resultado factual.",
+    "\"Para\" + infinitivo é usado quando o sujeito das duas orações é o mesmo; \"para que\" + subjuntivo, quando são diferentes."
+  ],
+  "related": [
+    { "lessonId": "b2-subjuntivo-sistema-completo", "label": "Subjuntivo: Sistema Completo" },
+    { "lessonId": "b2-conectores-argumentativos", "label": "Conectores Argumentativos" }
+  ]
+}

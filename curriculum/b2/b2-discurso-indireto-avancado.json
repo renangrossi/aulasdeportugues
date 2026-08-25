@@ -1,0 +1,88 @@
+{
+  "id": "b2-discurso-indireto-avancado",
+  "level": "B2",
+  "order": 7,
+  "skill": "grammar",
+  "title": "Discurso Indireto Avançado",
+  "subtitle": "Relatando perguntas e ordens, não só afirmações.",
+  "objectives": [
+    "Relatar perguntas de sim/não e perguntas com palavra interrogativa",
+    "Relatar ordens e pedidos usando o subjuntivo",
+    "Combinar o recuo verbal do B1 com essas novas estruturas"
+  ],
+  "content": {
+    "intro": "No B1 você aprendeu a relatar afirmações. Agora é hora de relatar perguntas e ordens — que seguem padrões próprios, além do simples recuo verbal.",
+    "explanation": "<p>Para relatar uma <strong>pergunta de sim/não</strong>, usa-se <strong>se</strong> (equivalente a \"whether/if\"): <em>\"Você vem?\"</em> → \"ela perguntou <strong>se</strong> eu vinha\". Para relatar uma <strong>pergunta com palavra interrogativa</strong> (o quê, quem, onde, quando), mantém-se a própria palavra interrogativa, sem \"se\": <em>\"Onde você mora?\"</em> → \"ele perguntou <strong>onde</strong> eu morava\".</p><p>Para relatar uma <strong>ordem ou pedido</strong>, usa-se um verbo como <strong>mandar</strong>, <strong>pedir</strong> ou <strong>dizer</strong> seguido de <strong>que + subjuntivo</strong>: <em>\"Saia agora!\"</em> → \"ela mandou <strong>que</strong> eu <strong>saísse</strong>\" (o imperativo original vira subjuntivo no relato, geralmente no imperfeito, seguindo o recuo verbal).</p>",
+    "rules": [
+      "Pergunta de sim/não: verbo de fala + se + oração (sem inversão)",
+      "Pergunta com palavra interrogativa: mantém a palavra (onde, quando, o que...), sem \"se\"",
+      "Ordem/pedido: mandar/pedir/dizer + que + subjuntivo (geralmente imperfeito do subjuntivo)",
+      "O imperativo original sempre vira subjuntivo no discurso indireto, nunca fica no imperativo",
+      "Os mesmos ajustes de tempo verbal e pronomes do B1 continuam se aplicando"
+    ],
+    "table": {
+      "caption": "Discurso indireto — perguntas e ordens",
+      "headers": ["Discurso direto", "Discurso indireto"],
+      "rows": [
+        ["\"Você vem à festa?\"", "Ela perguntou se eu vinha à festa."],
+        ["\"Onde você mora?\"", "Ele perguntou onde eu morava."],
+        ["\"Feche a porta!\"", "Ela pediu que eu fechasse a porta."],
+        ["\"Não faça isso!\"", "Ele mandou que eu não fizesse isso."]
+      ]
+    },
+    "examples": [
+      "Ela me perguntou se eu tinha terminado o trabalho.",
+      "Ele quis saber quando a reunião ia começar.",
+      "O professor pediu que os alunos entregassem a tarefa na sexta.",
+      "Minha mãe mandou que eu tomasse cuidado na viagem.",
+      "Eles perguntaram por que eu tinha chegado atrasado."
+    ],
+    "commonMistakes": [
+      { "wrong": "\"Ela perguntou que eu vinha\" (usando \"que\" em vez de \"se\" para perguntas de sim/não)", "right": "\"Ela perguntou se eu vinha\"", "why": "Perguntas de sim/não relatadas sempre usam \"se\", não \"que\"." },
+      { "wrong": "\"Ele mandou que eu saia\" (presente do subjuntivo em vez do imperfeito, num contexto passado)", "right": "\"Ele mandou que eu saísse\"", "why": "Como \"mandou\" está no passado, o verbo relatado geralmente recua para o imperfeito do subjuntivo, seguindo a lógica do discurso indireto." },
+      { "wrong": "\"Ela perguntou onde que eu morava\" (misturando \"onde\" com \"que\")", "right": "\"Ela perguntou onde eu morava\"", "why": "Com palavra interrogativa, não se usa \"que\" adicional — a própria palavra (onde) já conecta a oração." }
+    ],
+    "tip": "Para relatar uma ordem, pense primeiro na versão com \"pedir/mandar que\" + subjuntivo — é a estrutura que substitui completamente o imperativo original."
+  },
+  "exercises": [
+    {
+      "id": "discav-fill",
+      "type": "fill-blank",
+      "title": "Transforme para o Discurso Indireto",
+      "instructions": "Complete a versão em discurso indireto.",
+      "items": [
+        { "id": "discava", "prompt": "\"Você já comeu?\" → Ele perguntou ___ eu já tinha comido.", "answers": [["se"]], "explanation": "Pergunta de sim/não: conectivo \"se\"." },
+        { "id": "discavb", "prompt": "\"Quando você chega?\" → Ela perguntou ___ eu chegava.", "answers": [["quando"]], "explanation": "Pergunta com palavra interrogativa: mantém a palavra, sem \"se\"." },
+        { "id": "discavc", "prompt": "\"Estude mais!\" → O professor pediu que eu ___ (estudar) mais.", "answers": [["estudasse"]], "explanation": "Imperativo relatado vira imperfeito do subjuntivo: estudasse." }
+      ]
+    },
+    {
+      "id": "discav-mc",
+      "type": "multiple-choice",
+      "title": "Escolha a Transformação Correta",
+      "instructions": "Escolha a versão correta em discurso indireto.",
+      "items": [
+        { "id": "discavd", "prompt": "Fala original: \"Feche a janela!\" Como fica relatada?", "options": ["Ela disse que fechasse a janela.", "Ela pediu que eu fechasse a janela.", "Ela pediu que eu feche a janela."], "answerIndex": 1, "explanation": "\"Pedir que\" + imperfeito do subjuntivo relata corretamente uma ordem/pedido no passado." },
+        { "id": "discave", "prompt": "Fala original: \"O que você quer?\" Como fica relatada?", "options": ["Ele perguntou se eu queria.", "Ele perguntou o que eu queria.", "Ele perguntou que eu queria."], "answerIndex": 1, "explanation": "Pergunta com palavra interrogativa mantém a própria palavra (o que)." }
+      ]
+    },
+    {
+      "id": "discav-writing",
+      "type": "writing",
+      "title": "Relate uma Conversa Completa",
+      "instructions": "Imagine um diálogo curto (uma pergunta e um pedido) e relate os dois em discurso indireto.",
+      "items": [
+        { "id": "discavf", "prompt": "Escreva 3 a 4 frases relatando uma pergunta e um pedido/ordem que alguém fez a você recentemente." }
+      ]
+    }
+  ],
+  "summary": [
+    "Perguntas de sim/não relatadas usam \"se\"; perguntas com palavra interrogativa mantêm a própria palavra.",
+    "Ordens e pedidos relatados usam mandar/pedir/dizer + que + subjuntivo, geralmente no imperfeito.",
+    "O imperativo original sempre se transforma em subjuntivo no discurso indireto."
+  ],
+  "related": [
+    { "lessonId": "b2-voz-passiva-alternativas-estilisticas", "label": "Voz Passiva: Alternativas Estilísticas" },
+    { "lessonId": "b2-conectores-argumentativos", "label": "Conectores Argumentativos" }
+  ]
+}

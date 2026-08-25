@@ -1,0 +1,91 @@
+{
+  "id": "b2-colocacao-pronominal-avancada",
+  "level": "B2",
+  "order": 5,
+  "skill": "grammar",
+  "title": "Colocação Pronominal Avançada",
+  "subtitle": "Pronomes com infinitivo, gerúndio e a mesóclise formal — fechando o quadro do B1.",
+  "objectives": [
+    "Posicionar pronomes corretamente com infinitivo e gerúndio",
+    "Reconhecer e formar a mesóclise em contextos muito formais",
+    "Revisar e consolidar as regras de próclise e ênclise com mais exemplos"
+  ],
+  "content": {
+    "intro": "No B1 você aprendeu o essencial de próclise e ênclise. Esta lição completa o quadro com infinitivo, gerúndio e a rara — mas real — mesóclise.",
+    "explanation": "<p>Com o <strong>infinitivo</strong>, o pronome geralmente vem depois, ligado por hífen: \"vou <strong>encontrá-lo</strong> amanhã\", \"é bom <strong>vê-la</strong> de novo\". Mas depois de uma preposição que já pede próclise em outros contextos, o pronome pode vir antes do infinitivo na fala informal: \"para <strong>o</strong> encontrar\" (formal) ou simplesmente \"para <strong>encontrá-lo</strong>\".</p><p>Com o <strong>gerúndio</strong>, o padrão formal é a ênclise (\"vend<strong>o-o</strong>\"), mas no Brasil falado é comum usar próclise (\"<strong>o</strong> vendo\") ou simplesmente evitar a construção reformulando a frase.</p><p>A <strong>mesóclise</strong> (pronome no meio do verbo) só existe com o <strong>futuro do presente</strong> e o <strong>futuro do pretérito (condicional)</strong>, e apenas em registro muito formal ou literário: \"encontrar-<strong>te</strong>-ei\" (eu te encontrarei), \"dar-<strong>lhe</strong>-ia\" (eu lhe daria). É importante saber reconhecê-la ao ler, mas raramente é usada na fala ou mesmo na escrita cotidiana do Brasil.</p>",
+    "rules": [
+      "Infinitivo: pronome depois, com hífen (encontrá-lo, vê-la) — padrão mais comum",
+      "Gerúndio: ênclise formal (vendo-o); próclise informal comum no Brasil falado (o vendo)",
+      "Mesóclise: só com futuro do presente/pretérito, em registro muito formal (encontrar-te-ei, dar-lhe-ia)",
+      "A mesóclise é praticamente inexistente na fala cotidiana — reconheça-a, mas não se cobre usá-la",
+      "Combinações informais no Brasil falado costumam evitar tanto a ênclise quanto a mesóclise em favor da próclise"
+    ],
+    "table": {
+      "caption": "Colocação pronominal — formas verbais especiais",
+      "headers": ["Estrutura", "Exemplo", "Registro"],
+      "rows": [
+        ["Infinitivo + pronome", "vou encontrá-lo", "padrão, qualquer registro"],
+        ["Gerúndio + pronome (ênclise)", "vendo-o", "formal/escrito"],
+        ["Pronome + gerúndio (próclise)", "o vendo", "informal, falado"],
+        ["Mesóclise (futuro)", "encontrar-te-ei", "muito formal/literário"]
+      ]
+    },
+    "examples": [
+      "Vou encontrá-la na estação amanhã.",
+      "É importante ajudá-los o quanto antes.",
+      "Estava explicando-lhe a situação quando ela chegou. (formal)",
+      "Dar-lhe-ei a resposta assim que possível. (muito formal)",
+      "Vou te dar a resposta assim que possível. (comum, falado)"
+    ],
+    "commonMistakes": [
+      { "wrong": "Tentar usar mesóclise na fala cotidiana", "right": "usar o futuro perto (vou + infinitivo) com o pronome em próclise: \"vou te encontrar\"", "why": "A mesóclise soa extremamente formal/arcaica fora de contextos muito específicos — na fala, o futuro perto com próclise é natural e correto." },
+      { "wrong": "\"Vou o encontrar\" (próclise antes de infinitivo sem gatilho)", "right": "\"Vou encontrá-lo\"", "why": "Sem uma palavra que exija próclise antes, o padrão com infinitivo é o pronome depois, ligado por hífen." },
+      { "wrong": "Confundir a ordem do pronome oblíquo com a de outros idiomas (ex.: colocar sempre antes do verbo)", "right": "seguir os gatilhos específicos do português para próclise/ênclise/mesóclise", "why": "A colocação pronominal do português segue regras próprias, não uma tradução direta da ordem de outro idioma." }
+    ],
+    "tip": "Para a fala cotidiana, você só precisa dominar duas construções: pronome antes do verbo conjugado (próclise, na maioria das situações) e pronome depois do infinitivo com hífen (encontrá-lo). A mesóclise é reconhecimento, não produção ativa."
+  },
+  "exercises": [
+    {
+      "id": "colavc-fill",
+      "type": "fill-blank",
+      "title": "Complete com o Pronome na Posição Certa",
+      "instructions": "Complete cada frase com o verbo e o pronome na posição correta.",
+      "items": [
+        { "id": "colavca", "prompt": "Vou ___ (encontrar + a, com hífen) amanhã na estação.", "answers": [["encontrá-la"]], "explanation": "Infinitivo + pronome, ligado por hífen: encontrá-la." },
+        { "id": "colavcb", "prompt": "É importante ___ (ajudar + os, com hífen) o quanto antes.", "answers": [["ajudá-los"]], "explanation": "Infinitivo + pronome: ajudá-los." }
+      ]
+    },
+    {
+      "id": "colavc-mc",
+      "type": "multiple-choice",
+      "title": "Reconheça a Mesóclise",
+      "instructions": "Identifique a estrutura verbal em cada frase.",
+      "items": [
+        { "id": "colavcc", "prompt": "\"Encontrar-te-ei amanhã.\" Que estrutura é essa?", "options": ["Próclise", "Ênclise", "Mesóclise"], "answerIndex": 2, "explanation": "O pronome está no meio do verbo no futuro do presente — mesóclise." },
+        { "id": "colavcd", "prompt": "Na fala cotidiana do Brasil, qual é a forma mais natural de dizer o mesmo?", "options": ["Encontrar-te-ei amanhã.", "Vou te encontrar amanhã.", "Encontrarei-te amanhã."], "answerIndex": 1, "explanation": "O futuro perto com próclise é a forma natural e amplamente usada no Brasil falado." }
+      ]
+    },
+    {
+      "id": "colavc-match",
+      "type": "matching",
+      "title": "Associe a Estrutura ao Registro",
+      "instructions": "Associe cada estrutura de colocação pronominal ao registro em que é mais comum.",
+      "items": [
+        { "id": "colavce", "pairs": [
+          { "left": "vou encontrá-lo", "right": "qualquer registro" },
+          { "left": "o vendo (antes do gerúndio)", "right": "informal, falado" },
+          { "left": "dar-lhe-ei", "right": "muito formal/literário" }
+        ], "explanation": "Cada estrutura tem um registro típico de uso." }
+      ]
+    }
+  ],
+  "summary": [
+    "Com infinitivo, o pronome geralmente vem depois, ligado por hífen (encontrá-lo).",
+    "Com gerúndio, a ênclise é formal (vendo-o) e a próclise é comum na fala informal (o vendo).",
+    "A mesóclise (encontrar-te-ei) só existe no futuro, em registro muito formal — reconheça-a, mas não é obrigatória usá-la."
+  ],
+  "related": [
+    { "lessonId": "b2-subjuntivo-sistema-completo", "label": "Subjuntivo: Sistema Completo" },
+    { "lessonId": "b2-registro-formal-e-informal", "label": "Registro Formal e Informal" }
+  ]
+}

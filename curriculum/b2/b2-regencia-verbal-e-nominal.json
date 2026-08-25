@@ -1,0 +1,95 @@
+{
+  "id": "b2-regencia-verbal-e-nominal",
+  "level": "B2",
+  "order": 3,
+  "skill": "grammar",
+  "title": "Regência Verbal e Nominal",
+  "subtitle": "Qual preposição cada verbo e adjetivo exige — e por que não dá para adivinhar.",
+  "objectives": [
+    "Usar a preposição correta depois dos verbos mais comuns com regência fixa",
+    "Usar a preposição correta depois de adjetivos com regência fixa",
+    "Reconhecer verbos que mudam de sentido conforme a preposição usada"
+  ],
+  "content": {
+    "intro": "Regência é a relação entre um verbo (ou adjetivo) e a preposição que ele exige. Não existe uma regra geral — cada verbo tem sua própria regência, que precisa ser aprendida junto com o verbo.",
+    "explanation": "<p>A <strong>regência verbal</strong> define qual preposição (se houver) acompanha um verbo: <strong>gostar <em>de</em></strong> algo, <strong>assistir <em>a</em></strong> um filme (formal) — no Brasil falado, \"assistir\" sem preposição também é comum, mas a norma culta pede \"a\" — <strong>precisar <em>de</em></strong> ajuda, <strong>obedecer <em>a</em></strong> uma regra, <strong>namorar</strong> alguém (sem preposição, apesar do que se poderia imaginar).</p><p>A <strong>regência nominal</strong> funciona da mesma forma para adjetivos: <strong>apto <em>a</em></strong>, <strong>cheio <em>de</em></strong>, <strong>diferente <em>de</em></strong>, <strong>fiel <em>a</em></strong>, <strong>orgulhoso <em>de</em></strong>. Alguns verbos mudam completamente de sentido conforme a preposição: <strong>assistir</strong> (ver algo) vs. <strong>assistir a</strong> (formal, mesmo sentido) vs. <strong>assistir</strong> um paciente (cuidar de, sem preposição); <strong>chamar</strong> alguém (convocar) vs. <strong>chamar de</strong> (dar um nome/apelido a).</p>",
+    "rules": [
+      "Gostar de, precisar de, depender de, lembrar-se de, esquecer-se de",
+      "Obedecer a, assistir a (formal), responder a",
+      "Namorar, encontrar, visitar — sem preposição, apesar do sentido \"social\"",
+      "Adjetivos: apto a, cheio de, diferente de, fiel a, orgulhoso de, satisfeito com",
+      "Alguns verbos mudam de sentido conforme a preposição — memorize os pares mais comuns"
+    ],
+    "table": {
+      "caption": "Regência de verbos comuns",
+      "headers": ["Verbo", "Preposição", "Exemplo"],
+      "rows": [
+        ["gostar", "de", "Eu gosto de música."],
+        ["precisar", "de", "Eu preciso de ajuda."],
+        ["obedecer", "a", "As crianças obedecem aos pais."],
+        ["assistir (formal)", "a", "Nós assistimos ao filme."],
+        ["namorar", "(nenhuma)", "Ela namora um colega de trabalho."]
+      ]
+    },
+    "examples": [
+      "Eu me lembro dele perfeitamente.",
+      "Ela é fiel aos seus princípios.",
+      "Estou orgulhoso de você.",
+      "Nós dependemos muito dessa decisão.",
+      "As crianças obedecem às regras da escola."
+    ],
+    "commonMistakes": [
+      { "wrong": "\"Eu gosto música\" (sem a preposição obrigatória)", "right": "\"Eu gosto de música\"", "why": "\"Gostar\" sempre exige a preposição \"de\" antes do complemento." },
+      { "wrong": "\"Ela namora com um colega\" (acrescentando \"com\" desnecessariamente)", "right": "\"Ela namora um colega\"", "why": "\"Namorar\" é transitivo direto, sem preposição, apesar de muitos estudantes esperarem \"com\" por analogia com outros idiomas." },
+      { "wrong": "\"Eu preciso ajuda\" (sem a preposição)", "right": "\"Eu preciso de ajuda\"", "why": "\"Precisar\" de um substantivo sempre exige \"de\" — só dispensa a preposição antes de um verbo no infinitivo (preciso estudar)." }
+    ],
+    "tip": "A regência não segue uma lógica universal — a melhor estratégia é aprender cada verbo novo já junto com sua preposição, anotando um exemplo de frase completa, não o verbo isolado."
+  },
+  "exercises": [
+    {
+      "id": "reg-fill",
+      "type": "fill-blank",
+      "title": "Complete com a Preposição Certa",
+      "instructions": "Complete cada frase com a preposição exigida pelo verbo ou adjetivo (ou deixe em branco se não houver).",
+      "items": [
+        { "id": "rega", "prompt": "Eu preciso ___ mais tempo para terminar.", "answers": [["de"]], "explanation": "\"Precisar\" + substantivo exige \"de\"." },
+        { "id": "regb", "prompt": "Ela é muito fiel ___ seus amigos.", "answers": [["a", "aos"]], "explanation": "\"Fiel\" exige a preposição \"a\"." },
+        { "id": "regc", "prompt": "Ela se lembra ___ primeira vez que veio ao Brasil.", "answers": [["da"]], "explanation": "\"Lembrar-se de\" + \"a\" (artigo feminino) se contrai em \"da\"." }
+      ]
+    },
+    {
+      "id": "reg-mc",
+      "type": "multiple-choice",
+      "title": "Escolha a Regência Correta",
+      "instructions": "Escolha a versão correta de cada frase.",
+      "items": [
+        { "id": "regd", "prompt": "Qual frase está correta?", "options": ["Eu gosto muito dela.", "Eu gosto muito ela.", "Eu gosto muito com ela."], "answerIndex": 0, "explanation": "\"Gostar\" sempre exige a preposição \"de\"." },
+        { "id": "rege", "prompt": "Qual frase está correta, na norma culta formal?", "options": ["Nós assistimos o filme.", "Nós assistimos ao filme.", "Nós assistimos no filme."], "answerIndex": 1, "explanation": "Na norma culta, \"assistir\" (no sentido de ver) exige a preposição \"a\"." }
+      ]
+    },
+    {
+      "id": "reg-match",
+      "type": "matching",
+      "title": "Associe o Verbo/Adjetivo à Preposição",
+      "instructions": "Associe cada verbo ou adjetivo à preposição que ele exige.",
+      "items": [
+        { "id": "regf", "pairs": [
+          { "left": "gostar", "right": "de" },
+          { "left": "obedecer", "right": "a" },
+          { "left": "cheio", "right": "de" },
+          { "left": "orgulhoso", "right": "de" },
+          { "left": "fiel", "right": "a" }
+        ], "explanation": "Cada verbo/adjetivo tem uma regência própria, memorizada individualmente." }
+      ]
+    }
+  ],
+  "summary": [
+    "Regência verbal e nominal definem qual preposição (se houver) cada verbo ou adjetivo exige.",
+    "Não há uma regra universal — cada palavra precisa ser aprendida com sua regência específica.",
+    "Alguns verbos, como \"assistir\" e \"chamar\", mudam de sentido conforme a preposição usada."
+  ],
+  "related": [
+    { "lessonId": "b2-crase-aprofundada", "label": "Crase Aprofundada" },
+    { "lessonId": "b2-conectores-argumentativos", "label": "Conectores Argumentativos" }
+  ]
+}

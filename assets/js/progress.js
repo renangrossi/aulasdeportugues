@@ -78,7 +78,7 @@
   // (ver scripts/build_exercise_index.py) depois que Pre-A1 e A1 foram
   // escritos; os demais níveis (ainda "planned") caem no valor padrão
   // abaixo, o que é inofensivo — não há exercícios lá para contar ainda.
-  var LEVEL_EXERCISE_COUNTS = { "PRE-A1": 26, A1: 64, A2: 38, B1: 36 };
+  var LEVEL_EXERCISE_COUNTS = { "PRE-A1": 26, A1: 64, A2: 38, B1: 36, B2: 27 };
   function explorerThreshold(level) {
     var total = LEVEL_EXERCISE_COUNTS[level] || 30;
     return Math.max(6, Math.round(total * 0.3));

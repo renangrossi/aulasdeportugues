@@ -1,0 +1,94 @@
+{
+  "id": "b2-subjuntivo-sistema-completo",
+  "level": "B2",
+  "order": 1,
+  "skill": "grammar",
+  "title": "Subjuntivo: Sistema Completo",
+  "subtitle": "Juntando presente, imperfeito, futuro e os dois tempos compostos em um só quadro.",
+  "objectives": [
+    "Visualizar os cinco tempos do subjuntivo em conjunto",
+    "Formar e usar o pretérito perfeito do subjuntivo (tenha + particípio)",
+    "Revisar o mais-que-perfeito do subjuntivo (tivesse + particípio) em novos contextos"
+  ],
+  "content": {
+    "intro": "Você já usou presente, imperfeito e futuro do subjuntivo em contextos separados. Esta lição junta tudo — e apresenta as duas formas compostas que ainda faltavam.",
+    "explanation": "<p>O subjuntivo tem cinco tempos: <strong>presente</strong> (fale, coma), <strong>pretérito imperfeito</strong> (falasse, comesse), <strong>futuro</strong> (falar, comer), e dois tempos <strong>compostos</strong> — o <strong>pretérito perfeito do subjuntivo</strong> (tenha falado, tenha comido) e o <strong>pretérito mais-que-perfeito do subjuntivo</strong> (tivesse falado, tivesse comido).</p><p>O <strong>pretérito perfeito do subjuntivo</strong> (presente do subjuntivo de \"ter\" + particípio) expressa uma reação de dúvida ou emoção sobre algo que <strong>já aconteceu</strong>: \"espero que ele <strong>tenha chegado</strong> bem\" (a chegada já pode ter acontecido, mas ainda não tenho certeza). Já o <strong>mais-que-perfeito do subjuntivo</strong> (que você já viu nas condicionais do B1) expressa uma condição hipotética sobre o passado: \"se eu <strong>tivesse sabido</strong>, teria agido diferente\".</p>",
+    "rules": [
+      "Presente: fale, coma (dúvida/desejo sobre o presente/futuro)",
+      "Imperfeito: falasse, comesse (hipótese no passado ou condicional tipo 3)",
+      "Futuro: falar, comer (depois de se/quando, sobre o futuro)",
+      "Pretérito perfeito: tenha falado, tenha comido (dúvida/emoção sobre algo já concluído)",
+      "Mais-que-perfeito: tivesse falado, tivesse comido (hipótese sobre o passado)"
+    ],
+    "table": {
+      "caption": "Os cinco tempos do subjuntivo — \"falar\"",
+      "headers": ["Tempo", "Forma (eu)", "Uso típico"],
+      "rows": [
+        ["Presente", "fale", "Espero que ele fale a verdade."],
+        ["Imperfeito", "falasse", "Se eu falasse alemão, eu me mudaria."],
+        ["Futuro", "falar", "Quando ele falar, me avise."],
+        ["Pret. perfeito", "tenha falado", "Espero que ele tenha falado a verdade."],
+        ["Mais-que-perfeito", "tivesse falado", "Se eu tivesse falado antes, teria evitado o problema."]
+      ]
+    },
+    "examples": [
+      "Espero que vocês tenham gostado da viagem.",
+      "Duvido que ela tenha terminado o trabalho a tempo.",
+      "Se eu tivesse estudado mais, teria passado no exame.",
+      "É possível que ele já tenha saído.",
+      "Fico feliz que você tenha vindo."
+    ],
+    "commonMistakes": [
+      { "wrong": "\"Espero que ele chegou bem\" (indicativo em vez do subjuntivo composto)", "right": "\"Espero que ele tenha chegado bem\"", "why": "\"Esperar que\" sobre um evento já concluído usa o pretérito perfeito do subjuntivo, não o pretérito perfeito do indicativo." },
+      { "wrong": "Confundir \"tenha falado\" (dúvida sobre o passado) com \"tinha falado\" (fato do passado)", "right": "usar \"tenha\" para dúvida/emoção; \"tinha\" para um fato certo", "why": "As duas formas são parecidas, mas pertencem a modos diferentes: subjuntivo (incerteza) vs. indicativo (certeza)." },
+      { "wrong": "Usar o presente do subjuntivo (tenha) onde o mais-que-perfeito (tivesse) é necessário", "right": "usar \"tivesse\" em condicionais hipotéticas sobre o passado", "why": "\"Se eu tenha estudado\" não existe — condicionais hipotéticas passadas sempre usam \"tivesse\", nunca \"tenha\"." }
+    ],
+    "tip": "Visualize o subjuntivo como um sistema de cinco peças que se encaixam conforme o tempo (presente/passado/futuro) e conforme a ação está concluída ou não — não como cinco regras soltas e independentes."
+  },
+  "exercises": [
+    {
+      "id": "subjc-fill",
+      "type": "fill-blank",
+      "title": "Complete com o Tempo do Subjuntivo Certo",
+      "instructions": "Complete cada frase com a forma correta do subjuntivo.",
+      "items": [
+        { "id": "subjca", "prompt": "Espero que ela já ___ ___ (ter + chegar) em casa.", "answers": [["tenha"], ["chegado"]], "explanation": "Dúvida sobre algo já concluído: pretérito perfeito do subjuntivo." },
+        { "id": "subjcb", "prompt": "Se eu ___ (saber) a resposta, eu diria.", "answers": [["soubesse"]], "explanation": "Hipótese no presente: imperfeito do subjuntivo." },
+        { "id": "subjcc", "prompt": "Se vocês ___ ___ (ter + avisar) antes, nós teríamos ajudado.", "answers": [["tivessem"], ["avisado"]], "explanation": "Hipótese sobre o passado: mais-que-perfeito do subjuntivo." }
+      ]
+    },
+    {
+      "id": "subjc-mc",
+      "type": "multiple-choice",
+      "title": "Escolha o Tempo Verbal Certo",
+      "instructions": "Escolha a forma correta do subjuntivo conforme o contexto.",
+      "items": [
+        { "id": "subjcd", "prompt": "\"Duvido que ele ___ o trabalho ainda.\" (ação provavelmente ainda não concluída)", "options": ["termine", "tenha terminado", "terminasse"], "answerIndex": 1, "explanation": "Dúvida sobre algo que pode já ter acontecido: pretérito perfeito do subjuntivo." },
+        { "id": "subjce", "prompt": "\"Fico feliz que vocês ___ à festa ontem.\"", "options": ["venham", "tenham vindo", "viessem"], "answerIndex": 1, "explanation": "Emoção sobre um evento já concluído (ontem): pretérito perfeito do subjuntivo." }
+      ]
+    },
+    {
+      "id": "subjc-match",
+      "type": "matching",
+      "title": "Associe o Tempo ao Uso",
+      "instructions": "Associe cada tempo do subjuntivo ao seu uso característico.",
+      "items": [
+        { "id": "subjcf", "pairs": [
+          { "left": "presente (fale)", "right": "dúvida/desejo sobre agora ou o futuro" },
+          { "left": "imperfeito (falasse)", "right": "hipótese no presente" },
+          { "left": "pretérito perfeito (tenha falado)", "right": "dúvida sobre algo já concluído" },
+          { "left": "mais-que-perfeito (tivesse falado)", "right": "hipótese sobre o passado" }
+        ], "explanation": "Cada tempo do subjuntivo tem um papel próprio dentro do sistema." }
+      ]
+    }
+  ],
+  "summary": [
+    "O subjuntivo tem cinco tempos: presente, imperfeito, futuro, pretérito perfeito e mais-que-perfeito.",
+    "O pretérito perfeito do subjuntivo (tenha + particípio) expressa dúvida/emoção sobre algo já concluído.",
+    "O mais-que-perfeito do subjuntivo (tivesse + particípio) expressa hipótese sobre o passado."
+  ],
+  "related": [
+    { "lessonId": "b2-oracoes-concessivas-finais-consecutivas", "label": "Orações Concessivas, Finais e Consecutivas" },
+    { "lessonId": "b2-colocacao-pronominal-avancada", "label": "Colocação Pronominal Avançada" }
+  ]
+}

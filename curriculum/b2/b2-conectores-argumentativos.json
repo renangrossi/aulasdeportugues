@@ -1,0 +1,88 @@
+{
+  "id": "b2-conectores-argumentativos",
+  "level": "B2",
+  "order": 8,
+  "skill": "writing",
+  "title": "Conectores Argumentativos",
+  "subtitle": "Contudo, portanto, além disso — o vocabulário que estrutura um bom texto.",
+  "objectives": [
+    "Usar conectores de oposição, conclusão e adição em textos argumentativos",
+    "Variar o vocabulário para evitar repetição de \"mas\" e \"por isso\"",
+    "Estruturar um parágrafo argumentativo simples com conectores adequados"
+  ],
+  "content": {
+    "intro": "Até aqui você usou \"mas\", \"e\" e \"porque\" na maior parte das suas frases. Esta lição amplia esse repertório com o vocabulário típico de textos argumentativos e de redações formais.",
+    "explanation": "<p>Conectores de <strong>oposição/contraste</strong> — mais formais que \"mas\" — incluem <strong>contudo</strong>, <strong>todavia</strong>, <strong>no entanto</strong>, <strong>por outro lado</strong>. Conectores de <strong>conclusão</strong> — mais formais que \"por isso\" — incluem <strong>portanto</strong>, <strong>logo</strong>, <strong>por conseguinte</strong>, <strong>dessa forma</strong>. Conectores de <strong>adição</strong> reforçam um argumento anterior: <strong>além disso</strong>, <strong>ademais</strong>, <strong>outrossim</strong> (muito formal). Para <strong>concluir</strong> um texto: <strong>em suma</strong>, <strong>enfim</strong>, <strong>em síntese</strong>.</p><p>Esses conectores aparecem principalmente na escrita formal — redações, artigos, e-mails profissionais — e ajudam a evitar a repetição constante de \"mas\", \"e\" e \"então\", que soa repetitiva em um texto mais longo.</p>",
+    "rules": [
+      "Oposição: contudo, todavia, no entanto, por outro lado (equivalentes mais formais de \"mas\")",
+      "Conclusão: portanto, logo, por conseguinte, dessa forma (equivalentes mais formais de \"por isso\")",
+      "Adição: além disso, ademais (equivalentes mais formais de \"e também\")",
+      "Fechamento: em suma, enfim, em síntese",
+      "Esses conectores são típicos da escrita formal — soam artificiais em conversas muito informais"
+    ],
+    "table": {
+      "caption": "Conectores por função",
+      "headers": ["Função", "Conectores", "Equivalente informal"],
+      "rows": [
+        ["Oposição", "contudo, todavia, no entanto", "mas"],
+        ["Conclusão", "portanto, logo, por conseguinte", "por isso"],
+        ["Adição", "além disso, ademais", "e também"],
+        ["Fechamento", "em suma, enfim", "resumindo"]
+      ]
+    },
+    "examples": [
+      "O projeto é promissor; contudo, precisa de mais investimento.",
+      "Ela estudou muito; portanto, mereceu a aprovação.",
+      "O produto é eficiente. Além disso, tem um preço acessível.",
+      "Em suma, a proposta traz mais benefícios do que riscos.",
+      "Choveu o dia inteiro; no entanto, o evento não foi cancelado."
+    ],
+    "commonMistakes": [
+      { "wrong": "Usar \"contudo\" e \"portanto\" em uma conversa informal com amigos", "right": "reservar esses conectores para textos formais e argumentativos", "why": "Esses conectores soam artificiais/exagerados em contextos muito informais — \"mas\" e \"por isso\" continuam naturais na fala." },
+      { "wrong": "Repetir \"mas\" várias vezes no mesmo parágrafo de um texto formal", "right": "variar entre contudo, todavia, no entanto", "why": "A variação de conectores torna um texto mais fluido e evita a monotonia da repetição." },
+      { "wrong": "Usar \"portanto\" sem uma relação lógica clara de causa e efeito antes dele", "right": "usar \"portanto\" só quando a frase anterior realmente justifica a conclusão", "why": "Conectores de conclusão exigem uma relação lógica real entre as ideias — usá-los sem essa relação confunde o leitor." }
+    ],
+    "tip": "Ao escrever um texto mais longo, releia e marque cada \"mas\", \"e\" e \"por isso\" — depois, veja se algum poderia ser substituído por um conector mais preciso, sem exagerar na formalidade."
+  },
+  "exercises": [
+    {
+      "id": "conect-fill",
+      "type": "fill-blank",
+      "title": "Complete com o Conector",
+      "instructions": "Complete cada frase com um conector adequado ao contexto.",
+      "items": [
+        { "id": "conecta", "prompt": "O time jogou bem; ___, perdeu o jogo. (oposição)", "answers": [["contudo", "todavia", "no entanto"]], "explanation": "Qualquer conector de oposição formal encaixa aqui." },
+        { "id": "conectb", "prompt": "Ele chegou atrasado a todas as reuniões; ___, foi demitido. (conclusão)", "answers": [["portanto", "logo", "por conseguinte"]], "explanation": "Conectores de conclusão indicam a consequência lógica." },
+        { "id": "conectc", "prompt": "O apartamento é espaçoso. ___, fica perto do metrô. (adição)", "answers": [["Além disso", "Ademais"]], "explanation": "Conectores de adição reforçam um argumento anterior." }
+      ]
+    },
+    {
+      "id": "conect-mc",
+      "type": "multiple-choice",
+      "title": "Identifique a Função do Conector",
+      "instructions": "Identifique a função do conector em cada frase.",
+      "items": [
+        { "id": "conectd", "prompt": "\"Estudei bastante; todavia, fiquei nervoso na prova.\" Que função tem \"todavia\"?", "options": ["Oposição", "Conclusão", "Adição"], "answerIndex": 0, "explanation": "\"Todavia\" introduz um contraste com a frase anterior." },
+        { "id": "conecte", "prompt": "\"Ela é muito qualificada; logo, foi a escolhida para o cargo.\" Que função tem \"logo\"?", "options": ["Oposição", "Conclusão", "Adição"], "answerIndex": 1, "explanation": "\"Logo\" introduz uma conclusão lógica." }
+      ]
+    },
+    {
+      "id": "conect-writing",
+      "type": "writing",
+      "title": "Escreva um Parágrafo Argumentativo",
+      "instructions": "Escreva um parágrafo curto (4-6 frases) defendendo uma opinião simples, usando pelo menos três conectores diferentes desta lição.",
+      "items": [
+        { "id": "conectf", "prompt": "Tema sugerido: \"Trabalhar de casa é melhor do que trabalhar no escritório?\" Use conectores de oposição, conclusão e adição." }
+      ]
+    }
+  ],
+  "summary": [
+    "Contudo, todavia e no entanto são alternativas formais a \"mas\".",
+    "Portanto, logo e por conseguinte são alternativas formais a \"por isso\".",
+    "Variar os conectores torna um texto mais fluido e evita repetição excessiva."
+  ],
+  "related": [
+    { "lessonId": "b2-oracoes-concessivas-finais-consecutivas", "label": "Orações Concessivas, Finais e Consecutivas" },
+    { "lessonId": "b2-registro-formal-e-informal", "label": "Registro Formal e Informal" }
+  ]
+}
