@@ -1,5 +1,5 @@
 {
-  "_readme": "Fonte única de verdade para a sequência do currículo. status: 'published' = o HTML gerado existe e está linkado na página do nível; 'drafted' = curriculum/{nivel}/{id}.json existe, ainda não construído; 'planned' = identificado no desenho pedagógico do curso, ainda sem JSON. Pre-A1, A1, A2, B1, B2 e C1 estão 100% publicados. C2 tem seu roteiro completo definido aqui para orientar a próxima fase, mas ainda não foi escrito -- a página de nível mostra esses tópicos como 'Em breve' em vez de fingir que já existem.",
+  "_readme": "Fonte única de verdade para a sequência do currículo. status: 'published' = o HTML gerado existe e está linkado na página do nível; 'drafted' = curriculum/{nivel}/{id}.json existe, ainda não construído; 'planned' = identificado no desenho pedagógico do curso, ainda sem JSON. Todos os sete níveis, de Pre-A1 a C2, estão 100% publicados -- o currículo completo do curso está no ar.",
   "levels": {
     "PRE-A1": {
       "units": [
@@ -133,13 +133,13 @@
       "units": [
         {
           "id": "1",
-          "title": "Proficiência (5 tópicos planejados)",
+          "title": "Proficiência (5 lições)",
           "lessons": [
-            { "id": "c2-dominio-dos-tempos-e-modos", "status": "planned", "title": "Domínio dos Tempos e Modos" },
-            { "id": "c2-estruturas-retoricas-avancadas", "status": "planned", "title": "Estruturas Retóricas Avançadas" },
-            { "id": "c2-registro-literario-e-coloquial", "status": "planned", "title": "Registro Literário e Coloquial" },
-            { "id": "c2-ironia-humor-e-ambiguidade", "status": "planned", "title": "Ironia, Humor e Ambiguidade" },
-            { "id": "c2-traducao-e-transposicao-de-registro", "status": "planned", "title": "Tradução e Transposição de Registro" }
+            { "id": "c2-dominio-dos-tempos-e-modos", "status": "published" },
+            { "id": "c2-estruturas-retoricas-avancadas", "status": "published" },
+            { "id": "c2-registro-literario-e-coloquial", "status": "published" },
+            { "id": "c2-ironia-humor-e-ambiguidade", "status": "published" },
+            { "id": "c2-traducao-e-transposicao-de-registro", "status": "published" }
           ]
         }
       ]

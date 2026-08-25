@@ -1,0 +1,88 @@
+{
+  "id": "c2-traducao-e-transposicao-de-registro",
+  "level": "C2",
+  "order": 5,
+  "skill": "writing",
+  "title": "Tradução e Transposição de Registro",
+  "subtitle": "A lição final: transformar qualquer mensagem em qualquer registro, com precisão.",
+  "objectives": [
+    "Reconhecer os falsos cognatos mais comuns entre português e inglês",
+    "Transpor uma mesma mensagem entre registros formal e informal com naturalidade",
+    "Sintetizar as habilidades de todo o curso em uma tarefa final de produção"
+  ],
+  "content": {
+    "intro": "Esta é a última lição do curso — não porque a jornada com o português termina aqui, mas porque, a partir deste ponto, a melhor forma de continuar evoluindo é o contato direto com o idioma real: livros, filmes, notícias, conversas.",
+    "explanation": "<p>Um ponto final importante para quem chega a este nível: os <strong>falsos cognatos</strong> (ou \"falsos amigos\") são palavras parecidas entre português e inglês, mas com significados diferentes. \"<strong>Pretend</strong>\" não significa \"pretender\" (que em português significa \"to intend\"), e sim \"fingir\". \"<strong>Actually</strong>\" não significa \"atualmente\" (que significa \"currently\"), e sim \"na verdade\". \"<strong>Push</strong>\" não é \"puxar\" (que é \"pull\"), e sim \"empurrar\". Reconhecer esses pares evita erros sutis, mas reveladores, mesmo em falantes muito avançados.</p><p>A <strong>transposição de registro</strong> — habilidade central desta lição — é a capacidade de pegar a mesma mensagem e reescrevê-la em diferentes registros, mantendo o sentido: uma reclamação pode ser dita de forma informal a um amigo (\"cara, o atendimento foi um horror\") ou de forma formal em um e-mail a uma empresa (\"venho por meio deste relatar minha insatisfação com o atendimento recebido\"). Dominar essa transposição — junto com tudo o que você já aprendeu neste curso — é a marca de um falante verdadeiramente proficiente.</p>",
+    "rules": [
+      "Falsos cognatos comuns: pretend (fingir, não \"pretender\"); actually (na verdade, não \"atualmente\"); push (empurrar, não \"puxar\")",
+      "Outros falsos cognatos: parents (pais, não \"parentes\"); library (biblioteca, não \"livraria\"); college (faculdade, não \"colégio\")",
+      "Transposição de registro: mesma mensagem, vocabulário e estrutura ajustados ao contexto social",
+      "Formal: vocabulário neutro/elevado, construções impessoais, sem contrações informais",
+      "Informal: vocabulário coloquial, contrações, frases mais curtas e diretas"
+    ],
+    "table": {
+      "caption": "Falsos cognatos comuns (inglês → português)",
+      "headers": ["Palavra em inglês", "Parece mas NÃO é", "Significado real"],
+      "rows": [
+        ["pretend", "pretender", "fingir"],
+        ["actually", "atualmente", "na verdade"],
+        ["push", "puxar", "empurrar"],
+        ["parents", "parentes", "pais"],
+        ["library", "livraria", "biblioteca"]
+      ]
+    },
+    "examples": [
+      "\"I pretend to be busy\" = \"eu finjo estar ocupado\" (não \"eu pretendo estar ocupado\").",
+      "\"Actually, I disagree\" = \"na verdade, eu discordo\" (não \"atualmente, eu discordo\").",
+      "Informal: \"cara, esse atendimento foi horrível.\" Formal: \"gostaria de registrar minha insatisfação com o atendimento.\"",
+      "Informal: \"cê topa?\" Formal: \"você teria interesse em participar?\"",
+      "\"My parents live in São Paulo\" = \"meus pais moram em São Paulo\" (não \"meus parentes\")."
+    ],
+    "commonMistakes": [
+      { "wrong": "\"Eu pretendo ser rico\" traduzindo \"I pretend to be rich\" (fingir)", "right": "\"Eu finjo ser rico\" para \"pretend\"; \"eu pretendo ser rico\" significa \"I intend to be rich\"", "why": "\"Pretender\" em português significa \"ter a intenção de\", não \"fingir\" — um falso cognato clássico." },
+      { "wrong": "Misturar registros na mesma mensagem (começar formal e terminar com gírias)", "right": "manter consistência de registro do início ao fim do texto", "why": "A inconsistência de registro quebra a coerência e pode até soar como falta de controle sobre o idioma." },
+      { "wrong": "Achar que dominar gramática sozinha garante comunicação eficaz", "right": "combinar gramática, vocabulário, registro e contexto cultural", "why": "Comunicação real depende de mais do que regras gramaticais corretas — depende de escolher a forma certa para a situação certa." }
+    ],
+    "tip": "A partir daqui, a prática mais valiosa é o contato real com o idioma: leia notícias brasileiras, assista a filmes e séries em português, converse com falantes nativos. A gramática que você aprendeu neste curso é a base — a fluência de verdade se constrói no uso."
+  },
+  "exercises": [
+    {
+      "id": "trad-mc",
+      "type": "multiple-choice",
+      "title": "Falsos Cognatos",
+      "instructions": "Escolha o significado correto de cada palavra em inglês.",
+      "items": [
+        { "id": "trada", "prompt": "\"Actually\" em português significa:", "options": ["Atualmente", "Na verdade", "Realmente ocupado"], "answerIndex": 1, "explanation": "\"Actually\" significa \"na verdade\" — \"atualmente\" se traduz como \"currently\"." },
+        { "id": "tradb", "prompt": "\"My parents\" em português significa:", "options": ["Meus parentes", "Meus pais", "Meus primos"], "answerIndex": 1, "explanation": "\"Parents\" significa \"pais\" — \"parentes\" se traduz como \"relatives\"." }
+      ]
+    },
+    {
+      "id": "trad-correction",
+      "type": "correction",
+      "title": "Transponha o Registro",
+      "instructions": "Reescreva cada frase informal em um registro formal, mantendo o mesmo sentido.",
+      "items": [
+        { "id": "tradc", "incorrect": "Cara, esse produto veio todo quebrado, que saco!", "answer": ["O produto chegou danificado, o que causou grande insatisfação", "Venho relatar que o produto foi recebido danificado."], "explanation": "A versão formal evita gírias e expressa a mesma reclamação de forma profissional." },
+        { "id": "tradd", "incorrect": "Cê pode me confirmar se tá tudo certo com o pedido?", "answer": ["Você poderia confirmar se está tudo certo com o pedido?", "Poderia confirmar se o pedido está correto?"], "explanation": "A versão formal evita as contrações \"cê\" e \"tá\"." }
+      ]
+    },
+    {
+      "id": "trad-writing",
+      "type": "writing",
+      "title": "Tarefa Final: Duas Versões, Uma Mensagem",
+      "instructions": "Escreva a mesma mensagem — pedindo um adiamento de prazo — em duas versões completas: uma informal (para um colega próximo) e uma formal (para um cliente ou superior). Use os recursos de todo o curso: conectores, subjuntivo, registro adequado.",
+      "items": [
+        { "id": "trade", "prompt": "Escreva as duas versões completas, com pelo menos 3-4 frases cada, mantendo o mesmo pedido central nas duas." }
+      ]
+    }
+  ],
+  "summary": [
+    "Falsos cognatos como pretend/pretender e actually/atualmente merecem atenção mesmo em nível avançado.",
+    "Transpor uma mensagem entre registros exige ajustar vocabulário, estrutura e tratamento, mantendo o sentido.",
+    "A partir deste ponto, o contato real com o idioma — livros, filmes, conversas — é o que constrói fluência verdadeira."
+  ],
+  "related": [
+    { "lessonId": "c2-ironia-humor-e-ambiguidade", "label": "Ironia, Humor e Ambiguidade" },
+    { "lessonId": "c2-registro-literario-e-coloquial", "label": "Registro Literário e Coloquial" }
+  ]
+}

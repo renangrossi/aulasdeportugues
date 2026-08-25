@@ -1,0 +1,77 @@
+{
+  "id": "c2-dominio-dos-tempos-e-modos",
+  "level": "C2",
+  "order": 1,
+  "skill": "grammar",
+  "title": "Domínio dos Tempos e Modos",
+  "subtitle": "O presente histórico e as escolhas verbais mais sutis do português maduro.",
+  "objectives": [
+    "Usar o presente histórico para narrar eventos passados com mais vivacidade",
+    "Reconhecer escolhas sutis entre tempos/modos que mudam o tom de um texto",
+    "Revisar, em conjunto, o sistema verbal completo estudado até aqui"
+  ],
+  "content": {
+    "intro": "Você já domina cada tempo e modo verbal isoladamente. Nesta última etapa gramatical do curso, o foco é a escolha fina entre eles — o que separa um português correto de um português verdadeiramente elegante.",
+    "explanation": "<p>O <strong>presente histórico</strong> é o uso do presente do indicativo para narrar eventos do passado, criando um efeito de proximidade e vivacidade — muito comum em textos jornalísticos, biografias e narrativas literárias: \"Em 1822, Dom Pedro <strong>declara</strong> a independência do Brasil\" (em vez de \"declarou\"). É um recurso estilístico deliberado, não um erro de tempo verbal.</p><p>Falantes avançados também fazem escolhas sutis entre tempos próximos em significado para ajustar o <strong>tom</strong>: o condicional simples pode suavizar uma afirmação (\"isso <strong>seria</strong> um erro\" soa menos direto que \"isso <strong>é</strong> um erro\"); o subjuntivo imperfeito pode expressar um pedido educadíssimo (\"se você <strong>pudesse</strong> me ajudar...\"). Dominar essas nuances é o que diferencia um texto tecnicamente correto de um texto verdadeiramente bem escrito.</p>",
+    "rules": [
+      "Presente histórico: presente do indicativo para narrar o passado, criando vivacidade",
+      "Condicional simples pode suavizar afirmações diretas, soando mais educado/hesitante",
+      "Imperfeito do subjuntivo em pedidos (se você pudesse...) é mais educado que o presente",
+      "A escolha entre tempos próximos comunica tom, não apenas tempo cronológico",
+      "Textos jornalísticos e biográficos usam o presente histórico com frequência para dar ritmo à narrativa"
+    ],
+    "examples": [
+      "Em 1500, Cabral chega ao território que hoje é o Brasil.",
+      "Isso seria, no mínimo, uma decisão precipitada.",
+      "Se você pudesse revisar o documento, eu agradeceria muito.",
+      "O escritor nasce em 1930 e publica seu primeiro livro aos vinte anos.",
+      "Seria interessante repensar essa estratégia."
+    ],
+    "commonMistakes": [
+      { "wrong": "Achar que o presente histórico é um erro gramatical", "right": "reconhecê-lo como um recurso estilístico legítimo e comum", "why": "É uma escolha deliberada para dar vivacidade à narrativa, amplamente usada em textos de qualidade." },
+      { "wrong": "Misturar presente histórico com pretérito na mesma frase de forma inconsistente", "right": "manter a consistência dentro do mesmo trecho narrativo", "why": "Embora o presente histórico seja válido, misturar tempos aleatoriamente dentro do mesmo parágrafo quebra a coesão do texto." },
+      { "wrong": "Usar sempre a forma mais direta, ignorando o efeito suavizador do condicional/subjuntivo", "right": "escolher deliberadamente entre formas diretas e suavizadas conforme o contexto social", "why": "A escolha do tempo verbal comunica tom — formalidade, educação, hesitação — além do tempo cronológico." }
+    ],
+    "tip": "Ao revisar um texto narrativo seu, experimente reescrever um trecho no presente histórico — perceba como isso muda o ritmo e a proximidade emocional do relato."
+  },
+  "exercises": [
+    {
+      "id": "domtm-mc",
+      "type": "multiple-choice",
+      "title": "Reconheça o Presente Histórico",
+      "instructions": "Identifique o uso do presente histórico e seu efeito.",
+      "items": [
+        { "id": "domtma", "prompt": "\"Em 1889, a República é proclamada no Brasil.\" Que recurso é esse?", "options": ["Erro de tempo verbal", "Presente histórico", "Futuro do presente"], "answerIndex": 1, "explanation": "É o presente histórico, usado para narrar um evento passado com mais vivacidade." },
+        { "id": "domtmb", "prompt": "Qual frase soa mais suave/educada?", "options": ["Isso é um erro.", "Isso seria um erro.", "Isso foi um erro."], "answerIndex": 1, "explanation": "O condicional simples suaviza a afirmação, tornando-a menos direta." }
+      ]
+    },
+    {
+      "id": "domtm-fill",
+      "type": "fill-blank",
+      "title": "Reescreva no Presente Histórico",
+      "instructions": "Reescreva a frase no presente histórico.",
+      "items": [
+        { "id": "domtmc", "prompt": "\"O escritor nasceu em 1920.\" → O escritor ___ em 1920. (presente histórico)", "answers": [["nasce"]], "explanation": "Presente histórico: nasce." },
+        { "id": "domtmd", "prompt": "\"Ela publicou o livro em 1960.\" → Ela ___ o livro em 1960. (presente histórico)", "answers": [["publica"]], "explanation": "Presente histórico: publica." }
+      ]
+    },
+    {
+      "id": "domtm-writing",
+      "type": "writing",
+      "title": "Narre no Presente Histórico",
+      "instructions": "Escreva um parágrafo curto (4-6 frases) sobre um evento histórico ou biográfico, usando o presente histórico do início ao fim.",
+      "items": [
+        { "id": "domtme", "prompt": "Escolha um evento (real ou inventado) e narre-o inteiramente no presente, para praticar o efeito de vivacidade desse recurso." }
+      ]
+    }
+  ],
+  "summary": [
+    "O presente histórico narra eventos passados no presente, criando vivacidade — é estilo, não erro.",
+    "O condicional e o imperfeito do subjuntivo suavizam afirmações e pedidos.",
+    "A escolha entre tempos verbais próximos comunica tom, além do tempo cronológico em si."
+  ],
+  "related": [
+    { "lessonId": "c2-estruturas-retoricas-avancadas", "label": "Estruturas Retóricas Avançadas" },
+    { "lessonId": "c2-registro-literario-e-coloquial", "label": "Registro Literário e Coloquial" }
+  ]
+}

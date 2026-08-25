@@ -1,0 +1,77 @@
+{
+  "id": "c2-ironia-humor-e-ambiguidade",
+  "level": "C2",
+  "order": 4,
+  "skill": "reading",
+  "title": "Ironia, Humor e Ambiguidade",
+  "subtitle": "Quando o que se diz não é exatamente o que se quer dizer.",
+  "objectives": [
+    "Reconhecer ironia pelo contexto e pela entonação implícita no texto",
+    "Identificar trocadilhos e outros recursos de humor baseados em duplo sentido",
+    "Reconhecer ambiguidades estruturais e resolvê-las por contexto"
+  ],
+  "content": {
+    "intro": "Esta é, talvez, a habilidade mais difícil de qualquer idioma: entender o que não está sendo dito literalmente. Ironia, humor e ambiguidade exigem uma leitura além da gramática.",
+    "explanation": "<p>A <strong>ironia</strong> diz o oposto do que realmente se quer comunicar, geralmente com uma intenção crítica ou humorística: depois de um dia de chuva torrencial, dizer \"<strong>que dia lindo</strong>, hein?\" comunica exatamente o oposto do que as palavras dizem literalmente — e só o contexto revela isso. O <strong>humor</strong> frequentemente se apoia em <strong>trocadilhos</strong> (palavras com duplo sentido ou som parecido): \"o padeiro estava <strong>pão</strong> duro\" brinca com \"pão\" (o alimento) e a expressão \"pão-duro\" (pessoa avarenta).</p><p>A <strong>ambiguidade estrutural</strong> acontece quando uma frase permite mais de uma interpretação gramaticalmente válida: \"vi o cachorro correndo\" pode significar que <em>eu</em> corria ao ver o cachorro, ou que o <em>cachorro</em> corria. Falantes avançados aprendem a identificar essas ambiguidades e, na escrita cuidadosa, a reescrever a frase para eliminá-las quando a clareza importa.</p>",
+    "rules": [
+      "Ironia: comunica o oposto do sentido literal, identificada pelo contexto (não por marcação gramatical)",
+      "Trocadilho: brinca com duplo sentido ou semelhança sonora entre palavras",
+      "Ambiguidade estrutural: uma frase permite mais de uma leitura gramaticalmente válida",
+      "Na escrita cuidadosa, reescreva frases ambíguas para eliminar a duplicidade quando a clareza é importante",
+      "A entonação (na fala) e o contexto (na escrita) são as pistas principais para identificar ironia"
+    ],
+    "examples": [
+      "Depois de perder o ônibus na chuva: \"Que sorte a minha, hein?\" (irônico)",
+      "\"Ele é tão pontual que chega sempre um dia depois.\" (ironia sobre atraso)",
+      "\"O eletricista estava tenso: seu casamento tinha dado curto-circuito.\" (trocadilho)",
+      "\"Vi o cachorro correndo\" (ambíguo: quem corria?) → \"Enquanto corria, eu vi o cachorro\" (mais claro)",
+      "\"Ele mandou um recado ao professor sobre o filho dele\" (de quem é o filho: dele ou do professor? Ambíguo)"
+    ],
+    "commonMistakes": [
+      { "wrong": "Interpretar uma frase irônica literalmente", "right": "buscar pistas de contexto (situação, tom, exagero) para identificar a ironia", "why": "A ironia depende inteiramente do contexto — sem ele, a frase parece uma afirmação literal comum." },
+      { "wrong": "Escrever frases estruturalmente ambíguas em textos que exigem precisão (contratos, instruções)", "right": "reescrever a frase para eliminar qualquer duplo sentido não intencional", "why": "Em contextos que exigem exatidão, a ambiguidade pode causar mal-entendidos sérios." },
+      { "wrong": "Achar que humor e trocadilhos traduzem-se diretamente entre idiomas", "right": "reconhecer que jogos de palavras raramente funcionam em tradução literal", "why": "Trocadilhos dependem do som e do duplo sentido específico das palavras em português — quase nunca sobrevivem à tradução direta." }
+    ],
+    "tip": "Ao ler um texto e sentir que algo \"soa estranho\" ou contraditório com o contexto geral, considere a possibilidade de ironia — é frequentemente esse estranhamento que sinaliza a intenção irônica do autor."
+  },
+  "exercises": [
+    {
+      "id": "iron-mc",
+      "type": "multiple-choice",
+      "title": "Identifique a Ironia",
+      "instructions": "Identifique se a frase é irônica, considerando o contexto dado.",
+      "items": [
+        { "id": "irona", "prompt": "Depois de um trânsito de três horas: \"Nossa, que viagem rápida!\" O que essa frase realmente comunica?", "options": ["Que a viagem foi realmente rápida", "O oposto — que a viagem foi muito demorada", "Que a pessoa está feliz"], "answerIndex": 1, "explanation": "É ironia: o contexto (três horas de trânsito) contradiz o sentido literal da frase." },
+        { "id": "ironb", "prompt": "\"O dentista dava um sorriso... digno de reparo.\" Que recurso é esse?", "options": ["Trocadilho com \"sorriso\"/\"reparo\" (relacionado a dentes)", "Antítese", "Eufemismo"], "answerIndex": 0, "explanation": "É um trocadilho, brincando com o duplo sentido de \"reparo\" (consertar) associado à profissão de dentista." }
+      ]
+    },
+    {
+      "id": "iron-tf",
+      "type": "true-false",
+      "title": "Verdadeiro ou Falso",
+      "instructions": "Leia cada afirmação sobre ironia, humor e ambiguidade.",
+      "items": [
+        { "id": "ironc", "statement": "A ironia costuma ser marcada por uma palavra ou sinal gramatical específico no português escrito.", "answer": false, "explanation": "A ironia depende do contexto, não de uma marcação gramatical formal." },
+        { "id": "irond", "statement": "Trocadilhos geralmente se traduzem bem, palavra por palavra, para outros idiomas.", "answer": false, "explanation": "Trocadilhos dependem do som e do sentido específico em português, raramente sobrevivendo à tradução literal." }
+      ]
+    },
+    {
+      "id": "iron-writing",
+      "type": "writing",
+      "title": "Reescreva Sem Ambiguidade",
+      "instructions": "A frase \"O gerente informou o cliente sobre o problema no relatório dele\" é ambígua (de quem é o relatório: do gerente ou do cliente?). Reescreva-a de duas formas diferentes, eliminando a ambiguidade em cada versão.",
+      "items": [
+        { "id": "irone", "prompt": "Escreva duas versões claras: uma em que o relatório é do cliente, outra em que é do gerente." }
+      ]
+    }
+  ],
+  "summary": [
+    "A ironia comunica o oposto do sentido literal e só é identificável pelo contexto.",
+    "Trocadilhos exploram duplo sentido ou semelhança sonora entre palavras.",
+    "Ambiguidades estruturais devem ser reescritas quando a clareza do texto é importante."
+  ],
+  "related": [
+    { "lessonId": "c2-registro-literario-e-coloquial", "label": "Registro Literário e Coloquial" },
+    { "lessonId": "c2-traducao-e-transposicao-de-registro", "label": "Tradução e Transposição de Registro" }
+  ]
+}

@@ -11,17 +11,18 @@ reconstruída inteiramente para o português.
 
 ## Estado atual
 
-- **Pre-A1, A1, A2, B1, B2 e C1 estão 100% publicados**: 68 lições,
-  208 blocos de exercícios, 440 itens corrigíveis automaticamente.
-- **C2 tem o roteiro pedagógico completo definido** em
-  `curriculum/index.json` (status `"planned"`), com a página de nível
-  já no ar mostrando cada tópico como "Em breve" — não é uma promessa
-  vaga, é a lista real do que vem a seguir.
-- Sem "AI Teacher" (Cloudflare Worker + LLM) nesta fase — pode ser
-  adicionado depois, do mesmo jeito que no site em inglês, se fizer
-  sentido no futuro.
+- **Currículo completo: os sete níveis do QECR, de Pre-A1 a C2, estão
+  100% publicados** — 73 lições, 223 blocos de exercícios, 459 itens
+  corrigíveis automaticamente. Nenhuma página de nível mostra mais
+  "Em breve".
+- Sem "AI Teacher" (Cloudflare Worker + LLM) — pode ser adicionado
+  depois, do mesmo jeito que no site em inglês, se fizer sentido no
+  futuro.
 - Sem áudio pré-gravado: os botões de "Ouvir" usam a Web Speech API do
   próprio navegador (`assets/js/listening.js`) — grátis, sem arquivos.
+- Próximos passos naturais (não feitos ainda): mais lições por nível
+  (o roteiro atual é uma cobertura sólida, não exaustiva, de cada
+  nível), o "AI Teacher" opcional, e áudio pré-gravado real.
 
 ## Arquitetura
 

@@ -1,0 +1,91 @@
+{
+  "id": "c2-estruturas-retoricas-avancadas",
+  "level": "C2",
+  "order": 2,
+  "skill": "writing",
+  "title": "Estruturas Retóricas Avançadas",
+  "subtitle": "Anáfora, antítese, gradação — os recursos que dão força a um discurso.",
+  "objectives": [
+    "Reconhecer figuras de retórica comuns em discursos e textos persuasivos",
+    "Usar anáfora, antítese e gradação para dar força a uma ideia",
+    "Aplicar esses recursos com moderação em textos próprios"
+  ],
+  "content": {
+    "intro": "Discursos memoráveis, boas redações e textos persuasivos de qualidade compartilham um traço: o uso deliberado de figuras de retórica. Esta lição apresenta as mais úteis para um falante avançado.",
+    "explanation": "<p>A <strong>anáfora</strong> repete a mesma palavra ou expressão no início de frases ou versos consecutivos, criando ritmo e ênfase: \"<strong>Não</strong> desistiremos, <strong>não</strong> vamos parar, <strong>não</strong> vamos recuar\" (o exemplo é imaginário, mas ilustra o padrão). A <strong>antítese</strong> aproxima ideias opostas para criar contraste: \"um pequeno passo para o homem, um grande salto para a humanidade\". A <strong>gradação</strong> (ou clímax) organiza ideias em ordem crescente de intensidade: \"ele não apenas participou, ele contribuiu, ele liderou, ele transformou\".</p><p>O <strong>eufemismo</strong> suaviza uma ideia desagradável (\"ele nos deixou\" em vez de \"ele morreu\"), enquanto a <strong>hipérbole</strong> exagera deliberadamente para causar impacto (\"esperei uma eternidade\"). Usados com moderação, esses recursos elevam significativamente a qualidade de um discurso ou texto argumentativo.</p>",
+    "rules": [
+      "Anáfora: repetição no início de frases/versos consecutivos, para ritmo e ênfase",
+      "Antítese: aproximação de ideias opostas, para contraste",
+      "Gradação (clímax): sequência de ideias em intensidade crescente",
+      "Eufemismo: suaviza uma ideia desagradável ou delicada",
+      "Hipérbole: exagero deliberado para causar impacto emocional"
+    ],
+    "table": {
+      "caption": "Figuras de retórica",
+      "headers": ["Figura", "Efeito", "Exemplo"],
+      "rows": [
+        ["Anáfora", "ritmo, ênfase", "Estudei. Treinei. Venci."],
+        ["Antítese", "contraste", "Rico de sonhos, pobre de recursos."],
+        ["Gradação", "intensidade crescente", "Ele sorriu, riu, gargalhou."],
+        ["Eufemismo", "suavização", "Ela \"partiu\" cedo demais."]
+      ]
+    },
+    "examples": [
+      "Lutamos por respeito. Lutamos por dignidade. Lutamos por justiça.",
+      "Pequeno na estatura, gigante na coragem.",
+      "O time melhorou, evoluiu, surpreendeu a todos.",
+      "Ele \"está numa fase difícil financeiramente\" (eufemismo para \"está sem dinheiro\").",
+      "Chorei rios de lágrimas naquele dia."
+    ],
+    "commonMistakes": [
+      { "wrong": "Usar figuras de retórica em excesso, tornando o texto artificial", "right": "aplicá-las com moderação, em pontos estratégicos do texto", "why": "O efeito de uma figura de retórica se perde — e pode até soar pomposo — se usado em toda frase." },
+      { "wrong": "Confundir anáfora (repetição no início) com simples repetição de palavra em qualquer posição", "right": "reconhecer que a anáfora especificamente repete no início de unidades consecutivas", "why": "A posição da repetição é o que define tecnicamente essa figura de retórica." },
+      { "wrong": "Usar hipérbole em contextos que exigem precisão objetiva (um relatório técnico, por exemplo)", "right": "reservar a hipérbole para textos persuasivos, literários ou informais", "why": "O exagero deliberado é inadequado em contextos que exigem exatidão factual." }
+    ],
+    "tip": "Ao escrever um texto persuasivo ou um discurso, escolha um ou dois recursos retóricos para o ponto mais importante do texto — o efeito é maior quando usado com intenção, não espalhado por todo o texto."
+  },
+  "exercises": [
+    {
+      "id": "retor-mc",
+      "type": "multiple-choice",
+      "title": "Identifique a Figura de Retórica",
+      "instructions": "Identifique a figura de retórica em cada frase.",
+      "items": [
+        { "id": "retora", "prompt": "\"Sonhamos alto. Trabalhamos duro. Vencemos juntos.\" Que figura é essa?", "options": ["Anáfora", "Eufemismo", "Antítese"], "answerIndex": 0, "explanation": "É uma anáfora, com estrutura repetida no início de cada oração." },
+        { "id": "retorb", "prompt": "\"Rico em sonhos, pobre em oportunidades.\" Que figura é essa?", "options": ["Gradação", "Antítese", "Hipérbole"], "answerIndex": 1, "explanation": "É uma antítese, aproximando ideias opostas (rico/pobre)." }
+      ]
+    },
+    {
+      "id": "retor-match",
+      "type": "matching",
+      "title": "Associe a Figura ao Exemplo",
+      "instructions": "Associe cada figura de retórica ao exemplo correspondente.",
+      "items": [
+        { "id": "retorc", "pairs": [
+          { "left": "Eufemismo", "right": "Ele \"nos deixou\" recentemente." },
+          { "left": "Hipérbole", "right": "Esperei uma eternidade por você." },
+          { "left": "Gradação", "right": "Ele chegou, viu, venceu." },
+          { "left": "Antítese", "right": "Um pequeno gesto, um grande impacto." }
+        ], "explanation": "Cada figura de retórica tem um padrão estrutural característico." }
+      ]
+    },
+    {
+      "id": "retor-writing",
+      "type": "writing",
+      "title": "Escreva com Recursos Retóricos",
+      "instructions": "Escreva três frases curtas sobre um tema à sua escolha, usando uma anáfora, uma antítese e uma gradação — uma figura por frase.",
+      "items": [
+        { "id": "retord", "prompt": "Identifique claramente qual figura você usou em cada frase." }
+      ]
+    }
+  ],
+  "summary": [
+    "Anáfora repete no início de frases/versos consecutivos, criando ritmo.",
+    "Antítese aproxima ideias opostas; gradação organiza ideias em intensidade crescente.",
+    "Eufemismo suaviza; hipérbole exagera — ambos devem ser usados com moderação."
+  ],
+  "related": [
+    { "lessonId": "c2-dominio-dos-tempos-e-modos", "label": "Domínio dos Tempos e Modos" },
+    { "lessonId": "c2-ironia-humor-e-ambiguidade", "label": "Ironia, Humor e Ambiguidade" }
+  ]
+}

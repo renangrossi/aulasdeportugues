@@ -1,0 +1,91 @@
+{
+  "id": "c2-registro-literario-e-coloquial",
+  "level": "C2",
+  "order": 3,
+  "skill": "reading",
+  "title": "Registro Literário e Coloquial",
+  "subtitle": "Do vocabulário mais erudito às gírias mais atuais — os dois extremos do idioma.",
+  "objectives": [
+    "Reconhecer vocabulário e sintaxe de registro literário/erudito",
+    "Reconhecer gírias e reduções fonéticas comuns no português coloquial mais atual",
+    "Transitar entre os dois extremos conforme o contexto"
+  ],
+  "content": {
+    "intro": "Um falante realmente avançado transita com naturalidade entre dois extremos: a linguagem mais elaborada e erudita de um texto literário, e o português coloquial mais informal, cheio de gírias e reduções, das conversas do dia a dia.",
+    "explanation": "<p>O <strong>registro literário/erudito</strong> usa vocabulário menos comum (\"outrora\" em vez de \"antes\"; \"destarte\" em vez de \"assim\"; \"efêmero\" em vez de \"passageiro\"), sintaxe mais complexa (com mais subordinação e inversões) e evita repetições óbvias. É o registro de romances, poesia e textos acadêmicos mais tradicionais.</p><p>O <strong>registro coloquial</strong> — especialmente entre jovens — usa gírias que mudam rapidamente (\"mó\", \"treta\", \"​mano\", \"​é nós\"), reduções fonéticas na escrita informal (\"vc\", \"pq\", \"tb\"), e frases mais curtas e diretas. Gírias são extremamente variáveis por geração e região, e um falante avançado deve saber <strong>reconhecê-las em contexto</strong>, mesmo sem necessariamente usá-las ativamente.</p>",
+    "rules": [
+      "Registro literário: vocabulário raro (outrora, destarte), sintaxe elaborada, poucas repetições",
+      "Registro coloquial: gírias, reduções fonéticas (vc, pq), frases curtas e diretas",
+      "Gírias mudam rapidamente por geração e região — reconhecimento é mais importante que produção ativa",
+      "Um falante avançado ajusta o registro conforme o interlocutor e o contexto, sem se prender a um só extremo",
+      "A leitura de literatura amplia o vocabulário erudito; o contato com conversas reais ensina o coloquial atual"
+    ],
+    "table": {
+      "caption": "Literário vs. coloquial",
+      "headers": ["Literário/erudito", "Coloquial"],
+      "rows": [
+        ["outrora", "antes"],
+        ["destarte", "assim"],
+        ["efêmero", "passageiro"],
+        ["Ele partiu em busca de novos horizontes.", "Ele foi viajar, sei lá pra onde."]
+      ]
+    },
+    "examples": [
+      "Outrora, esta cidade fervilhava de vida; hoje, resta apenas silêncio. (literário)",
+      "Cara, foi mó treta lá na festa ontem! (coloquial)",
+      "Destarte, conclui-se que a hipótese inicial se confirma. (acadêmico/literário)",
+      "Vc vem ou não? Responde aí, pfvr. (coloquial, escrita informal)",
+      "A efêmera beleza da juventude logo se dissipa. (literário)"
+    ],
+    "commonMistakes": [
+      { "wrong": "Usar vocabulário literário/erudito em uma conversa casual com amigos", "right": "reservar esse vocabulário para textos escritos mais formais/literários", "why": "Palavras como \"destarte\" e \"outrora\" soam artificiais ou pretensiosas na fala cotidiana." },
+      { "wrong": "Achar que gírias são \"português errado\"", "right": "reconhecer o registro coloquial como parte legítima e viva do idioma", "why": "Gírias e reduções fazem parte da língua falada real — são um registro, não um erro." },
+      { "wrong": "Tentar usar gírias que já saíram de moda para soar \"jovem\"", "right": "reconhecer que gírias mudam rápido e nem sempre valem a pena produzir ativamente", "why": "Gírias datadas podem soar estranhas mesmo para falantes nativos — reconhecimento passivo é geralmente mais útil para um estudante." }
+    ],
+    "tip": "Leia um romance brasileiro clássico e, na mesma semana, assista a um vídeo ou podcast informal de jovens brasileiros — o contraste entre os dois registros é uma das formas mais rápidas de expandir seu alcance no idioma."
+  },
+  "exercises": [
+    {
+      "id": "regcol-mc",
+      "type": "multiple-choice",
+      "title": "Literário ou Coloquial?",
+      "instructions": "Identifique o registro de cada frase.",
+      "items": [
+        { "id": "regcola", "prompt": "\"Outrora, esta terra foi próspera.\" Que registro é esse?", "options": ["Literário", "Coloquial"], "answerIndex": 0, "explanation": "\"Outrora\" é uma palavra de registro literário/erudito." },
+        { "id": "regcolb", "prompt": "\"Mano, hoje rolou muita coisa!\" Que registro é esse?", "options": ["Literário", "Coloquial"], "answerIndex": 1, "explanation": "\"Mano\" e \"rolou\" são marcas de registro coloquial/gíria." }
+      ]
+    },
+    {
+      "id": "regcol-match",
+      "type": "matching",
+      "title": "Associe a Palavra Erudita ao Equivalente Comum",
+      "instructions": "Associe cada palavra de registro literário ao seu equivalente mais comum.",
+      "items": [
+        { "id": "regcolc", "pairs": [
+          { "left": "outrora", "right": "antes" },
+          { "left": "destarte", "right": "assim" },
+          { "left": "efêmero", "right": "passageiro" },
+          { "left": "inefável", "right": "indescritível" }
+        ], "explanation": "Cada palavra erudita tem um equivalente mais simples e comum no dia a dia." }
+      ]
+    },
+    {
+      "id": "regcol-correction",
+      "type": "correction",
+      "title": "Ajuste o Registro",
+      "instructions": "Reescreva a frase coloquial em um registro mais literário/formal.",
+      "items": [
+        { "id": "regcold", "incorrect": "Cara, foi mó treta lá na reunião.", "answer": ["A reunião foi bastante conturbada", "Houve um grande conflito na reunião."], "explanation": "A versão formal evita gírias e usa vocabulário mais neutro." }
+      ]
+    }
+  ],
+  "summary": [
+    "O registro literário usa vocabulário raro e sintaxe elaborada; o coloquial usa gírias e reduções.",
+    "Gírias mudam rapidamente por geração e região — o reconhecimento é mais importante que o uso ativo.",
+    "Um falante avançado transita entre os dois registros conforme o contexto social."
+  ],
+  "related": [
+    { "lessonId": "c2-estruturas-retoricas-avancadas", "label": "Estruturas Retóricas Avançadas" },
+    { "lessonId": "c2-traducao-e-transposicao-de-registro", "label": "Tradução e Transposição de Registro" }
+  ]
+}
