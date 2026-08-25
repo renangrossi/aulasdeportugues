@@ -1,0 +1,88 @@
+{
+  "id": "b1-imperativo-completo",
+  "level": "B1",
+  "order": 4,
+  "skill": "grammar",
+  "title": "Imperativo Completo",
+  "subtitle": "Por que \"não fale\" usa uma forma diferente de \"fale\" — o imperativo negativo e o do \"tu\".",
+  "objectives": [
+    "Formar o imperativo negativo, sempre baseado no subjuntivo",
+    "Formar o imperativo afirmativo com \"tu\", diferente do de \"você\"",
+    "Reconhecer por que o subjuntivo que você acabou de aprender é a chave do imperativo negativo"
+  ],
+  "content": {
+    "intro": "No A1 você aprendeu o imperativo afirmativo com \"você\". Agora que o subjuntivo não é mais novidade, dá para completar o quadro: o imperativo negativo e a forma usada com \"tu\".",
+    "explanation": "<p>O <strong>imperativo negativo</strong> (não faça isso) usa exatamente a mesma forma do <strong>presente do subjuntivo</strong>, para qualquer pessoa: \"não <strong>fale</strong>\", \"não <strong>coma</strong>\", \"não <strong>abram</strong>\" — são as mesmas formas de \"que você fale\", \"que você coma\", \"que vocês abram\". É por isso que vale a pena ter aprendido o subjuntivo primeiro.</p><p>O imperativo afirmativo com <strong>tu</strong> (usado em algumas regiões do Brasil e em Portugal) é diferente do de \"você\": tira-se o -s final da segunda pessoa do presente do indicativo — fala<strong>s</strong> → fala; come<strong>s</strong> → come; abre<strong>s</strong> → abre. Já o imperativo negativo do \"tu\" volta a usar o subjuntivo: \"não fal<strong>es</strong>\".</p>",
+    "rules": [
+      "Imperativo negativo (não + verbo) = presente do subjuntivo, para qualquer pessoa",
+      "Não fale, não coma, não abra (você) | Não falem, não comam, não abram (vocês)",
+      "Imperativo afirmativo de \"tu\": presente indicativo de tu, sem o -s final (falas → fala)",
+      "Imperativo negativo de \"tu\": subjuntivo de tu (não fales, não comas, não abras)",
+      "No Brasil, a forma com \"você\" (baseada no subjuntivo) é a mais usada em todo o país"
+    ],
+    "table": {
+      "caption": "Imperativo completo — \"falar\"",
+      "headers": ["Pessoa", "Afirmativo", "Negativo"],
+      "rows": [
+        ["tu", "fala", "não fales"],
+        ["você", "fale", "não fale"],
+        ["vocês", "falem", "não falem"]
+      ]
+    },
+    "examples": [
+      "Fale mais devagar, por favor. / Não fale tão rápido.",
+      "Coma toda a comida. / Não coma doces à noite.",
+      "Abram os livros na página dez. / Não abram ainda.",
+      "Fala baixo, por favor. (tu, informal)",
+      "Não fales assim comigo. (tu, informal)"
+    ],
+    "commonMistakes": [
+      { "wrong": "\"Não fala\" (usando a forma afirmativa no negativo)", "right": "\"Não fale\"", "why": "O imperativo negativo sempre usa a forma do subjuntivo, nunca a forma afirmativa do indicativo." },
+      { "wrong": "\"Fales!\" no afirmativo com \"tu\"", "right": "\"Fala!\"", "why": "O imperativo afirmativo de \"tu\" usa o presente do indicativo sem o -s, não o subjuntivo — o subjuntivo (fales) só aparece na forma negativa." },
+      { "wrong": "\"Não comam\" pronunciado como \"não come\"", "right": "\"Não comam\" (vocês)", "why": "O imperativo negativo concorda em número com o sujeito, como qualquer forma do subjuntivo." }
+    ],
+    "tip": "Regra de ouro: toda vez que você quiser dizer \"não faça algo\", pense primeiro na forma do subjuntivo daquele verbo — o imperativo negativo é sempre idêntico a ela."
+  },
+  "exercises": [
+    {
+      "id": "impc-fill",
+      "type": "fill-blank",
+      "title": "Complete o Imperativo",
+      "instructions": "Complete cada frase com a forma correta do imperativo (afirmativo ou negativo, conforme indicado).",
+      "items": [
+        { "id": "impca", "prompt": "___ (falar, negativo, você) sobre isso na frente das crianças.", "answers": [["Não fale"]], "explanation": "Imperativo negativo = subjuntivo: não fale." },
+        { "id": "impcb", "prompt": "___ (abrir, afirmativo, vocês) as janelas, está abafado.", "answers": [["Abram"]], "explanation": "Imperativo afirmativo de \"vocês\": abram." },
+        { "id": "impcc", "prompt": "___ (comer, negativo, vocês) antes da hora do almoço.", "answers": [["Não comam"]], "explanation": "Imperativo negativo, plural: não comam." }
+      ]
+    },
+    {
+      "id": "impc-mc",
+      "type": "multiple-choice",
+      "title": "Afirmativo ou Negativo?",
+      "instructions": "Escolha a forma correta do imperativo.",
+      "items": [
+        { "id": "impcd", "prompt": "Como se diz \"Don't worry\" em português (você)?", "options": ["Não se preocupa", "Não se preocupe", "Não se preocupas"], "answerIndex": 1, "explanation": "Imperativo negativo usa a forma do subjuntivo: preocupe." },
+        { "id": "impce", "prompt": "Qual é o imperativo afirmativo de \"falar\" com \"tu\"?", "options": ["fale", "falas", "fala"], "answerIndex": 2, "explanation": "Imperativo afirmativo de \"tu\": presente indicativo sem o -s final." }
+      ]
+    },
+    {
+      "id": "impc-correction",
+      "type": "correction",
+      "title": "Corrija as Frases",
+      "instructions": "Cada frase usa a forma errada do imperativo. Escreva a versão correta.",
+      "items": [
+        { "id": "impcf", "incorrect": "Não fala tão alto, por favor.", "answer": ["Não fale tão alto, por favor", "Não fale tão alto, por favor."], "explanation": "Imperativo negativo sempre usa a forma do subjuntivo: fale." },
+        { "id": "impcg", "incorrect": "Não venham tarde, disse ela para o filho.", "answer": ["Não venha tarde, disse ela para o filho", "Não venham tarde, disse ela para os filhos."], "explanation": "Se \"o filho\" é uma única pessoa, o imperativo deve estar no singular: não venha." }
+      ]
+    }
+  ],
+  "summary": [
+    "O imperativo negativo (não + verbo) é sempre idêntico ao presente do subjuntivo.",
+    "O imperativo afirmativo de \"tu\" usa o presente do indicativo sem o -s final — diferente do de \"você\".",
+    "No Brasil, a forma baseada em \"você\" é a mais usada em quase todo o país."
+  ],
+  "related": [
+    { "lessonId": "b1-presente-do-subjuntivo-introducao", "label": "Presente do Subjuntivo: Introdução" },
+    { "lessonId": "b1-pronomes-oblicuos-e-colocacao", "label": "Pronomes Oblíquos e Colocação Pronominal" }
+  ]
+}

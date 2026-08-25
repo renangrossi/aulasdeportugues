@@ -1,0 +1,88 @@
+{
+  "id": "b1-voz-passiva",
+  "level": "B1",
+  "order": 7,
+  "skill": "grammar",
+  "title": "Voz Passiva",
+  "subtitle": "Quando o foco da frase é a ação, não quem a praticou.",
+  "objectives": [
+    "Transformar frases da voz ativa para a voz passiva",
+    "Fazer a concordância do particípio com o sujeito na voz passiva",
+    "Usar \"por\" para introduzir o agente da passiva quando necessário"
+  ],
+  "content": {
+    "intro": "Na voz ativa, o sujeito pratica a ação (\"a empresa contratou o funcionário\"). Na voz passiva, o sujeito recebe a ação (\"o funcionário foi contratado pela empresa\") — o foco muda de quem faz para o que acontece.",
+    "explanation": "<p>A voz passiva analítica se forma com <strong>ser</strong> (conjugado no tempo desejado) + <strong>particípio</strong> do verbo principal: \"o livro <strong>foi escrito</strong> por ela\". O <strong>agente da passiva</strong> — quem praticou a ação — é introduzido por <strong>por</strong> (ou pela contração pelo/pela): \"escrito <strong>por</strong> ela\", mas pode ser omitido quando não é importante ou não é conhecido: \"a ponte foi construída em 1990\" (sem dizer por quem).</p><p>Diferente do inglês, o particípio na voz passiva <strong>concorda em gênero e número</strong> com o sujeito: \"o livro foi escrit<strong>o</strong>\" / \"a carta foi escrit<strong>a</strong>\" / \"os livros foram escrit<strong>os</strong>\" / \"as cartas foram escrit<strong>as</strong>\".</p>",
+    "rules": [
+      "Voz passiva = ser (conjugado) + particípio",
+      "O agente da passiva é introduzido por \"por\" (ou pelo/pela)",
+      "O particípio concorda em gênero e número com o sujeito da passiva",
+      "O agente pode ser omitido quando é desconhecido ou irrelevante",
+      "Voz ativa: sujeito pratica a ação. Voz passiva: sujeito recebe a ação"
+    ],
+    "table": {
+      "caption": "Ativa vs. Passiva",
+      "headers": ["Voz ativa", "Voz passiva"],
+      "rows": [
+        ["Ela escreveu o livro.", "O livro foi escrito por ela."],
+        ["A empresa contratou os funcionários.", "Os funcionários foram contratados pela empresa."],
+        ["Construíram a ponte em 1990.", "A ponte foi construída em 1990."]
+      ]
+    },
+    "examples": [
+      "O quadro foi pintado por um artista famoso.",
+      "As cartas foram enviadas ontem.",
+      "Este prédio foi construído há cem anos.",
+      "A decisão será anunciada amanhã.",
+      "Os documentos foram assinados pelo diretor."
+    ],
+    "commonMistakes": [
+      { "wrong": "\"O livro foi escrito por ela\" mas o particípio não concorda em outros casos: \"A carta foi escrito\"", "right": "\"A carta foi escrita\"", "why": "O particípio precisa concordar em gênero com o sujeito \"carta\" (feminino) — escrita, não escrito." },
+      { "wrong": "\"O livro foi escrito para ela\" (usando \"para\" em vez de \"por\" para o agente)", "right": "\"O livro foi escrito por ela\"", "why": "O agente da passiva é sempre introduzido por \"por\", nunca por \"para\"." },
+      { "wrong": "Usar a voz passiva em excesso na fala cotidiana", "right": "preferir a voz ativa quando o agente é conhecido e relevante", "why": "A voz passiva é mais comum na escrita formal e em notícias — na fala cotidiana, a voz ativa costuma soar mais natural." }
+    ],
+    "tip": "Para transformar uma frase ativa em passiva: o objeto da ativa vira o sujeito da passiva; o verbo vira \"ser\" + particípio; o sujeito da ativa vira o agente, introduzido por \"por\"."
+  },
+  "exercises": [
+    {
+      "id": "pass-fill",
+      "type": "fill-blank",
+      "title": "Complete a Voz Passiva",
+      "instructions": "Complete cada frase com a forma correta da voz passiva.",
+      "items": [
+        { "id": "passa", "prompt": "O bolo ___ ___ (ser + fazer) pela minha avó.", "answers": [["foi"], ["feito"]], "explanation": "\"Fazer\" tem particípio irregular: feito." },
+        { "id": "passb", "prompt": "As janelas ___ ___ (ser + abrir) pela manhã.", "answers": [["foram"], ["abertas"]], "explanation": "\"Abrir\" tem particípio irregular: aberto/aberta; aqui, feminino plural: abertas." },
+        { "id": "passc", "prompt": "O novo hospital ___ ___ (ser + inaugurar) no ano passado.", "answers": [["foi"], ["inaugurado"]], "explanation": "Verbo regular -ar: inaugurado." }
+      ]
+    },
+    {
+      "id": "pass-mc",
+      "type": "multiple-choice",
+      "title": "Ativa ou Passiva?",
+      "instructions": "Escolha a versão correta na voz passiva.",
+      "items": [
+        { "id": "passd", "prompt": "Transforme para a voz passiva: \"Ela pintou o quadro.\"", "options": ["O quadro foi pintado por ela.", "O quadro pintou por ela.", "O quadro foi pintado para ela."], "answerIndex": 0, "explanation": "Voz passiva correta: ser + particípio + por + agente." },
+        { "id": "passe", "prompt": "Qual é a concordância correta para \"as cartas\"?", "options": ["foram escritas", "foi escrito", "foram escrito"], "answerIndex": 0, "explanation": "\"Cartas\" é feminino plural: foram escritas." }
+      ]
+    },
+    {
+      "id": "pass-correction",
+      "type": "correction",
+      "title": "Corrija a Concordância",
+      "instructions": "Cada frase tem um erro de concordância no particípio. Escreva a versão correta.",
+      "items": [
+        { "id": "passf", "incorrect": "As portas foram fechado à noite.", "answer": ["As portas foram fechadas à noite", "As portas foram fechadas à noite."], "explanation": "\"Portas\" é feminino plural: fechadas." },
+        { "id": "passg", "incorrect": "O prédio foi construída em 1950.", "answer": ["O prédio foi construído em 1950", "O prédio foi construído em 1950."], "explanation": "\"Prédio\" é masculino singular: construído." }
+      ]
+    }
+  ],
+  "summary": [
+    "A voz passiva se forma com ser + particípio, com o agente introduzido por \"por\".",
+    "O particípio concorda em gênero e número com o sujeito da passiva.",
+    "A voz ativa é mais natural na fala; a passiva é mais comum na escrita formal e em notícias."
+  ],
+  "related": [
+    { "lessonId": "b1-se-apassivador-e-indeterminado", "label": "Se Apassivador e Indeterminado" },
+    { "lessonId": "b1-discurso-indireto", "label": "Discurso Indireto" }
+  ]
+}

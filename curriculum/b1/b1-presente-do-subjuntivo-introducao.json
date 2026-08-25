@@ -1,0 +1,95 @@
+{
+  "id": "b1-presente-do-subjuntivo-introducao",
+  "level": "B1",
+  "order": 2,
+  "skill": "grammar",
+  "title": "Presente do Subjuntivo: Introdução",
+  "subtitle": "O modo verbal da dúvida, do desejo e da emoção.",
+  "objectives": [
+    "Formar o presente do subjuntivo de verbos regulares e dos irregulares mais comuns",
+    "Reconhecer as expressões que exigem o subjuntivo",
+    "Usar o subjuntivo em orações com \"que\" depois de desejo, dúvida e emoção"
+  ],
+  "content": {
+    "intro": "Até agora, todos os verbos que você aprendeu estavam no modo indicativo — o modo dos fatos. O subjuntivo é outro modo inteiro, usado para o que ainda não é certeza: desejos, dúvidas, emoções, pedidos.",
+    "explanation": "<p>O indicativo afirma fatos (\"ela <strong>trabalha</strong> aqui\"); o subjuntivo expressa algo que <strong>não é uma certeza</strong> — um desejo, uma dúvida, uma emoção, uma possibilidade: \"espero que ela <strong>trabalhe</strong> aqui\". A forma mais comum de identificar a necessidade do subjuntivo é uma oração com <strong>\"que\"</strong> depois de um verbo de desejo (querer, esperar), dúvida (duvidar) ou emoção (ter medo, ficar feliz).</p><p>Para formar o presente do subjuntivo regular, parte-se da forma \"eu\" do presente do indicativo, remove-se o -o final, e acrescenta-se a terminação <strong>oposta</strong>: verbos -ar recebem terminações em <strong>-e</strong> (falo → fale, fale, falemos, falem); verbos -er/-ir recebem terminações em <strong>-a</strong> (como → coma, coma, comamos, comam).</p>",
+    "rules": [
+      "Verbos -ar: -e, -e, -emos, -em (falo → fale, fale, falemos, falem)",
+      "Verbos -er/-ir: -a, -a, -amos, -am (como → coma, coma, comamos, comam)",
+      "Gatilhos comuns: espero que, quero que, é importante/necessário que, duvido que, tomara que, talvez",
+      "Irregulares essenciais: ser→seja, estar→esteja, ir→vá, ter→tenha, fazer→faça, saber→saiba, querer→queira, poder→possa",
+      "Usado depois de \"que\" quando a oração principal expressa desejo, dúvida, emoção ou necessidade"
+    ],
+    "table": {
+      "caption": "Presente do subjuntivo — irregulares essenciais",
+      "headers": ["Infinitivo", "eu", "você/ele/ela", "nós"],
+      "rows": [
+        ["ser", "seja", "seja", "sejamos"],
+        ["estar", "esteja", "esteja", "estejamos"],
+        ["ir", "vá", "vá", "vamos"],
+        ["ter", "tenha", "tenha", "tenhamos"],
+        ["fazer", "faça", "faça", "façamos"]
+      ]
+    },
+    "examples": [
+      "Espero que você esteja bem.",
+      "Quero que ele venha à festa.",
+      "É importante que nós estudemos todos os dias.",
+      "Duvido que ela saiba a resposta.",
+      "Tomara que amanhã não chova."
+    ],
+    "commonMistakes": [
+      { "wrong": "\"Espero que você está bem\" (usando o indicativo depois de \"espero que\")", "right": "\"Espero que você esteja bem\"", "why": "\"Esperar que\" é um gatilho clássico do subjuntivo — nunca vem seguido do indicativo." },
+      { "wrong": "\"Quero que ele vem\"", "right": "\"Quero que ele venha\"", "why": "\"Vir\" no subjuntivo é irregular: venha, não \"vem\" (que é indicativo)." },
+      { "wrong": "Usar o indicativo depois de \"talvez\"", "right": "usar o subjuntivo depois de \"talvez\"", "why": "\"Talvez\" expressa possibilidade/dúvida e, por isso, também exige o subjuntivo: \"talvez ele venha\", não \"talvez ele vem\"." }
+    ],
+    "tip": "Antes de conjugar qualquer verbo depois de \"que\", pergunte-se: a oração principal expressa um fato certo, ou um desejo/dúvida/emoção? Se for a segunda opção, use o subjuntivo."
+  },
+  "exercises": [
+    {
+      "id": "subj-fill",
+      "type": "fill-blank",
+      "title": "Complete com o Subjuntivo",
+      "instructions": "Complete cada frase com a forma correta do presente do subjuntivo.",
+      "items": [
+        { "id": "subja", "prompt": "Espero que vocês ___ (gostar) do presente.", "answers": [["gostem"]], "explanation": "Verbo -ar no subjuntivo: gostem." },
+        { "id": "subjb", "prompt": "É importante que nós ___ (ser) pontuais.", "answers": [["sejamos"]], "explanation": "\"Ser\" no subjuntivo, primeira pessoa do plural: sejamos." },
+        { "id": "subjc", "prompt": "Duvido que ele ___ (saber) a verdade.", "answers": [["saiba"]], "explanation": "\"Saber\" no subjuntivo é irregular: saiba." }
+      ]
+    },
+    {
+      "id": "subj-mc",
+      "type": "multiple-choice",
+      "title": "Indicativo ou Subjuntivo?",
+      "instructions": "Escolha a forma verbal correta conforme o contexto.",
+      "items": [
+        { "id": "subjd", "prompt": "\"Eu sei que ela ___ aqui.\" (fato certo)", "options": ["trabalha", "trabalhe"], "answerIndex": 0, "explanation": "\"Sei que\" expressa certeza — usa-se o indicativo." },
+        { "id": "subje", "prompt": "\"Espero que ela ___ aqui.\" (desejo)", "options": ["trabalha", "trabalhe"], "answerIndex": 1, "explanation": "\"Espero que\" expressa desejo — usa-se o subjuntivo." }
+      ]
+    },
+    {
+      "id": "subj-match",
+      "type": "matching",
+      "title": "Associe o Verbo à Forma Irregular",
+      "instructions": "Associe cada verbo no infinitivo à sua forma irregular no presente do subjuntivo (eu).",
+      "items": [
+        { "id": "subjf", "pairs": [
+          { "left": "ser", "right": "seja" },
+          { "left": "estar", "right": "esteja" },
+          { "left": "ir", "right": "vá" },
+          { "left": "ter", "right": "tenha" },
+          { "left": "querer", "right": "queira" }
+        ], "explanation": "Esses cinco verbos são os irregulares mais frequentes no presente do subjuntivo." }
+      ]
+    }
+  ],
+  "summary": [
+    "O subjuntivo expressa desejo, dúvida, emoção ou possibilidade — nunca fatos certos.",
+    "Verbos -ar levam terminações em -e; verbos -er/-ir levam terminações em -a.",
+    "Ser, estar, ir, ter, fazer, saber, querer e poder têm formas irregulares essenciais no subjuntivo."
+  ],
+  "related": [
+    { "lessonId": "b1-futuro-do-subjuntivo", "label": "Futuro do Subjuntivo" },
+    { "lessonId": "b1-imperativo-completo", "label": "Imperativo Completo" }
+  ]
+}

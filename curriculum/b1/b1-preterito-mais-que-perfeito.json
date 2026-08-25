@@ -1,0 +1,88 @@
+{
+  "id": "b1-preterito-mais-que-perfeito",
+  "level": "B1",
+  "order": 1,
+  "skill": "grammar",
+  "title": "Pretérito Mais-Que-Perfeito",
+  "subtitle": "Quando uma coisa já tinha acontecido antes de outra, no passado.",
+  "objectives": [
+    "Formar o pretérito mais-que-perfeito composto (tinha + particípio)",
+    "Usar esse tempo verbal para indicar uma ação anterior a outra ação passada",
+    "Reconhecer (sem precisar usar) a forma simples, mais literária"
+  ],
+  "content": {
+    "intro": "Quando você conta uma história no passado e precisa voltar ainda mais no tempo — \"algo que já tinha acontecido antes\" — é este o tempo verbal que você precisa.",
+    "explanation": "<p>O pretérito mais-que-perfeito indica uma ação que aconteceu <strong>antes de outra ação já no passado</strong>: \"quando eu cheguei, ela já <strong>tinha saído</strong>\" — sair aconteceu antes de chegar, e os dois já estão no passado. Na fala e na escrita cotidiana do Brasil, usa-se quase sempre a forma <strong>composta</strong>: o imperfeito de <strong>ter</strong> (tinha, tinha, tínhamos, tinham) + o <strong>particípio</strong> do verbo principal.</p><p>Existe também uma forma <strong>simples</strong> (falara, comera, abrira), usada principalmente em textos literários ou muito formais — vale reconhecê-la ao ler, mas a forma composta é a que você deve usar para falar e escrever.</p>",
+    "rules": [
+      "Forma composta (a mais usada): tinha/tinha/tínhamos/tinham + particípio",
+      "Indica uma ação anterior a outra ação já no passado",
+      "Particípios regulares: -ar → -ado (falado); -er/-ir → -ido (comido, partido)",
+      "Particípios irregulares comuns: feito (fazer), dito (dizer), visto (ver), posto (pôr), aberto (abrir), escrito (escrever)",
+      "A forma simples (falara, comera) existe mas é rara fora de textos literários"
+    ],
+    "table": {
+      "caption": "Pretérito mais-que-perfeito composto — \"falar\"",
+      "headers": ["Pronome", "Forma"],
+      "rows": [
+        ["eu", "tinha falado"],
+        ["você/ele/ela", "tinha falado"],
+        ["nós", "tínhamos falado"],
+        ["vocês/eles/elas", "tinham falado"]
+      ]
+    },
+    "examples": [
+      "Quando eu cheguei, o filme já tinha começado.",
+      "Ela disse que já tinha visitado aquela cidade antes.",
+      "Nós já tínhamos jantado quando eles chegaram.",
+      "Eu nunca tinha visto uma coisa tão bonita.",
+      "Ele já tinha saído quando eu liguei."
+    ],
+    "commonMistakes": [
+      { "wrong": "\"Quando eu cheguei, ela já saiu\" (usando pretérito perfeito para as duas ações)", "right": "\"Quando eu cheguei, ela já tinha saído\"", "why": "Quando uma ação claramente aconteceu antes da outra no passado, o mais-que-perfeito deixa essa ordem explícita." },
+      { "wrong": "\"Eu tinha fazido\"", "right": "\"Eu tinha feito\"", "why": "\"Fazer\" tem particípio irregular: feito, não \"fazido\"." },
+      { "wrong": "Usar a forma simples (falara) na fala cotidiana", "right": "usar a forma composta (tinha falado)", "why": "A forma simples soa formal/literária demais para uma conversa comum — a composta é o padrão falado e escrito do dia a dia." }
+    ],
+    "tip": "Pense no mais-que-perfeito como \"o passado do passado\" — sempre que sua frase tiver duas ações passadas e uma claramente aconteceu antes da outra, considere usar esse tempo para a mais antiga."
+  },
+  "exercises": [
+    {
+      "id": "mqp-fill",
+      "type": "fill-blank",
+      "title": "Complete com o Mais-Que-Perfeito",
+      "instructions": "Complete cada frase com a forma composta do pretérito mais-que-perfeito.",
+      "items": [
+        { "id": "mqpa", "prompt": "Quando o professor chegou, os alunos já ___ ___ (ter + sair).", "answers": [["tinham"], ["saído"]], "explanation": "Terceira pessoa do plural: tinham saído." },
+        { "id": "mqpb", "prompt": "Eu nunca ___ ___ (ter + comer) comida tão apimentada antes.", "answers": [["tinha"], ["comido"]], "explanation": "Primeira pessoa do singular: tinha comido." },
+        { "id": "mqpc", "prompt": "Nós já ___ ___ (ter + fazer) as malas quando o táxi chegou.", "answers": [["tínhamos"], ["feito"]], "explanation": "\"Fazer\" tem particípio irregular: feito." }
+      ]
+    },
+    {
+      "id": "mqp-mc",
+      "type": "multiple-choice",
+      "title": "Escolha a Frase Correta",
+      "instructions": "Escolha a versão que expressa corretamente a sequência de eventos.",
+      "items": [
+        { "id": "mqpd", "prompt": "Duas ações: 1) o filme começou; 2) eu cheguei depois. Como expressar isso corretamente?", "options": ["Quando eu cheguei, o filme já tinha começado.", "Quando eu cheguei, o filme já começa.", "Quando eu chego, o filme já tinha começado."], "answerIndex": 0, "explanation": "A ação mais antiga (começar) vai no mais-que-perfeito; a mais recente (chegar), no pretérito perfeito." },
+        { "id": "mqpe", "prompt": "Qual é o particípio correto de \"ver\"?", "options": ["visto", "vido", "veido"], "answerIndex": 0, "explanation": "\"Ver\" tem particípio irregular: visto." }
+      ]
+    },
+    {
+      "id": "mqp-order",
+      "type": "ordering",
+      "title": "Monte a Frase",
+      "instructions": "Coloque as palavras na ordem correta.",
+      "items": [
+        { "id": "mqpf", "prompt": "saído / já / tinha / quando / cheguei / eu / ela", "words": ["Quando", "eu", "cheguei", "ela", "já", "tinha", "saído"], "explanation": "Oração temporal (quando eu cheguei) + sujeito + advérbio + verbo auxiliar + particípio." }
+      ]
+    }
+  ],
+  "summary": [
+    "O pretérito mais-que-perfeito indica uma ação anterior a outra ação já no passado.",
+    "A forma composta (tinha + particípio) é a usada na fala e na escrita cotidiana.",
+    "Particípios irregulares comuns: feito, dito, visto, posto, aberto, escrito."
+  ],
+  "related": [
+    { "lessonId": "b1-discurso-indireto", "label": "Discurso Indireto" },
+    { "lessonId": "b1-condicional-composto", "label": "Condicional Composto" }
+  ]
+}

@@ -1,5 +1,5 @@
 {
-  "_readme": "Fonte única de verdade para a sequência do currículo. status: 'published' = o HTML gerado existe e está linkado na página do nível; 'drafted' = curriculum/{nivel}/{id}.json existe, ainda não construído; 'planned' = identificado no desenho pedagógico do curso, ainda sem JSON. Pre-A1, A1 e A2 estão 100% publicados. B1 até C2 têm seu roteiro completo definido aqui para orientar as próximas fases, mas ainda não foram escritos -- as páginas de nível mostram esses tópicos como 'Em breve' em vez de fingir que já existem.",
+  "_readme": "Fonte única de verdade para a sequência do currículo. status: 'published' = o HTML gerado existe e está linkado na página do nível; 'drafted' = curriculum/{nivel}/{id}.json existe, ainda não construído; 'planned' = identificado no desenho pedagógico do curso, ainda sem JSON. Pre-A1, A1, A2 e B1 estão 100% publicados. B2 até C2 têm seu roteiro completo definido aqui para orientar as próximas fases, mas ainda não foram escritos -- as páginas de nível mostram esses tópicos como 'Em breve' em vez de fingir que já existem.",
   "levels": {
     "PRE-A1": {
       "units": [
@@ -76,20 +76,20 @@
       "units": [
         {
           "id": "1",
-          "title": "Gramática Intermediária (12 tópicos planejados)",
+          "title": "Gramática Intermediária (12 lições)",
           "lessons": [
-            { "id": "b1-preterito-mais-que-perfeito", "status": "planned", "title": "Pretérito Mais-Que-Perfeito" },
-            { "id": "b1-futuro-do-subjuntivo", "status": "planned", "title": "Futuro do Subjuntivo" },
-            { "id": "b1-presente-do-subjuntivo-introducao", "status": "planned", "title": "Presente do Subjuntivo: Introdução" },
-            { "id": "b1-imperativo-completo", "status": "planned", "title": "Imperativo Completo" },
-            { "id": "b1-voz-passiva", "status": "planned", "title": "Voz Passiva" },
-            { "id": "b1-discurso-indireto", "status": "planned", "title": "Discurso Indireto" },
-            { "id": "b1-pronomes-oblicuos-e-colocacao", "status": "planned", "title": "Pronomes Oblíquos e Colocação Pronominal" },
-            { "id": "b1-por-e-para-aprofundado", "status": "planned", "title": "Por e Para: Aprofundado" },
-            { "id": "b1-condicional-composto", "status": "planned", "title": "Condicional Composto" },
-            { "id": "b1-oracoes-condicionais", "status": "planned", "title": "Orações Condicionais" },
-            { "id": "b1-se-apassivador-e-indeterminado", "status": "planned", "title": "Se Apassivador e Indeterminado" },
-            { "id": "b1-expressoes-idiomaticas", "status": "planned", "title": "Expressões Idiomáticas" }
+            { "id": "b1-preterito-mais-que-perfeito", "status": "published" },
+            { "id": "b1-presente-do-subjuntivo-introducao", "status": "published" },
+            { "id": "b1-futuro-do-subjuntivo", "status": "published" },
+            { "id": "b1-imperativo-completo", "status": "published" },
+            { "id": "b1-oracoes-condicionais", "status": "published" },
+            { "id": "b1-condicional-composto", "status": "published" },
+            { "id": "b1-voz-passiva", "status": "published" },
+            { "id": "b1-se-apassivador-e-indeterminado", "status": "published" },
+            { "id": "b1-discurso-indireto", "status": "published" },
+            { "id": "b1-pronomes-oblicuos-e-colocacao", "status": "published" },
+            { "id": "b1-por-e-para-aprofundado", "status": "published" },
+            { "id": "b1-expressoes-idiomaticas", "status": "published" }
           ]
         }
       ]

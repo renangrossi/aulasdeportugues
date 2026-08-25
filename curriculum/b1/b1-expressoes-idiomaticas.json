@@ -1,0 +1,89 @@
+{
+  "id": "b1-expressoes-idiomaticas",
+  "level": "B1",
+  "order": 12,
+  "skill": "vocabulary",
+  "title": "Expressões Idiomáticas",
+  "subtitle": "Dez expressões que todo brasileiro usa — e que nenhuma tradução literal explica.",
+  "objectives": [
+    "Reconhecer dez expressões idiomáticas comuns do português brasileiro",
+    "Usar essas expressões no contexto correto",
+    "Evitar traduzir expressões idiomáticas literalmente"
+  ],
+  "content": {
+    "intro": "Depois de tanta gramática pesada, esta lição é sobre cultura e vocabulário vivo — as expressões que fazem você soar como um falante de verdade, não como um livro de gramática.",
+    "explanation": "<p>Expressões idiomáticas não podem ser traduzidas palavra por palavra — o significado do conjunto é diferente da soma das partes. \"<strong>Cair a ficha</strong>\", por exemplo, não tem nada a ver com uma ficha caindo de verdade: significa \"finalmente entender algo\". Quanto mais você ouvir e usar essas expressões em contexto, mais natural sua fala vai soar.</p><p>Esta lição reúne dez das expressões mais comuns no português falado no Brasil, usadas em conversas do dia a dia, no trabalho e até em noticiários.</p>",
+    "rules": [
+      "Cair a ficha = finalmente entender ou perceber algo",
+      "Dar zebra = dar errado, sair diferente do esperado",
+      "Pagar mico = passar vergonha em público",
+      "Quebrar o galho = resolver um problema de forma improvisada",
+      "Engolir sapo = aceitar algo desagradável sem reclamar",
+      "Com a corda toda = muito animado, cheio de energia",
+      "Chutar o balde = desistir de seguir regras, perder a paciência de vez",
+      "Encher linguiça = enrolar, prolongar algo sem necessidade",
+      "Dar um jeitinho = encontrar uma solução criativa, mesmo informal",
+      "Ficar de olho = prestar atenção, vigiar algo ou alguém"
+    ],
+    "examples": [
+      "Demorei, mas a ficha caiu: eu tinha entendido tudo errado!",
+      "A gente esperava vitória fácil, mas deu zebra e perdemos.",
+      "Ele pagou o maior mico na festa ontem.",
+      "Não tenho a peça certa, mas dá para quebrar o galho com essa aqui.",
+      "Fica de olho nas crianças enquanto eu cozinho."
+    ],
+    "commonMistakes": [
+      { "wrong": "Traduzir \"cair a ficha\" literalmente para outro idioma", "right": "usar o equivalente idiomático desse idioma, ou explicar o sentido (\"finalmente entendi\")", "why": "Expressões idiomáticas quase nunca fazem sentido traduzidas palavra por palavra — o significado é do conjunto, não das partes." },
+      { "wrong": "Usar expressões idiomáticas em contextos muito formais (uma carta oficial, por exemplo)", "right": "reservar essas expressões para conversas informais e semiformais", "why": "Expressões idiomáticas são majoritariamente de registro informal/coloquial — soam deslocadas em textos muito formais." },
+      { "wrong": "Tentar decorar dezenas de expressões de uma vez", "right": "aprender poucas por vez, sempre em contexto real (uma frase, um diálogo)", "why": "Expressões idiomáticas grudam muito mais quando aprendidas dentro de um contexto de uso, não como lista isolada." }
+    ],
+    "tip": "Quando ouvir uma expressão nova em um filme, música ou conversa, anote a frase inteira, não só a expressão isolada — o contexto ajuda a lembrar o significado e o uso correto."
+  },
+  "exercises": [
+    {
+      "id": "idiom-match",
+      "type": "matching",
+      "title": "Associe a Expressão ao Significado",
+      "instructions": "Associe cada expressão idiomática ao seu significado.",
+      "items": [
+        { "id": "idioma", "pairs": [
+          { "left": "cair a ficha", "right": "finalmente entender algo" },
+          { "left": "dar zebra", "right": "dar errado" },
+          { "left": "pagar mico", "right": "passar vergonha" },
+          { "left": "quebrar o galho", "right": "resolver de forma improvisada" },
+          { "left": "engolir sapo", "right": "aceitar algo desagradável" },
+          { "left": "ficar de olho", "right": "prestar atenção" }
+        ], "explanation": "Cada expressão idiomática tem um significado fixo, diferente da tradução literal das palavras." }
+      ]
+    },
+    {
+      "id": "idiom-mc",
+      "type": "multiple-choice",
+      "title": "Escolha a Expressão Certa",
+      "instructions": "Escolha a expressão idiomática mais adequada para cada situação.",
+      "items": [
+        { "id": "idiomb", "prompt": "Seu amigo tropeçou e caiu na frente de todo mundo. O que ele fez?", "options": ["Quebrou o galho", "Pagou mico", "Ficou de olho"], "answerIndex": 1, "explanation": "\"Pagar mico\" significa passar vergonha em público." },
+        { "id": "idiomc", "prompt": "Você não tinha a ferramenta certa, mas resolveu o problema improvisando. O que você fez?", "options": ["Quebrou o galho", "Engoliu sapo", "Deu zebra"], "answerIndex": 0, "explanation": "\"Quebrar o galho\" significa resolver algo de forma improvisada." }
+      ]
+    },
+    {
+      "id": "idiom-fill",
+      "type": "fill-blank",
+      "title": "Complete com a Expressão",
+      "instructions": "Complete cada frase com a expressão idiomática adequada.",
+      "items": [
+        { "id": "idiomd", "prompt": "Demorei um tempo, mas finalmente a ___ caiu.", "answers": [["ficha"]], "explanation": "\"A ficha caiu\" = finalmente entendi." },
+        { "id": "idiome", "prompt": "Ele estava muito animado hoje, chegou com a corda ___.", "answers": [["toda"]], "explanation": "\"Com a corda toda\" = muito animado, cheio de energia." }
+      ]
+    }
+  ],
+  "summary": [
+    "Expressões idiomáticas têm um significado próprio, diferente da tradução literal das palavras.",
+    "São majoritariamente usadas em contextos informais e semiformais.",
+    "Aprender expressões em contexto (frases reais) ajuda muito mais do que decorar listas isoladas."
+  ],
+  "related": [
+    { "lessonId": "b1-por-e-para-aprofundado", "label": "Por e Para: Aprofundado" },
+    { "lessonId": "b1-pronomes-oblicuos-e-colocacao", "label": "Pronomes Oblíquos e Colocação Pronominal" }
+  ]
+}

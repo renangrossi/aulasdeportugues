@@ -1,0 +1,88 @@
+{
+  "id": "b1-condicional-composto",
+  "level": "B1",
+  "order": 6,
+  "skill": "grammar",
+  "title": "Condicional Composto",
+  "subtitle": "\"Eu teria ajudado\" — o que aconteceria, mas não aconteceu.",
+  "objectives": [
+    "Formar o condicional composto (teria + particípio)",
+    "Usar esse tempo para expressar hipóteses e arrependimentos no passado",
+    "Combinar o condicional composto com o pretérito mais-que-perfeito do subjuntivo em condicionais passadas"
+  ],
+  "content": {
+    "intro": "Agora que você domina o condicional simples e o mais-que-perfeito, esta lição combina os dois em um tempo composto para falar do que \"teria acontecido\" no passado.",
+    "explanation": "<p>O condicional composto expressa uma ação que <strong>aconteceria</strong>, mas que <strong>não aconteceu</strong>, geralmente por causa de outra condição não realizada: \"eu <strong>teria ajudado</strong>, mas não pude\". Forma-se com o condicional simples de <strong>ter</strong> (teria, teria, teríamos, teriam) + o <strong>particípio</strong> do verbo principal.</p><p>É muito usado em condicionais sobre o passado, junto com o pretérito mais-que-perfeito do subjuntivo (tivesse + particípio): \"se eu <strong>tivesse estudado</strong> mais, eu <strong>teria passado</strong> no exame\" — o equivalente ao terceiro condicional do inglês (\"if I had studied, I would have passed\").</p>",
+    "rules": [
+      "Condicional composto = teria/teria/teríamos/teriam + particípio",
+      "Usado para expressar o que \"teria acontecido\" mas não aconteceu",
+      "Combina com o mais-que-perfeito do subjuntivo (tivesse + particípio) em condicionais sobre o passado",
+      "Padrão: se + tivesse + particípio, + teria + particípio",
+      "Equivalente ao \"would have + particípio\" do inglês"
+    ],
+    "table": {
+      "caption": "Condicional composto — \"ajudar\"",
+      "headers": ["Pronome", "Forma"],
+      "rows": [
+        ["eu", "teria ajudado"],
+        ["você/ele/ela", "teria ajudado"],
+        ["nós", "teríamos ajudado"],
+        ["vocês/eles/elas", "teriam ajudado"]
+      ]
+    },
+    "examples": [
+      "Eu teria ajudado, mas não pude sair de casa.",
+      "Se eu tivesse estudado mais, eu teria passado no exame.",
+      "Nós teríamos ido à festa, mas estávamos muito cansados.",
+      "Ela disse que teria ligado antes, se soubesse.",
+      "Se vocês tivessem me avisado, nós teríamos chegado a tempo."
+    ],
+    "commonMistakes": [
+      { "wrong": "\"Eu teria ajudar\" (sem o particípio)", "right": "\"Eu teria ajudado\"", "why": "O condicional composto sempre precisa do particípio do verbo principal depois de \"teria\"." },
+      { "wrong": "\"Se eu teria estudado, eu passaria\" (condicional composto na oração com \"se\")", "right": "\"Se eu tivesse estudado, eu teria passado\"", "why": "A oração com \"se\" usa o mais-que-perfeito do subjuntivo (tivesse); o condicional composto (teria) fica na oração principal." },
+      { "wrong": "Confundir condicional composto com o pretérito mais-que-perfeito (tinha + particípio)", "right": "usar \"teria\" para hipóteses não realizadas, \"tinha\" para fatos que realmente aconteceram antes de outro evento", "why": "As duas estruturas são parecidas na forma (auxiliar + particípio), mas \"teria\" é hipotético e \"tinha\" é factual." }
+    ],
+    "tip": "Sempre que você quiser dizer \"teria feito algo, mas não fiz\", combine \"se eu tivesse + particípio\" com \"eu teria + particípio\" — as duas peças andam juntas."
+  },
+  "exercises": [
+    {
+      "id": "condc-fill",
+      "type": "fill-blank",
+      "title": "Complete com o Condicional Composto",
+      "instructions": "Complete cada frase com a forma correta do condicional composto.",
+      "items": [
+        { "id": "condca", "prompt": "Eu ___ ___ (ter + ajudar), mas não sabia do problema.", "answers": [["teria"], ["ajudado"]], "explanation": "Primeira pessoa: teria ajudado." },
+        { "id": "condcb", "prompt": "Se ela tivesse me ligado, eu ___ ___ (ter + ir) buscá-la.", "answers": [["teria"], ["ido"]], "explanation": "\"Ir\" tem particípio irregular: ido." },
+        { "id": "condcc", "prompt": "Nós ___ ___ (ter + comprar) a casa, mas o preço subiu.", "answers": [["teríamos"], ["comprado"]], "explanation": "Primeira pessoa do plural: teríamos comprado." }
+      ]
+    },
+    {
+      "id": "condc-mc",
+      "type": "multiple-choice",
+      "title": "Escolha a Forma Correta",
+      "instructions": "Escolha a versão gramaticalmente correta.",
+      "items": [
+        { "id": "condcd", "prompt": "Qual frase completa corretamente uma condicional sobre o passado?", "options": ["Se eu soubesse, eu teria avisado.", "Se eu saberia, eu teria avisado.", "Se eu soubesse, eu tinha avisado."], "answerIndex": 0, "explanation": "\"Se eu soubesse\" (imperfeito do subjuntivo) combina com \"eu teria avisado\" (condicional composto)." },
+        { "id": "condce", "prompt": "Qual é o particípio correto de \"fazer\"?", "options": ["fazido", "feito", "fazendo"], "answerIndex": 1, "explanation": "\"Fazer\" tem particípio irregular: feito." }
+      ]
+    },
+    {
+      "id": "condc-order",
+      "type": "ordering",
+      "title": "Monte a Frase",
+      "instructions": "Coloque as palavras na ordem correta.",
+      "items": [
+        { "id": "condcf", "prompt": "mas / eu / teria / não / ajudado / pude", "words": ["Eu", "teria", "ajudado", "mas", "não", "pude"], "explanation": "Sujeito + condicional composto + conjunção + negação + verbo auxiliar." }
+      ]
+    }
+  ],
+  "summary": [
+    "O condicional composto (teria + particípio) expressa o que teria acontecido, mas não aconteceu.",
+    "Combina-se com o mais-que-perfeito do subjuntivo (tivesse + particípio) em condicionais sobre o passado.",
+    "É o equivalente português ao \"would have + particípio\" do inglês."
+  ],
+  "related": [
+    { "lessonId": "b1-oracoes-condicionais", "label": "Orações Condicionais" },
+    { "lessonId": "b1-preterito-mais-que-perfeito", "label": "Pretérito Mais-Que-Perfeito" }
+  ]
+}

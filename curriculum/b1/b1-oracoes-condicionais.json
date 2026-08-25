@@ -1,0 +1,87 @@
+{
+  "id": "b1-oracoes-condicionais",
+  "level": "B1",
+  "order": 5,
+  "skill": "grammar",
+  "title": "Orações Condicionais",
+  "subtitle": "Três jeitos de dizer \"se\" — do real ao puramente hipotético.",
+  "objectives": [
+    "Formar condicionais reais com se + presente do indicativo",
+    "Formar condicionais futuras/hipotéticas com se + futuro do subjuntivo",
+    "Reconhecer o padrão de uma condicional impossível/hipotética com o imperfeito do subjuntivo"
+  ],
+  "content": {
+    "intro": "Você já tem as duas peças principais — o presente e o futuro do subjuntivo. Esta lição organiza tudo isso em três tipos de frase condicional, do mais realista ao mais hipotético.",
+    "explanation": "<p><strong>Tipo 1 — condição real/habitual:</strong> se + <strong>presente do indicativo</strong>, + presente/imperativo: \"se <strong>chove</strong>, eu <strong>levo</strong> guarda-chuva\" (sempre que isso acontece). <strong>Tipo 2 — condição futura, possível:</strong> se + <strong>futuro do subjuntivo</strong>, + futuro/presente: \"se eu <strong>tiver</strong> tempo, eu <strong>vou</strong> visitar você\" (é o padrão que você já estudou).</p><p><strong>Tipo 3 — condição hipotética/improvável ou impossível:</strong> se + <strong>imperfeito do subjuntivo</strong>, + <strong>condicional simples</strong>: \"se eu <strong>tivesse</strong> dinheiro, eu <strong>viajaria</strong> pelo mundo\" (mas eu não tenho — é hipotético). O imperfeito do subjuntivo se forma a partir da terceira pessoa do plural do pretérito perfeito, removendo -ram e acrescentando -sse, -sse, -ssemos, -ssem: falaram → falasse; tiveram → tivesse; foram → fosse.</p>",
+    "rules": [
+      "Tipo 1 (real/habitual): se + presente do indicativo, presente/imperativo",
+      "Tipo 2 (futura/possível): se + futuro do subjuntivo, futuro/presente",
+      "Tipo 3 (hipotética/impossível): se + imperfeito do subjuntivo, condicional simples",
+      "Imperfeito do subjuntivo: raiz do pretérito perfeito (3ª pl.) + -sse/-sse/-ssemos/-ssem",
+      "Ser/ir → fosse; ter → tivesse; estar → estivesse; fazer → fizesse; poder → pudesse"
+    ],
+    "table": {
+      "caption": "Os três tipos de condicional",
+      "headers": ["Tipo", "Oração com \"se\"", "Oração principal", "Exemplo"],
+      "rows": [
+        ["1. Real", "presente do indicativo", "presente/imperativo", "Se chove, eu levo guarda-chuva."],
+        ["2. Futura", "futuro do subjuntivo", "futuro/presente", "Se eu tiver tempo, eu vou."],
+        ["3. Hipotética", "imperfeito do subjuntivo", "condicional simples", "Se eu tivesse tempo, eu iria."]
+      ]
+    },
+    "examples": [
+      "Se eu como muito à noite, durmo mal.",
+      "Se você precisar de ajuda, me ligue.",
+      "Se eu tivesse mais tempo, aprenderia outro idioma.",
+      "Se ela soubesse a verdade, ficaria muito triste.",
+      "Se nós ganhássemos na loteria, viajaríamos pelo mundo."
+    ],
+    "commonMistakes": [
+      { "wrong": "\"Se eu teria dinheiro, eu viajaria\" (condicional na oração com \"se\")", "right": "\"Se eu tivesse dinheiro, eu viajaria\"", "why": "A oração com \"se\" de uma condicional hipotética nunca usa o condicional — usa o imperfeito do subjuntivo; o condicional fica só na oração principal." },
+      { "wrong": "\"Se eu tenho tempo, eu viajaria\" (misturando tipo 1 com tipo 3)", "right": "\"Se eu tivesse tempo, eu viajaria\" (tipo 3) ou \"Se eu tenho tempo, eu viajo\" (tipo 1)", "why": "Os dois lados da condicional precisam pertencer ao mesmo tipo — não se mistura presente do indicativo com condicional simples." },
+      { "wrong": "\"Se eu terei tempo, eu vou\" (futuro simples em vez de futuro do subjuntivo)", "right": "\"Se eu tiver tempo, eu vou\"", "why": "A condição futura possível sempre usa o futuro do subjuntivo depois de \"se\", nunca o futuro simples do indicativo." }
+    ],
+    "tip": "Pergunte-se: isso é uma regra geral (tipo 1), algo que ainda pode acontecer (tipo 2), ou algo puramente imaginário/improvável (tipo 3)? A resposta escolhe o par de tempos verbais certo."
+  },
+  "exercises": [
+    {
+      "id": "cond3-fill",
+      "type": "fill-blank",
+      "title": "Complete a Condicional",
+      "instructions": "Complete cada frase condicional com o tempo verbal correto.",
+      "items": [
+        { "id": "cond3a", "prompt": "Se ela ___ (estudar, tipo 1) todos os dias, ela aprende rápido.", "answers": [["estuda"]], "explanation": "Condição real/habitual: presente do indicativo." },
+        { "id": "cond3b", "prompt": "Se nós ___ (poder, tipo 2), nós ajudamos vocês amanhã.", "answers": [["pudermos"]], "explanation": "Condição futura possível: futuro do subjuntivo." },
+        { "id": "cond3c", "prompt": "Se eu ___ (ser, tipo 3) rico, eu compraria uma casa na praia.", "answers": [["fosse"]], "explanation": "Condição hipotética: imperfeito do subjuntivo." }
+      ]
+    },
+    {
+      "id": "cond3-mc",
+      "type": "multiple-choice",
+      "title": "Qual Tipo de Condicional?",
+      "instructions": "Identifique o tipo de condicional em cada frase.",
+      "items": [
+        { "id": "cond3d", "prompt": "\"Se eu tivesse asas, eu voaria.\" Que tipo de condicional é essa?", "options": ["Real", "Futura possível", "Hipotética/impossível"], "answerIndex": 2, "explanation": "Ter asas é impossível — condicional hipotética, tipo 3." },
+        { "id": "cond3e", "prompt": "\"Se fizer sol amanhã, vamos à praia.\" Que tipo de condicional é essa?", "options": ["Real", "Futura possível", "Hipotética/impossível"], "answerIndex": 1, "explanation": "É algo que ainda pode acontecer no futuro — tipo 2, futuro do subjuntivo." }
+      ]
+    },
+    {
+      "id": "cond3-writing",
+      "type": "writing",
+      "title": "O Que Você Faria?",
+      "instructions": "Complete de forma criativa, usando a condicional hipotética (tipo 3): \"Se eu pudesse falar com qualquer pessoa do mundo, eu...\"",
+      "items": [
+        { "id": "cond3f", "prompt": "Escreva de 3 a 4 frases usando \"se eu pudesse... eu...\" e outras condicionais hipotéticas parecidas." }
+      ]
+    }
+  ],
+  "summary": [
+    "Condicional real (tipo 1): se + presente do indicativo, presente.",
+    "Condicional futura/possível (tipo 2): se + futuro do subjuntivo, futuro/presente.",
+    "Condicional hipotética/impossível (tipo 3): se + imperfeito do subjuntivo, condicional simples."
+  ],
+  "related": [
+    { "lessonId": "b1-futuro-do-subjuntivo", "label": "Futuro do Subjuntivo" },
+    { "lessonId": "b1-condicional-composto", "label": "Condicional Composto" }
+  ]
+}

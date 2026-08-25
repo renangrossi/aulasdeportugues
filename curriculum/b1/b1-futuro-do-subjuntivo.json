@@ -1,0 +1,91 @@
+{
+  "id": "b1-futuro-do-subjuntivo",
+  "level": "B1",
+  "order": 3,
+  "skill": "grammar",
+  "title": "Futuro do Subjuntivo",
+  "subtitle": "Um tempo verbal que o português tem e o inglês simplesmente não tem.",
+  "objectives": [
+    "Formar o futuro do subjuntivo de verbos regulares e irregulares",
+    "Usar esse tempo depois de se, quando, assim que e enquanto",
+    "Reconhecer por que o inglês traduz esse tempo com um presente simples"
+  ],
+  "content": {
+    "intro": "Este é um dos tempos verbais mais característicos do português — e um dos que mais surpreendem quem vem de idiomas sem um equivalente direto.",
+    "explanation": "<p>O futuro do subjuntivo é usado depois de conjunções que introduzem uma condição ou um momento futuro ainda incerto: <strong>se</strong> (if), <strong>quando</strong> (when), <strong>assim que</strong> (as soon as), <strong>enquanto</strong> (while). Em inglês, essas frases usam o presente simples (\"<em>when</em> you <em>arrive</em>...\"), o que engana muitos estudantes a tentar usar o presente do indicativo em português — mas o correto é o futuro do subjuntivo: \"<strong>quando você chegar</strong>...\".</p><p>Para formar o futuro do subjuntivo regular, parte-se do infinitivo completo e acrescentam-se as terminações <strong>-r, -res, -r, -rmos, -rem</strong>: falar → eu falar, você falar, nós falarmos, eles falarem — na prática, para \"eu\" e \"você/ele/ela\", a forma é <strong>idêntica ao infinitivo</strong> em verbos regulares. Os irregulares seguem a raiz do pretérito perfeito (terceira pessoa do plural, sem o -am final): ser/ir → for, tiver, fizer, puder, souber, disser, vier, estiver.</p>",
+    "rules": [
+      "Regulares: infinitivo + -r/-res/-r/-rmos/-rem (falar → falar, falares, falar, falarmos, falarem)",
+      "Usado depois de: se, quando, assim que, enquanto, sempre que — referindo-se a algo futuro/hipotético",
+      "Ser/Ir: for, fores, for, formos, forem",
+      "Ter: tiver, tiveres, tiver, tivermos, tiverem",
+      "Fazer: fizer, fizeres, fizer, fizermos, fizerem",
+      "Poder: puder | Saber: souber | Dizer: disser | Vir: vier | Estar: estiver"
+    ],
+    "table": {
+      "caption": "Futuro do subjuntivo — irregulares essenciais",
+      "headers": ["Infinitivo", "eu / você / ele", "nós"],
+      "rows": [
+        ["ser/ir", "for", "formos"],
+        ["ter", "tiver", "tivermos"],
+        ["fazer", "fizer", "fizermos"],
+        ["poder", "puder", "pudermos"],
+        ["estar", "estiver", "estivermos"]
+      ]
+    },
+    "examples": [
+      "Se eu tiver tempo, eu vou visitar você.",
+      "Quando você chegar, me avise.",
+      "Assim que ele puder, ele liga para você.",
+      "Enquanto eu estiver aqui, cuido de tudo.",
+      "Se você quiser, podemos conversar depois."
+    ],
+    "commonMistakes": [
+      { "wrong": "\"Quando você chega, me avise\" (presente do indicativo em vez de futuro do subjuntivo)", "right": "\"Quando você chegar, me avise\"", "why": "Depois de \"quando\" referindo-se ao futuro, o português exige o futuro do subjuntivo, não o presente." },
+      { "wrong": "\"Se eu terei tempo\" (confundindo com o futuro simples do indicativo)", "right": "\"Se eu tiver tempo\"", "why": "Depois de \"se\" com sentido de condição futura, usa-se o futuro do subjuntivo (tiver), não o futuro simples do indicativo (terei)." },
+      { "wrong": "\"Assim que ele pode\" (indicativo)", "right": "\"Assim que ele puder\"", "why": "\"Assim que\" introduzindo um evento futuro incerto sempre pede o futuro do subjuntivo." }
+    ],
+    "tip": "Regra prática: se a oração com se/quando/assim que se refere a algo que ainda vai acontecer (ou pode acontecer), use o futuro do subjuntivo — mesmo que em inglês a frase pareça estar no presente."
+  },
+  "exercises": [
+    {
+      "id": "futsub-fill",
+      "type": "fill-blank",
+      "title": "Complete com o Futuro do Subjuntivo",
+      "instructions": "Complete cada frase com a forma correta do futuro do subjuntivo.",
+      "items": [
+        { "id": "futsuba", "prompt": "Se eu ___ (ter) dinheiro, eu viajo para o Brasil.", "answers": [["tiver"]], "explanation": "\"Ter\" no futuro do subjuntivo: tiver." },
+        { "id": "futsubb", "prompt": "Quando ela ___ (chegar), me avise.", "answers": [["chegar"]], "explanation": "Verbo regular -ar: forma idêntica ao infinitivo, chegar." },
+        { "id": "futsubc", "prompt": "Assim que nós ___ (poder), vamos ajudar.", "answers": [["pudermos"]], "explanation": "\"Poder\" no futuro do subjuntivo, primeira pessoa do plural: pudermos." }
+      ]
+    },
+    {
+      "id": "futsub-mc",
+      "type": "multiple-choice",
+      "title": "Escolha a Forma Correta",
+      "instructions": "Escolha a conjugação correta.",
+      "items": [
+        { "id": "futsubd", "prompt": "\"Se você ___ dúvidas, me pergunte.\"", "options": ["tem", "tiver", "terá"], "answerIndex": 1, "explanation": "Condição futura depois de \"se\": futuro do subjuntivo, tiver." },
+        { "id": "futsube", "prompt": "\"Enquanto eu ___ aqui, tudo vai ficar bem.\"", "options": ["estou", "estiver", "estarei"], "answerIndex": 1, "explanation": "\"Enquanto\" referindo-se a uma condição futura contínua exige o futuro do subjuntivo." }
+      ]
+    },
+    {
+      "id": "futsub-correction",
+      "type": "correction",
+      "title": "Corrija as Frases",
+      "instructions": "Cada frase usa o tempo verbal errado. Escreva a versão correta.",
+      "items": [
+        { "id": "futsubf", "incorrect": "Quando você chega, avise-me.", "answer": ["Quando você chegar, avise-me", "Quando você chegar, avise-me."], "explanation": "\"Quando\" referindo-se ao futuro exige o futuro do subjuntivo: chegar." },
+        { "id": "futsubg", "incorrect": "Se ele fará isso, eu ajudo.", "answer": ["Se ele fizer isso, eu ajudo", "Se ele fizer isso, eu ajudo."], "explanation": "Depois de \"se\" com condição futura, usa-se o futuro do subjuntivo: fizer, não o futuro simples do indicativo." }
+      ]
+    }
+  ],
+  "summary": [
+    "O futuro do subjuntivo aparece depois de se, quando, assim que e enquanto, referindo-se a algo futuro/incerto.",
+    "Verbos regulares no futuro do subjuntivo são idênticos ao infinitivo (para eu/você/ele).",
+    "Os irregulares seguem a raiz da terceira pessoa do plural do pretérito perfeito: for, tiver, fizer, puder, estiver."
+  ],
+  "related": [
+    { "lessonId": "b1-presente-do-subjuntivo-introducao", "label": "Presente do Subjuntivo: Introdução" },
+    { "lessonId": "b1-oracoes-condicionais", "label": "Orações Condicionais" }
+  ]
+}

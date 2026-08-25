@@ -1,0 +1,94 @@
+{
+  "id": "b1-por-e-para-aprofundado",
+  "level": "B1",
+  "order": 11,
+  "skill": "grammar",
+  "title": "Por e Para: Aprofundado",
+  "subtitle": "Voltando ao maior desafio das preposições, com os usos que faltavam.",
+  "objectives": [
+    "Usar \"por\" como agente da voz passiva e em expressões fixas",
+    "Usar \"para\" para opinião, comparação e prazo",
+    "Reconhecer as expressões fixas mais comuns com por e para"
+  ],
+  "content": {
+    "intro": "No A2 você viu a distinção básica entre por e para. Agora, com voz passiva e mais vocabulário, dá para completar o quadro com os usos mais avançados.",
+    "explanation": "<p><strong>Por</strong> ganha três usos novos importantes: como <strong>agente da voz passiva</strong> (\"o livro foi escrito <strong>por</strong> ela\"), em <strong>expressões fixas</strong> (<strong>por</strong> favor, <strong>por</strong> exemplo, <strong>por</strong> isso, <strong>por</strong> enquanto, <strong>por</strong> acaso) e para indicar <strong>duração aproximada</strong> (\"morei lá <strong>por</strong> dois anos\").</p><p><strong>Para</strong> ganha o uso de <strong>opinião pessoal</strong> (\"<strong>para</strong> mim, esse filme é excelente\"), <strong>comparação implícita</strong> (\"<strong>para</strong> uma criança, ela é muito madura\" — comparado com o esperado de uma criança) e <strong>prazo final</strong> (\"preciso terminar isso <strong>para</strong> sexta-feira\").</p>",
+    "rules": [
+      "Por = agente da passiva (escrito por ela), expressões fixas (por favor, por exemplo, por isso)",
+      "Por = duração aproximada (morei lá por dois anos)",
+      "Para = opinião pessoal (para mim...), comparação implícita (para uma criança...)",
+      "Para = prazo final de uma tarefa (para sexta-feira)",
+      "Expressões fixas com por não seguem a lógica de causa/troca — são memorizadas como bloco"
+    ],
+    "table": {
+      "caption": "Expressões fixas com por",
+      "headers": ["Expressão", "Significado"],
+      "rows": [
+        ["por favor", "please"],
+        ["por exemplo", "for example"],
+        ["por isso", "that's why / therefore"],
+        ["por enquanto", "for now"],
+        ["por acaso", "by chance"]
+      ]
+    },
+    "examples": [
+      "Este quadro foi pintado por um artista famoso.",
+      "Para mim, essa é a melhor solução.",
+      "Preciso entregar o relatório para sexta-feira.",
+      "Ele fala muito bem português, para quem começou há pouco tempo.",
+      "Por enquanto, vamos deixar assim."
+    ],
+    "commonMistakes": [
+      { "wrong": "\"Este livro foi escrito para ela\" (usando \"para\" para o agente da passiva)", "right": "\"Este livro foi escrito por ela\"", "why": "O agente da voz passiva é sempre introduzido por \"por\", nunca por \"para\"." },
+      { "wrong": "\"Por mim, esse filme é ótimo\" (usando \"por\" para opinião)", "right": "\"Para mim, esse filme é ótimo\"", "why": "Opinião pessoal sempre usa \"para mim\", não \"por mim\" — \"por mim\" tem outro sentido (relacionado a concordância/indiferença: \"por mim, tudo bem\")." },
+      { "wrong": "\"Preciso terminar isso por sexta-feira\" (usando \"por\" para prazo)", "right": "\"Preciso terminar isso para sexta-feira\"", "why": "Prazo final de uma tarefa sempre usa \"para\", não \"por\"." }
+    ],
+    "tip": "As expressões fixas com \"por\" (por favor, por exemplo, por isso) não seguem nenhuma lógica de causa ou troca — são blocos fixos que precisam ser memorizados como unidades, não deduzidos pela regra geral."
+  },
+  "exercises": [
+    {
+      "id": "pp4-fill",
+      "type": "fill-blank",
+      "title": "Complete com Por ou Para",
+      "instructions": "Escolha a preposição correta.",
+      "items": [
+        { "id": "pp4a", "prompt": "Este quadro foi pintado ___ um artista desconhecido.", "answers": [["por"]], "options": ["por", "para"], "explanation": "Agente da voz passiva: por." },
+        { "id": "pp4b", "prompt": "___ mim, essa é a melhor opção.", "answers": [["Para"]], "options": ["Para", "Por"], "explanation": "Opinião pessoal: para mim." },
+        { "id": "pp4c", "prompt": "Preciso terminar o projeto ___ o final do mês.", "answers": [["para"]], "options": ["para", "por"], "explanation": "Prazo final: para." }
+      ]
+    },
+    {
+      "id": "pp4-mc",
+      "type": "multiple-choice",
+      "title": "Escolha a Preposição Certa",
+      "instructions": "Escolha a preposição correta para cada frase.",
+      "items": [
+        { "id": "pp4d", "prompt": "\"Ele fala muito bem, ___ quem só estuda há seis meses.\" (comparação implícita)", "options": ["para", "por"], "answerIndex": 0, "explanation": "Comparação implícita com uma expectativa usa \"para\"." },
+        { "id": "pp4e", "prompt": "\"Moramos naquela casa ___ dez anos.\" (duração aproximada)", "options": ["por", "para"], "answerIndex": 0, "explanation": "Duração aproximada de tempo usa \"por\"." }
+      ]
+    },
+    {
+      "id": "pp4-match",
+      "type": "matching",
+      "title": "Associe a Expressão ao Significado",
+      "instructions": "Associe cada expressão fixa com \"por\" ao seu significado em inglês.",
+      "items": [
+        { "id": "pp4f", "pairs": [
+          { "left": "por favor", "right": "please" },
+          { "left": "por exemplo", "right": "for example" },
+          { "left": "por isso", "right": "that's why" },
+          { "left": "por acaso", "right": "by chance" }
+        ], "explanation": "Essas expressões são blocos fixos, memorizados como unidades." }
+      ]
+    }
+  ],
+  "summary": [
+    "Por introduz o agente da voz passiva, aparece em expressões fixas e indica duração aproximada.",
+    "Para expressa opinião pessoal, comparação implícita e prazo final de uma tarefa.",
+    "As expressões fixas com por (por favor, por exemplo, por isso) devem ser memorizadas como blocos."
+  ],
+  "related": [
+    { "lessonId": "b1-voz-passiva", "label": "Voz Passiva" },
+    { "lessonId": "b1-expressoes-idiomaticas", "label": "Expressões Idiomáticas" }
+  ]
+}

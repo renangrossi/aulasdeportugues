@@ -1,0 +1,88 @@
+{
+  "id": "b1-discurso-indireto",
+  "level": "B1",
+  "order": 9,
+  "skill": "grammar",
+  "title": "Discurso Indireto",
+  "subtitle": "Contando o que outra pessoa disse, sem citar as palavras exatas.",
+  "objectives": [
+    "Transformar discurso direto em discurso indireto",
+    "Aplicar o recuo dos tempos verbais (backshift) corretamente",
+    "Ajustar pronomes e expressões de tempo/lugar ao relatar uma fala"
+  ],
+  "content": {
+    "intro": "Sempre que você conta o que alguém disse — sem citar a fala exata entre aspas — está usando o discurso indireto. E, como em muitos idiomas, os tempos verbais recuam um passo no passado.",
+    "explanation": "<p>No discurso direto, citamos exatamente o que foi dito: <em>\"Ela disse: 'Estou cansada.'\"</em> No discurso indireto, relatamos a fala sem citação direta, geralmente introduzida por \"que\": <strong>\"Ela disse que estava cansada.\"</strong> — repare que o presente (\"estou\") vira imperfeito (\"estava\").</p><p>Esse \"recuo\" é sistemático: o presente vira imperfeito; o pretérito perfeito vira mais-que-perfeito; o futuro simples vira condicional simples (futuro do pretérito). Além dos verbos, pronomes e expressões de tempo/lugar também mudam: \"hoje\" vira \"naquele dia\"; \"amanhã\" vira \"no dia seguinte\"; \"aqui\" vira \"lá\".</p>",
+    "rules": [
+      "Presente → imperfeito: \"Estou cansada\" → disse que estava cansada",
+      "Pretérito perfeito → mais-que-perfeito: \"Eu comi\" → disse que tinha comido",
+      "Futuro simples → condicional simples: \"Eu irei\" → disse que iria",
+      "Presente do subjuntivo → imperfeito do subjuntivo: \"Espero que venha\" → disse que esperava que viesse",
+      "Expressões de tempo/lugar mudam: hoje→naquele dia; amanhã→no dia seguinte; aqui→lá; este→aquele"
+    ],
+    "table": {
+      "caption": "Recuo dos tempos verbais no discurso indireto",
+      "headers": ["Discurso direto", "Discurso indireto"],
+      "rows": [
+        ["\"Estou cansada.\"", "Ela disse que estava cansada."],
+        ["\"Eu já comi.\"", "Ele disse que já tinha comido."],
+        ["\"Eu vou viajar amanhã.\"", "Ela disse que ia viajar no dia seguinte."],
+        ["\"Eu farei isso.\"", "Ele disse que faria isso."]
+      ]
+    },
+    "examples": [
+      "Ela disse: \"Estou com fome\" → Ela disse que estava com fome.",
+      "Ele perguntou: \"Você vem amanhã?\" → Ele perguntou se eu iria no dia seguinte.",
+      "Eles avisaram: \"Vamos chegar atrasados\" → Eles avisaram que iam chegar atrasados.",
+      "Ela prometeu: \"Eu ligo mais tarde\" → Ela prometeu que ligaria mais tarde.",
+      "Ele contou: \"Já vi esse filme\" → Ele contou que já tinha visto esse filme."
+    ],
+    "commonMistakes": [
+      { "wrong": "\"Ela disse que está cansada\" (sem o recuo do tempo verbal)", "right": "\"Ela disse que estava cansada\"", "why": "O verbo da fala original precisa recuar um tempo verbal ao ser relatado no discurso indireto." },
+      { "wrong": "\"Ele disse que vai viajar amanhã\" (mantendo \"amanhã\" sem ajustar)", "right": "\"Ele disse que ia viajar no dia seguinte\"", "why": "Expressões de tempo relativas ao momento da fala original também precisam ser ajustadas ao contexto de quem relata." },
+      { "wrong": "Esquecer de transformar uma pergunta direta em indireta com \"se\"", "right": "\"Ele perguntou se eu vinha\" (não \"Ele perguntou eu vinha\")", "why": "Perguntas de sim/não no discurso indireto precisam do conectivo \"se\", equivalente a \"whether/if\" em inglês." }
+    ],
+    "tip": "Ao relatar uma fala, imagine que você está contando a história um dia depois, em outro lugar — isso ajuda a lembrar por que os tempos verbais e as expressões de tempo/lugar precisam mudar."
+  },
+  "exercises": [
+    {
+      "id": "disc-fill",
+      "type": "fill-blank",
+      "title": "Transforme para o Discurso Indireto",
+      "instructions": "Complete a versão em discurso indireto de cada fala original.",
+      "items": [
+        { "id": "disca", "prompt": "Ela disse: \"Estou ocupada.\" → Ela disse que ___ ocupada.", "answers": [["estava"]], "explanation": "Presente → imperfeito: estava." },
+        { "id": "discb", "prompt": "Ele disse: \"Eu já terminei.\" → Ele disse que já ___ ___ (ter + terminar).", "answers": [["tinha"], ["terminado"]], "explanation": "Pretérito perfeito → mais-que-perfeito: tinha terminado." },
+        { "id": "discc", "prompt": "Ela prometeu: \"Eu vou ajudar.\" → Ela prometeu que ___ ajudar.", "answers": [["ia"]], "explanation": "\"Ir\" no presente (contínuo/perto) vira imperfeito ao relatar: ia." }
+      ]
+    },
+    {
+      "id": "disc-mc",
+      "type": "multiple-choice",
+      "title": "Escolha a Transformação Correta",
+      "instructions": "Escolha a versão correta em discurso indireto.",
+      "items": [
+        { "id": "discd", "prompt": "Fala original: \"Eu ligo amanhã.\" Como fica no discurso indireto?", "options": ["Ele disse que ligaria no dia seguinte.", "Ele disse que liga amanhã.", "Ele disse que ligou amanhã."], "answerIndex": 0, "explanation": "Futuro simples → condicional simples, e \"amanhã\" → \"no dia seguinte\"." },
+        { "id": "disce", "prompt": "Fala original: \"Você vem à festa?\" Como fica no discurso indireto?", "options": ["Ela perguntou se eu vinha à festa.", "Ela perguntou eu vinha à festa.", "Ela perguntou que eu vinha à festa."], "answerIndex": 0, "explanation": "Perguntas de sim/não usam \"se\" no discurso indireto." }
+      ]
+    },
+    {
+      "id": "disc-writing",
+      "type": "writing",
+      "title": "Relate uma Conversa",
+      "instructions": "Pense em algo que alguém te disse recentemente e relate em discurso indireto, usando pelo menos dois verbos com recuo de tempo.",
+      "items": [
+        { "id": "discf", "prompt": "Escreva de 2 a 3 frases começando com \"Ele/ela disse que...\" ou \"Ele/ela perguntou se...\"." }
+      ]
+    }
+  ],
+  "summary": [
+    "O discurso indireto relata uma fala sem citação direta, geralmente com \"que\".",
+    "Os tempos verbais recuam: presente→imperfeito; perfeito→mais-que-perfeito; futuro→condicional.",
+    "Expressões de tempo e lugar também mudam: hoje→naquele dia; aqui→lá; amanhã→no dia seguinte."
+  ],
+  "related": [
+    { "lessonId": "b1-preterito-mais-que-perfeito", "label": "Pretérito Mais-Que-Perfeito" },
+    { "lessonId": "b1-voz-passiva", "label": "Voz Passiva" }
+  ]
+}

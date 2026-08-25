@@ -1,0 +1,79 @@
+{
+  "id": "b1-se-apassivador-e-indeterminado",
+  "level": "B1",
+  "order": 8,
+  "skill": "grammar",
+  "title": "Se Apassivador e Indeterminado",
+  "subtitle": "\"Vende-se casas\" e \"vive-se bem aqui\" — dois usos do \"se\" que não são reflexivos.",
+  "objectives": [
+    "Reconhecer o \"se\" apassivador como uma alternativa mais informal à voz passiva",
+    "Usar o \"se\" indeterminado quando o sujeito não é especificado",
+    "Diferenciar esses dois usos do \"se\" reflexivo já estudado"
+  ],
+  "content": {
+    "intro": "Você já viu o \"se\" reflexivo (levantar-se) e a voz passiva com \"ser\". Existe uma terceira família de usos do \"se\", extremamente comum em placas, anúncios e conversas — e que não tem nada de reflexivo.",
+    "explanation": "<p>O <strong>se apassivador</strong> (também chamado de voz passiva sintética) é uma alternativa mais direta e informal à passiva com \"ser\": em vez de \"casas são vendidas\", diz-se <strong>\"vendem-se casas\"</strong>. O verbo concorda com o substantivo que segue: \"vende-<strong>se</strong> casa\" (singular) / \"vendem-<strong>se</strong> casas\" (plural) — é essa concordância que faz esse \"se\" funcionar como passiva.</p><p>O <strong>se indeterminado</strong> é usado quando não se sabe ou não importa quem pratica a ação — geralmente com verbos que não têm objeto direto: <strong>\"vive-se bem aqui\"</strong>, <strong>\"trabalha-se muito nesta empresa\"</strong>. Diferente do apassivador, o verbo fica sempre no singular, porque não há um substantivo com o qual concordar.</p>",
+    "rules": [
+      "Se apassivador: verbo concorda com o substantivo (vende-se casa / vendem-se casas)",
+      "Se indeterminado: verbo sempre no singular, sem substantivo para concordância (vive-se bem, trabalha-se muito)",
+      "Comum em placas e anúncios: \"Aluga-se apartamento\", \"Precisa-se de funcionário\"",
+      "Diferente do \"se\" reflexivo, que indica que a própria pessoa pratica a ação sobre si mesma",
+      "É uma alternativa mais natural e informal à voz passiva com \"ser\" no dia a dia"
+    ],
+    "examples": [
+      "Aluga-se apartamento no centro da cidade.",
+      "Vendem-se carros usados nesta loja.",
+      "Fala-se português no Brasil e em Portugal.",
+      "Precisa-se de voluntários para o evento.",
+      "Come-se muito bem neste restaurante."
+    ],
+    "commonMistakes": [
+      { "wrong": "\"Vende-se casas\" (verbo no singular com substantivo plural)", "right": "\"Vendem-se casas\"", "why": "No se apassivador, o verbo concorda com o substantivo — \"casas\" é plural, então o verbo também precisa ser." },
+      { "wrong": "\"Vivem-se bem aqui\" (concordando o verbo sem haver substantivo)", "right": "\"Vive-se bem aqui\"", "why": "No se indeterminado, não há substantivo para o verbo concordar — ele fica sempre no singular." },
+      { "wrong": "Confundir \"aluga-se\" (apassivador) com um uso reflexivo", "right": "reconhecer que ninguém está \"se alugando\" — é o imóvel que é alugado", "why": "O se apassivador não indica uma ação sobre a própria pessoa; é uma forma alternativa de passiva." }
+    ],
+    "tip": "Truque rápido: se o verbo tem um objeto direto claro (vender algo, alugar algo), é apassivador e concorda no plural. Se o verbo não tem objeto direto (viver, trabalhar), é indeterminado e fica sempre no singular."
+  },
+  "exercises": [
+    {
+      "id": "seind-fill",
+      "type": "fill-blank",
+      "title": "Complete com o Verbo Certo",
+      "instructions": "Complete cada frase com a forma correta do verbo indicado, concordando quando necessário.",
+      "items": [
+        { "id": "seinda", "prompt": "___-se (alugar) apartamentos neste prédio.", "answers": [["Alugam"]], "explanation": "Se apassivador: o verbo concorda com \"apartamentos\" (plural)." },
+        { "id": "seindb", "prompt": "___-se (viver) muito bem nesta cidade.", "answers": [["Vive"]], "explanation": "Se indeterminado: verbo sempre no singular." },
+        { "id": "seindc", "prompt": "___-se (precisar) de mais funcionários na loja.", "answers": [["Precisa"]], "explanation": "\"Precisar de\" não tem objeto direto — se indeterminado, singular." }
+      ]
+    },
+    {
+      "id": "seind-mc",
+      "type": "multiple-choice",
+      "title": "Apassivador ou Indeterminado?",
+      "instructions": "Identifique o tipo de \"se\" em cada frase.",
+      "items": [
+        { "id": "seindd", "prompt": "\"Vendem-se casas nesta rua.\" Que tipo de \"se\" é esse?", "options": ["Apassivador", "Indeterminado", "Reflexivo"], "answerIndex": 0, "explanation": "O verbo concorda com \"casas\" — é o se apassivador, uma alternativa à voz passiva." },
+        { "id": "seinde", "prompt": "\"Trabalha-se muito aqui.\" Que tipo de \"se\" é esse?", "options": ["Apassivador", "Indeterminado", "Reflexivo"], "answerIndex": 1, "explanation": "Não há substantivo com o qual concordar — é o se indeterminado, verbo sempre no singular." }
+      ]
+    },
+    {
+      "id": "seind-correction",
+      "type": "correction",
+      "title": "Corrija a Concordância",
+      "instructions": "Cada frase tem um erro de concordância. Escreva a versão correta.",
+      "items": [
+        { "id": "seindf", "incorrect": "Aluga-se salas comerciais no centro.", "answer": ["Alugam-se salas comerciais no centro", "Alugam-se salas comerciais no centro."], "explanation": "\"Salas\" é plural, então o verbo precisa concordar: alugam-se." },
+        { "id": "seindg", "incorrect": "Comem-se bem neste restaurante.", "answer": ["Come-se bem neste restaurante", "Come-se bem neste restaurante."], "explanation": "Sem objeto direto para concordar, o se indeterminado exige o verbo no singular." }
+      ]
+    }
+  ],
+  "summary": [
+    "O se apassivador é uma alternativa informal à voz passiva; o verbo concorda com o substantivo.",
+    "O se indeterminado indica um sujeito não especificado; o verbo fica sempre no singular.",
+    "Os dois usos aparecem com muita frequência em placas, anúncios e na fala cotidiana."
+  ],
+  "related": [
+    { "lessonId": "b1-voz-passiva", "label": "Voz Passiva" },
+    { "lessonId": "b1-pronomes-oblicuos-e-colocacao", "label": "Pronomes Oblíquos e Colocação Pronominal" }
+  ]
+}

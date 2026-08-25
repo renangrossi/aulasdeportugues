@@ -1,0 +1,89 @@
+{
+  "id": "b1-pronomes-oblicuos-e-colocacao",
+  "level": "B1",
+  "order": 10,
+  "skill": "grammar",
+  "title": "Pronomes Oblíquos e Colocação Pronominal",
+  "subtitle": "Me diga ou diga-me? A regra que organiza onde o pronome vai na frase.",
+  "objectives": [
+    "Usar os pronomes oblíquos átonos (me, te, o/a, lhe, nos)",
+    "Reconhecer quando usar próclise (antes do verbo) e ênclise (depois do verbo)",
+    "Entender por que o português falado no Brasil prefere a próclise, mesmo onde a regra formal pede ênclise"
+  ],
+  "content": {
+    "intro": "Este é um dos traços mais próprios do português — nenhum outro idioma que a maioria dos estudantes já conhece organiza a posição do pronome exatamente da mesma forma.",
+    "explanation": "<p>Os pronomes oblíquos átonos substituem objetos diretos e indiretos: <strong>me, te, o/a, nos, lhe(s)</strong>. \"Eu vi <strong>o filme</strong>\" → \"eu <strong>o</strong> vi\". \"Eu dei o presente <strong>para ela</strong>\" → \"eu <strong>lhe</strong> dei o presente\".</p><p>A <strong>colocação pronominal</strong> tem três posições possíveis: <strong>próclise</strong> (pronome antes do verbo — <em>me chamo</em>), <strong>ênclise</strong> (pronome depois do verbo, com hífen — <em>chamo-me</em>) e <strong>mesóclise</strong> (pronome no meio do verbo, só no futuro — <em>encontrar-te-ei</em>, raríssimo). A regra formal escrita usa próclise depois de palavras negativas (não, nunca, ninguém), palavras interrogativas, conjunções subordinativas (que, se, quando) e certos advérbios; usa ênclise quando o verbo inicia a oração.</p><p>Na <strong>fala cotidiana do Brasil</strong>, porém, a próclise é fortemente preferida em quase qualquer situação — inclusive no início da frase: \"<strong>Me</strong> chamo João\" é natural e universal no Brasil falado, mesmo que a regra escrita formal preferisse \"Chamo-me João\".</p>",
+    "rules": [
+      "Próclise (pronome antes do verbo) depois de: não/nunca/ninguém, palavras interrogativas, que/se/quando, alguns advérbios",
+      "Ênclise (pronome depois do verbo, com hífen) quando o verbo inicia a oração — mais comum na escrita formal",
+      "Mesóclise (pronome no meio do verbo) só com futuro do presente/pretérito, em registro muito formal/literário — raro",
+      "Na fala brasileira cotidiana, a próclise é preferida quase sempre, mesmo no início da frase",
+      "Lhe/lhes substituem objeto indireto (para ele/ela); o/a/os/as substituem objeto direto"
+    ],
+    "table": {
+      "caption": "Pronomes oblíquos átonos",
+      "headers": ["Pessoa", "Objeto direto", "Objeto indireto"],
+      "rows": [
+        ["eu", "me", "me"],
+        ["você/ele/ela", "o/a", "lhe"],
+        ["nós", "nos", "nos"],
+        ["vocês/eles/elas", "os/as", "lhes"]
+      ]
+    },
+    "examples": [
+      "Eu não te vi na festa ontem.",
+      "Quando você me ligar, eu respondo.",
+      "Ele me disse a verdade.",
+      "Diga-me a verdade. (formal) / Me diga a verdade. (comum no Brasil falado)",
+      "Nunca lhe contei esse segredo."
+    ],
+    "commonMistakes": [
+      { "wrong": "\"Não chamo-me João\" (ênclise depois de negação)", "right": "\"Não me chamo João\"", "why": "Depois de palavras negativas, a regra pede próclise — o pronome antes do verbo." },
+      { "wrong": "Achar que \"me chamo João\" no início da frase está sempre errado", "right": "reconhecer que é a forma natural e correta no português falado do Brasil", "why": "A próclise no início da frase é amplamente aceita e até preferida na fala brasileira, apesar de a norma escrita mais tradicional preferir a ênclise nesse caso." },
+      { "wrong": "\"Eu vi lhe no parque\" (usando \"lhe\" como objeto direto de pessoa)", "right": "\"Eu o vi no parque\" / \"Eu vi ele no parque\" (informal)", "why": "\"Lhe\" é objeto indireto (para ele/ela); para objeto direto de pessoa, usa-se o/a (formal) ou o próprio pronome pessoal (ele/ela, comum na fala informal)." }
+    ],
+    "tip": "Na dúvida sobre onde colocar o pronome ao falar, siga o padrão do Brasil falado: coloque o pronome antes do verbo (próclise) — funciona na esmagadora maioria das situações do dia a dia."
+  },
+  "exercises": [
+    {
+      "id": "pron-fill",
+      "type": "fill-blank",
+      "title": "Complete com o Pronome Certo",
+      "instructions": "Complete cada frase com o pronome oblíquo correto.",
+      "items": [
+        { "id": "prona", "prompt": "Eu não ___ vi na reunião ontem. (você)", "answers": [["te"]], "explanation": "Segunda pessoa: te." },
+        { "id": "pronb", "prompt": "Ela ___ contou a novidade. (para mim)", "answers": [["me"]], "explanation": "Primeira pessoa, objeto indireto: me." },
+        { "id": "pronc", "prompt": "Nós ___ ajudamos sempre que possível. (a eles)", "answers": [["os"]], "explanation": "Terceira pessoa do plural, objeto direto: os." }
+      ]
+    },
+    {
+      "id": "pron-mc",
+      "type": "multiple-choice",
+      "title": "Próclise ou Ênclise?",
+      "instructions": "Escolha a posição correta do pronome.",
+      "items": [
+        { "id": "prond", "prompt": "Depois de \"nunca\", qual é a colocação correta?", "options": ["Nunca disse-me a verdade.", "Nunca me disse a verdade.", "As duas estão erradas."], "answerIndex": 1, "explanation": "Palavras negativas exigem próclise — o pronome antes do verbo." },
+        { "id": "prone", "prompt": "No português falado do Brasil, qual frase é mais natural para começar uma apresentação?", "options": ["Chamo-me Ana.", "Me chamo Ana.", "As duas são igualmente raras."], "answerIndex": 1, "explanation": "\"Me chamo Ana\" é a forma natural e universal na fala brasileira, mesmo no início da frase." }
+      ]
+    },
+    {
+      "id": "pron-correction",
+      "type": "correction",
+      "title": "Corrija a Colocação",
+      "instructions": "Cada frase tem o pronome na posição errada para o contexto formal. Escreva a versão correta.",
+      "items": [
+        { "id": "pronf", "incorrect": "Quando ele viu-me, sorriu.", "answer": ["Quando ele me viu, sorriu", "Quando ele me viu, sorriu."], "explanation": "Depois de conjunção subordinativa (\"quando\"), a regra formal pede próclise." },
+        { "id": "prong", "incorrect": "Ninguém contou-me a novidade.", "answer": ["Ninguém me contou a novidade", "Ninguém me contou a novidade."], "explanation": "Depois de palavra negativa (\"ninguém\"), usa-se próclise." }
+      ]
+    }
+  ],
+  "summary": [
+    "Próclise (antes do verbo) depois de negação, palavras interrogativas e conjunções subordinativas.",
+    "Ênclise (depois do verbo, com hífen) quando o verbo inicia a oração — mais formal/escrita.",
+    "Na fala cotidiana do Brasil, a próclise é preferida quase sempre, mesmo no início da frase."
+  ],
+  "related": [
+    { "lessonId": "b1-imperativo-completo", "label": "Imperativo Completo" },
+    { "lessonId": "b1-por-e-para-aprofundado", "label": "Por e Para: Aprofundado" }
+  ]
+}
