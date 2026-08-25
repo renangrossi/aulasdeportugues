@@ -1,0 +1,97 @@
+{
+  "id": "a1-verbos-irregulares-no-presente",
+  "level": "A1",
+  "order": 6,
+  "skill": "grammar",
+  "title": "Verbos Irregulares no Presente",
+  "subtitle": "Ir, ter, fazer, poder, querer e saber — os irregulares mais usados do dia a dia.",
+  "objectives": [
+    "Conjugar ir, ter, fazer, poder, querer e saber no presente",
+    "Reconhecer que a irregularidade aparece principalmente na forma \"eu\"",
+    "Usar esses verbos em frases do cotidiano"
+  ],
+  "content": {
+    "intro": "Estes seis verbos estão entre os mais usados do português — e todos fogem do padrão regular. Vale a pena memorizá-los cedo, porque aparecem em praticamente toda conversa.",
+    "explanation": "<p>A maioria dos verbos irregulares do português muda de forma mais evidente na primeira pessoa (\"eu\") e depois volta a um padrão mais previsível nas demais pessoas. Veja: <strong>fazer</strong> → eu faço (irregular), mas você faz, nós fazemos, eles fazem (quase regulares). O mesmo acontece com <strong>saber</strong> → eu sei, e <strong>poder</strong> → eu posso.</p><p><strong>Ir</strong> e <strong>ter</strong> são ainda mais irregulares, com mudanças em várias pessoas: ir → vou, vai, vamos, vão; ter → tenho, tem, temos, têm.</p>",
+    "rules": [
+      "Ir: vou, vai, vamos, vão",
+      "Ter: tenho, tem, temos, têm",
+      "Fazer: faço, faz, fazemos, fazem",
+      "Poder: posso, pode, podemos, podem",
+      "Querer: quero, quer, queremos, querem",
+      "Saber: sei, sabe, sabemos, sabem"
+    ],
+    "table": {
+      "caption": "Seis verbos irregulares essenciais",
+      "headers": ["Pronome", "Ir", "Ter", "Fazer", "Poder"],
+      "rows": [
+        ["eu", "vou", "tenho", "faço", "posso"],
+        ["você/ele/ela", "vai", "tem", "faz", "pode"],
+        ["nós", "vamos", "temos", "fazemos", "podemos"],
+        ["vocês/eles/elas", "vão", "têm", "fazem", "podem"]
+      ]
+    },
+    "examples": [
+      "Eu vou ao trabalho de ônibus.",
+      "Nós temos duas reuniões hoje.",
+      "Ela faz bolo todo domingo.",
+      "Eu não posso sair agora.",
+      "Vocês sabem falar espanhol?"
+    ],
+    "commonMistakes": [
+      { "wrong": "\"Eu fazo\"", "right": "\"Eu faço\"", "why": "A primeira pessoa de \"fazer\" muda a consoante final para \"ç\": faço, não \"fazo\"." },
+      { "wrong": "\"Eu teno\"", "right": "\"Eu tenho\"", "why": "A primeira pessoa de \"ter\" é irregular: tenho, com \"nh\"." },
+      { "wrong": "\"Nós vai\"", "right": "\"Nós vamos\"", "why": "Cada pessoa gramatical de \"ir\" tem sua própria forma — não se usa \"vai\" com \"nós\"." }
+    ],
+    "tip": "Como esses seis verbos aparecem o tempo todo, pratique-os em frases reais sobre sua própria rotina: \"Eu vou trabalhar\", \"Eu tenho um carro\", \"Eu sei cozinhar\"."
+  },
+  "exercises": [
+    {
+      "id": "irreg-fill",
+      "type": "fill-blank",
+      "title": "Conjugue o Verbo Irregular",
+      "instructions": "Complete cada frase com a forma correta do verbo indicado.",
+      "items": [
+        { "id": "ir1", "prompt": "Eu ___ (ir) ao mercado agora.", "answers": [["vou"]], "explanation": "Primeira pessoa de \"ir\": vou." },
+        { "id": "ir2", "prompt": "Nós ___ (ter) muito trabalho esta semana.", "answers": [["temos"]], "explanation": "Primeira pessoa do plural de \"ter\": temos." },
+        { "id": "ir3", "prompt": "Ele ___ (fazer) exercícios todos os dias.", "answers": [["faz"]], "explanation": "Terceira pessoa do singular de \"fazer\": faz." },
+        { "id": "ir4", "prompt": "Eu não ___ (saber) a resposta.", "answers": [["sei"]], "explanation": "Primeira pessoa de \"saber\" é totalmente irregular: sei." }
+      ]
+    },
+    {
+      "id": "irreg-mc",
+      "type": "multiple-choice",
+      "title": "Escolha a Forma Correta",
+      "instructions": "Escolha a conjugação correta.",
+      "items": [
+        { "id": "ir5", "prompt": "Eles ___ jogar futebol muito bem.", "options": ["sabem", "sabe", "sei"], "answerIndex": 0, "explanation": "Terceira pessoa do plural de \"saber\": sabem." },
+        { "id": "ir6", "prompt": "Você ___ me ajudar amanhã?", "options": ["pode", "posso", "podem"], "answerIndex": 0, "explanation": "Segunda/terceira pessoa do singular de \"poder\": pode." },
+        { "id": "ir7", "prompt": "Nós ___ viajar no verão.", "options": ["queremos", "quer", "querem"], "answerIndex": 0, "explanation": "Primeira pessoa do plural de \"querer\": queremos." }
+      ]
+    },
+    {
+      "id": "irreg-match",
+      "type": "matching",
+      "title": "Associe o Verbo à Forma \"Eu\"",
+      "instructions": "Associe cada verbo no infinitivo à sua forma irregular na primeira pessoa.",
+      "items": [
+        { "id": "ir8", "pairs": [
+          { "left": "ir", "right": "vou" },
+          { "left": "ter", "right": "tenho" },
+          { "left": "fazer", "right": "faço" },
+          { "left": "poder", "right": "posso" },
+          { "left": "saber", "right": "sei" }
+        ], "explanation": "A forma \"eu\" é onde a maioria destes verbos apresenta a maior irregularidade." }
+      ]
+    }
+  ],
+  "summary": [
+    "Ir, ter, fazer, poder, querer e saber são irregulares, mas extremamente comuns.",
+    "A irregularidade aparece com mais força na forma \"eu\": vou, tenho, faço, posso, quero, sei.",
+    "Praticar com frases sobre a própria rotina ajuda a fixar essas formas rapidamente."
+  ],
+  "related": [
+    { "lessonId": "a1-presente-do-indicativo-verbos-regulares", "label": "Presente do Indicativo: Verbos Regulares" },
+    { "lessonId": "a1-ha-e-tem", "label": "Há e Tem: Existência" }
+  ]
+}

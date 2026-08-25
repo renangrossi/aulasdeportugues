@@ -1,0 +1,89 @@
+{
+  "id": "a1-presente-continuo",
+  "level": "A1",
+  "order": 13,
+  "skill": "grammar",
+  "title": "Presente Contínuo",
+  "subtitle": "Estar + gerúndio: o que está acontecendo agora mesmo.",
+  "objectives": [
+    "Formar o gerúndio de verbos -ar, -er e -ir",
+    "Usar estar + gerúndio para ações em progresso",
+    "Diferenciar o presente simples do presente contínuo"
+  ],
+  "content": {
+    "intro": "Assim como o inglês tem \"I am eating\", o português tem uma estrutura equivalente para descrever ações que acontecem neste exato momento.",
+    "explanation": "<p>O gerúndio é formado removendo a terminação do infinitivo e acrescentando <strong>-ando</strong> (verbos -ar), <strong>-endo</strong> (verbos -er) ou <strong>-indo</strong> (verbos -ir): falar → falando, comer → comendo, abrir → abrindo. Para formar o presente contínuo, combina-se o verbo <strong>estar</strong> conjugado com o gerúndio: \"eu estou falando\", \"ela está comendo\".</p><p>O presente contínuo é usado para ações acontecendo neste exato momento (\"eu estou estudando agora\") — diferente do presente simples, que expressa hábitos e rotinas (\"eu estudo português todos os dias\").</p>",
+    "rules": [
+      "Gerúndio -ar: -ando (falar → falando)",
+      "Gerúndio -er: -endo (comer → comendo)",
+      "Gerúndio -ir: -indo (abrir → abrindo)",
+      "Presente contínuo = estar (conjugado) + gerúndio",
+      "Use o contínuo para ações em progresso agora; use o simples para hábitos e rotinas"
+    ],
+    "table": {
+      "caption": "Presente contínuo — exemplo com \"falar\"",
+      "headers": ["Pronome", "Estar", "+ Gerúndio"],
+      "rows": [
+        ["eu", "estou", "falando"],
+        ["você/ele/ela", "está", "falando"],
+        ["nós", "estamos", "falando"],
+        ["vocês/eles/elas", "estão", "falando"]
+      ]
+    },
+    "examples": [
+      "Eu estou estudando português agora.",
+      "Ela está trabalhando no escritório hoje.",
+      "Nós estamos assistindo a um filme.",
+      "Eles estão comendo pizza neste momento.",
+      "Você está me ouvindo?"
+    ],
+    "commonMistakes": [
+      { "wrong": "\"Eu falando português\" (sem o verbo estar)", "right": "\"Eu estou falando português\"", "why": "O presente contínuo sempre precisa do verbo \"estar\" conjugado antes do gerúndio." },
+      { "wrong": "Usar o presente contínuo para hábitos (\"Eu estou estudando português todo dia\")", "right": "\"Eu estudo português todo dia\" (presente simples)", "why": "Hábitos e rotinas usam o presente simples, não o contínuo, que é reservado para o momento exato." },
+      { "wrong": "\"comendo\" formado errado como \"comando\"", "right": "\"comendo\"", "why": "Verbos -er formam o gerúndio com -endo, não -ando (que é exclusivo dos verbos -ar)." }
+    ],
+    "tip": "Pergunte-se: isso está acontecendo NESTE exato momento, ou é algo que você faz regularmente? A resposta decide entre contínuo e simples."
+  },
+  "exercises": [
+    {
+      "id": "cont-fill",
+      "type": "fill-blank",
+      "title": "Complete com o Presente Contínuo",
+      "instructions": "Complete cada frase com estar + gerúndio do verbo indicado.",
+      "items": [
+        { "id": "pc1", "prompt": "Eu ___ (estudar) português agora.", "answers": [["estou estudando"]], "explanation": "Estou (eu) + estudando (gerúndio de estudar)." },
+        { "id": "pc2", "prompt": "Ela ___ (escrever) um e-mail neste momento.", "answers": [["está escrevendo"]], "explanation": "Está (ela) + escrevendo (gerúndio de escrever)." },
+        { "id": "pc3", "prompt": "Nós ___ (dormir) muito pouco esta semana.", "answers": [["estamos dormindo"]], "explanation": "Estamos (nós) + dormindo (gerúndio de dormir)." }
+      ]
+    },
+    {
+      "id": "cont-mc",
+      "type": "multiple-choice",
+      "title": "Simples ou Contínuo?",
+      "instructions": "Escolha a forma verbal correta conforme o contexto.",
+      "items": [
+        { "id": "pc4", "prompt": "\"Todos os dias, eu ___ café da manhã às sete.\"", "options": ["tomo", "estou tomando"], "answerIndex": 0, "explanation": "Rotina diária usa presente simples." },
+        { "id": "pc5", "prompt": "\"Agora mesmo, eu ___ café.\"", "options": ["tomo", "estou tomando"], "answerIndex": 1, "explanation": "Ação acontecendo neste momento exato usa presente contínuo." }
+      ]
+    },
+    {
+      "id": "cont-order",
+      "type": "ordering",
+      "title": "Monte a Frase",
+      "instructions": "Coloque as palavras na ordem correta.",
+      "items": [
+        { "id": "pc6", "prompt": "trabalhando / eles / estão / hoje", "words": ["Eles", "estão", "trabalhando", "hoje"], "explanation": "Sujeito + estar conjugado + gerúndio + advérbio." },
+        { "id": "pc7", "prompt": "chovendo / lá / está / fora", "words": ["Está", "chovendo", "lá", "fora"], "explanation": "Está (impessoal, sem sujeito explícito) + gerúndio + advérbios de lugar." }
+      ]
+    }
+  ],
+  "summary": [
+    "O gerúndio termina em -ando (-ar), -endo (-er) ou -indo (-ir).",
+    "Presente contínuo = estar conjugado + gerúndio, para ações acontecendo agora.",
+    "Hábitos e rotinas usam presente simples; o momento exato usa presente contínuo."
+  ],
+  "related": [
+    { "lessonId": "a1-presente-do-indicativo-verbos-regulares", "label": "Presente do Indicativo: Verbos Regulares" },
+    { "lessonId": "a1-imperativo-basico", "label": "Imperativo Básico" }
+  ]
+}

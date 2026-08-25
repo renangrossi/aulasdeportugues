@@ -1,0 +1,84 @@
+{
+  "id": "a1-pronomes-pessoais",
+  "level": "A1",
+  "order": 2,
+  "skill": "grammar",
+  "title": "Pronomes Pessoais",
+  "subtitle": "Quem fala, com quem e sobre quem — os pronomes do sujeito.",
+  "objectives": [
+    "Listar todos os pronomes pessoais do sujeito",
+    "Escolher entre você, tu e vocês conforme a região e o contexto",
+    "Usar o pronome certo com o verbo conjugado corretamente"
+  ],
+  "content": {
+    "intro": "Os pronomes pessoais indicam quem pratica a ação de um verbo. Em português, a escolha do pronome certo depende também da região do Brasil.",
+    "explanation": "<p>Os pronomes pessoais do sujeito são: <strong>eu</strong> (I), <strong>tu/você</strong> (you, singular), <strong>ele/ela</strong> (he/she), <strong>nós</strong> (we), <strong>vós/vocês</strong> (you, plural), <strong>eles/elas</strong> (they). Na maior parte do Brasil, \"você\" substitui \"tu\" no dia a dia, tanto em contextos formais quanto informais — \"tu\" é comum apenas em algumas regiões, como o Rio Grande do Sul e partes do Nordeste e Norte.</p><p>\"Vocês\" é sempre o plural de \"você\", mesmo em situações informais — diferente do inglês, que usa \"you\" tanto no singular quanto no plural, o português distingue os dois claramente.</p>",
+    "rules": [
+      "eu = I | tu / você = you (singular) | ele / ela = he / she",
+      "nós = we | vós / vocês = you (plural) | eles / elas = they",
+      "No Brasil, \"você\" é o pronome padrão de segunda pessoa, usado com a conjugação da terceira pessoa (você fala, ele fala)",
+      "\"Vós\" é praticamente extinto no Brasil — usado só em textos religiosos ou muito formais/antigos",
+      "Pronomes de sujeito costumam ser omitidos quando o contexto já deixa claro quem fala: \"Estou cansado\" (em vez de \"Eu estou cansado\")"
+    ],
+    "examples": [
+      "Eu moro em São Paulo.",
+      "Você fala português muito bem.",
+      "Ela trabalha em um hospital.",
+      "Nós somos amigos há muitos anos.",
+      "Vocês vão à festa amanhã?"
+    ],
+    "commonMistakes": [
+      { "wrong": "Usar \"tu fala\" no Brasil sem ajustar o verbo", "right": "\"tu falas\" (concordância própria) ou \"você fala\"", "why": "\"Tu\" pede uma conjugação verbal diferente de \"você\" — misturar as duas formas soa incorreto." },
+      { "wrong": "Usar \"vocês\" para se referir a uma única pessoa", "right": "\"você\", no singular", "why": "\"Vocês\" é sempre plural, mesmo quando \"you\" em inglês poderia ser tanto singular quanto plural." },
+      { "wrong": "Sempre repetir o pronome em toda frase", "right": "omitir o pronome quando o contexto já é claro", "why": "Como a conjugação verbal já indica a pessoa, o pronome de sujeito é frequentemente dispensável em português." }
+    ],
+    "tip": "Ao aprender português brasileiro, foque em \"você\" e \"vocês\" — eles cobrem a grande maioria das situações reais de conversa no Brasil."
+  },
+  "exercises": [
+    {
+      "id": "pron-match",
+      "type": "matching",
+      "title": "Associe o Pronome em Português ao Inglês",
+      "instructions": "Associe cada pronome pessoal ao seu equivalente em inglês.",
+      "items": [
+        { "id": "pp1", "pairs": [
+          { "left": "eu", "right": "I" },
+          { "left": "você", "right": "you (singular)" },
+          { "left": "nós", "right": "we" },
+          { "left": "vocês", "right": "you (plural)" },
+          { "left": "eles", "right": "they" }
+        ], "explanation": "Cada pronome pessoal em português tem um equivalente direto em inglês." }
+      ]
+    },
+    {
+      "id": "pron-mc",
+      "type": "multiple-choice",
+      "title": "Escolha o Pronome Certo",
+      "instructions": "Escolha o pronome mais apropriado para cada situação.",
+      "items": [
+        { "id": "pp2", "prompt": "Você está falando sobre um grupo de três amigas. Qual pronome usar?", "options": ["elas", "eles", "vocês"], "answerIndex": 0, "explanation": "\"Elas\" é usado para um grupo composto só por pessoas do gênero feminino." },
+        { "id": "pp3", "prompt": "Você fala diretamente com duas pessoas. Qual pronome usar?", "options": ["vocês", "nós", "eles"], "answerIndex": 0, "explanation": "\"Vocês\" é o plural de \"você\", usado ao falar diretamente com mais de uma pessoa." },
+        { "id": "pp4", "prompt": "No Brasil, qual é a forma mais comum de dizer \"you\" no singular?", "options": ["tu", "você", "vós"], "answerIndex": 1, "explanation": "\"Você\" é a forma padrão em quase todo o Brasil." }
+      ]
+    },
+    {
+      "id": "pron-fill",
+      "type": "fill-blank",
+      "title": "Complete com o Pronome",
+      "instructions": "Complete cada frase com o pronome pessoal mais adequado.",
+      "items": [
+        { "id": "pp5", "prompt": "___ moramos no Rio de Janeiro.", "answers": [["Nós"]], "options": ["Nós", "Eles", "Você"], "explanation": "A forma verbal \"moramos\" combina com o pronome \"nós\"." },
+        { "id": "pp6", "prompt": "___ trabalham juntos há cinco anos.", "answers": [["Eles", "Elas"]], "options": ["Eles", "Eu", "Nós"], "explanation": "A terceira pessoa do plural (trabalham) combina com \"eles/elas\"." }
+      ]
+    }
+  ],
+  "summary": [
+    "Os pronomes pessoais são eu, você/tu, ele/ela, nós, vocês, eles/elas.",
+    "\"Você\" é o pronome padrão de segunda pessoa no Brasil; \"tu\" é regional.",
+    "\"Vocês\" é sempre plural — nunca use para falar com uma única pessoa."
+  ],
+  "related": [
+    { "lessonId": "a1-ser-e-estar", "label": "Ser e Estar" },
+    { "lessonId": "a1-possessivos", "label": "Pronomes Possessivos" }
+  ]
+}

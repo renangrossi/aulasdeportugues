@@ -1,0 +1,100 @@
+{
+  "id": "a1-presente-do-indicativo-verbos-regulares",
+  "level": "A1",
+  "order": 5,
+  "skill": "grammar",
+  "title": "Presente do Indicativo: Verbos Regulares",
+  "subtitle": "As três terminações -ar, -er, -ir que organizam quase todos os verbos.",
+  "objectives": [
+    "Conjugar verbos regulares terminados em -ar, -er e -ir no presente",
+    "Reconhecer o infinitivo de um verbo a partir da sua forma conjugada",
+    "Usar o presente para hábitos, rotinas e verdades gerais"
+  ],
+  "content": {
+    "intro": "Todo verbo em português no infinitivo termina em -ar, -er ou -ir. Aprender o padrão de cada grupo é a chave para conjugar centenas de verbos regulares.",
+    "explanation": "<p>Para conjugar um verbo regular no presente, remove-se a terminação do infinitivo (-ar, -er, -ir) e acrescenta-se a terminação correspondente a cada pessoa. Os três grupos têm padrões parecidos, mas com vogais diferentes: <strong>falar</strong> → eu falo, você fala; <strong>comer</strong> → eu como, você come; <strong>abrir</strong> → eu abro, você abre.</p><p>O presente do indicativo é usado para hábitos (\"eu estudo português todos os dias\"), verdades gerais (\"a água ferve a 100 graus\") e ações que acontecem agora, no sentido amplo (\"ela trabalha em um banco\").</p>",
+    "rules": [
+      "Verbos -ar (falar): falo, fala, falamos, falam",
+      "Verbos -er (comer): como, come, comemos, comem",
+      "Verbos -ir (abrir): abro, abre, abrimos, abrem",
+      "A terminação da primeira pessoa (eu) quase sempre termina em -o, em qualquer grupo",
+      "\"Nós\" sempre mantém a vogal do infinitivo: falamos, comemos, abrimos"
+    ],
+    "table": {
+      "caption": "Presente do indicativo — três verbos modelo",
+      "headers": ["Pronome", "Falar (-ar)", "Comer (-er)", "Abrir (-ir)"],
+      "rows": [
+        ["eu", "falo", "como", "abro"],
+        ["você / ele / ela", "fala", "come", "abre"],
+        ["nós", "falamos", "comemos", "abrimos"],
+        ["vocês / eles / elas", "falam", "comem", "abrem"]
+      ]
+    },
+    "examples": [
+      "Eu falo português e inglês.",
+      "Nós comemos arroz e feijão todos os dias.",
+      "Ela abre a loja às nove horas.",
+      "Vocês estudam à noite ou de manhã?",
+      "Ele trabalha em uma empresa grande."
+    ],
+    "commonMistakes": [
+      { "wrong": "\"Eu como\" pronunciado/escrito como \"Eu como\" mas conjugando errado outros verbos -er, tipo \"Eu vivo\" → \"Eu vivê\"", "right": "manter -o na primeira pessoa de todos os grupos: eu vivo, eu falo, eu abro", "why": "A primeira pessoa do singular no presente sempre termina em -o, independente do grupo do verbo." },
+      { "wrong": "\"Nós falam\" (usando a terminação de eles)", "right": "\"Nós falamos\"", "why": "Cada pessoa gramatical tem sua própria terminação — não se pode misturar \"nós\" com a forma de \"eles\"." },
+      { "wrong": "Tratar todo verbo -er como se fosse -ir (ou vice-versa)", "right": "verificar o infinitivo real de cada verbo antes de conjugar", "why": "Verbos -er e -ir têm terminações parecidas mas diferentes em \"vocês/eles\" (comem vs. abrem) — vale a pena confirmar o grupo correto." }
+    ],
+    "tip": "Escolha um verbo de cada grupo (-ar, -er, -ir) e pratique a conjugação completa até sair de memória — isso destrava a maioria dos outros verbos regulares automaticamente."
+  },
+  "exercises": [
+    {
+      "id": "pres-fill",
+      "type": "fill-blank",
+      "title": "Conjugue o Verbo",
+      "instructions": "Complete cada frase com a forma correta do verbo indicado no presente.",
+      "items": [
+        { "id": "pr1", "prompt": "Eu ___ (estudar) português todos os dias.", "answers": [["estudo"]], "explanation": "Verbo -ar, primeira pessoa: estudo." },
+        { "id": "pr2", "prompt": "Nós ___ (comer) frutas no café da manhã.", "answers": [["comemos"]], "explanation": "Verbo -er, primeira pessoa do plural: comemos." },
+        { "id": "pr3", "prompt": "Ela ___ (assistir) filmes todo fim de semana.", "answers": [["assiste"]], "explanation": "Verbo -ir, terceira pessoa do singular: assiste." },
+        { "id": "pr4", "prompt": "Vocês ___ (trabalhar) juntos?", "answers": [["trabalham"]], "explanation": "Verbo -ar, terceira pessoa do plural: trabalham." }
+      ]
+    },
+    {
+      "id": "pres-mc",
+      "type": "multiple-choice",
+      "title": "Escolha a Forma Correta",
+      "instructions": "Escolha a conjugação correta do verbo.",
+      "items": [
+        { "id": "pr5", "prompt": "Qual é a forma correta de \"abrir\" para \"nós\"?", "options": ["abrimos", "abrem", "abro"], "answerIndex": 0, "explanation": "\"Nós\" mantém a vogal do infinitivo: abrimos." },
+        { "id": "pr6", "prompt": "Qual é a forma correta de \"vender\" para \"ele\"?", "options": ["vendo", "vende", "vendem"], "answerIndex": 1, "explanation": "Terceira pessoa do singular de verbos -er: vende." }
+      ]
+    },
+    {
+      "id": "pres-order",
+      "type": "ordering",
+      "title": "Monte a Frase",
+      "instructions": "Coloque as palavras na ordem correta.",
+      "items": [
+        { "id": "pr7", "prompt": "café / bebemos / todo / nós / dia", "words": ["Nós", "bebemos", "café", "todo", "dia"], "explanation": "Sujeito + verbo + objeto + expressão de tempo." },
+        { "id": "pr8", "prompt": "cedo / ela / acorda / sempre", "words": ["Ela", "sempre", "acorda", "cedo"], "explanation": "Sujeito + advérbio de frequência + verbo + advérbio de modo." }
+      ]
+    },
+    {
+      "id": "pres-vocab",
+      "type": "vocabulary",
+      "title": "Qual é o Infinitivo?",
+      "instructions": "Identifique o infinitivo correto de cada verbo conjugado.",
+      "items": [
+        { "id": "pr9", "prompt": "\"Comemos\" vem do infinitivo:", "options": ["comer", "comar", "comir"], "answerIndex": 0, "explanation": "\"Comemos\" é a forma de \"nós\" do verbo \"comer\"." },
+        { "id": "pr10", "prompt": "\"Partem\" vem do infinitivo:", "options": ["parter", "partir", "partar"], "answerIndex": 1, "explanation": "\"Partem\" é a forma de \"eles\" do verbo \"partir\"." }
+      ]
+    }
+  ],
+  "summary": [
+    "Verbos regulares seguem três padrões: -ar (falar), -er (comer), -ir (abrir).",
+    "A primeira pessoa (eu) quase sempre termina em -o em qualquer grupo.",
+    "O presente do indicativo expressa hábitos, rotinas e verdades gerais."
+  ],
+  "related": [
+    { "lessonId": "a1-verbos-irregulares-no-presente", "label": "Verbos Irregulares no Presente" },
+    { "lessonId": "a1-presente-continuo", "label": "Presente Contínuo" }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "id": "pre-a1-leitura-e-escuta-de-sobrevivencia",
+  "level": "PRE-A1",
+  "order": 8,
+  "skill": "reading",
+  "title": "Leitura e Escuta de Sobrevivência",
+  "subtitle": "Junte tudo o que você aprendeu em um texto curto e simples.",
+  "objectives": [
+    "Ler um texto curto em português e entender a ideia geral",
+    "Responder perguntas simples sobre um texto",
+    "Ouvir uma frase em português e reconhecer palavras conhecidas"
+  ],
+  "content": {
+    "intro": "Esta lição fecha o nível Pre-A1 combinando alfabeto, saudações, números, pessoas/objetos e os verbos básicos em um texto único, curto e real.",
+    "explanation": "<p>Ler um texto pela primeira vez em outro idioma pode parecer difícil — mas você não precisa entender cada palavra. O objetivo é reconhecer o que já é familiar (nomes, números, palavras parecidas com outros idiomas) e usar isso para entender a ideia geral.</p><p>Use o botão de \"Ouvir o texto\" para escutar o parágrafo abaixo em voz alta enquanto acompanha a leitura — treinar olhos e ouvidos juntos acelera o reconhecimento de palavras.</p>",
+    "rules": [
+      "Leia o texto uma primeira vez só para pegar a ideia geral, sem parar em cada palavra desconhecida",
+      "Na segunda leitura, preste atenção às palavras que você já conhece de lições anteriores",
+      "Ouça o áudio pelo menos duas vezes: primeiro sem olhar o texto, depois acompanhando com os olhos",
+      "Não é necessário entender 100% do texto para responder às perguntas de compreensão"
+    ],
+    "examples": [
+      "Meu nome é Marina.",
+      "Eu sou de Curitiba e moro em São Paulo.",
+      "Hoje é segunda-feira e são nove horas da manhã.",
+      "Eu preciso estudar português todos os dias.",
+      "Eu gosto de música brasileira e de café."
+    ],
+    "commonMistakes": [
+      { "wrong": "Parar a leitura na primeira palavra desconhecida", "right": "continuar lendo e voltar depois, se necessário", "why": "Entender o contexto geral é mais importante do que traduzir cada palavra isolada." },
+      { "wrong": "Tentar escrever uma tradução perfeita mentalmente", "right": "focar em pegar a ideia principal", "why": "Neste nível, o objetivo é compreensão geral, não tradução palavra por palavra." }
+    ],
+    "tip": "Depois de terminar esta lição, você já sabe se apresentar, cumprimentar, contar, perguntar as horas, pedir repetição e falar sobre pessoas e objetos — o suficiente para uma primeira conversa real em português."
+  },
+  "exercises": [
+    {
+      "id": "leitura-rc",
+      "type": "reading-comprehension",
+      "title": "Leia e Responda",
+      "instructions": "Leia o texto (ou ouça, usando o botão de áudio) e responda às perguntas.",
+      "passage": "<button type=\"button\" class=\"tts-btn tts-btn--passage\" data-tts data-tts-target=\"#texto-marina\" aria-label=\"Ouvir o texto\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M11 5 6 9H2v6h4l5 4V5Z\"/><path d=\"M15.5 8.5a5 5 0 0 1 0 7\"/><path d=\"M19 5a10 10 0 0 1 0 14\"/></svg></button><p id=\"texto-marina\">Olá! Meu nome é Marina. Eu sou de Curitiba, mas moro em São Paulo. Hoje é segunda-feira e são nove horas da manhã. Eu preciso estudar português todos os dias, porque eu quero morar no Brasil no próximo ano. Eu gosto muito de música brasileira e de café. Meu professor de português se chama Renan. Muito prazer!</p>",
+      "items": [
+        { "id": "lv1", "prompt": "Qual é o nome da pessoa no texto?", "options": ["Renan", "Marina", "São Paulo"], "answerIndex": 1, "explanation": "O texto começa com \"Meu nome é Marina\"." },
+        { "id": "lv2", "prompt": "De onde ela é?", "options": ["São Paulo", "Curitiba", "Rio de Janeiro"], "answerIndex": 1, "explanation": "O texto diz \"Eu sou de Curitiba\"." },
+        { "id": "lv3", "prompt": "Que dia da semana é no texto?", "options": ["Domingo", "Sexta-feira", "Segunda-feira"], "answerIndex": 2, "explanation": "O texto diz \"Hoje é segunda-feira\"." },
+        { "id": "lv4", "prompt": "Por que ela precisa estudar português?", "options": ["Porque ela é professora", "Porque ela quer morar no Brasil", "Porque ela gosta de café"], "answerIndex": 1, "explanation": "O texto diz \"porque eu quero morar no Brasil no próximo ano\"." },
+        { "id": "lv5", "prompt": "Como se chama o professor dela?", "options": ["Marina", "Renan", "Curitiba"], "answerIndex": 1, "explanation": "O texto termina com \"Meu professor de português se chama Renan\"." }
+      ]
+    },
+    {
+      "id": "leitura-vocab",
+      "type": "vocabulary",
+      "title": "Vocabulário do Texto",
+      "instructions": "Escolha o significado correto de cada palavra do texto.",
+      "items": [
+        { "id": "lv6", "prompt": "\"Moro\" (eu moro em São Paulo) significa:", "options": ["Eu trabalho", "Eu vivo/resido", "Eu estudo"], "answerIndex": 1, "explanation": "\"Morar\" significa viver ou residir em um lugar." },
+        { "id": "lv7", "prompt": "\"Próximo ano\" significa:", "options": ["O ano passado", "O ano que vem", "Este mesmo ano"], "answerIndex": 1, "explanation": "\"Próximo\" indica o que vem depois — o ano seguinte." }
+      ]
+    },
+    {
+      "id": "leitura-writing",
+      "type": "writing",
+      "title": "Sua Vez de Escrever",
+      "instructions": "Escreva um parágrafo curto sobre você, seguindo o modelo do texto de Marina. Não existe resposta certa ou errada aqui — o objetivo é praticar.",
+      "items": [
+        { "id": "lv8", "prompt": "Escreva de 3 a 5 frases se apresentando: seu nome, de onde você é, o que você gosta e por que você está aprendendo português." }
+      ]
+    }
+  ],
+  "summary": [
+    "Você não precisa entender cada palavra para compreender a ideia geral de um texto.",
+    "Ouvir e ler ao mesmo tempo ajuda a reconhecer palavras mais rápido no futuro.",
+    "Com o vocabulário do Pre-A1, já é possível ler e escrever uma apresentação pessoal simples."
+  ],
+  "related": [
+    { "lessonId": "pre-a1-ser-estar-e-pronomes", "label": "Ser, Estar e os Pronomes" },
+    { "lessonId": "pre-a1-alfabeto-e-sons", "label": "O Alfabeto e os Sons do Português" }
+  ]
+}

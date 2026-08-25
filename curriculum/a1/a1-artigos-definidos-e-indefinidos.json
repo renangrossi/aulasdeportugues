@@ -1,0 +1,89 @@
+{
+  "id": "a1-artigos-definidos-e-indefinidos",
+  "level": "A1",
+  "order": 4,
+  "skill": "grammar",
+  "title": "Artigos Definidos e Indefinidos",
+  "subtitle": "O, a, os, as, um, uma, uns, umas — e quando usar cada um.",
+  "objectives": [
+    "Usar os quatro artigos definidos e os quatro indefinidos",
+    "Escolher entre artigo definido e indefinido conforme o contexto",
+    "Formar corretamente o plural dos artigos"
+  ],
+  "content": {
+    "intro": "Você já conhece o/a e um/uma da lição Pre-A1. Agora vamos ver as formas de plural e entender quando usar cada tipo de artigo.",
+    "explanation": "<p>Os <strong>artigos definidos</strong> (o, a, os, as) equivalem a \"the\" — usados quando se fala de algo específico e já conhecido: \"o livro que você me deu\". Os <strong>artigos indefinidos</strong> (um, uma, uns, umas) equivalem a \"a/an/some\" — usados para algo não específico ou mencionado pela primeira vez: \"eu li um livro interessante\".</p><p>Diferente do inglês, o português também usa artigo definido antes de substantivos gerais e abstratos (\"o amor é importante\", \"a vida é curta\") e, muitas vezes, antes de nomes próprios em conversas informais (\"a Maria chegou\").</p>",
+    "rules": [
+      "Definidos: o (masc. sing.), a (fem. sing.), os (masc. pl.), as (fem. pl.)",
+      "Indefinidos: um (masc. sing.), uma (fem. sing.), uns (masc. pl.), umas (fem. pl.)",
+      "Use o definido para algo específico/já mencionado: \"Vi o filme ontem\" (um filme específico)",
+      "Use o indefinido para algo não específico/novo na conversa: \"Vi um filme ontem\" (qualquer filme)",
+      "Substantivos gerais/abstratos levam artigo definido em português, mesmo sem levar em inglês: \"O tempo é precioso\""
+    ],
+    "table": {
+      "caption": "Artigos definidos e indefinidos",
+      "headers": ["", "Masculino", "Feminino"],
+      "rows": [
+        ["Definido singular", "o", "a"],
+        ["Definido plural", "os", "as"],
+        ["Indefinido singular", "um", "uma"],
+        ["Indefinido plural", "uns", "umas"]
+      ]
+    },
+    "examples": [
+      "Eu vi um filme ontem. O filme era muito bom.",
+      "As crianças estão brincando no parque.",
+      "Ela comprou uns livros na feira.",
+      "O amor e a amizade são importantes na vida.",
+      "Umas amigas minhas vão viajar amanhã."
+    ],
+    "commonMistakes": [
+      { "wrong": "Omitir o artigo antes de substantivos gerais (\"Vida é curta\")", "right": "\"A vida é curta\"", "why": "Em português, substantivos gerais/abstratos costumam levar artigo definido, diferente do inglês." },
+      { "wrong": "\"Umas\" usado como sinônimo exato de \"algumas\" em todo contexto", "right": "usar \"uns/umas\" para quantidade aproximada e não específica", "why": "\"Uns/umas\" indica uma quantidade indefinida, parecida com \"some\", enquanto \"alguns/algumas\" é mais específico sobre quantidade." },
+      { "wrong": "Usar artigo indefinido para algo já mencionado antes", "right": "usar o artigo definido na segunda menção", "why": "Depois que algo é apresentado com \"um/uma\", a próxima menção usa \"o/a\"." }
+    ],
+    "tip": "Regra prática: primeira menção de algo = indefinido (um/uma); menções seguintes do mesmo item = definido (o/a)."
+  },
+  "exercises": [
+    {
+      "id": "art-fill",
+      "type": "fill-blank",
+      "title": "Complete com o Artigo Certo",
+      "instructions": "Escolha entre artigo definido e indefinido conforme o contexto.",
+      "items": [
+        { "id": "at1", "prompt": "Eu comprei ___ carro novo ontem.", "answers": [["um"]], "options": ["um", "o"], "explanation": "Primeira menção do carro — usa-se o artigo indefinido \"um\"." },
+        { "id": "at2", "prompt": "___ carro é muito confortável.", "answers": [["O"]], "options": ["O", "Um"], "explanation": "Já mencionado antes, agora se usa o artigo definido \"o\"." },
+        { "id": "at3", "prompt": "___ tempo não espera por ninguém.", "answers": [["O"]], "options": ["O", "Um"], "explanation": "Substantivo abstrato/geral — leva artigo definido em português." }
+      ]
+    },
+    {
+      "id": "art-mc",
+      "type": "multiple-choice",
+      "title": "Definido ou Indefinido?",
+      "instructions": "Escolha a forma correta para cada frase.",
+      "items": [
+        { "id": "at4", "prompt": "Ela tem ___ amigas muito legais.", "options": ["as", "umas"], "answerIndex": 1, "explanation": "Quantidade não específica de amigas — usa-se o artigo indefinido plural \"umas\"." },
+        { "id": "at5", "prompt": "___ crianças da escola cantaram muito bem.", "options": ["As", "Umas"], "answerIndex": 0, "explanation": "Grupo específico e já conhecido (as crianças DA escola) — usa-se o artigo definido." }
+      ]
+    },
+    {
+      "id": "art-order",
+      "type": "ordering",
+      "title": "Monte a Frase",
+      "instructions": "Coloque as palavras na ordem correta.",
+      "items": [
+        { "id": "at6", "prompt": "amor / é / importante / o", "words": ["O", "amor", "é", "importante"], "explanation": "Artigo definido + substantivo + verbo + adjetivo." },
+        { "id": "at7", "prompt": "livro / li / interessante / eu / um", "words": ["Eu", "li", "um", "livro", "interessante"], "explanation": "Sujeito + verbo + artigo indefinido + substantivo + adjetivo." }
+      ]
+    }
+  ],
+  "summary": [
+    "Artigo definido (o/a/os/as) marca algo específico ou já conhecido.",
+    "Artigo indefinido (um/uma/uns/umas) marca algo novo ou não específico.",
+    "Substantivos abstratos/gerais levam artigo definido em português, diferente do inglês."
+  ],
+  "related": [
+    { "lessonId": "a1-genero-e-numero-dos-substantivos", "label": "Gênero e Número dos Substantivos" },
+    { "lessonId": "a1-contracoes-de-preposicao-e-artigo", "label": "Contrações de Preposição e Artigo" }
+  ]
+}

@@ -1,0 +1,178 @@
+/* =======================================================================
+   DESIGN TOKENS
+   Renan, o Professor — Academia de Português Brasileiro
+   Fonte única de verdade para cor, tipografia, espaçamento e movimento.
+   Todo o resto do sistema de estilos deve ler destas variáveis em vez de
+   valores fixos, para que toda a identidade visual possa ser ajustada
+   a partir daqui.
+   ======================================================================= */
+
+:root {
+  /* ---- Paleta da marca ---------------------------------------------
+     Verde-mata profundo (instituição / autoridade), terracota (acento
+     quente, convite à ação), azul-céu (acento secundário), ouro
+     (ornamento, honrarias) e areia/marfim (superfícies claras e
+     acolhedoras). Uma identidade brasileira contemporânea, mas sóbria
+     — nada de bandeira ou clichê, cores usadas como uma paisagem, não
+     como um cartaz. */
+  --verde-900: #0c2a20;
+  --verde-800: #12362a;
+  --verde-700: #184433;
+  --verde-600: #235940;
+
+  --terracota-700: #8a3d22;
+  --terracota-600: #b1522c;
+  --terracota-500: #c96a3f;
+
+  --azul-700: #123a52;
+  --azul-600: #1c5678;
+  --azul-500: #2b7098;
+
+  --ouro-600: #b8862c;
+  --ouro-500: #cf9f3f;
+  --ouro-300: #e8c877;
+
+  --areia-100: #faf5e9;
+  --areia-200: #f3ead4;
+  --areia-300: #e6d7b3;
+  --marfim-50: #fffdf8;
+
+  --tinta-900: #1c2620;
+  --tinta-700: #384339;
+  --tinta-500: #62705f;
+
+  /* ---- Aliases de compatibilidade -------------------------------------
+     Vários estilos de componente (herdados da arquitetura original,
+     reaproveitados aqui) ainda referenciam os nomes de token "brutos"
+     abaixo diretamente (gradientes, sombras e hovers ajustados a esses
+     nomes). Em vez de reescrever cada seletor, os nomes antigos
+     continuam existindo como apelidos para a nova paleta verde/ouro —
+     assim o sistema inteiro herda a identidade brasileira sem precisar
+     tocar em components.css/dark-mode.css/search.css/base.css. */
+  --gold-300: var(--ouro-300);
+  --gold-500: var(--ouro-500);
+  --gold-600: var(--ouro-600);
+  --ink-900: var(--tinta-900);
+  --navy-600: var(--verde-600);
+  --navy-700: var(--verde-700);
+  --navy-800: var(--verde-800);
+  --parchment-100: var(--areia-100);
+  --parchment-200: var(--areia-200);
+
+  /* ---- Papéis semânticos de cor (tema claro, padrão) -----------------
+     Componentes devem referenciar estes papéis, não a paleta crua
+     acima, para que dark-mode.css possa reapontá-los com segurança. */
+  --color-bg: #ffffff;
+  --color-surface: var(--areia-100);
+  --color-surface-raised: #ffffff;
+  --color-border: var(--areia-300);
+  --color-border-strong: var(--terracota-600);
+
+  --color-text: var(--tinta-900);
+  --color-text-muted: var(--tinta-500);
+  --color-text-on-dark: var(--areia-100);
+  --color-text-on-dark-muted: #cdd6c8;
+
+  --color-primary: var(--verde-800);
+  --color-primary-strong: var(--verde-900);
+  --color-accent: var(--terracota-600);
+  --color-accent-strong: var(--terracota-700);
+  --color-secondary-accent: var(--azul-600);
+  --color-gold: var(--ouro-600);
+  /* Mantido com este nome por compatibilidade com estilos herdados que
+     usam --color-red como cor de borda decorativa (ex.: moldura de
+     imagem, modal de busca) — aqui aponta para o terracota da marca,
+     não para "vermelho" literal. */
+  --color-red: var(--terracota-600);
+  --color-red-dim: var(--terracota-700);
+  --color-unavailable: var(--tinta-500);
+
+  --color-focus-ring: var(--ouro-600);
+
+  /* Diz ao navegador que esta página tem uma UI clara explícita
+     (rolagem, e — combinado com as cores de select/option em
+     base.css — os menus de <select> renderizam com aparência clara em
+     vez de adivinhar pelo sistema operacional). O dark mode reaponta
+     isso para "dark" em dark-mode.css. */
+  color-scheme: light;
+
+  /* Cores de feedback dedicadas aos exercícios — ajustadas para boa
+     visibilidade mesmo em baixa saturação, independentes das cores de
+     marca. */
+  --color-success: #2f7a52;
+  --color-success-bg: #e3f2e8;
+  --color-danger: #b3323f;
+  --color-danger-bg: #fbe9ea;
+
+  /* ---- Tipografia ---------------------------------------------------- */
+  --font-display: "Lora", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+  --font-body: "Source Sans 3", "Segoe UI", Helvetica, Arial, sans-serif;
+  --font-mono: "IBM Plex Mono", "Courier New", monospace;
+
+  --step--1: clamp(0.83rem, 0.8rem + 0.15vw, 0.9rem);
+  --step-0:  clamp(1rem, 0.96rem + 0.2vw, 1.08rem);
+  --step-1:  clamp(1.2rem, 1.12rem + 0.4vw, 1.35rem);
+  --step-2:  clamp(1.44rem, 1.3rem + 0.7vw, 1.75rem);
+  --step-3:  clamp(1.8rem, 1.55rem + 1.2vw, 2.4rem);
+  --step-4:  clamp(2.25rem, 1.85rem + 2vw, 3.2rem);
+  --step-5:  clamp(2.75rem, 2.1rem + 3.2vw, 4.4rem);
+
+  --leading-tight: 1.15;
+  --leading-snug: 1.35;
+  --leading-normal: 1.7;
+
+  --tracking-wide: 0.06em;
+  --tracking-wider: 0.14em;
+
+  /* ---- Escala de espaçamento (ritmo de 8px) -------------------------- */
+  --space-3xs: 0.25rem;
+  --space-2xs: 0.5rem;
+  --space-xs:  0.75rem;
+  --space-sm:  1rem;
+  --space-md:  1.5rem;
+  --space-lg:  2rem;
+  --space-xl:  2.75rem;
+  --space-2xl: 4rem;
+  --space-3xl: 8rem;
+
+  --content-max: 76rem;
+  --content-narrow: 46rem;
+
+  /* ---- Raio, bordas e sombra ------------------------------------------
+     Mantidos discretos e levemente arredondados — sensação de
+     caderno/instituto de idiomas, calorosa mas séria. */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 14px;
+
+  --border-hairline: 1px solid var(--color-border);
+  --border-gold: 1px solid var(--color-border-strong);
+
+  --shadow-sm: 0 1px 2px rgba(18, 54, 42, 0.10);
+  --shadow-md: 0 6px 20px -8px rgba(18, 54, 42, 0.28);
+  --shadow-lg: 0 18px 45px -18px rgba(18, 54, 42, 0.38);
+  --shadow-inset-rule: inset 0 1px 0 rgba(255, 255, 255, 0.4);
+
+  /* ---- Movimento -------------------------------------------------------
+     Curto e discreto por padrão; ver base.css para reduced-motion. */
+  --ease-standard: cubic-bezier(0.4, 0, 0.2, 1);
+  --duration-fast: 150ms;
+  --duration-base: 240ms;
+  --duration-slow: 420ms;
+
+  --header-height: 84px;
+  /* Altura da barra fixa .level-toc (presente em páginas de nível,
+     hub e "Teste Você Mesmo"), usada junto com --header-height para
+     calcular o deslocamento total de rolagem abaixo. */
+  --toc-height: 72px;
+  --sticky-offset: calc(var(--header-height) + var(--toc-height) + var(--space-sm));
+}
+
+/* Header mais baixo em telas pequenas mantém a matemática de
+   deslocamento de rolagem correta */
+@media (max-width: 640px) {
+  :root {
+    --header-height: 68px;
+    --toc-height: 70px;
+  }
+}

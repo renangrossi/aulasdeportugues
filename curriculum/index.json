@@ -1,0 +1,148 @@
+{
+  "_readme": "Fonte única de verdade para a sequência do currículo. status: 'published' = o HTML gerado existe e está linkado na página do nível; 'drafted' = curriculum/{nivel}/{id}.json existe, ainda não construído; 'planned' = identificado no desenho pedagógico do curso, ainda sem JSON. Pre-A1 e A1 estão 100% publicados nesta primeira fase (Fase 1 do plano). A2 até C2 têm seu roteiro completo definido aqui para orientar as próximas fases, mas ainda não foram escritos -- as páginas de nível mostram esses tópicos como 'Em breve' em vez de fingir que já existem.",
+  "levels": {
+    "PRE-A1": {
+      "units": [
+        {
+          "id": "1",
+          "title": "Português de Sobrevivência (8 lições)",
+          "lessons": [
+            { "id": "pre-a1-alfabeto-e-sons", "status": "published" },
+            { "id": "pre-a1-saudacoes-e-apresentacoes", "status": "published" },
+            { "id": "pre-a1-numeros-horas-e-datas", "status": "published" },
+            { "id": "pre-a1-linguagem-de-sala-de-aula", "status": "published" },
+            { "id": "pre-a1-pessoas-e-objetos", "status": "published" },
+            { "id": "pre-a1-verbos-basicos-e-querer", "status": "published" },
+            { "id": "pre-a1-ser-estar-e-pronomes", "status": "published" },
+            { "id": "pre-a1-leitura-e-escuta-de-sobrevivencia", "status": "published" }
+          ]
+        }
+      ]
+    },
+    "A1": {
+      "units": [
+        {
+          "id": "1",
+          "title": "Gramática Iniciante (20 lições)",
+          "lessons": [
+            { "id": "a1-ser-e-estar", "status": "published" },
+            { "id": "a1-pronomes-pessoais", "status": "published" },
+            { "id": "a1-genero-e-numero-dos-substantivos", "status": "published" },
+            { "id": "a1-artigos-definidos-e-indefinidos", "status": "published" },
+            { "id": "a1-presente-do-indicativo-verbos-regulares", "status": "published" },
+            { "id": "a1-verbos-irregulares-no-presente", "status": "published" },
+            { "id": "a1-contracoes-de-preposicao-e-artigo", "status": "published" },
+            { "id": "a1-adjetivos-e-concordancia", "status": "published" },
+            { "id": "a1-possessivos", "status": "published" },
+            { "id": "a1-demonstrativos", "status": "published" },
+            { "id": "a1-numeros-cardinais-e-ordinais", "status": "published" },
+            { "id": "a1-preposicoes-de-lugar-e-tempo", "status": "published" },
+            { "id": "a1-presente-continuo", "status": "published" },
+            { "id": "a1-conjuncoes-basicas", "status": "published" },
+            { "id": "a1-perguntas-sim-ou-nao", "status": "published" },
+            { "id": "a1-palavras-interrogativas", "status": "published" },
+            { "id": "a1-ha-e-tem", "status": "published" },
+            { "id": "a1-imperativo-basico", "status": "published" },
+            { "id": "a1-diminutivos-e-aumentativos", "status": "published" },
+            { "id": "a1-revisao-a1", "status": "published" }
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "units": [
+        {
+          "id": "1",
+          "title": "Gramática Elementar (13 tópicos planejados)",
+          "lessons": [
+            { "id": "a2-preterito-perfeito-verbos-regulares", "status": "planned", "title": "Pretérito Perfeito: Verbos Regulares" },
+            { "id": "a2-preterito-perfeito-irregulares", "status": "planned", "title": "Pretérito Perfeito: Verbos Irregulares" },
+            { "id": "a2-preterito-imperfeito", "status": "planned", "title": "Pretérito Imperfeito" },
+            { "id": "a2-perfeito-vs-imperfeito", "status": "planned", "title": "Perfeito vs. Imperfeito" },
+            { "id": "a2-futuro-simples-e-futuro-perto", "status": "planned", "title": "Futuro Simples e Futuro Perto" },
+            { "id": "a2-comparativos-e-superlativos", "status": "planned", "title": "Comparativos e Superlativos" },
+            { "id": "a2-adverbios-de-frequencia-e-modo", "status": "planned", "title": "Advérbios de Frequência e Modo" },
+            { "id": "a2-quantificadores", "status": "planned", "title": "Quantificadores" },
+            { "id": "a2-preposicoes-de-movimento", "status": "planned", "title": "Preposições de Movimento" },
+            { "id": "a2-por-e-para-introducao", "status": "planned", "title": "Por e Para: Introdução" },
+            { "id": "a2-pronomes-relativos", "status": "planned", "title": "Pronomes Relativos" },
+            { "id": "a2-verbos-reflexivos", "status": "planned", "title": "Verbos Reflexivos" },
+            { "id": "a2-condicional-simples", "status": "planned", "title": "Condicional Simples" }
+          ]
+        }
+      ]
+    },
+    "B1": {
+      "units": [
+        {
+          "id": "1",
+          "title": "Gramática Intermediária (12 tópicos planejados)",
+          "lessons": [
+            { "id": "b1-preterito-mais-que-perfeito", "status": "planned", "title": "Pretérito Mais-Que-Perfeito" },
+            { "id": "b1-futuro-do-subjuntivo", "status": "planned", "title": "Futuro do Subjuntivo" },
+            { "id": "b1-presente-do-subjuntivo-introducao", "status": "planned", "title": "Presente do Subjuntivo: Introdução" },
+            { "id": "b1-imperativo-completo", "status": "planned", "title": "Imperativo Completo" },
+            { "id": "b1-voz-passiva", "status": "planned", "title": "Voz Passiva" },
+            { "id": "b1-discurso-indireto", "status": "planned", "title": "Discurso Indireto" },
+            { "id": "b1-pronomes-oblicuos-e-colocacao", "status": "planned", "title": "Pronomes Oblíquos e Colocação Pronominal" },
+            { "id": "b1-por-e-para-aprofundado", "status": "planned", "title": "Por e Para: Aprofundado" },
+            { "id": "b1-condicional-composto", "status": "planned", "title": "Condicional Composto" },
+            { "id": "b1-oracoes-condicionais", "status": "planned", "title": "Orações Condicionais" },
+            { "id": "b1-se-apassivador-e-indeterminado", "status": "planned", "title": "Se Apassivador e Indeterminado" },
+            { "id": "b1-expressoes-idiomaticas", "status": "planned", "title": "Expressões Idiomáticas" }
+          ]
+        }
+      ]
+    },
+    "B2": {
+      "units": [
+        {
+          "id": "1",
+          "title": "Gramática Intermediária Superior (9 tópicos planejados)",
+          "lessons": [
+            { "id": "b2-subjuntivo-sistema-completo", "status": "planned", "title": "Subjuntivo: Sistema Completo" },
+            { "id": "b2-oracoes-concessivas-finais-consecutivas", "status": "planned", "title": "Orações Concessivas, Finais e Consecutivas" },
+            { "id": "b2-regencia-verbal-e-nominal", "status": "planned", "title": "Regência Verbal e Nominal" },
+            { "id": "b2-crase-aprofundada", "status": "planned", "title": "Crase Aprofundada" },
+            { "id": "b2-colocacao-pronominal-avancada", "status": "planned", "title": "Colocação Pronominal Avançada" },
+            { "id": "b2-discurso-indireto-avancado", "status": "planned", "title": "Discurso Indireto Avançado" },
+            { "id": "b2-voz-passiva-alternativas-estilisticas", "status": "planned", "title": "Voz Passiva: Alternativas Estilísticas" },
+            { "id": "b2-conectores-argumentativos", "status": "planned", "title": "Conectores Argumentativos" },
+            { "id": "b2-registro-formal-e-informal", "status": "planned", "title": "Registro Formal e Informal" }
+          ]
+        }
+      ]
+    },
+    "C1": {
+      "units": [
+        {
+          "id": "1",
+          "title": "Gramática Avançada (6 tópicos planejados)",
+          "lessons": [
+            { "id": "c1-subjuntivo-em-contextos-complexos", "status": "planned", "title": "Subjuntivo em Contextos Complexos" },
+            { "id": "c1-oracoes-reduzidas", "status": "planned", "title": "Orações Reduzidas" },
+            { "id": "c1-estruturas-enfaticas-e-inversao", "status": "planned", "title": "Estruturas Enfáticas e Inversão" },
+            { "id": "c1-variacao-linguistica-regional", "status": "planned", "title": "Variação Linguística Regional" },
+            { "id": "c1-leitura-jornalistica-e-literaria", "status": "planned", "title": "Leitura Jornalística e Literária" },
+            { "id": "c1-escrita-formal", "status": "planned", "title": "Escrita Formal" }
+          ]
+        }
+      ]
+    },
+    "C2": {
+      "units": [
+        {
+          "id": "1",
+          "title": "Proficiência (5 tópicos planejados)",
+          "lessons": [
+            { "id": "c2-dominio-dos-tempos-e-modos", "status": "planned", "title": "Domínio dos Tempos e Modos" },
+            { "id": "c2-estruturas-retoricas-avancadas", "status": "planned", "title": "Estruturas Retóricas Avançadas" },
+            { "id": "c2-registro-literario-e-coloquial", "status": "planned", "title": "Registro Literário e Coloquial" },
+            { "id": "c2-ironia-humor-e-ambiguidade", "status": "planned", "title": "Ironia, Humor e Ambiguidade" },
+            { "id": "c2-traducao-e-transposicao-de-registro", "status": "planned", "title": "Tradução e Transposição de Registro" }
+          ]
+        }
+      ]
+    }
+  }
+}

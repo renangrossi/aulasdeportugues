@@ -1,0 +1,117 @@
+/* =======================================================================
+   DARK MODE
+   Toggled via [data-theme="dark"] on <html>, set by main.js and
+   persisted to localStorage. Deep navy / forest / warm brown, never
+   pure black — kept within the same academic palette as the light theme.
+   ======================================================================= */
+
+html[data-theme="dark"] {
+  /* A proper deep blue, not forest green — kept dark enough for contrast
+     but with enough blue chroma to read clearly as "blue", never black. */
+  --color-bg: #0b1526;
+  --color-surface: #101c33;
+  --color-surface-raised: #16233d;
+  --color-border: #2c3f5e;
+  --color-border-strong: var(--color-red);
+
+  --color-text: #f1f4f9;
+  --color-text-muted: #b7c2d6;
+  --color-text-on-dark: #f4eee0;
+  --color-text-on-dark-muted: #c9c2b3;
+
+  --color-primary: #0c1526;
+  --color-primary-strong: #08101e;
+  /* Dark mode keeps the same terracota/ouro family as light mode
+     (just lifted brighter for contrast on a dark background) instead
+     of an unrelated hue, so the brand still reads as itself at night. */
+  --color-accent: #e0895c;
+  --color-accent-strong: #e8a679;
+  --color-secondary-accent: #6fa78c;
+  --color-gold: var(--gold-500);
+  --color-red: #d98a54;
+  --color-red-dim: #b56f3e;
+  --color-unavailable: #93a1bd;
+
+  --color-success: #4fae7c;
+  --color-success-bg: #14301f;
+  --color-danger: #e08a93;
+  --color-danger-bg: #3a1720;
+
+  color-scheme: dark;
+}
+
+html[data-theme="dark"] body {
+  background-image: linear-gradient(180deg, #0d1930 0%, #0b1526 420px);
+}
+
+html[data-theme="dark"] .hero {
+  background: radial-gradient(1200px 600px at 15% -10%, rgba(196, 154, 63, 0.14), transparent 60%), var(--color-primary-strong);
+}
+
+html[data-theme="dark"] .cta-band {
+  background: linear-gradient(160deg, #08101e, #12213a);
+}
+
+html[data-theme="dark"] .site-footer {
+  background: var(--color-primary-strong);
+}
+
+html[data-theme="dark"] .card,
+html[data-theme="dark"] .lesson-card,
+html[data-theme="dark"] .level-card,
+html[data-theme="dark"] .skill-card,
+html[data-theme="dark"] .media-card {
+  box-shadow: none;
+}
+
+html[data-theme="dark"] .lesson-card.is-unavailable {
+  background: #0e1830;
+}
+
+html[data-theme="dark"] ::selection {
+  background: var(--gold-600);
+  color: #0b1526;
+}
+
+/* ---------------------------------------------------------------------
+   Buttons in dark mode — .btn--ghost used --color-primary for its
+   text/border, which is a very dark navy in dark mode and became
+   nearly invisible against dark surfaces. Gold reads clearly against
+   every dark surface on the site and stays distinct from the solid
+   red .btn--accent buttons.
+   --------------------------------------------------------------------- */
+html[data-theme="dark"] .btn--ghost {
+  color: var(--gold-300);
+  border-color: var(--gold-500);
+}
+html[data-theme="dark"] .btn--ghost:hover {
+  background: var(--gold-500);
+  color: var(--ink-900);
+  border-color: var(--gold-500);
+}
+html[data-theme="dark"] .btn--primary {
+  background: var(--navy-600);
+  border-color: var(--navy-600);
+}
+html[data-theme="dark"] .btn--primary:hover {
+  background: var(--navy-800);
+}
+
+/* Remaining text-only uses of --color-primary that read as near-invisible
+   dark navy against dark surfaces — switched to gold for legibility. */
+html[data-theme="dark"] .badge--doc,
+html[data-theme="dark"] .level-card__link,
+html[data-theme="dark"] .toc a,
+html[data-theme="dark"] .level-toc a:hover,
+html[data-theme="dark"] .level-toc a:focus-visible {
+  color: var(--gold-300);
+}
+html[data-theme="dark"] .level-toc a.is-active {
+  background: var(--navy-600);
+  border-color: var(--navy-600);
+  color: var(--parchment-100);
+}
+html[data-theme="dark"] .order-build .word-chip {
+  background: var(--navy-600);
+  border-color: var(--gold-500);
+}

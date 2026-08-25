@@ -1,0 +1,97 @@
+{
+  "id": "pre-a1-pessoas-e-objetos",
+  "level": "PRE-A1",
+  "order": 5,
+  "skill": "vocabulary",
+  "title": "Pessoas e Objetos: O/A, Um/Uma",
+  "subtitle": "Todo substantivo em português tem um gênero — masculino ou feminino.",
+  "objectives": [
+    "Reconhecer se uma palavra é masculina ou feminina",
+    "Usar corretamente o/a e um/uma",
+    "Nomear objetos comuns do dia a dia"
+  ],
+  "content": {
+    "intro": "Em português, absolutamente todo substantivo — pessoa, objeto ou ideia — é masculino ou feminino. Isso não existe em inglês, então vale a pena praticar desde já.",
+    "explanation": "<p>Palavras terminadas em <strong>-o</strong> costumam ser masculinas (o livro, o carro) e palavras terminadas em <strong>-a</strong> costumam ser femininas (a casa, a mesa). Mas atenção: há muitas exceções (o problema, a foto), então o melhor é aprender cada palavra junto com seu artigo.</p><p>\"O\" e \"a\" significam \"the\" e mudam conforme o gênero: <strong>o</strong> livro / <strong>a</strong> mesa. \"Um\" e \"uma\" significam \"a/an\" e seguem a mesma regra: <strong>um</strong> livro / <strong>uma</strong> mesa.</p>",
+    "rules": [
+      "Palavras em -o geralmente são masculinas: o carro, o livro, o telefone",
+      "Palavras em -a geralmente são femininas: a casa, a mesa, a cadeira",
+      "\"O\" / \"um\" acompanham palavras masculinas",
+      "\"A\" / \"uma\" acompanham palavras femininas",
+      "Algumas palavras fogem da regra e precisam ser memorizadas: o problema, o dia, a foto, a mão"
+    ],
+    "table": {
+      "caption": "Objetos comuns e seu gênero",
+      "headers": ["Masculino (o / um)", "Feminino (a / uma)"],
+      "rows": [
+        ["o livro (book)", "a mesa (table)"],
+        ["o telefone (phone)", "a cadeira (chair)"],
+        ["o computador (computer)", "a caneta (pen)"],
+        ["o carro (car)", "a casa (house)"],
+        ["o dia (day)", "a mão (hand)"]
+      ]
+    },
+    "examples": [
+      "O livro está na mesa.",
+      "Eu preciso de uma caneta.",
+      "A casa é grande.",
+      "Este é um computador novo.",
+      "A mão dela está fria."
+    ],
+    "commonMistakes": [
+      { "wrong": "\"a dia\" (achando que \"dia\" é feminino por não terminar em -o típico)", "right": "\"o dia\"", "why": "\"Dia\" termina em -a mas é masculino — uma das exceções mais comuns." },
+      { "wrong": "\"o mão\"", "right": "\"a mão\"", "why": "\"Mão\" termina em -ão mas é feminina — outra exceção importante." },
+      { "wrong": "Usar \"um\" e \"uma\" como sinônimos intercambiáveis", "right": "escolher conforme o gênero da palavra", "why": "Assim como \"o/a\", \"um/uma\" sempre concorda com o gênero do substantivo." }
+    ],
+    "tip": "Sempre que aprender uma palavra nova, aprenda-a junto com \"o\" ou \"a\" na frente — isso evita ter que decorar a regra depois."
+  },
+  "exercises": [
+    {
+      "id": "pobj-fill",
+      "type": "fill-blank",
+      "title": "Complete com O ou A",
+      "instructions": "Escolha o artigo correto para cada palavra.",
+      "items": [
+        { "id": "po1", "prompt": "___ livro está na mochila.", "answers": [["O"]], "options": ["O", "A"], "explanation": "\"Livro\" termina em -o e é masculino." },
+        { "id": "po2", "prompt": "___ casa é azul.", "answers": [["A"]], "options": ["A", "O"], "explanation": "\"Casa\" termina em -a e é feminina." },
+        { "id": "po3", "prompt": "___ dia está bonito hoje.", "answers": [["O"]], "options": ["O", "A"], "explanation": "\"Dia\" é uma exceção: termina em -a mas é masculino." },
+        { "id": "po4", "prompt": "___ mão dele está machucada.", "answers": [["A"]], "options": ["A", "O"], "explanation": "\"Mão\" é uma exceção: termina em -ão mas é feminina." }
+      ]
+    },
+    {
+      "id": "pobj-mc",
+      "type": "multiple-choice",
+      "title": "Escolha o Artigo Indefinido",
+      "instructions": "Escolha entre \"um\" e \"uma\".",
+      "items": [
+        { "id": "po5", "prompt": "Eu tenho ___ computador novo.", "options": ["um", "uma"], "answerIndex": 0, "explanation": "\"Computador\" é masculino, então usa-se \"um\"." },
+        { "id": "po6", "prompt": "Ela comprou ___ caneta vermelha.", "options": ["um", "uma"], "answerIndex": 1, "explanation": "\"Caneta\" é feminina, então usa-se \"uma\"." },
+        { "id": "po7", "prompt": "Existe ___ problema com o carro.", "options": ["um", "uma"], "answerIndex": 0, "explanation": "\"Problema\" termina em -a mas é masculino — uma exceção importante." }
+      ]
+    },
+    {
+      "id": "pobj-match",
+      "type": "matching",
+      "title": "Associe a Palavra ao Artigo Correto",
+      "instructions": "Associe cada substantivo ao artigo definido correto.",
+      "items": [
+        { "id": "po8", "pairs": [
+          { "left": "telefone", "right": "o" },
+          { "left": "cadeira", "right": "a" },
+          { "left": "foto", "right": "a" },
+          { "left": "problema", "right": "o" },
+          { "left": "carro", "right": "o" }
+        ], "explanation": "Foto e problema são exceções conhecidas à regra de terminação -a/-o." }
+      ]
+    }
+  ],
+  "summary": [
+    "Todo substantivo em português é masculino ou feminino, mesmo objetos sem gênero natural.",
+    "Palavras em -o costumam ser masculinas; palavras em -a costumam ser femininas — mas há exceções.",
+    "O/um acompanham palavras masculinas; a/uma acompanham palavras femininas."
+  ],
+  "related": [
+    { "lessonId": "pre-a1-linguagem-de-sala-de-aula", "label": "Linguagem de Sala de Aula" },
+    { "lessonId": "pre-a1-verbos-basicos-e-querer", "label": "Verbos Básicos: Querer e Precisar" }
+  ]
+}

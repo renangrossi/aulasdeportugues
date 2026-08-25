@@ -1,0 +1,90 @@
+{
+  "id": "a1-numeros-cardinais-e-ordinais",
+  "level": "A1",
+  "order": 11,
+  "skill": "vocabulary",
+  "title": "Números Cardinais e Ordinais",
+  "subtitle": "De vinte a mil, e as posições: primeiro, segundo, terceiro...",
+  "objectives": [
+    "Contar de 20 a 1000 em português",
+    "Usar os números ordinais de 1º a 10º",
+    "Fazer a concordância de gênero dos números ordinais"
+  ],
+  "content": {
+    "intro": "Você já aprendeu os números até 20. Agora vamos expandir para dezenas, centenas e para os números ordinais, usados para ordem e posição.",
+    "explanation": "<p>As dezenas seguem um padrão regular: <strong>vinte, trinta, quarenta, cinquenta, sessenta, setenta, oitenta, noventa</strong>. Para formar números compostos, usa-se \"e\": vinte <strong>e</strong> um, trinta <strong>e</strong> cinco. Cem é <strong>cem</strong> (exato) ou <strong>cento</strong> (seguido de outro número: cento e vinte). Mil é <strong>mil</strong>, sem artigo antes.</p><p>Os números <strong>ordinais</strong> (primeiro, segundo, terceiro...) indicam posição e, diferente dos cardinais, concordam em gênero e número com o substantivo: <strong>primeiro</strong> lugar / <strong>primeira</strong> posição.</p>",
+    "rules": [
+      "Dezenas: vinte, trinta, quarenta, cinquenta, sessenta, setenta, oitenta, noventa",
+      "Números compostos usam \"e\": vinte e um, quarenta e cinco",
+      "Cem (exato) vs. cento (seguido de outro número): cem reais / cento e dez reais",
+      "Mil não leva artigo antes: \"mil pessoas\", não \"um mil pessoas\"",
+      "Ordinais concordam em gênero: primeiro/primeira, segundo/segunda, terceiro/terceira..."
+    ],
+    "table": {
+      "caption": "Ordinais de 1º a 10º",
+      "headers": ["Número", "Masculino", "Feminino"],
+      "rows": [
+        ["1º/1ª", "primeiro", "primeira"],
+        ["2º/2ª", "segundo", "segunda"],
+        ["3º/3ª", "terceiro", "terceira"],
+        ["4º/4ª", "quarto", "quarta"],
+        ["5º/5ª", "quinto", "quinta"],
+        ["10º/10ª", "décimo", "décima"]
+      ]
+    },
+    "examples": [
+      "Ela mora no vigésimo andar.",
+      "Eu tenho trinta e cinco anos.",
+      "Este é o meu primeiro dia de trabalho.",
+      "O livro custa cento e vinte reais.",
+      "Mais de mil pessoas foram ao show."
+    ],
+    "commonMistakes": [
+      { "wrong": "\"um mil reais\"", "right": "\"mil reais\"", "why": "Diferente do inglês (\"one thousand\"), \"mil\" nunca leva \"um\" antes em português." },
+      { "wrong": "\"a primeiro posição\"", "right": "\"a primeira posição\"", "why": "Ordinais concordam em gênero com o substantivo — \"posição\" é feminino." },
+      { "wrong": "\"cento reais\" (para valor exato)", "right": "\"cem reais\"", "why": "\"Cem\" é usado sozinho ou antes de outra palavra; \"cento\" só aparece seguido de \"e + número\" (cento e dez)." }
+    ],
+    "tip": "Pratique dizer seu próprio telefone, idade e endereço em voz alta em português — números do dia a dia fixam mais rápido do que listas decoradas."
+  },
+  "exercises": [
+    {
+      "id": "num2-fill",
+      "type": "fill-blank",
+      "title": "Escreva o Número",
+      "instructions": "Escreva o número por extenso.",
+      "items": [
+        { "id": "n21", "prompt": "Eu tenho ___ (42) anos.", "answers": [["quarenta e dois"]], "explanation": "42 = quarenta e dois." },
+        { "id": "n22", "prompt": "O hotel tem ___ (100) quartos.", "answers": [["cem"]], "explanation": "100 exato = cem." },
+        { "id": "n23", "prompt": "Este é o meu ___ (1º) livro em português.", "answers": [["primeiro"]], "explanation": "1º, masculino = primeiro." }
+      ]
+    },
+    {
+      "id": "num2-mc",
+      "type": "multiple-choice",
+      "title": "Escolha a Forma Correta",
+      "instructions": "Escolha a resposta correta.",
+      "items": [
+        { "id": "n24", "prompt": "Como se diz 156 em português?", "options": ["cento e cinquenta e seis", "cem e cinquenta e seis", "um cento cinquenta seis"], "answerIndex": 0, "explanation": "\"Cento\" aparece antes de outro número: cento e cinquenta e seis." },
+        { "id": "n25", "prompt": "Qual é a forma feminina de \"terceiro\"?", "options": ["terceira", "terceiro", "terça"], "answerIndex": 0, "explanation": "Ordinais concordam em gênero: terceiro/terceira." }
+      ]
+    },
+    {
+      "id": "num2-order",
+      "type": "ordering",
+      "title": "Monte a Frase",
+      "instructions": "Coloque as palavras na ordem correta.",
+      "items": [
+        { "id": "n26", "prompt": "andar / no / mora / ela / segundo", "words": ["Ela", "mora", "no", "segundo", "andar"], "explanation": "Sujeito + verbo + preposição/artigo + ordinal + substantivo." }
+      ]
+    }
+  ],
+  "summary": [
+    "Dezenas seguem um padrão regular; números compostos usam \"e\" (vinte e um).",
+    "\"Mil\" nunca leva \"um\" antes; \"cem\" é usado sozinho, \"cento\" antes de outro número.",
+    "Ordinais concordam em gênero e número com o substantivo que acompanham."
+  ],
+  "related": [
+    { "lessonId": "a1-preposicoes-de-lugar-e-tempo", "label": "Preposições de Lugar e Tempo" },
+    { "lessonId": "a1-perguntas-sim-ou-nao", "label": "Perguntas Sim ou Não" }
+  ]
+}

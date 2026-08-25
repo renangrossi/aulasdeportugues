@@ -1,0 +1,92 @@
+{
+  "id": "a1-demonstrativos",
+  "level": "A1",
+  "order": 10,
+  "skill": "grammar",
+  "title": "Pronomes Demonstrativos",
+  "subtitle": "Este, esse, aquele — três formas de \"this/that\" conforme a distância.",
+  "objectives": [
+    "Usar este/esse/aquele conforme a distância física ou temporal",
+    "Fazer a concordância de gênero e número dos demonstrativos",
+    "Usar isto/isso/aquilo para ideias sem gênero definido"
+  ],
+  "content": {
+    "intro": "Enquanto o inglês distingue apenas \"this\" (perto) e \"that\" (longe), o português tem três níveis de distância.",
+    "explanation": "<p><strong>Este/esta</strong> indica algo perto de quem fala (\"this\"). <strong>Esse/essa</strong> indica algo perto de quem ouve, ou uma distância intermediária (também traduzido como \"that\", mas ligado ao ouvinte). <strong>Aquele/aquela</strong> indica algo distante de ambos (\"that, over there\"). No português falado do dia a dia, \"este\" e \"esse\" costumam se confundir, mas na escrita formal a distinção continua importante.</p><p>Para coisas sem gênero definido, ou ideias abstratas, usam-se as formas neutras: <strong>isto</strong>, <strong>isso</strong> e <strong>aquilo</strong> — sem plural e sem variação de gênero.</p>",
+    "rules": [
+      "Este/esta/estes/estas = perto de quem fala",
+      "Esse/essa/esses/essas = perto de quem ouve, ou referência a algo já mencionado",
+      "Aquele/aquela/aqueles/aquelas = distante de ambos",
+      "Isto/isso/aquilo = formas neutras, sem gênero, para ideias ou objetos não identificados",
+      "\"Esse\" combinado com \"de\" forma \"desse\"; \"aquele\" combinado com \"de\" forma \"daquele\""
+    ],
+    "table": {
+      "caption": "Demonstrativos por distância",
+      "headers": ["Distância", "Masculino", "Feminino", "Neutro"],
+      "rows": [
+        ["Perto de mim", "este/estes", "esta/estas", "isto"],
+        ["Perto de você", "esse/esses", "essa/essas", "isso"],
+        ["Longe de nós dois", "aquele/aqueles", "aquela/aquelas", "aquilo"]
+      ]
+    },
+    "examples": [
+      "Este livro aqui é meu.",
+      "Essa caneta que você tem é bonita.",
+      "Aquela casa longe da rua é muito grande.",
+      "O que é isso na sua mão?",
+      "Eu não entendo aquilo que ele disse."
+    ],
+    "commonMistakes": [
+      { "wrong": "Usar \"esta\" para algo distante", "right": "\"aquela\", para distância maior", "why": "\"Este/esta\" só deve ser usado para algo próximo de quem fala." },
+      { "wrong": "\"Isto casa\" (usando a forma neutra com substantivo)", "right": "\"esta casa\"", "why": "Isto/isso/aquilo são usados sozinhos, sem substantivo — nunca acompanham um substantivo diretamente." },
+      { "wrong": "Ignorar a concordância de gênero: \"este casa\"", "right": "\"esta casa\"", "why": "Demonstrativos concordam em gênero com o substantivo: casa é feminino, então usa-se \"esta\"." }
+    ],
+    "tip": "No português falado cotidiano, a distinção este/esse é frequentemente relaxada — mas isto/isso/aquilo (sem substantivo) continuam muito usados e vale a pena dominar."
+  },
+  "exercises": [
+    {
+      "id": "dem-fill",
+      "type": "fill-blank",
+      "title": "Complete com o Demonstrativo",
+      "instructions": "Escolha a forma correta conforme a distância indicada.",
+      "items": [
+        { "id": "dm1", "prompt": "___ (this, perto de mim) livro é muito interessante.", "answers": [["Este"]], "options": ["Este", "Aquele", "Isso"], "explanation": "Algo perto de quem fala usa \"este\"." },
+        { "id": "dm2", "prompt": "___ (that, distante) montanha é muito alta.", "answers": [["Aquela"]], "options": ["Aquela", "Esta", "Isto"], "explanation": "Algo distante de ambos usa \"aquela\"." },
+        { "id": "dm3", "prompt": "O que é ___ (that thing) na sua mesa?", "answers": [["isso"]], "options": ["isso", "esta", "aquele"], "explanation": "Referência a um objeto não identificado usa a forma neutra \"isso\"." }
+      ]
+    },
+    {
+      "id": "dem-mc",
+      "type": "multiple-choice",
+      "title": "Escolha a Forma Certa",
+      "instructions": "Escolha o demonstrativo correto para cada situação.",
+      "items": [
+        { "id": "dm4", "prompt": "Você aponta para uma casa bem longe, no horizonte. Qual palavra usar?", "options": ["esta", "essa", "aquela"], "answerIndex": 2, "explanation": "Distância grande de ambos os falantes pede \"aquela\"." },
+        { "id": "dm5", "prompt": "Você segura um objeto na própria mão. Qual palavra usar?", "options": ["este", "aquele", "esse"], "answerIndex": 0, "explanation": "Algo na sua própria mão está perto de quem fala — usa-se \"este\"." }
+      ]
+    },
+    {
+      "id": "dem-match",
+      "type": "matching",
+      "title": "Associe o Demonstrativo à Distância",
+      "instructions": "Associe cada demonstrativo à distância que ele indica.",
+      "items": [
+        { "id": "dm6", "pairs": [
+          { "left": "este", "right": "perto de quem fala" },
+          { "left": "esse", "right": "perto de quem ouve" },
+          { "left": "aquele", "right": "distante de ambos" },
+          { "left": "isso", "right": "objeto neutro, não identificado" }
+        ], "explanation": "Cada demonstrativo carrega uma noção de distância diferente." }
+      ]
+    }
+  ],
+  "summary": [
+    "Este/esse/aquele indicam três níveis de distância, diferente do inglês (apenas this/that).",
+    "Isto/isso/aquilo são formas neutras, usadas sozinhas para ideias ou objetos não identificados.",
+    "Os demonstrativos concordam em gênero e número com o substantivo que acompanham."
+  ],
+  "related": [
+    { "lessonId": "a1-possessivos", "label": "Pronomes Possessivos" },
+    { "lessonId": "a1-preposicoes-de-lugar-e-tempo", "label": "Preposições de Lugar e Tempo" }
+  ]
+}

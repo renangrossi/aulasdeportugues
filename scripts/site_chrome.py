@@ -1,0 +1,190 @@
+"""
+Chrome compartilhado (head/header/nav/overlay de busca/footer) para as
+páginas de lição geradas -- em espírito idêntico ao scripts/site_chrome.py
+do site-irmão em inglês, adaptado inteiramente para português e sem o
+painel "AI Teacher" nem o widget flutuante de dicionário (ver o plano
+de arquitetura em README.md). Só o <main> específico de cada lição
+muda de página a página; ver build_lesson.py.
+
+REL é o prefixo de caminho relativo do arquivo gerado de volta à raiz
+do repositório, ex.: "../../" para niveis/{nivel}/{licao}.html.
+"""
+
+LEVELS = [
+    ("Pre-A1", "Sobrevivência", "pre-a1"),
+    ("A1", "Iniciante", "a1"),
+    ("A2", "Elementar", "a2"),
+    ("B1", "Intermediário", "b1"),
+    ("B2", "Intermediário Superior", "b2"),
+    ("C1", "Avançado", "c1"),
+    ("C2", "Proficiente", "c2"),
+]
+
+SITE_URL = "https://renangrossi.github.io/aulasdeportugues/"
+
+
+def nav_levels_html(rel, active_level_code):
+    items = []
+    for code, name, slug in LEVELS:
+        current = ' aria-current="page"' if code.upper() == (active_level_code or "").upper() else ""
+        items.append(
+            f'<li><a href="{rel}niveis/{slug}.html"{current}><span>{name}</span>'
+            f'<span class="level-code">{code}</span></a></li>'
+        )
+    return "".join(items)
+
+
+def head(rel, title, description):
+    return f"""<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{title}</title>
+<meta name="description" content="{description}">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Renan, o Professor">
+<meta property="og:title" content="{title}">
+<meta property="og:description" content="{description}">
+<meta property="og:locale" content="pt_BR">
+<link rel="icon" href="{rel}assets/img/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;0,700;1,500&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{rel}assets/css/tokens.css">
+<link rel="stylesheet" href="{rel}assets/css/base.css">
+<link rel="stylesheet" href="{rel}assets/css/components.css">
+<link rel="stylesheet" href="{rel}assets/css/layout.css">
+<link rel="stylesheet" href="{rel}assets/css/dark-mode.css">
+<link rel="stylesheet" href="{rel}assets/css/search.css">
+<link rel="stylesheet" href="{rel}assets/css/exercises.css"><link rel="stylesheet" href="{rel}assets/css/lessons.css">
+<script>
+(function(){{try{{var t=localStorage.getItem('theme');if(!t){{t=window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';}}document.documentElement.setAttribute('data-theme',t);}}catch(e){{}}}})();
+</script>
+</head>"""
+
+
+def header(rel, active_level_code, breadcrumb_html):
+    return f"""<body class="" data-level-code="{active_level_code}">
+    <a class="skip-link" href="#main-content">Pular para o conteúdo</a>
+    <header class="site-header">
+        <div class="site-header__bar">
+            <a class="brand" href="{rel}index.html">
+                <img class="brand__mark" src="{rel}assets/img/logo.svg" alt="" width="38" height="38" loading="lazy">
+                <span class="brand__text">
+                    <span class="brand__name">Renan, o Professor</span>
+                    <span class="brand__tagline">Academia de Português Brasileiro</span>
+                </span>
+            </a>
+            <nav class="primary-nav" id="primary-nav" role="navigation" aria-label="Navegação principal">
+                <ul class="primary-nav__list">
+                <li><a href="{rel}index.html">Início</a></li>
+                <li><a href="{rel}index.html#gramatica">Gramática</a></li>
+                <li class="nav-drop">
+                    <button type="button" class="nav-drop__toggle" aria-haspopup="true" aria-expanded="false">
+                        Níveis <span class="nav-drop__caret" aria-hidden="true"></span>
+                    </button>
+                    <ul class="nav-drop__menu" role="menu">
+                    {nav_levels_html(rel, active_level_code)}
+                    </ul>
+                </li>
+                <li><a href="{rel}exercicios.html">Exercícios</a></li>
+                <li><a href="{rel}teste-de-nivelamento.html">Teste de Nível</a></li>
+                <li><a href="{rel}verbos-irregulares.html">Verbos Irregulares</a></li>
+                <li><a href="{rel}dicionario.html">Dicionário</a></li>
+                </ul>
+            </nav>
+            <div class="nav-utility">
+                <button type="button" class="theme-toggle" data-search-toggle aria-label="Buscar no site" aria-haspopup="dialog">
+                    <svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+                </button>
+                <button type="button" class="theme-toggle" data-theme-toggle aria-label="Mudar para modo escuro">
+                    <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+                    <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5Z"/></svg>
+                </button>
+                <button type="button" class="nav-toggle" data-nav-toggle aria-label="Abrir menu" aria-expanded="false" aria-controls="primary-nav">
+                    <span class="nav-toggle__icon"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <div class="search-overlay" data-search-overlay hidden>
+        <div class="search-modal" role="dialog" aria-modal="true" aria-label="Busca no site" data-index-src="{rel}assets/data/search-index.json">
+            <div class="search-modal__bar">
+                <svg class="search-modal__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+                <input type="search" class="search-modal__input" data-search-input placeholder="Buscar lições, gramática, vocabulário, exercícios&hellip;" aria-label="Buscar">
+                <button type="button" class="search-modal__close" data-search-close aria-label="Fechar busca"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18"/><path d="M6 6l12 12"/></svg></button>
+            </div>
+            <div class="search-modal__results" data-search-results>
+                <p class="search-modal__hint">Digite pelo menos 2 caracteres para buscar em todos os níveis, lições, tópicos de gramática e exercícios.</p>
+            </div>
+        </div>
+    </div>
+    <nav class="breadcrumbs" aria-label="Navegação estrutural">
+        <ol>
+        {breadcrumb_html}
+        </ol>
+    </nav>
+    <main id="main-content" class="site-main">"""
+
+
+def footer(rel, extra_scripts=""):
+    return f"""</main>
+    <footer class="site-footer">
+        <div class="site-footer__inner">
+            <div>
+                <a class="brand" href="{rel}index.html">
+                    <img class="brand__mark" src="{rel}assets/img/logo.svg" alt="" width="38" height="38" loading="lazy">
+                    <span class="brand__text">
+                        <span class="brand__name">Renan, o Professor</span>
+                        <span class="brand__tagline">Academia de Português Brasileiro</span>
+                    </span>
+                </a>
+                <p class="site-footer__blurb">Um curso de português brasileiro alinhado ao QECR, construído uma lição honesta e cuidadosamente revisada de cada vez &mdash; das primeiras saudações à proficiência.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Níveis</h4>
+                <ul>
+                    <li><a href="{rel}niveis/pre-a1.html">Pre-A1 &mdash; Sobrevivência</a></li>
+                    <li><a href="{rel}niveis/a1.html">A1 &mdash; Iniciante</a></li>
+                    <li><a href="{rel}niveis/a2.html">A2 &mdash; Elementar</a></li>
+                    <li><a href="{rel}niveis/b1.html">B1 &mdash; Intermediário</a></li>
+                    <li><a href="{rel}niveis/b2.html">B2 &mdash; Intermediário Superior</a></li>
+                    <li><a href="{rel}niveis/c1.html">C1 &mdash; Avançado</a></li>
+                    <li><a href="{rel}niveis/c2.html">C2 &mdash; Proficiente</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Praticar</h4>
+                <ul>
+                    <li><a href="{rel}index.html#gramatica">Trilhas de Gramática</a></li>
+                    <li><a href="{rel}exercicios.html">Exercícios</a></li>
+                    <li><a href="{rel}teste-de-nivelamento.html">Teste de Nível</a></li>
+                    <li><a href="{rel}revisao-de-hoje.html">Revisão de Hoje</a></li>
+                    <li><a href="{rel}verbos-irregulares.html">Verbos Irregulares</a></li>
+                    <li><a href="{rel}dicionario.html">Dicionário</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Sobre o QECR</h4>
+                <ul>
+                    <li><a href="{rel}index.html#sobre-qecr">O que é o QECR?</a></li>
+                    <li><a href="{rel}index.html#porque-nos">Por que estudar aqui</a></li>
+                    <li><a href="{rel}index.html#missao">Nossa missão</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="site-footer__bottom">
+            <p>&copy; Renan, o Professor &mdash; Academia de Português Brasileiro. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <button type="button" class="back-to-top" data-back-to-top aria-label="Voltar ao topo">
+        <svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5"/><path d="m5 12 7-7 7 7"/></svg>
+    </button>
+    <script src="{rel}assets/js/main.js"></script>
+    <script src="{rel}assets/js/search.js"></script>
+    <script src="{rel}assets/js/listening.js"></script>
+    <script src="{rel}assets/js/progress.js"></script><script src="{rel}assets/js/exercises.js"></script>{extra_scripts}
+</body>
+</html>
+"""

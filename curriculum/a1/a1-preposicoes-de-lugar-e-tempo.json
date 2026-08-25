@@ -1,0 +1,85 @@
+{
+  "id": "a1-preposicoes-de-lugar-e-tempo",
+  "level": "A1",
+  "order": 12,
+  "skill": "grammar",
+  "title": "Preposições de Lugar e Tempo",
+  "subtitle": "Em, sobre, sob, entre, antes, depois — onde e quando as coisas acontecem.",
+  "objectives": [
+    "Usar as preposições de lugar mais comuns",
+    "Usar as preposições de tempo mais comuns",
+    "Diferenciar \"em\" para lugares fechados e \"em cima de/sobre\" para superfícies"
+  ],
+  "content": {
+    "intro": "Preposições conectam palavras e situam objetos e eventos no espaço e no tempo. São pequenas palavras, mas mudam completamente o sentido da frase.",
+    "explanation": "<p>Para localização, <strong>em</strong> é a preposição mais geral (\"estou em casa\", \"o livro está na mesa\" — com contração). <strong>Sobre</strong> e <strong>em cima de</strong> indicam algo em uma superfície; <strong>sob</strong> e <strong>embaixo de</strong> indicam algo abaixo; <strong>entre</strong> indica algo no meio de duas coisas; <strong>ao lado de</strong> indica proximidade lateral.</p><p>Para tempo, <strong>antes de</strong> e <strong>depois de</strong> indicam sequência; <strong>durante</strong> indica um período; <strong>desde</strong> marca o início de algo que continua; <strong>até</strong> marca o fim de um período.</p>",
+    "rules": [
+      "em = dentro de, localização geral: em casa, em São Paulo",
+      "sobre / em cima de = em uma superfície: o livro está sobre a mesa",
+      "sob / embaixo de = abaixo de algo: o gato está embaixo da cama",
+      "entre = no meio de duas coisas: entre a casa e a rua",
+      "antes de / depois de = sequência no tempo: antes do almoço, depois da aula",
+      "desde / até = início e fim de um período: desde as oito até as dez"
+    ],
+    "examples": [
+      "O gato está em cima da mesa.",
+      "Eu moro entre a padaria e a farmácia.",
+      "Nós estudamos antes do jantar.",
+      "A loja fica aberta desde as nove até as sete.",
+      "As chaves estão embaixo do tapete."
+    ],
+    "commonMistakes": [
+      { "wrong": "\"O livro está em a mesa\"", "right": "\"O livro está na mesa\" (ou \"sobre a mesa\")", "why": "\"Em\" + \"a\" sempre se contrai para \"na\"." },
+      { "wrong": "Usar \"entre\" com apenas um elemento", "right": "usar \"entre\" sempre com dois elementos ou um grupo", "why": "\"Entre\" pede pelo menos duas referências: \"entre a casa e a rua\"." },
+      { "wrong": "Confundir \"desde\" com \"há\"", "right": "\"desde\" marca o início de um período; \"há\" indica quanto tempo se passou", "why": "\"Eu moro aqui desde 2020\" (ponto de início) é diferente de \"eu moro aqui há 5 anos\" (duração)." }
+    ],
+    "tip": "Associe cada preposição a uma imagem mental simples: sobre = em cima, sob = embaixo, entre = no meio — isso ajuda a lembrar mais rápido do que decorar a lista sozinha."
+  },
+  "exercises": [
+    {
+      "id": "prep-fill",
+      "type": "fill-blank",
+      "title": "Complete com a Preposição",
+      "instructions": "Escolha a preposição de lugar ou tempo mais adequada.",
+      "items": [
+        { "id": "pl1", "prompt": "O gato está ___ da mesa. (embaixo)", "answers": [["embaixo"]], "options": ["embaixo", "sobre", "entre"], "explanation": "\"Embaixo de\" indica posição abaixo de algo." },
+        { "id": "pl2", "prompt": "Eu estudo ___ do trabalho. (antes)", "answers": [["antes"]], "options": ["antes", "durante", "sob"], "explanation": "\"Antes de\" indica sequência temporal." },
+        { "id": "pl3", "prompt": "A farmácia fica ___ o mercado e a escola. (entre)", "answers": [["entre"]], "options": ["entre", "sobre", "desde"], "explanation": "\"Entre\" localiza algo no meio de duas referências." }
+      ]
+    },
+    {
+      "id": "prep-mc",
+      "type": "multiple-choice",
+      "title": "Escolha a Preposição Certa",
+      "instructions": "Escolha a opção correta.",
+      "items": [
+        { "id": "pl4", "prompt": "\"A loja funciona ___ as 9h ___ as 18h.\"", "options": ["desde / até", "entre / sob", "sobre / embaixo"], "answerIndex": 0, "explanation": "\"Desde... até...\" marca início e fim de um período." },
+        { "id": "pl5", "prompt": "\"O quadro está ___ a parede.\"", "options": ["sobre", "entre", "desde"], "answerIndex": 0, "explanation": "\"Sobre\" indica que o quadro está fixado na superfície da parede." }
+      ]
+    },
+    {
+      "id": "prep-match",
+      "type": "matching",
+      "title": "Associe a Preposição ao Significado",
+      "instructions": "Associe cada preposição ao seu significado em inglês.",
+      "items": [
+        { "id": "pl6", "pairs": [
+          { "left": "sobre", "right": "on / over" },
+          { "left": "sob", "right": "under" },
+          { "left": "entre", "right": "between" },
+          { "left": "antes de", "right": "before" },
+          { "left": "depois de", "right": "after" }
+        ], "explanation": "Cada preposição de lugar/tempo tem um equivalente aproximado em inglês." }
+      ]
+    }
+  ],
+  "summary": [
+    "Em, sobre, sob e entre localizam objetos no espaço; antes, depois, desde e até situam eventos no tempo.",
+    "\"Em\" sempre se contrai com o artigo definido: em + a = na.",
+    "\"Entre\" exige pelo menos duas referências; \"desde... até...\" marca início e fim."
+  ],
+  "related": [
+    { "lessonId": "a1-contracoes-de-preposicao-e-artigo", "label": "Contrações de Preposição e Artigo" },
+    { "lessonId": "a1-ha-e-tem", "label": "Há e Tem: Existência" }
+  ]
+}

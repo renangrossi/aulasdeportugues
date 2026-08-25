@@ -1,0 +1,92 @@
+{
+  "id": "a1-possessivos",
+  "level": "A1",
+  "order": 9,
+  "skill": "grammar",
+  "title": "Pronomes Possessivos",
+  "subtitle": "Meu, minha, seu, sua, nosso, nossa — de quem é o quê.",
+  "objectives": [
+    "Usar os pronomes possessivos corretamente com cada pronome pessoal",
+    "Fazer a concordância entre o possessivo e o substantivo possuído",
+    "Entender a ambiguidade de \"seu/sua\" e como evitá-la"
+  ],
+  "content": {
+    "intro": "Possessivos em português concordam com a coisa possuída, não com quem possui — uma diferença importante em relação ao inglês.",
+    "explanation": "<p>Em inglês, \"his car\" e \"her car\" mudam conforme o gênero do <em>dono</em>. Em português, o possessivo concorda com o <em>objeto possuído</em>: \"o carro dele\"/\"o carro dela\" usam \"carro\" (masculino) do mesmo jeito, mas \"meu carro\" versus \"minha casa\" mudam conforme o gênero da própria palavra \"carro\"/\"casa\", não de quem fala.</p><p>\"Seu/sua\" pode significar \"your\", \"his\" ou \"her\" — o que gera ambiguidade. Para deixar claro de quem se fala, é comum usar \"dele\"/\"dela\" no lugar: \"o carro <strong>dele</strong>\" (his car) em vez de apenas \"seu carro\".</p>",
+    "rules": [
+      "eu → meu/minha/meus/minhas",
+      "você/ele/ela → seu/sua/seus/suas (ou dele/dela para maior clareza)",
+      "nós → nosso/nossa/nossos/nossas",
+      "vocês/eles/elas → seu/sua/seus/suas (ou deles/delas)",
+      "O possessivo concorda em gênero e número com a coisa possuída, não com o dono"
+    ],
+    "table": {
+      "caption": "Possessivos — masculino e feminino",
+      "headers": ["Pronome", "Masc. sing.", "Fem. sing.", "Masc. pl.", "Fem. pl."],
+      "rows": [
+        ["eu", "meu", "minha", "meus", "minhas"],
+        ["você/ele/ela", "seu", "sua", "seus", "suas"],
+        ["nós", "nosso", "nossa", "nossos", "nossas"]
+      ]
+    },
+    "examples": [
+      "Meu irmão mora em Portugal; minha irmã mora no Brasil.",
+      "Nosso carro é branco.",
+      "Ela perdeu o celular dela ontem.",
+      "Vocês trouxeram seus livros?",
+      "Este é o escritório deles."
+    ],
+    "commonMistakes": [
+      { "wrong": "\"Minha carro\"", "right": "\"Meu carro\"", "why": "\"Carro\" é masculino, então o possessivo precisa ser \"meu\", não \"minha\"." },
+      { "wrong": "Usar \"seu\" sempre, mesmo quando gera ambiguidade", "right": "usar \"dele/dela\" quando o contexto não deixa claro de quem se fala", "why": "\"Seu\" pode significar \"seu\" (de você), \"dele\" ou \"dela\" — usar \"dele/dela\" evita confusão." },
+      { "wrong": "Concordar o possessivo com o dono, e não com a coisa possuída", "right": "concordar sempre com a coisa possuída", "why": "Diferente do inglês, o gênero de \"meu/minha\" depende do substantivo que vem depois, não de quem fala." }
+    ],
+    "tip": "Sempre que a frase puder soar ambígua com \"seu/sua\", prefira \"dele/dela/deles/delas\" — é mais claro e muito usado no português falado do Brasil."
+  },
+  "exercises": [
+    {
+      "id": "poss-fill",
+      "type": "fill-blank",
+      "title": "Complete com o Possessivo Certo",
+      "instructions": "Complete cada frase com a forma correta do possessivo.",
+      "items": [
+        { "id": "ps1", "prompt": "Este é ___ (my) livro.", "answers": [["meu"]], "options": ["meu", "minha", "seu"], "explanation": "\"Livro\" é masculino, então usa-se \"meu\"." },
+        { "id": "ps2", "prompt": "___ (our) casa fica perto da praia.", "answers": [["Nossa"]], "options": ["Nossa", "Nosso", "Sua"], "explanation": "\"Casa\" é feminino, então usa-se \"nossa\"." },
+        { "id": "ps3", "prompt": "Vocês viram ___ (their) chaves?", "answers": [["suas"]], "options": ["suas", "seus", "nossas"], "explanation": "\"Chaves\" é feminino plural, então usa-se \"suas\"." }
+      ]
+    },
+    {
+      "id": "poss-mc",
+      "type": "multiple-choice",
+      "title": "Evite a Ambiguidade",
+      "instructions": "Escolha a opção mais clara para cada contexto.",
+      "items": [
+        { "id": "ps4", "prompt": "Você quer dizer especificamente \"o carro dela\" (de Marina). Qual opção é mais clara?", "options": ["seu carro", "o carro dela", "nosso carro"], "answerIndex": 1, "explanation": "\"O carro dela\" elimina a ambiguidade de \"seu\", que poderia significar \"de você\" também." },
+        { "id": "ps5", "prompt": "Qual possessivo concorda corretamente com \"problemas\" (masculino plural)?", "options": ["meus problemas", "minhas problemas", "minha problemas"], "answerIndex": 0, "explanation": "\"Problemas\" é masculino plural, então usa-se \"meus\"." }
+      ]
+    },
+    {
+      "id": "poss-match",
+      "type": "matching",
+      "title": "Associe o Pronome ao Possessivo",
+      "instructions": "Associe cada pronome pessoal ao possessivo correspondente (forma masculina singular).",
+      "items": [
+        { "id": "ps6", "pairs": [
+          { "left": "eu", "right": "meu" },
+          { "left": "nós", "right": "nosso" },
+          { "left": "você", "right": "seu" },
+          { "left": "eles", "right": "seu (ou deles)" }
+        ], "explanation": "Cada pronome pessoal tem seu possessivo correspondente." }
+      ]
+    }
+  ],
+  "summary": [
+    "O possessivo concorda com a coisa possuída, não com o gênero de quem fala.",
+    "Meu/minha, seu/sua, nosso/nossa mudam conforme o substantivo que acompanham.",
+    "\"Dele/dela/deles/delas\" evita a ambiguidade natural de \"seu/sua\"."
+  ],
+  "related": [
+    { "lessonId": "a1-pronomes-pessoais", "label": "Pronomes Pessoais" },
+    { "lessonId": "a1-demonstrativos", "label": "Pronomes Demonstrativos" }
+  ]
+}

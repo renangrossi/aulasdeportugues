@@ -1,0 +1,89 @@
+{
+  "id": "pre-a1-verbos-basicos-e-querer",
+  "level": "PRE-A1",
+  "order": 6,
+  "skill": "grammar",
+  "title": "Verbos Básicos: Querer e Precisar",
+  "subtitle": "Como dizer o que você quer, precisa ou gosta.",
+  "objectives": [
+    "Conjugar querer, precisar e gostar de no presente",
+    "Expressar desejos e necessidades simples",
+    "Combinar esses verbos com outro verbo no infinitivo"
+  ],
+  "content": {
+    "intro": "Antes de qualquer gramática complexa, você precisa conseguir dizer o que quer, o que precisa e do que gosta. Estes três verbos resolvem isso.",
+    "explanation": "<p><strong>Querer</strong> expressa desejo (\"eu quero água\"). <strong>Precisar</strong> expressa necessidade (\"eu preciso de ajuda\") e é sempre seguido de \"de\" quando vem um substantivo. <strong>Gostar</strong> expressa preferência e também é sempre seguido de \"de\" (\"eu gosto de café\").</p><p>Os três podem ser seguidos de outro verbo no <strong>infinitivo</strong> (a forma \"crua\" do verbo, terminada em -ar, -er ou -ir): \"eu quero comer\", \"eu preciso estudar\", \"eu gosto de viajar\".</p>",
+    "rules": [
+      "Querer + substantivo: eu quero um café",
+      "Querer + verbo no infinitivo: eu quero comer",
+      "Precisar de + substantivo: eu preciso de dinheiro",
+      "Precisar + verbo no infinitivo (sem \"de\"): eu preciso estudar",
+      "Gostar de + substantivo ou verbo no infinitivo: eu gosto de música / eu gosto de dançar"
+    ],
+    "table": {
+      "caption": "Querer — presente do indicativo",
+      "headers": ["Pronome", "Forma"],
+      "rows": [
+        ["eu", "quero"],
+        ["você / ele / ela", "quer"],
+        ["nós", "queremos"],
+        ["vocês / eles / elas", "querem"]
+      ]
+    },
+    "examples": [
+      "Eu quero um copo de água, por favor.",
+      "Nós precisamos de mais tempo.",
+      "Ela gosta de música brasileira.",
+      "Eu preciso estudar português todos os dias.",
+      "Vocês querem sair hoje à noite?"
+    ],
+    "commonMistakes": [
+      { "wrong": "\"Eu preciso de estudar\"", "right": "\"Eu preciso estudar\"", "why": "Antes de um verbo no infinitivo, \"precisar\" NÃO usa \"de\" — só antes de substantivos." },
+      { "wrong": "\"Eu gosto café\"", "right": "\"Eu gosto de café\"", "why": "\"Gostar\" sempre precisa da preposição \"de\", com substantivo ou verbo." },
+      { "wrong": "\"Eu querer viajar\"", "right": "\"Eu quero viajar\"", "why": "O primeiro verbo (querer) precisa ser conjugado; só o segundo fica no infinitivo." }
+    ],
+    "tip": "Memorize o padrão \"precisar + verbo\" (sem de) versus \"gostar de + verbo\" (com de) — é o erro mais comum nesta lição."
+  },
+  "exercises": [
+    {
+      "id": "verb-fill",
+      "type": "fill-blank",
+      "title": "Complete com a Forma Certa",
+      "instructions": "Complete cada frase com a forma correta de querer, precisar ou gostar.",
+      "items": [
+        { "id": "vb1", "prompt": "Eu ___ de café todos os dias. (gostar)", "answers": [["gosto"]], "options": ["gosto", "gostar", "gosta"], "explanation": "\"Eu gosto de\" é a forma correta na primeira pessoa." },
+        { "id": "vb2", "prompt": "Nós ___ mais informações. (precisar)", "answers": [["precisamos"]], "options": ["precisamos", "precisa", "precisar"], "explanation": "\"Nós precisamos\" — forma da primeira pessoa do plural." },
+        { "id": "vb3", "prompt": "Ela ___ viajar para o Brasil. (querer)", "answers": [["quer"]], "options": ["quer", "quero", "querem"], "explanation": "\"Ela quer\" — terceira pessoa do singular de \"querer\"." }
+      ]
+    },
+    {
+      "id": "verb-correction",
+      "type": "correction",
+      "title": "Corrija as Frases",
+      "instructions": "Cada frase tem um erro com \"de\". Escreva a versão correta.",
+      "items": [
+        { "id": "vb4", "incorrect": "Eu preciso de estudar hoje.", "answer": ["Eu preciso estudar hoje", "Eu preciso estudar hoje."], "explanation": "Antes de verbo no infinitivo, \"precisar\" não leva \"de\"." },
+        { "id": "vb5", "incorrect": "Ela gosta música clássica.", "answer": ["Ela gosta de música clássica", "Ela gosta de música clássica."], "explanation": "\"Gostar\" sempre precisa de \"de\", mesmo antes de substantivo." }
+      ]
+    },
+    {
+      "id": "verb-mc",
+      "type": "multiple-choice",
+      "title": "Escolha a Frase Correta",
+      "instructions": "Escolha a versão gramaticalmente correta.",
+      "items": [
+        { "id": "vb6", "prompt": "Qual frase está correta?", "options": ["Eu preciso de dormir.", "Eu preciso dormir.", "Eu precisar dormir."], "answerIndex": 1, "explanation": "\"Precisar\" + verbo no infinitivo não leva \"de\"." },
+        { "id": "vb7", "prompt": "Qual frase está correta?", "options": ["Nós gosta de praia.", "Nós gostamos praia.", "Nós gostamos de praia."], "answerIndex": 2, "explanation": "\"Gostar\" concorda com o sujeito (nós gostamos) e leva \"de\"." }
+      ]
+    }
+  ],
+  "summary": [
+    "Querer, precisar e gostar são essenciais para expressar desejos e necessidades.",
+    "\"Precisar + verbo\" não leva \"de\"; \"gostar de + verbo/substantivo\" sempre leva \"de\".",
+    "Só o primeiro verbo é conjugado; o segundo fica no infinitivo (-ar, -er, -ir)."
+  ],
+  "related": [
+    { "lessonId": "pre-a1-pessoas-e-objetos", "label": "Pessoas e Objetos: O/A, Um/Uma" },
+    { "lessonId": "pre-a1-ser-estar-e-pronomes", "label": "Ser, Estar e os Pronomes" }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "id": "a1-diminutivos-e-aumentativos",
+  "level": "A1",
+  "order": 19,
+  "skill": "vocabulary",
+  "title": "Diminutivos e Aumentativos",
+  "subtitle": "-inho, -inha, -ão: um traço muito brasileiro da língua.",
+  "objectives": [
+    "Formar o diminutivo de substantivos comuns com -inho/-inha",
+    "Formar o aumentativo com -ão/-ona",
+    "Reconhecer o uso afetivo do diminutivo no português brasileiro"
+  ],
+  "content": {
+    "intro": "Poucos traços do português soam tão brasileiros quanto o uso constante de diminutivos — não só para tamanho, mas também para carinho, cortesia e informalidade.",
+    "explanation": "<p>O <strong>diminutivo</strong> mais comum é formado acrescentando <strong>-inho</strong> (masculino) ou <strong>-inha</strong> (feminino) ao final da palavra, geralmente removendo a vogal final antes: casa → cas<strong>inha</strong>, carro → carr<strong>inho</strong>. Além de indicar tamanho pequeno, o diminutivo no Brasil é usado com muita frequência para expressar <em>carinho</em> (\"meu amorzinho\"), <em>cortesia</em> (\"um minutinho, por favor\") ou até para suavizar um pedido.</p><p>O <strong>aumentativo</strong>, formado com <strong>-ão</strong> (masculino) ou <strong>-ona</strong> (feminino), indica tamanho grande ou intensidade: casa → cas<strong>arão</strong>, mulher → mulher<strong>ona</strong>.</p>",
+    "rules": [
+      "Diminutivo masculino: -inho (carro → carrinho, gato → gatinho)",
+      "Diminutivo feminino: -inha (casa → casinha, mesa → mesinha)",
+      "Aumentativo masculino: -ão (casa → casarão, homem → homenzarrão)",
+      "Aumentativo feminino: -ona (mulher → mulherona, casa → casona)",
+      "O diminutivo é usado tanto para tamanho quanto para carinho, cortesia e informalidade"
+    ],
+    "examples": [
+      "Espera um minutinho, por favor.",
+      "Que gatinho fofo!",
+      "Ele mora naquele casarão antigo.",
+      "Ela comprou uma bolsinha nova.",
+      "Meu filhinho está dormindo agora."
+    ],
+    "commonMistakes": [
+      { "wrong": "Achar que o diminutivo só indica tamanho pequeno", "right": "reconhecer também o uso afetivo/de cortesia", "why": "No Brasil, \"um minutinho\" não significa um minuto literalmente menor — é uma forma de suavizar o pedido." },
+      { "wrong": "\"casainha\" (sem remover a vogal final)", "right": "\"casinha\"", "why": "A vogal final da palavra original geralmente é removida antes de acrescentar -inho/-inha." },
+      { "wrong": "Usar excessivamente o diminutivo em contextos muito formais", "right": "reservar o uso intenso do diminutivo para conversas informais", "why": "Embora seja natural no dia a dia, o uso exagerado de diminutivos pode soar pouco profissional em contextos formais." }
+    ],
+    "tip": "Preste atenção em como brasileiros usam diminutivos em conversas reais — muitas vezes eles não indicam tamanho nenhum, só um tom mais afetuoso ou gentil."
+  },
+  "exercises": [
+    {
+      "id": "dim-fill",
+      "type": "fill-blank",
+      "title": "Forme o Diminutivo",
+      "instructions": "Complete com a forma diminutiva da palavra indicada.",
+      "items": [
+        { "id": "dm21", "prompt": "Que ___ (gato) fofo! (diminutivo)", "answers": [["gatinho"]], "explanation": "Gato → gatinho (masculino)." },
+        { "id": "dm22", "prompt": "Ela tem uma ___ (casa) muito organizada. (diminutivo)", "answers": [["casinha"]], "explanation": "Casa → casinha (feminino, removendo o -a final antes de -inha)." }
+      ]
+    },
+    {
+      "id": "dim-mc",
+      "type": "multiple-choice",
+      "title": "Diminutivo ou Aumentativo?",
+      "instructions": "Escolha se a palavra em destaque é diminutivo ou aumentativo.",
+      "items": [
+        { "id": "dm23", "prompt": "\"Ele mora naquele casarão enorme.\" A palavra \"casarão\" é:", "options": ["Diminutivo", "Aumentativo"], "answerIndex": 1, "explanation": "\"-arão\" é uma forma de aumentativo, indicando tamanho grande." },
+        { "id": "dm24", "prompt": "\"Espera um minutinho.\" A palavra \"minutinho\" é:", "options": ["Diminutivo", "Aumentativo"], "answerIndex": 0, "explanation": "\"-inho\" é diminutivo, aqui usado com sentido de cortesia, não de tamanho." }
+      ]
+    },
+    {
+      "id": "dim-match",
+      "type": "matching",
+      "title": "Associe a Palavra à Forma",
+      "instructions": "Associe cada palavra base à sua forma diminutiva correta.",
+      "items": [
+        { "id": "dm25", "pairs": [
+          { "left": "carro", "right": "carrinho" },
+          { "left": "bolsa", "right": "bolsinha" },
+          { "left": "filho", "right": "filhinho" },
+          { "left": "mesa", "right": "mesinha" }
+        ], "explanation": "O padrão -inho/-inha se aplica à maioria dos substantivos, removendo a vogal final." }
+      ]
+    }
+  ],
+  "summary": [
+    "Diminutivos (-inho/-inha) indicam tamanho pequeno, mas também carinho e cortesia.",
+    "Aumentativos (-ão/-ona) indicam tamanho grande ou intensidade.",
+    "O uso afetivo do diminutivo é um traço muito característico do português brasileiro falado."
+  ],
+  "related": [
+    { "lessonId": "a1-imperativo-basico", "label": "Imperativo Básico" },
+    { "lessonId": "a1-revisao-a1", "label": "Revisão Geral do A1" }
+  ]
+}

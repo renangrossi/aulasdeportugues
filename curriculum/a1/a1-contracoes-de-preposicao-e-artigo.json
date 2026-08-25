@@ -1,0 +1,89 @@
+{
+  "id": "a1-contracoes-de-preposicao-e-artigo",
+  "level": "A1",
+  "order": 7,
+  "skill": "grammar",
+  "title": "Contrações de Preposição e Artigo",
+  "subtitle": "Do, da, no, na, ao, à — quando preposição e artigo se fundem em uma palavra só.",
+  "objectives": [
+    "Formar as contrações mais comuns de preposição + artigo",
+    "Usar do/da/dos/das, no/na/nos/nas e ao/à/aos/às corretamente",
+    "Evitar o erro de usar a preposição e o artigo separados"
+  ],
+  "content": {
+    "intro": "Em português, algumas preposições nunca ficam separadas do artigo que vem depois — elas se combinam em uma única palavra. Isso é obrigatório, não opcional.",
+    "explanation": "<p>Quando a preposição <strong>de</strong> encontra um artigo definido, forma-se: de + o = <strong>do</strong>, de + a = <strong>da</strong>, de + os = <strong>dos</strong>, de + as = <strong>das</strong>. Quando a preposição <strong>em</strong> encontra um artigo definido, forma-se: em + o = <strong>no</strong>, em + a = <strong>na</strong>, em + os = <strong>nos</strong>, em + as = <strong>nas</strong>. Quando a preposição <strong>a</strong> encontra um artigo definido, forma-se: a + o = <strong>ao</strong>, a + a = <strong>à</strong> (com acento grave — a crase), a + os = <strong>aos</strong>, a + as = <strong>às</strong>.</p><p>Essas contrações são <em>obrigatórias</em>: não se diz \"eu moro em a cidade\", e sim \"eu moro <strong>na</strong> cidade\".</p>",
+    "rules": [
+      "de + o/a/os/as = do / da / dos / das (posse, origem, assunto)",
+      "em + o/a/os/as = no / na / nos / nas (localização)",
+      "a + o/a/os/as = ao / à / aos / às (direção, destino)",
+      "Com artigos indefinidos, as contrações são opcionais: em + um = num, em + uma = numa",
+      "As contrações são obrigatórias com artigo definido — nunca deixe preposição e artigo separados"
+    ],
+    "table": {
+      "caption": "Contrações mais comuns",
+      "headers": ["Preposição", "+ o", "+ a", "+ os", "+ as"],
+      "rows": [
+        ["de", "do", "da", "dos", "das"],
+        ["em", "no", "na", "nos", "nas"],
+        ["a", "ao", "à", "aos", "às"]
+      ]
+    },
+    "examples": [
+      "Eu moro na cidade de São Paulo.",
+      "O livro está do lado da mesa.",
+      "Nós vamos ao cinema hoje à noite.",
+      "As chaves estão nos bolsos das calças.",
+      "Ele chega às oito horas."
+    ],
+    "commonMistakes": [
+      { "wrong": "\"Eu moro em a cidade\"", "right": "\"Eu moro na cidade\"", "why": "\"Em\" + \"a\" sempre se contrai em \"na\" — nunca ficam separados." },
+      { "wrong": "\"O carro de o meu irmão\"", "right": "\"O carro do meu irmão\"", "why": "\"De\" + \"o\" sempre se contrai em \"do\"." },
+      { "wrong": "\"Nós vamos a a praia\"", "right": "\"Nós vamos à praia\"", "why": "\"A\" + \"a\" se contrai em \"à\", com acento grave (crase)." }
+    ],
+    "tip": "Essas contrações se tornam automáticas com a prática — leia frases em voz alta repetindo \"na, no, do, da, ao, à\" até que soem naturais."
+  },
+  "exercises": [
+    {
+      "id": "contr-fill",
+      "type": "fill-blank",
+      "title": "Complete com a Contração Certa",
+      "instructions": "Escolha a contração correta de preposição e artigo.",
+      "items": [
+        { "id": "ct1", "prompt": "Eu volto ___ trabalho às seis horas. (de + o)", "answers": [["do"]], "options": ["do", "no", "ao"], "explanation": "\"De\" + \"o\" = \"do\"." },
+        { "id": "ct2", "prompt": "As crianças estão ___ escola. (em + a)", "answers": [["na"]], "options": ["na", "da", "à"], "explanation": "\"Em\" + \"a\" = \"na\"." },
+        { "id": "ct3", "prompt": "Nós vamos ___ praia amanhã. (a + a)", "answers": [["à"]], "options": ["à", "na", "da"], "explanation": "\"A\" + \"a\" = \"à\" (com crase)." },
+        { "id": "ct4", "prompt": "O gato está ___ lado ___ cadeira. (em + o, de + a)", "answers": [["no"], ["da"]], "explanation": "\"Em\" + \"o\" = \"no\"; \"de\" + \"a\" = \"da\"." }
+      ]
+    },
+    {
+      "id": "contr-correction",
+      "type": "correction",
+      "title": "Corrija as Frases",
+      "instructions": "Cada frase esqueceu de fazer a contração obrigatória. Escreva a versão correta.",
+      "items": [
+        { "id": "ct5", "incorrect": "Eu moro em a cidade grande.", "answer": ["Eu moro na cidade grande", "Eu moro na cidade grande."], "explanation": "\"Em\" + \"a\" sempre vira \"na\"." },
+        { "id": "ct6", "incorrect": "O livro é de o professor.", "answer": ["O livro é do professor", "O livro é do professor."], "explanation": "\"De\" + \"o\" sempre vira \"do\"." }
+      ]
+    },
+    {
+      "id": "contr-mc",
+      "type": "multiple-choice",
+      "title": "Escolha a Contração Correta",
+      "instructions": "Escolha a opção correta para completar cada frase.",
+      "items": [
+        { "id": "ct7", "prompt": "As malas estão ___ carro.", "options": ["no", "na", "do"], "answerIndex": 0, "explanation": "\"Em\" + \"o\" = \"no\" (localização dentro do carro)." },
+        { "id": "ct8", "prompt": "Este presente é ___ minha mãe.", "options": ["do", "da", "no"], "answerIndex": 1, "explanation": "\"De\" + \"a\" = \"da\" (posse: pertence à mãe)." }
+      ]
+    }
+  ],
+  "summary": [
+    "De + o/a/os/as = do/da/dos/das; em + o/a/os/as = no/na/nos/nas; a + o/a/os/as = ao/à/aos/às.",
+    "Essas contrações são obrigatórias com artigo definido, nunca opcionais.",
+    "Com artigos indefinidos (um/uma), as contrações como \"num\"/\"numa\" existem mas são opcionais."
+  ],
+  "related": [
+    { "lessonId": "a1-artigos-definidos-e-indefinidos", "label": "Artigos Definidos e Indefinidos" },
+    { "lessonId": "a1-preposicoes-de-lugar-e-tempo", "label": "Preposições de Lugar e Tempo" }
+  ]
+}

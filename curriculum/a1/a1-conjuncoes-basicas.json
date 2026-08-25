@@ -1,0 +1,88 @@
+{
+  "id": "a1-conjuncoes-basicas",
+  "level": "A1",
+  "order": 14,
+  "skill": "grammar",
+  "title": "Conjunções Básicas",
+  "subtitle": "E, mas, ou, porque — as palavras que conectam ideias.",
+  "objectives": [
+    "Usar e, mas, ou e porque para conectar frases",
+    "Diferenciar \"porque\" (resposta/causa) de \"por que\" (pergunta)",
+    "Combinar frases simples em frases mais completas"
+  ],
+  "content": {
+    "intro": "Conjunções conectam palavras e frases, permitindo ideias mais completas do que frases curtas e soltas.",
+    "explanation": "<p><strong>E</strong> soma ideias (\"eu como e bebo\"). <strong>Mas</strong> contrasta ideias (\"eu quero ir, mas não posso\"). <strong>Ou</strong> apresenta uma escolha (\"café ou chá?\"). <strong>Porque</strong> explica uma causa (\"eu estudo porque quero aprender\").</p><p>Um ponto que confunde muitos estudantes: <strong>porque</strong> (junto, sem acento) é usado para responder ou explicar; <strong>por que</strong> (separado, sem acento) é usado para perguntar; <strong>por quê</strong> (separado, com acento) é usado no final de perguntas ou sozinho; <strong>porquê</strong> (junto, com acento) é um substantivo que significa \"a razão\".</p>",
+    "rules": [
+      "e = and (soma ideias): \"Eu como e bebo\"",
+      "mas = but (contraste): \"Eu quero, mas não posso\"",
+      "ou = or (escolha): \"Chá ou café?\"",
+      "porque = because, para explicar/responder: \"Eu vim porque preciso conversar\"",
+      "por que = why, para perguntar (no início ou meio da pergunta): \"Por que você chegou tarde?\""
+    ],
+    "table": {
+      "caption": "As quatro formas de \"porquê\"",
+      "headers": ["Forma", "Uso"],
+      "rows": [
+        ["por que", "pergunta (why): Por que você foi?"],
+        ["porque", "resposta/explicação (because): Porque eu precisava."],
+        ["por quê", "final de pergunta ou isolado: Você foi por quê?"],
+        ["porquê", "substantivo (the reason): Não entendo o porquê disso."]
+      ]
+    },
+    "examples": [
+      "Eu gosto de café e de chá.",
+      "Ela quer viajar, mas não tem dinheiro agora.",
+      "Você prefere ficar em casa ou sair?",
+      "Eu estudo português porque quero morar no Brasil.",
+      "Por que você não respondeu minha mensagem?"
+    ],
+    "commonMistakes": [
+      { "wrong": "\"Por que eu vim\" (para responder, no lugar de explicar)", "right": "\"Porque eu vim...\" (explicando a razão)", "why": "Ao responder ou explicar uma causa, usa-se \"porque\" junto, não \"por que\" separado." },
+      { "wrong": "\"Porque você chegou tarde?\" (pergunta usando a forma de resposta)", "right": "\"Por que você chegou tarde?\"", "why": "Perguntas usam \"por que\" separado, não \"porque\" junto." },
+      { "wrong": "Usar \"e\" para contrastar ideias opostas", "right": "usar \"mas\"", "why": "\"E\" soma ideias na mesma direção; para contraste, a conjunção correta é \"mas\"." }
+    ],
+    "tip": "Truque rápido: se a frase é uma pergunta, ou pode ser reescrita como pergunta, use \"por que\" (separado). Se está explicando ou respondendo, use \"porque\" (junto)."
+  },
+  "exercises": [
+    {
+      "id": "conj-fill",
+      "type": "fill-blank",
+      "title": "Complete com a Conjunção",
+      "instructions": "Escolha a conjunção correta para cada frase.",
+      "items": [
+        { "id": "cj1", "prompt": "Eu quero viajar, ___ não tenho dinheiro.", "answers": [["mas"]], "options": ["mas", "e", "ou"], "explanation": "Ideia de contraste — usa-se \"mas\"." },
+        { "id": "cj2", "prompt": "Você quer suco ___ água?", "answers": [["ou"]], "options": ["ou", "e", "mas"], "explanation": "Apresenta uma escolha entre duas opções — usa-se \"ou\"." },
+        { "id": "cj3", "prompt": "Eu não fui à festa ___ estava doente.", "answers": [["porque"]], "options": ["porque", "por que", "mas"], "explanation": "Explica a causa (resposta) — usa-se \"porque\" junto." }
+      ]
+    },
+    {
+      "id": "conj-mc",
+      "type": "multiple-choice",
+      "title": "Por Que ou Porque?",
+      "instructions": "Escolha a forma correta.",
+      "items": [
+        { "id": "cj4", "prompt": "\"___ você está triste?\"", "options": ["Por que", "Porque"], "answerIndex": 0, "explanation": "Pergunta usa \"por que\", separado." },
+        { "id": "cj5", "prompt": "\"Estou triste ___ perdi meu emprego.\"", "options": ["por que", "porque"], "answerIndex": 1, "explanation": "Explicação/resposta usa \"porque\", junto." }
+      ]
+    },
+    {
+      "id": "conj-order",
+      "type": "ordering",
+      "title": "Monte a Frase",
+      "instructions": "Coloque as palavras na ordem correta.",
+      "items": [
+        { "id": "cj6", "prompt": "gosto / mas / de / não / café / chá / gosto / de", "words": ["Eu", "gosto", "de", "café", "mas", "não", "gosto", "de", "chá"], "explanation": "Duas orações conectadas por \"mas\", indicando contraste." }
+      ]
+    }
+  ],
+  "summary": [
+    "E soma, mas contrasta, ou apresenta escolha, porque explica uma causa.",
+    "\"Por que\" (separado) é usado em perguntas; \"porque\" (junto) em respostas/explicações.",
+    "\"Por quê\" (com acento, isolado) e \"porquê\" (substantivo) completam o quarteto."
+  ],
+  "related": [
+    { "lessonId": "a1-perguntas-sim-ou-nao", "label": "Perguntas Sim ou Não" },
+    { "lessonId": "a1-palavras-interrogativas", "label": "Palavras Interrogativas" }
+  ]
+}

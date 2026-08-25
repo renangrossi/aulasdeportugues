@@ -1,0 +1,382 @@
+/* =======================================================================
+   EXERCISE ENGINE — component styles
+   Pairs with assets/js/exercises.js. Every exercise type shares this
+   card/feedback vocabulary so new types stay visually consistent.
+   ======================================================================= */
+
+.exercise-block {
+  background: var(--color-surface-raised);
+  border: var(--border-hairline);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  padding: var(--space-lg);
+  margin-bottom: var(--space-lg);
+}
+
+.exercise-block__head {
+  margin-bottom: var(--space-md);
+  padding-bottom: var(--space-md);
+  border-bottom: var(--border-hairline);
+}
+.exercise-block__type {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: var(--tracking-wider);
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: 0.4em;
+}
+.exercise-block__title { font-size: var(--step-1); margin-bottom: 0.3em; }
+.exercise-block__instructions { color: var(--color-text-muted); font-size: var(--step--1); }
+
+.exercise-item {
+  padding: var(--space-md) 0;
+  border-bottom: 1px dashed var(--color-border);
+}
+.exercise-item:last-of-type { border-bottom: none; padding-bottom: 0; }
+.exercise-item:first-of-type { padding-top: 0; }
+
+.exercise-item legend,
+.exercise-item__prompt {
+  font-weight: 600;
+  margin-bottom: 0.7em;
+  display: block;
+  color: var(--color-text);
+}
+.exercise-item fieldset { border: 0; padding: 0; margin: 0; }
+
+.exercise-item__number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.6em; height: 1.6em;
+  border-radius: 50%;
+  background: var(--color-surface);
+  border: var(--border-hairline);
+  font-size: 0.8em;
+  font-weight: 700;
+  color: var(--color-accent);
+  margin-right: 0.5em;
+  flex-shrink: 0;
+}
+
+/* Multiple choice / true-false / vocabulary options */
+.option-list { display: flex; flex-direction: column; gap: 0.55em; }
+.option {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65em;
+  padding: 0.65em 0.9em;
+  border: var(--border-hairline);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: border-color var(--duration-fast) var(--ease-standard), background-color var(--duration-fast) var(--ease-standard);
+}
+.option:hover { border-color: var(--color-border-strong); background: var(--color-surface); }
+.option input { margin-top: 0.2em; accent-color: var(--color-accent); flex-shrink: 0; }
+.option__label { font-size: var(--step--1); }
+
+.option.is-correct { border-color: var(--color-success); border-width: 2px; background: var(--color-success-bg); }
+.option.is-incorrect { border-color: var(--color-danger); border-width: 2px; background: var(--color-danger-bg); }
+.option__tag {
+  margin-left: auto;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+  padding-left: 0.8em;
+}
+.option.is-correct .option__tag { color: var(--color-success); }
+.option.is-incorrect .option__tag { color: var(--color-danger); }
+
+/* True/False: horizontal pair */
+.tf-options { display: flex; gap: 0.75em; }
+.tf-options .option { flex: 1; justify-content: center; text-align: center; }
+
+/* Fill-in-the-blank inline inputs */
+.blank-sentence { font-size: var(--step-0); line-height: 2.2; }
+.blank-input {
+  display: inline-block;
+  width: auto;
+  min-width: 6em;
+  font: inherit;
+  font-weight: 600;
+  padding: 0.15em 0.5em;
+  border: 0;
+  border-bottom: 2px solid var(--color-border-strong);
+  background: var(--color-surface);
+  border-radius: var(--radius-sm) var(--radius-sm) 0 0;
+  text-align: center;
+  color: var(--color-text);
+}
+/* Was hard-coded to --parchment-300 (light tan), which stayed light in
+   dark mode too — combined with --color-text going light-on-dark, that
+   made a focused blank/dropdown nearly unreadable (light text on a
+   light highlight). --color-surface-raised gives the same "lifted"
+   highlight feel while tracking the active theme. */
+.blank-input:focus-visible { background: var(--color-surface-raised); }
+.blank-input.is-correct { border-bottom-color: var(--color-success); background: var(--color-success-bg); }
+.blank-input.is-incorrect { border-bottom-color: var(--color-danger); background: var(--color-danger-bg); text-decoration: line-through; text-decoration-color: var(--color-danger); }
+select.blank-input { cursor: pointer; padding-right: 1.4em; }
+select.blank-input:disabled { cursor: default; opacity: 0.85; }
+
+/* Typing / correction — single line answers */
+.answer-input {
+  width: 100%;
+  max-width: 34em;
+  font: inherit;
+  padding: 0.6em 0.8em;
+  border: var(--border-hairline);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface);
+  color: var(--color-text);
+}
+.answer-input:focus-visible { outline-offset: 2px; }
+.answer-input.is-correct { border-color: var(--color-success); background: var(--color-success-bg); }
+.answer-input.is-incorrect { border-color: var(--color-danger); background: var(--color-danger-bg); }
+.exercise-item__source { color: var(--color-text-muted); font-style: italic; margin-bottom: 0.5em; font-size: var(--step--1); }
+
+/* Matching (dropdown-based — accessible & mobile-friendly) */
+.match-table { display: flex; flex-direction: column; gap: 0.6em; }
+.match-row-wrap { display: flex; flex-direction: column; gap: 0.25em; }
+.match-row { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 0.8em; }
+.match-row__left { font-weight: 600; font-size: var(--step--1); }
+.match-row__arrow { color: var(--color-text-muted); }
+.match-row select.answer-input { max-width: none; }
+/* Revealed once a row is graded incorrect — a wrong <select> pick only
+   turns red on its own, with nowhere to show what the right pairing
+   actually was, so this makes the correction explicit on screen (and,
+   once printed, in the saved PDF too). */
+.match-row__correct { margin: 0; padding-left: calc(1em + 0.8em); font-size: var(--step--1); color: var(--color-success); }
+.match-row__correct em { font-style: normal; font-weight: 600; }
+@media (max-width: 560px) {
+  .match-row { grid-template-columns: 1fr; gap: 0.3em; }
+  .match-row__arrow { display: none; }
+  .match-row__correct { padding-left: 0; }
+}
+
+/* Sentence ordering — click-to-build chips */
+.order-build {
+  min-height: 3.2em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  padding: 0.7em;
+  border: 2px dashed var(--color-border);
+  border-radius: var(--radius-sm);
+  margin-bottom: 0.7em;
+  background: var(--color-surface);
+}
+.order-build:empty::before {
+  content: "Toque nas palavras abaixo, na ordem certa.";
+  color: var(--color-text-muted);
+  font-size: var(--step--1);
+  font-style: italic;
+}
+.order-pool { display: flex; flex-wrap: wrap; gap: 0.5em; }
+.word-chip {
+  font: inherit;
+  font-size: var(--step--1);
+  font-weight: 600;
+  padding: 0.4em 0.9em;
+  border-radius: 999px;
+  border: var(--border-hairline);
+  background: var(--color-surface-raised);
+  color: var(--color-text);
+  cursor: pointer;
+}
+.word-chip:hover { border-color: var(--color-border-strong); }
+.word-chip.is-placed { opacity: 0.35; pointer-events: none; }
+.order-build .word-chip { background: var(--color-primary); color: var(--color-text-on-dark); border-color: var(--color-primary); cursor: pointer; }
+.order-reset { margin-top: 0.5em; }
+
+/* Reading passage */
+.reading-passage {
+  background: var(--color-surface);
+  border-left: 3px solid var(--color-gold);
+  border-radius: var(--radius-sm);
+  padding: var(--space-md);
+  margin-bottom: var(--space-md);
+  font-size: var(--step-0);
+  line-height: var(--leading-normal);
+}
+.reading-passage p:not(:last-child) { margin-bottom: 0.9em; }
+.vocab-term {
+  font-weight: 700;
+  color: var(--color-accent);
+  border-bottom: 1px dotted var(--color-accent);
+  cursor: help;
+}
+
+/* Item-level feedback (shown after submit) */
+.item-feedback {
+  display: none;
+  margin-top: 0.6em;
+  padding: 0.7em 0.9em;
+  border-radius: var(--radius-sm);
+  font-size: var(--step--1);
+  gap: 0.5em;
+  align-items: flex-start;
+}
+.item-feedback.is-visible { display: flex; }
+.item-feedback.is-correct { background: var(--color-success-bg); color: var(--color-text); }
+.item-feedback.is-incorrect { background: var(--color-danger-bg); color: var(--color-text); }
+.item-feedback svg { width: 18px; height: 18px; flex-shrink: 0; margin-top: 0.1em; }
+.item-feedback.is-correct svg { color: var(--color-success); }
+.item-feedback.is-incorrect svg { color: var(--color-danger); }
+.item-feedback__body strong { display: block; margin-bottom: 0.2em; }
+/* The correct form leads the feedback body (see setFeedback() in
+   exercises.js), so it gets a touch more weight than the explanation
+   sentence that follows it. */
+.item-feedback__body .correct-answer { display: block; margin-bottom: 0.2em; font-weight: 600; }
+
+/* Actions row */
+.exercise-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7em;
+  align-items: center;
+  margin-top: var(--space-md);
+  padding-top: var(--space-md);
+  border-top: var(--border-hairline);
+}
+
+/* Score summary panel */
+.score-panel {
+  display: none;
+  align-items: center;
+  gap: var(--space-md);
+  padding: var(--space-md);
+  border-radius: var(--radius-md);
+  margin-bottom: var(--space-md);
+  border: var(--border-hairline);
+  background: var(--color-surface);
+}
+.score-panel.is-visible { display: flex; }
+.score-panel__ring {
+  flex-shrink: 0;
+  width: 64px; height: 64px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 700;
+  border: 3px solid var(--color-success);
+  color: var(--color-text);
+}
+.score-panel__ring.is-low { border-color: var(--color-danger); }
+.score-panel__ring.is-mid { border-color: var(--color-gold); }
+.score-panel__text h4 { font-size: var(--step-0); margin-bottom: 0.2em; }
+.score-panel__text p { color: var(--color-text-muted); font-size: var(--step--1); margin: 0; }
+
+.exercise-item.is-locked .option,
+.exercise-item.is-locked .blank-input,
+.exercise-item.is-locked .answer-input,
+.exercise-item.is-locked select,
+.exercise-item.is-locked .word-chip { pointer-events: none; }
+.exercise-item.is-locked .option { cursor: default; }
+
+/* .progress-track / .progress-track__fill / .progress-label moved to
+   components.css (see "Progress / gamification widget") — the header
+   panel they style is now mounted on every page via progress.js, but
+   this file (exercises.css) isn't loaded on several of them (index,
+   dictionary, extras, exercises, simulated-exams, irregular-verbs),
+   which silently dropped .progress-label's `display: flex` there and
+   ran the level id straight into the exercises-done count (e.g. "A1"
+   + "0 done" read as "A10 done"). Keeping this shared CSS next to the
+   rest of the progress-widget rules in components.css (which every
+   page does load) fixes that at the root instead of per-page. */
+
+@media print {
+  .exercise-actions, .back-to-top { display: none; }
+}
+
+/* Printing a single exercise-block's results: rather than trying to
+   hide ancestors of the block (which doesn't work — a hidden
+   ancestor hides its descendants regardless of their own display
+   value), we clone the block into a dedicated overlay appended
+   directly to <body> and print just that. */
+#print-overlay { display: none; }
+body.is-printing-block > *:not(#print-overlay) { display: none !important; }
+body.is-printing-block #print-overlay {
+  display: block !important;
+  padding: var(--space-lg);
+}
+#print-overlay .exercise-actions,
+#print-overlay .print-hidden { display: none !important; }
+#print-overlay .exercise-block { border: none; box-shadow: none; padding: 0; }
+
+/* Print-only document header — states exactly what a saved/printed
+   PDF contains (level, Test Yourself, topic, exercise type and
+   title, or the topic/full-test equivalent — see
+   buildExercisePrintHeaderText & co. in exercises.js). It only ever
+   exists inside #print-overlay, so it never shows on the normal
+   interactive page. */
+.print-doc-header {
+  margin-bottom: var(--space-md);
+  padding-bottom: var(--space-sm);
+  border-bottom: 2px solid var(--color-border-strong);
+}
+.print-doc-header__path {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: var(--step-0);
+  line-height: 1.3;
+  letter-spacing: 0.01em;
+  color: var(--color-text);
+}
+@media print {
+  .print-doc-header {
+    break-after: avoid-page;
+    break-inside: avoid;
+  }
+}
+
+/* "Save Topic Answers" / "Save All Test Yourself Answers" summaries —
+   built fresh from the live, current state of every exercise they
+   cover (see collectExerciseAnswers/collectTopicAnswers in
+   exercises.js), so this styling only needs to present that data
+   clearly rather than mimic the interactive controls themselves. */
+.saved-summary-topic { margin-bottom: var(--space-lg); }
+.saved-summary-topic__title { margin-bottom: var(--space-sm); padding-bottom: var(--space-xs); border-bottom: var(--border-hairline); }
+.saved-summary-block { margin-bottom: var(--space-md); }
+.saved-summary-list { display: flex; flex-direction: column; gap: 0.6em; }
+.saved-summary-item { border-left: 3px solid var(--color-border-strong); padding: 0.3em 0.9em; }
+.saved-summary-item.is-correct { border-left-color: var(--color-success); }
+.saved-summary-item.is-incorrect { border-left-color: var(--color-danger); }
+.saved-summary-item.is-unanswered { border-left-color: var(--color-text-muted); }
+.saved-summary-item__status { margin: 0 0 0.2em; font-size: var(--step--1); font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; color: var(--color-text-muted); }
+.saved-summary-item__q { margin: 0 0 0.2em; font-weight: 600; }
+.saved-summary-item__a, .saved-summary-item__correct { margin: 0 0 0.2em; }
+.saved-summary-item__correct { color: var(--color-success); }
+.saved-summary-item__explanation { margin: 0; color: var(--color-text-muted); font-size: var(--step--1); }
+
+/* Writing prompts — free-text, ungraded exercise items */
+.writing-item { display: flex; flex-direction: column; gap: 0.5em; }
+.writing-item__prompt { font-weight: 600; }
+.writing-item__textarea {
+  width: 100%;
+  min-height: 140px;
+  padding: var(--space-sm) var(--space-md);
+  border: var(--border-hairline);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  color: var(--color-text);
+  font: inherit;
+  font-size: var(--step-0);
+  line-height: 1.6;
+  resize: vertical;
+}
+.writing-item__textarea:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+  border-color: var(--color-accent);
+}
+.writing-item__saved-answer {
+  white-space: pre-wrap;
+  border-left: 3px solid var(--color-border-strong);
+  padding-left: var(--space-sm);
+  color: var(--color-text-muted);
+}

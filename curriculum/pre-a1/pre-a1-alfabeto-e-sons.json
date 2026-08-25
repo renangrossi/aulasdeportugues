@@ -1,0 +1,93 @@
+{
+  "id": "pre-a1-alfabeto-e-sons",
+  "level": "PRE-A1",
+  "order": 1,
+  "skill": "pronunciation",
+  "title": "O Alfabeto e os Sons do Português",
+  "subtitle": "As primeiras letras e sons antes de qualquer palavra.",
+  "objectives": [
+    "Reconhecer as 26 letras do alfabeto em português",
+    "Pronunciar as cinco vogais e os principais sons nasais",
+    "Ler dígrafos comuns como lh, nh, ch e rr"
+  ],
+  "content": {
+    "intro": "Toda jornada começa pelo som. Antes das primeiras frases, vamos conhecer as letras e os sons que formam o português falado no Brasil.",
+    "explanation": "<p>O alfabeto português tem <strong>26 letras</strong> — as mesmas do inglês, incluindo K, W e Y (usadas principalmente em nomes próprios e palavras estrangeiras). A grande diferença não está nas letras, mas nos <strong>sons</strong>: o português brasileiro tem vogais abertas, vogais fechadas e vogais <em>nasais</em> (pronunciadas parcialmente pelo nariz), que não existem em inglês.</p><p>Cada vogal — <strong>a, e, i, o, u</strong> — pode soar aberta (como em <em>pé</em>) ou fechada (como em <em>você</em>). O acento (´ agudo, ^ circunflexo, ~ til) ajuda a indicar esse som e também qual sílaba é mais forte.</p>",
+    "rules": [
+      "As cinco vogais orais: <strong>a</strong> (casa), <strong>e</strong> (mesa), <strong>i</strong> (vida), <strong>o</strong> (bola), <strong>u</strong> (luz)",
+      "Vogais nasais (som pelo nariz): <strong>ã</strong> (maçã), <strong>ão</strong> (pão), <strong>em/en</strong> (bem), <strong>im/in</strong> (fim), <strong>om/on</strong> (bom), <strong>um/un</strong> (um)",
+      "O til (~) sempre marca nasalização: irmã, coração",
+      "A cedilha (ç) só aparece antes de a, o, u e sempre soa como \"ss\": açúcar, coração",
+      "Dígrafos especiais: <strong>lh</strong> soa como \"lli\" (filho), <strong>nh</strong> soa como \"ni\" (banho), <strong>ch</strong> soa como \"x\" de xis (chuva)",
+      "O <strong>rr</strong> e o <strong>r</strong> no início da palavra têm um som forte, raspado (rato, carro); um único r entre vogais é suave (caro)"
+    ],
+    "table": {
+      "caption": "Letras que soam diferente do que parecem",
+      "headers": ["Letra(s)", "Som aproximado", "Exemplo"],
+      "rows": [
+        ["lh", "\"lli\" (como em milhão)", "filho"],
+        ["nh", "\"ni\" (como em canyon)", "banho"],
+        ["ch", "\"x\" (nunca \"tch\")", "chuva"],
+        ["x", "pode ser \"ch\", \"z\", \"ss\" ou \"cs\"", "caixa, exame"],
+        ["s entre vogais", "som de \"z\"", "casa"]
+      ]
+    },
+    "examples": [
+      "Olá! Meu nome é Ana.",
+      "A casa é muito bonita.",
+      "Eu gosto de pão de queijo.",
+      "O carro do meu irmão é azul.",
+      "Muito obrigado pela ajuda!"
+    ],
+    "commonMistakes": [
+      { "wrong": "Pronunciar \"chuva\" como \"tchuva\"", "right": "chuva com som de \"x\" (xuva)", "why": "Em português brasileiro, ch sempre soa como x, nunca como tch." },
+      { "wrong": "Ignorar o til em \"não\"", "right": "não com som nasal, pelo nariz", "why": "O til muda completamente o significado: \"não\" (no) é diferente de \"noa\"." },
+      { "wrong": "Pronunciar o r de \"carro\" como em inglês", "right": "carro com r forte, raspado na garganta", "why": "O rr brasileiro é bem mais forte que o r do inglês — parecido com o \"h\" de \"house\"." }
+    ],
+    "tip": "Ouça palavras em voz alta usando o botão de áudio em cada exemplo desta lição — repita cada frase em voz alta pelo menos duas vezes antes de seguir em frente."
+  },
+  "exercises": [
+    {
+      "id": "alfabeto-mc",
+      "type": "multiple-choice",
+      "title": "Qual é o Som Certo?",
+      "instructions": "Escolha a opção que descreve o som correto.",
+      "items": [
+        { "id": "as1", "prompt": "Como soa o \"lh\" em \"filho\"?", "options": ["Como \"l\" simples", "Como \"lli\"", "Como \"f\""], "answerIndex": 1, "explanation": "O dígrafo lh tem um som próprio, parecido com \"lli\", sem equivalente exato em inglês." },
+        { "id": "as2", "prompt": "O que o til (~) indica em uma vogal?", "options": ["Que a sílaba é nasal", "Que a palavra é plural", "Que a palavra é uma pergunta"], "answerIndex": 0, "explanation": "O til sempre marca uma vogal nasal: ã, õ." },
+        { "id": "as3", "prompt": "Como soa o \"ch\" em português brasileiro?", "options": ["Como \"tch\"", "Como \"k\"", "Como \"x\" (xis)"], "answerIndex": 2, "explanation": "Diferente do espanhol, o ch em português soa sempre como x." }
+      ]
+    },
+    {
+      "id": "alfabeto-fill",
+      "type": "fill-blank",
+      "title": "Complete com a Letra Certa",
+      "instructions": "Escolha a letra ou combinação de letras que completa cada palavra corretamente.",
+      "items": [
+        { "id": "as4", "prompt": "Meu irmã___ mora no Brasil.", "answers": [["o"]], "options": ["o", "ão", "a"], "explanation": "\"Irmão\" é a forma masculina; a nasal ão é essencial aqui." },
+        { "id": "as5", "prompt": "Eu gosto de a___úcar no café.", "answers": [["ç"]], "options": ["ç", "c", "s"], "explanation": "A cedilha (ç) aparece antes de a, o, u para manter o som de \"ss\"." },
+        { "id": "as6", "prompt": "O ba___o está quente.", "answers": [["nh"]], "options": ["nh", "n", "ni"], "explanation": "\"Banho\" usa o dígrafo nh, com som parecido a \"ni\"." }
+      ]
+    },
+    {
+      "id": "alfabeto-tf",
+      "type": "true-false",
+      "title": "Verdadeiro ou Falso",
+      "instructions": "Leia cada afirmação sobre os sons do português.",
+      "items": [
+        { "id": "as7", "statement": "O alfabeto português tem exatamente as mesmas 26 letras do inglês.", "answer": true, "explanation": "Sim — desde 2009, K, W e Y são letras oficiais do alfabeto português." },
+        { "id": "as8", "statement": "Um único \"r\" no início da palavra soa suave, como em inglês.", "answer": false, "explanation": "No início da palavra (ou dobrado, rr), o r brasileiro é forte e raspado, não suave." },
+        { "id": "as9", "statement": "A cedilha (ç) pode aparecer antes de qualquer vogal.", "answer": false, "explanation": "A cedilha só aparece antes de a, o, u — nunca antes de e ou i, onde o c já soa como \"ss\" naturalmente." }
+      ]
+    }
+  ],
+  "summary": [
+    "O português tem 26 letras, mas sons que o inglês não tem: vogais nasais e dígrafos como lh, nh, ch.",
+    "O til (~) e a cedilha (ç) mudam a pronúncia de forma previsível.",
+    "O r no início da palavra (ou dobrado) é forte; entre vogais, é suave."
+  ],
+  "related": [
+    { "lessonId": "pre-a1-saudacoes-e-apresentacoes", "label": "Saudações e Apresentações" },
+    { "lessonId": "pre-a1-numeros-horas-e-datas", "label": "Números, Horas e Datas" }
+  ]
+}

@@ -1,0 +1,1333 @@
+/* =======================================================================
+   COMPONENTS
+   Reusable UI pieces. Class-based, no page-specific selectors.
+   ======================================================================= */
+
+/* ---------------------------------------------------------------------
+   Faixa divisória
+   Usada como divisor estrutural sob o cabeçalho/hero/rodapé.
+   --------------------------------------------------------------------- */
+.stripe-bar {
+  height: 7px;
+  width: 100%;
+  background: linear-gradient(90deg, var(--color-accent), var(--color-gold));
+}
+
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: var(--color-primary-strong);
+  color: var(--color-text-on-dark);
+  border-bottom: 4px solid var(--color-red);
+  box-shadow: var(--shadow-md);
+}
+
+.site-header__bar {
+  max-width: var(--content-max);
+  margin: 0 auto;
+  padding: 0 var(--space-md);
+  height: var(--header-height);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-md);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  font-family: var(--font-display);
+  color: var(--color-text-on-dark);
+  min-width: 0;
+}
+
+.brand__mark {
+  flex-shrink: 0;
+  width: 38px;
+  height: 38px;
+  color: var(--gold-500);
+}
+
+.brand__text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.15;
+  min-width: 0;
+}
+
+.brand__name {
+  font-size: var(--step-0);
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.brand__tagline {
+  font-family: var(--font-body);
+  font-size: 0.68rem;
+  letter-spacing: var(--tracking-wider);
+  text-transform: uppercase;
+  color: var(--gold-300);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+.nav-toggle {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background: transparent;
+  border: 1px solid rgba(228, 200, 135, 0.4);
+  border-radius: var(--radius-sm);
+  color: var(--color-text-on-dark);
+  cursor: pointer;
+}
+
+.nav-toggle__icon,
+.nav-toggle__icon::before,
+.nav-toggle__icon::after {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: currentColor;
+  position: relative;
+  transition: transform var(--duration-fast) var(--ease-standard), opacity var(--duration-fast);
+}
+.nav-toggle__icon::before,
+.nav-toggle__icon::after { content: ""; position: absolute; }
+.nav-toggle__icon::before { transform: translateY(-6px); }
+.nav-toggle__icon::after { transform: translateY(6px); }
+
+.nav-toggle[aria-expanded="true"] .nav-toggle__icon { background: transparent; }
+.nav-toggle[aria-expanded="true"] .nav-toggle__icon::before { transform: translateY(0) rotate(45deg); }
+.nav-toggle[aria-expanded="true"] .nav-toggle__icon::after { transform: translateY(0) rotate(-45deg); }
+
+.primary-nav__list {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.primary-nav__list > li { position: relative; }
+
+.primary-nav a,
+.nav-drop__toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3em;
+  font-size: var(--step--1);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--color-text-on-dark-muted);
+  padding: 0.5em 0.1em;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  font-family: var(--font-body);
+  position: relative;
+}
+
+.primary-nav a::after {
+  content: "";
+  position: absolute;
+  left: 0; right: 0; bottom: -2px;
+  height: 2px;
+  background: var(--gold-500);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform var(--duration-fast) var(--ease-standard);
+}
+
+.primary-nav a:hover,
+.primary-nav a:focus-visible,
+.nav-drop__toggle:hover,
+.nav-drop__toggle:focus-visible {
+  color: var(--color-text-on-dark);
+}
+.primary-nav a:hover::after,
+.primary-nav a:focus-visible::after { transform: scaleX(1); }
+
+.primary-nav a[aria-current="page"] {
+  color: var(--color-text-on-dark);
+}
+.primary-nav a[aria-current="page"]::after { transform: scaleX(1); background: var(--color-text-on-dark); }
+
+.nav-drop__caret {
+  width: 0.6em; height: 0.6em;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: rotate(45deg);
+  margin-top: -0.3em;
+  transition: transform var(--duration-fast) var(--ease-standard);
+}
+.nav-drop__toggle[aria-expanded="true"] .nav-drop__caret { transform: rotate(-135deg); margin-top: 0.2em; }
+
+.nav-drop__menu {
+  position: absolute;
+  top: calc(100% + 14px);
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 240px;
+  background: var(--color-primary);
+  border: 1px solid rgba(228, 200, 135, 0.35);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+  padding: var(--space-2xs);
+  opacity: 0;
+  visibility: hidden;
+  translate: 0 6px;
+  transition: opacity var(--duration-fast) var(--ease-standard), translate var(--duration-fast) var(--ease-standard), visibility var(--duration-fast);
+  z-index: 1100;
+}
+
+.nav-drop {
+  position: static;
+}
+
+.nav-drop.is-open .nav-drop__menu,
+.nav-drop:focus-within .nav-drop__menu {
+  opacity: 1;
+  visibility: visible;
+  translate: 0 0;
+}
+
+.nav-drop__menu li a {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-sm);
+  padding: 0.65em 0.9em;
+  border-radius: var(--radius-sm);
+  color: var(--color-text-on-dark-muted);
+  font-size: var(--step--1);
+  font-weight: 500;
+}
+.nav-drop__menu li a:hover,
+.nav-drop__menu li a:focus-visible { background: rgba(228, 200, 135, 0.12); color: var(--color-text-on-dark); }
+.nav-drop__menu li a::after { display: none; }
+
+.nav-drop__menu .level-code {
+  font-family: var(--font-mono);
+  font-size: 0.75em;
+  color: var(--gold-300);
+}
+
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid rgba(228, 200, 135, 0.4);
+  background: transparent;
+  color: var(--gold-300);
+  cursor: pointer;
+  flex-shrink: 0;
+}
+.theme-toggle:hover { background: rgba(228, 200, 135, 0.12); }
+.theme-toggle svg { width: 18px; height: 18px; }
+.theme-toggle .icon-moon { display: none; }
+html[data-theme="dark"] .theme-toggle .icon-sun { display: none; }
+html[data-theme="dark"] .theme-toggle .icon-moon { display: block; }
+
+.nav-utility {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+/* Mobile nav collapse */
+@media (max-width: 900px) {
+  .nav-toggle { display: inline-flex; }
+
+  .primary-nav {
+    position: fixed;
+    inset: var(--header-height) 0 0 0;
+    background: var(--color-primary-strong);
+    padding: var(--space-lg) var(--space-md);
+    overflow-y: auto;
+    transform: translateY(-8px);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity var(--duration-base) var(--ease-standard), transform var(--duration-base) var(--ease-standard), visibility var(--duration-base);
+  }
+  .primary-nav.is-open { opacity: 1; visibility: visible; transform: translateY(0); }
+
+  .primary-nav__list { flex-direction: column; align-items: stretch; gap: 0; }
+  .primary-nav__list > li { border-bottom: 1px solid rgba(228, 200, 135, 0.15); }
+  .primary-nav a, .nav-drop__toggle { width: 100%; padding: 1em 0.2em; font-size: var(--step-0); justify-content: space-between; }
+  .nav-drop__menu {
+    position: static;
+    transform: none;
+    opacity: 1; visibility: visible; translate: 0;
+    display: none;
+    box-shadow: none;
+    border: none;
+    background: rgba(0,0,0,0.15);
+    margin-bottom: var(--space-xs);
+  }
+  .nav-drop.is-open .nav-drop__menu { display: block; }
+}
+
+/* Progress/XP control — split by width. Below 900px it lives as a row
+   inside the ☰ menu (.primary-nav__item--progress, built by
+   progress.js right after the Dictionary link); above 900px it's the
+   compact header pill instead (.progress-toggle--pill, in
+   .nav-utility). Both are always mounted in the DOM in their fixed
+   spot — only one is ever visible at a time, and neither moves when
+   XP is first earned (see progress.js's renderToggle()/hasProgress()
+   for the separate "is there any progress yet" visibility check this
+   combines with). */
+@media (max-width: 900px) {
+  .progress-toggle--pill { display: none !important; }
+}
+@media (min-width: 901px) {
+  .primary-nav__item--progress { display: none !important; }
+}
+
+/* ---------------------------------------------------------------------
+   Breadcrumbs
+   --------------------------------------------------------------------- */
+.breadcrumbs {
+  max-width: var(--content-max);
+  margin: 0 auto;
+  padding: var(--space-sm) var(--space-md) 0;
+}
+.breadcrumbs ol { display: flex; flex-wrap: wrap; align-items: center; gap: 0.4em; }
+.breadcrumbs li { display: flex; align-items: center; gap: 0.4em; font-size: var(--step--1); color: var(--color-text-muted); }
+.breadcrumbs li:not(:last-child)::after { content: "/"; opacity: 0.5; }
+.breadcrumbs a { color: var(--color-accent); font-weight: 600; }
+.breadcrumbs a:hover { text-decoration: underline; }
+.breadcrumbs [aria-current="page"] { color: var(--color-text); font-weight: 600; }
+
+/* ---------------------------------------------------------------------
+   Buttons
+   --------------------------------------------------------------------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  font-family: var(--font-body);
+  font-size: var(--step--1);
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  padding: 0.75em 1.4em;
+  border-radius: var(--radius-sm);
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: background-color var(--duration-fast) var(--ease-standard), color var(--duration-fast) var(--ease-standard), border-color var(--duration-fast) var(--ease-standard), transform var(--duration-fast) var(--ease-standard);
+  text-align: center;
+}
+.btn:hover { transform: translateY(-1px); }
+.btn:active { transform: translateY(0); }
+.btn svg { width: 16px; height: 16px; }
+
+.btn--primary {
+  background: var(--color-primary);
+  color: var(--color-text-on-dark);
+  border-color: var(--color-primary);
+}
+.btn--primary:hover { background: var(--color-primary-strong); }
+
+.btn--accent {
+  background: var(--color-accent);
+  color: var(--parchment-100);
+  border-color: var(--color-accent);
+}
+.btn--accent:hover { background: var(--color-accent-strong); }
+
+.btn--ghost {
+  background: transparent;
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+.btn--ghost:hover { background: var(--color-primary); color: var(--color-text-on-dark); }
+
+.btn--ghost-inverse {
+  background: transparent;
+  color: var(--color-text-on-dark);
+  border-color: rgba(251, 248, 241, 0.5);
+}
+.btn--ghost-inverse:hover { background: rgba(251, 248, 241, 0.12); border-color: var(--color-text-on-dark); }
+
+.btn--small { padding: 0.55em 1em; font-size: 0.78rem; }
+.btn--block { width: 100%; }
+.btn[disabled], .btn.is-disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* ---------------------------------------------------------------------
+   Hero
+   --------------------------------------------------------------------- */
+.hero {
+  position: relative;
+  background: radial-gradient(1200px 600px at 15% -10%, rgba(196, 154, 63, 0.16), transparent 60%), var(--color-primary-strong);
+  color: var(--color-text-on-dark);
+  overflow: hidden;
+  border-bottom: 4px solid var(--color-red);
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(rgba(16, 27, 48, 0.55), rgba(16, 27, 48, 0.75)), var(--hero-image, none);
+  background-size: cover;
+  background-position: center 30%;
+  opacity: 0.5;
+  z-index: 0;
+}
+
+.hero__inner {
+  position: relative;
+  z-index: 1;
+  max-width: var(--content-max);
+  margin: 0 auto;
+  padding: var(--space-2xl) var(--space-md) var(--space-2xl);
+  display: grid;
+  gap: var(--space-lg);
+}
+
+.hero__eyebrow { color: var(--gold-300); }
+.hero__eyebrow::before { background: var(--gold-300); }
+
+.hero h1 {
+  color: var(--color-text-on-dark);
+  max-width: 18ch;
+  margin-top: var(--space-sm);
+}
+
+.hero__lede {
+  max-width: 56ch;
+  font-size: var(--step-1);
+  color: var(--color-text-on-dark-muted);
+  margin-top: var(--space-md);
+}
+
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  margin-top: var(--space-lg);
+}
+
+.hero__stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xl);
+  margin-top: var(--space-xl);
+  padding-top: var(--space-lg);
+  border-top: 1px solid rgba(228, 200, 135, 0.25);
+}
+
+.hero__split {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-xl);
+  flex-wrap: wrap;
+}
+.hero__split > div:first-child { flex: 1; min-width: 280px; }
+.hero__badge {
+  flex-shrink: 0;
+  width: 220px;
+  max-width: 40vw;
+  height: auto;
+  filter: drop-shadow(0 12px 30px rgba(0,0,0,0.4));
+}
+@media (max-width: 700px) {
+  .hero__badge { max-width: 45vw; margin: 0 auto; }
+  .hero__split { justify-content: center; text-align: center; }
+}
+
+.figure--onhero {
+  max-width: 640px;
+  margin: var(--space-lg) 0 0;
+}
+
+.hero__stat dt {
+  font-family: var(--font-display);
+  font-size: var(--step-3);
+  color: var(--gold-300);
+}
+.hero__stat dd {
+  margin: 0.2em 0 0;
+  font-size: var(--step--1);
+  color: var(--color-text-on-dark-muted);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-wide);
+}
+
+/* Page header (non-home pages): quieter version of the hero */
+.page-header {
+  background: var(--color-primary-strong);
+  color: var(--color-text-on-dark);
+  border-bottom: 4px solid var(--color-red);
+}
+.page-header__inner {
+  max-width: var(--content-max);
+  margin: 0 auto;
+  padding: var(--space-xl) var(--space-md);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-lg);
+  flex-wrap: wrap;
+}
+.page-header__text { flex: 1; min-width: 240px; }
+.page-header__badge {
+  flex-shrink: 0;
+  width: 88px;
+  height: 88px;
+  object-fit: contain;
+  opacity: 0.95;
+}
+@media (max-width: 640px) {
+  .page-header__badge { width: 64px; height: 64px; }
+}
+.page-header h1 { color: var(--color-text-on-dark); margin-top: var(--space-xs); font-size: var(--step-4); }
+.page-header__lede { color: var(--color-text-on-dark-muted); max-width: 62ch; margin-top: var(--space-sm); font-size: var(--step-1); }
+
+/* ---------------------------------------------------------------------
+   Section shell
+   --------------------------------------------------------------------- */
+.section {
+  padding: var(--space-2xl) var(--space-md);
+  /* Default assumes both the sticky header AND a sticky .level-toc
+     sub-nav sit above the section (true on level/hub/test-yourself
+     pages). Pages without a .level-toc (like the homepage) override
+     this just below to the header height alone — otherwise sections
+     land with a large, unexplained gap above them, well clear of the
+     header they're actually meant to sit right under. */
+  scroll-margin-top: var(--sticky-offset);
+}
+body:not(:has(.level-toc)) .section {
+  scroll-margin-top: calc(var(--header-height) + var(--space-sm));
+}
+.section--tight { padding: var(--space-xl) var(--space-md); }
+.section--surface { background: var(--color-surface); }
+.section--primary { background: var(--color-primary-strong); color: var(--color-text-on-dark); }
+.section--primary h2, .section--primary h3 { color: var(--color-text-on-dark); }
+.section--primary .eyebrow { color: var(--gold-300); }
+.section--primary .eyebrow::before { background: var(--gold-300); }
+
+/* Tighter internal rhythm for a run of related sections (currently the
+   Listening area's Core / Extra / Beyond-the-Course blocks) so they
+   read as one continuous flow instead of separate page sections. Only
+   the shared seam between two .section--listen siblings is tightened —
+   the section before the first one and after the last one keep the
+   site's normal section padding, so unrelated sections elsewhere on
+   the page (Vocabulary, Reading, Writing, etc.) are unaffected. */
+.section--listen + .section--listen { padding-top: var(--space-md); }
+.section--listen:has(+ .section--listen) { padding-bottom: var(--space-md); }
+
+.section__inner {
+  max-width: var(--content-max);
+  margin: 0 auto;
+}
+.section__inner--narrow { max-width: var(--content-narrow); }
+
+.section__head {
+  max-width: 46rem;
+  margin-bottom: var(--space-lg);
+}
+.section__head--center { margin-inline: auto; text-align: center; }
+
+.section__head h2 { margin-top: var(--space-xs); }
+.section__head p { margin-top: var(--space-sm); color: var(--color-text-muted); font-size: var(--step-0); }
+.section--primary .section__head p { color: var(--color-text-on-dark-muted); }
+
+/* ---------------------------------------------------------------------
+   Cards & grids
+   --------------------------------------------------------------------- */
+.grid {
+  display: grid;
+  gap: var(--space-md);
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+.grid--3 { grid-template-columns: repeat(3, 1fr); }
+.grid--4 { grid-template-columns: repeat(4, 1fr); }
+@media (max-width: 900px) {
+  .grid--3, .grid--4 { grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+}
+
+.card {
+  background: var(--color-surface-raised);
+  border: var(--border-hairline);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  padding: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  transition: transform var(--duration-base) var(--ease-standard), box-shadow var(--duration-base) var(--ease-standard), border-color var(--duration-base) var(--ease-standard);
+}
+.card:hover, .card:focus-within { transform: translateY(-4px); box-shadow: var(--shadow-md); border-color: var(--color-border-strong); }
+
+.card--feature {
+  border-top: 3px solid var(--color-accent);
+}
+
+.card__icon {
+  width: 46px; height: 46px;
+  display: inline-flex; align-items: center; justify-content: center;
+  border-radius: var(--radius-sm);
+  background: var(--color-surface);
+  color: var(--color-accent);
+  border: var(--border-hairline);
+}
+.card__icon svg { width: 24px; height: 24px; }
+
+.card h3 { font-size: var(--step-1); }
+.card p { color: var(--color-text-muted); font-size: var(--step--1); }
+.card__foot { margin-top: auto; padding-top: var(--space-xs); display: flex; justify-content: center; }
+
+/* Lesson card — used across level & hub pages for individual downloadable items */
+.lesson-card {
+  position: relative;
+  background: var(--color-surface-raised);
+  border: var(--border-hairline);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  padding: var(--space-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2xs);
+  transition: transform var(--duration-base) var(--ease-standard), box-shadow var(--duration-base) var(--ease-standard), border-color var(--duration-base) var(--ease-standard);
+  height: 100%;
+}
+.lesson-card:hover, .lesson-card:focus-within {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--color-border-strong);
+}
+
+.lesson-card__index {
+  display: block;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: var(--step--1);
+  letter-spacing: 0.04em;
+  color: var(--color-accent);
+  opacity: 0.85;
+  margin-bottom: 0.15em;
+}
+
+.lesson-card h3 {
+  font-size: var(--step-0);
+  padding-right: 0.2rem;
+}
+
+.lesson-card p {
+  color: var(--color-text-muted);
+  font-size: var(--step--1);
+  margin: 0;
+}
+
+.lesson-card__actions {
+  margin-top: auto;
+  padding-top: var(--space-sm);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5em;
+}
+
+/* Whole-card click target -- opt-in only, for cards that have an
+   unambiguous single destination. A card's title-link (levels/*.html
+   lesson cards, which link to the lesson page) or its explicitly-marked
+   primary action (a lone .btn--accent among several buttons) is
+   stretched with ::after to cover the whole <article>, since .lesson-card
+   is already position: relative -- so clicking anywhere on the card, not
+   just the link text, activates that one link. Every *other* action link
+   is kept `position: relative` so it still paints -- and stays clickable
+   -- above that full-card overlay.
+   Deliberately NOT extended to "just happens to be the only button" --
+   most .lesson-card instances site-wide (exercises.html's reading-text
+   cards, the Grammar Booklets PDF cards on level pages, index.html,
+   simulated-exams.html) are plain resource cards with one ordinary
+   button and no accent/title-link; stretching that button to the whole
+   card made the card *look* clickable everywhere via the cursor, when in
+   fact only the button itself was ever meant to be. See PR discussion
+   for the full bug report. */
+.lesson-card__title-link::after,
+.lesson-card__actions a.btn--accent:not(:only-child)::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  cursor: pointer;
+}
+/* The stretched link itself must stay position: static, or its ::after
+   would be contained by the link's own small box instead of the whole
+   card -- so only the *other* action link(s) in a multi-link card (e.g.
+   a secondary "Open PDF" next to a primary accent button) get position:
+   relative here, to keep painting -- and staying clickable -- above the
+   full-card overlay above. */
+.lesson-card__actions a:not(:only-child):not(.btn--accent) {
+  position: relative;
+}
+
+.lesson-card.is-unavailable {
+  background: var(--color-surface);
+  border-style: dashed;
+}
+.lesson-card.is-unavailable h3 { color: var(--color-text-muted); }
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35em;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  padding: 0.3em 0.6em;
+  border-radius: var(--radius-sm);
+  border: 1px solid currentColor;
+}
+.badge--pdf { color: var(--color-accent); }
+.badge--doc { color: var(--color-primary); }
+.badge--audio { color: var(--color-secondary-accent); }
+.badge--soon { color: var(--color-unavailable); }
+
+/* ---------------------------------------------------------------------
+   Level / skill index cards (homepage "Learning Levels" grid, etc.)
+   --------------------------------------------------------------------- */
+.level-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  background: var(--color-surface-raised);
+  border: var(--border-hairline);
+  border-radius: var(--radius-md);
+  padding: var(--space-lg);
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--duration-base) var(--ease-standard), box-shadow var(--duration-base) var(--ease-standard), border-color var(--duration-base) var(--ease-standard);
+}
+.level-card:hover, .level-card:focus-within { transform: translateY(-4px); box-shadow: var(--shadow-md); border-color: var(--color-border-strong); }
+
+.level-card__code {
+  font-family: var(--font-display);
+  font-size: var(--step-2);
+  color: var(--color-accent);
+}
+.level-card__name { font-size: var(--step--1); text-transform: uppercase; letter-spacing: var(--tracking-wide); color: var(--color-text-muted); }
+.level-card p { color: var(--color-text-muted); font-size: var(--step--1); }
+.level-card__link { margin-top: auto; font-weight: 700; color: var(--color-primary); display: inline-flex; align-items: center; gap: 0.4em; }
+.level-card__link svg { width: 16px; height: 16px; transition: transform var(--duration-fast) var(--ease-standard); }
+.level-card:hover .level-card__link svg { transform: translateX(3px); }
+
+/* ---------------------------------------------------------------------
+   Skill index (Grammar / Vocabulary / Reading ... homepage strip)
+   --------------------------------------------------------------------- */
+.skill-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  padding: var(--space-md);
+  border-radius: var(--radius-md);
+  border: var(--border-hairline);
+  background: var(--color-surface-raised);
+}
+.skill-card__icon { color: var(--color-accent); width: 28px; height: 28px; }
+.skill-card h3 { font-size: var(--step-0); }
+.skill-card p { font-size: var(--step--1); color: var(--color-text-muted); margin: 0; }
+
+/* ---------------------------------------------------------------------
+   Quote / feature banner
+   --------------------------------------------------------------------- */
+.pull-quote {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: var(--step-2);
+  line-height: var(--leading-snug);
+  max-width: 44rem;
+  border-left: 3px solid var(--color-gold);
+  padding-left: var(--space-md);
+}
+
+/* ---------------------------------------------------------------------
+   CTA band
+   --------------------------------------------------------------------- */
+.cta-band {
+  text-align: center;
+  padding: var(--space-2xl) var(--space-md);
+  background: linear-gradient(160deg, var(--color-primary-strong), var(--navy-700));
+  color: var(--color-text-on-dark);
+  border-top: 4px solid var(--color-red);
+  border-bottom: 4px solid var(--color-red);
+}
+.cta-band h2 { color: var(--color-text-on-dark); max-width: 34ch; margin: var(--space-xs) auto 0; }
+.cta-band p { color: var(--color-text-on-dark-muted); max-width: 50ch; margin: var(--space-sm) auto 0; }
+.cta-band .hero__actions { justify-content: center; }
+
+/* ---------------------------------------------------------------------
+   Footer
+   --------------------------------------------------------------------- */
+.site-footer {
+  background: var(--color-primary-strong);
+  color: var(--color-text-on-dark-muted);
+  border-top: 4px solid var(--color-red);
+}
+.site-footer__inner {
+  max-width: var(--content-max);
+  margin: 0 auto;
+  padding: var(--space-2xl) var(--space-md) var(--space-lg);
+  display: grid;
+  gap: var(--space-xl);
+  grid-template-columns: 1.4fr repeat(3, 1fr);
+}
+@media (max-width: 900px) {
+  .site-footer__inner { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 560px) {
+  .site-footer__inner { grid-template-columns: 1fr; }
+}
+
+.site-footer .brand__name,
+.site-footer .brand__tagline { color: inherit; }
+.site-footer__blurb { margin-top: var(--space-sm); font-size: var(--step--1); max-width: 32ch; }
+
+.footer-col h4 {
+  color: var(--parchment-200);
+  font-size: var(--step--1);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-wide);
+  margin-bottom: var(--space-sm);
+}
+.footer-col ul { display: flex; flex-direction: column; gap: 0.6em; }
+.footer-col a { font-size: var(--step--1); color: var(--color-text-on-dark-muted); }
+.footer-col a:hover, .footer-col a:focus-visible { color: var(--gold-300); text-decoration: underline; }
+
+.site-footer__bottom {
+  max-width: var(--content-max);
+  margin: 0 auto;
+  padding: var(--space-md) var(--space-md) var(--space-xl);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  justify-content: center;
+  text-align: center;
+  font-size: var(--step--1);
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+/* ---------------------------------------------------------------------
+   Back to top
+   --------------------------------------------------------------------- */
+.back-to-top {
+  position: fixed;
+  right: var(--space-md);
+  bottom: var(--space-md);
+  width: 48px; height: 48px;
+  border-radius: 50%;
+  border: 1px solid var(--color-gold);
+  background: var(--color-primary-strong);
+  color: var(--gold-300);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: var(--shadow-md);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(8px);
+  transition: opacity var(--duration-base) var(--ease-standard), transform var(--duration-base) var(--ease-standard), visibility var(--duration-base);
+  z-index: 900;
+}
+.back-to-top.is-visible { opacity: 1; visibility: visible; transform: translateY(0); }
+.back-to-top svg { width: 20px; height: 20px; }
+
+/* ---------------------------------------------------------------------
+   Misc utility
+   --------------------------------------------------------------------- */
+.center-text { text-align: center; }
+.mt-lg { margin-top: var(--space-lg); }
+.mt-xl { margin-top: var(--space-xl); }
+
+.divider-seal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  margin: var(--space-lg) 0;
+  color: var(--color-gold);
+}
+.divider-seal::before, .divider-seal::after {
+  content: "";
+  height: 1px;
+  flex: 1;
+  background: var(--color-border-strong);
+  opacity: 0.6;
+  max-width: 160px;
+}
+.divider-seal svg { width: 22px; height: 22px; }
+.divider-seal img { width: 44px; height: 44px; flex-shrink: 0; object-fit: contain; }
+
+/* Media/video card (Extras page) */
+.media-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  background: var(--color-surface-raised);
+  border: var(--border-hairline);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  padding: var(--space-md);
+  height: 100%;
+}
+.media-card__frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/9;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  background: var(--ink-900);
+  border: var(--border-hairline);
+}
+.media-card__frame iframe,
+.media-card__frame img,
+.media-card__frame video {
+  width: 100%; height: 100%;
+  object-fit: cover;
+}
+.media-card h3 { font-size: var(--step-0); }
+.media-card p { color: var(--color-text-muted); font-size: var(--step--1); }
+.media-card__actions { margin-top: auto; display: flex; flex-wrap: wrap; justify-content: center; gap: var(--space-xs, 0.4rem); }
+
+/* X/Twitter embed variant (broadcast or post) inside a media-card frame —
+   widgets.js replaces the blockquote with its own iframe, so this forces
+   that iframe to fill the same 16:9 box the video cards use. */
+.media-card__frame--x { display: flex; align-items: center; justify-content: center; }
+.media-card__frame--x blockquote.twitter-tweet,
+.media-card__frame--x blockquote.twitter-broadcast {
+  margin: 0;
+  max-width: 100%;
+}
+.media-card__frame--x iframe {
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 100% !important;
+}
+
+/* Table of contents / index list (used on hub pages for quick jump) */
+.toc {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6em;
+}
+.toc a {
+  padding: 0.5em 1em;
+  border: var(--border-hairline);
+  border-radius: 999px;
+  font-size: var(--step--1);
+  font-weight: 600;
+  color: var(--color-primary);
+  background: var(--color-surface-raised);
+}
+.toc a:hover, .toc a:focus-visible { border-color: var(--color-border-strong); background: var(--color-surface); }
+
+/* Alert / notice box (used for section intros lacking a downloadable file yet) */
+.notice {
+  border: var(--border-hairline);
+  border-left: 3px solid var(--color-gold);
+  background: var(--color-surface);
+  border-radius: var(--radius-sm);
+  padding: var(--space-md);
+  font-size: var(--step--1);
+  color: var(--color-text-muted);
+}
+.notice strong { color: var(--color-text); }
+.notice > svg { width: 22px; height: 22px; color: var(--color-gold); float: left; margin: 0.1em 0.7em 0.3em 0; }
+
+/* Listening exercises: an <audio> player followed by a collapsed
+   transcript, embedded directly in a reading-comprehension exercise's
+   "passage" field (see levels/{level}.html's Guided Listening Practice
+   sections and assets/audio/{level}/*.mp3). */
+audio {
+  width: 100%;
+  display: block;
+  margin-bottom: var(--space-sm);
+}
+.transcript-toggle {
+  border: var(--border-hairline);
+  border-radius: var(--radius-sm);
+  padding: var(--space-xs) var(--space-md);
+  background: var(--color-surface);
+}
+.transcript-toggle summary {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: var(--step--1);
+  color: var(--color-text-muted);
+  padding: var(--space-2xs) 0;
+}
+.transcript-toggle summary:hover { color: var(--color-text); }
+.transcript-toggle[open] summary { margin-bottom: var(--space-2xs); }
+.transcript-toggle p {
+  margin: var(--space-sm) 0 var(--space-xs);
+  font-size: var(--step--1);
+  color: var(--color-text);
+}
+
+.lesson-card__title-link { color: inherit; }
+.lesson-card__title-link:hover { color: var(--color-accent); text-decoration: underline; }
+
+/* ---------------------------------------------------------------------
+   Progress / gamification widget (assets/js/progress.js)
+   A compact header pill (XP + streak) that opens a small panel with
+   badges and per-level progress. Injected entirely from JS, so no
+   markup is required on individual pages beyond the <script> tag.
+   progress.js mounts this on every page that includes the script and
+   keeps it `hidden` until the student has real progress (xp > 0 or an
+   exercise on file); the rule below makes sure that `hidden` attribute
+   always wins over the `display: inline-flex` further down, even
+   though both selectors share the same specificity.
+   --------------------------------------------------------------------- */
+.progress-toggle[hidden] { display: none; }
+.progress-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35em;
+  height: 40px;
+  padding: 0 0.8em;
+  border-radius: 999px;
+  border: 1px solid rgba(228, 200, 135, 0.4);
+  background: transparent;
+  color: var(--gold-300);
+  font-family: var(--font-body);
+  font-size: var(--step--1);
+  font-weight: 600;
+  cursor: pointer;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+.progress-toggle:hover { background: rgba(228, 200, 135, 0.12); }
+.progress-toggle__flame { width: 16px; height: 16px; display: inline-flex; color: var(--color-text-on-dark-muted); }
+.progress-toggle__flame svg { width: 100%; height: 100%; }
+.progress-toggle.has-streak .progress-toggle__flame { color: var(--color-gold); }
+.progress-toggle__dot { opacity: 0.5; }
+.progress-toggle--floating {
+  position: fixed;
+  right: var(--space-md);
+  bottom: calc(var(--space-md) + 60px);
+  z-index: 899;
+  background: var(--color-primary-strong);
+  box-shadow: var(--shadow-md);
+}
+
+/* Mobile menu row — "Progress" label + a "🔥 1 · 65 XP"-style stat,
+   styled to match the other full-width rows in the mobile ☰ menu
+   (.primary-nav a / .nav-drop__toggle in the media query above), since
+   it lives in the same <li> list rather than the circular header pill
+   this reuses none of. Not media-query-gated itself: the parent
+   .primary-nav__item--progress is display:none above 900px (see
+   above), so this only ever renders at mobile widths regardless. */
+.progress-menu-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-sm);
+  width: 100%;
+  padding: 1em 0.2em;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  font-family: var(--font-body);
+  color: var(--color-text-on-dark-muted);
+  font-size: var(--step-0);
+  text-align: left;
+}
+.progress-menu-toggle:hover,
+.progress-menu-toggle:focus-visible { color: var(--color-text-on-dark); }
+.progress-menu-toggle__label { font-weight: 600; }
+.progress-menu-toggle__stat {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3em;
+  flex-shrink: 0;
+  font-size: var(--step--1);
+  font-weight: 700;
+  color: var(--gold-300);
+  white-space: nowrap;
+}
+.progress-menu-toggle__flame { width: 15px; height: 15px; display: inline-flex; color: var(--color-text-on-dark-muted); }
+.progress-menu-toggle__flame svg { width: 100%; height: 100%; }
+.progress-menu-toggle.has-streak .progress-menu-toggle__flame { color: var(--color-gold); }
+.progress-menu-toggle__dot { opacity: 0.6; }
+
+.progress-panel {
+  z-index: 902;
+  width: min(320px, calc(100vw - 2 * var(--space-md)));
+  max-height: min(520px, 75vh);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  background: var(--color-surface-raised);
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  padding: var(--space-md);
+}
+.progress-panel[hidden] { display: none; }
+/* Opened from the ☰ menu's Progress row (see progress.js's open()):
+   the menu itself closes immediately, so anchoring to that row's
+   position (like the header pill's dropdown does) isn't possible —
+   shown instead as a centered sheet below the header, clear of the
+   notch/home-indicator via the safe-area insets. */
+.progress-panel--sheet {
+  position: fixed !important;
+  top: calc(var(--header-height) + var(--space-sm) + env(safe-area-inset-top, 0px)) !important;
+  left: var(--space-md) !important;
+  right: var(--space-md) !important;
+  width: auto !important;
+  max-width: none;
+  max-height: min(520px, calc(100dvh - var(--header-height) - 2 * var(--space-md) - env(safe-area-inset-top, 0px) - env(safe-area-inset-bottom, 0px)));
+}
+.progress-panel__head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-sm);
+}
+.progress-panel__head strong { font-family: var(--font-display); font-size: var(--step-1); color: var(--color-text); display: block; }
+.progress-panel__streak-label { display: block; font-size: var(--step--1); color: var(--color-text-muted); margin-top: 0.2em; }
+.progress-panel__close {
+  flex-shrink: 0;
+  width: 26px; height: 26px;
+  border-radius: 50%;
+  border: 1px solid var(--color-border);
+  background: transparent;
+  color: var(--color-text-muted);
+  display: inline-flex; align-items: center; justify-content: center;
+  cursor: pointer;
+}
+.progress-panel__close svg { width: 13px; height: 13px; }
+.progress-panel__hint { font-size: 0.78rem; color: var(--color-text-muted); margin: 0.5em 0 var(--space-sm); }
+.progress-panel__levels { display: flex; flex-direction: column; gap: 0.6em; margin-bottom: var(--space-sm); }
+
+/* Per-level progress bar + its "<level> · N done · N XP" label — used
+   by both the header panel and progress.html's level list. Moved here
+   (was previously only in exercises.css) because the widget that
+   renders these is mounted on every page via progress.js, but several
+   pages (index, dictionary, extras, exercises, simulated-exams,
+   irregular-verbs) never loaded exercises.css. Without `display: flex`
+   here, .progress-label's two <span>s (the level id and the "N done ·
+   N XP" text) rendered with no space between them at all, reading as
+   "A10 done" instead of "A1" / "0 done · 0 XP". components.css is
+   loaded on every page, so this can't silently go missing again. */
+.progress-track {
+  width: 100%;
+  height: 8px;
+  border-radius: 999px;
+  background: var(--color-surface);
+  border: var(--border-hairline);
+  overflow: hidden;
+}
+.progress-track__fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--color-accent), var(--color-gold));
+  border-radius: 999px;
+  transition: width var(--duration-slow) var(--ease-standard);
+}
+.progress-label { display: flex; justify-content: space-between; gap: 0.75em; font-size: var(--step--1); color: var(--color-text-muted); margin-bottom: 0.4em; }
+.progress-panel__level-row .progress-track { height: 6px; }
+.progress-panel__badges-label { font-size: var(--step--1); font-weight: 700; color: var(--color-text); margin: var(--space-sm) 0 0.5em; }
+.progress-panel__link { margin-top: var(--space-sm); width: 100%; justify-content: center; }
+
+.badge-grid {
+  list-style: none;
+  margin: 0; padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5em;
+}
+.badge-chip {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25em;
+  padding: 0.5em 0.3em;
+  border-radius: var(--radius-md);
+  border: var(--border-hairline);
+  background: var(--color-surface);
+  text-align: center;
+  opacity: 0.55;
+}
+/* Earned chips use a constant light parchment fill (the "you earned
+   this" highlight should look the same in both themes), so their text
+   is pinned to a constant dark ink rather than the theme-variable
+   --color-text -- otherwise dark mode's light text would disappear
+   against this always-light background. */
+.badge-chip.is-earned { opacity: 1; border-color: var(--color-gold); background: var(--parchment-200); }
+.badge-chip__icon { font-size: 1.3rem; line-height: 1; }
+.badge-chip__name { font-size: 0.68rem; color: var(--color-text-muted); line-height: 1.25; }
+.badge-chip.is-earned .badge-chip__name { color: var(--ink-900); }
+
+.xp-toast-host {
+  position: fixed;
+  top: calc(var(--header-height) + var(--space-sm));
+  right: var(--space-md);
+  z-index: 950;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.4em;
+  pointer-events: none;
+}
+.xp-toast {
+  position: relative;
+  z-index: 0;
+  overflow: visible;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+  padding: 0.55em 0.9em;
+  border-radius: 999px;
+  background: var(--color-primary-strong);
+  color: var(--gold-300);
+  font-size: var(--step--1);
+  font-weight: 700;
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--color-gold);
+  opacity: 0;
+  transform: translateY(-6px);
+  transition: opacity var(--duration-base) var(--ease-standard), transform var(--duration-base) var(--ease-standard);
+  /* Toasts sit inside a pointer-events:none host (see .xp-toast-host)
+     so they never block clicks on the page underneath; re-enabling it
+     just here lets a toast be dismissed early with a click/tap, which
+     matters more now that TOAST_VISIBLE_MS keeps them up for ~7s. */
+  pointer-events: auto;
+  cursor: pointer;
+}
+.xp-toast.is-visible { opacity: 1; transform: translateY(0); }
+/* Badge toast reuses the same constant navy/gold pairing as the base
+   toast (both are always readable, in either theme) rather than
+   --color-accent-strong, which flips to a light pink in dark mode and
+   would lose contrast against light toast text. A thicker gold border
+   is enough to make it read as a bigger, celebratory moment. */
+.xp-toast--badge { border-width: 2px; }
+.xp-toast__icon { font-size: 1rem; }
+
+/* Golden fireworks/sparkle burst — a short, tasteful particle burst
+   behind+around a toast when it appears (skipped entirely by JS under
+   prefers-reduced-motion; see progress.js's prefersReducedMotion()).
+   Each .xp-burst__spark radiates outward from the toast's center along
+   --angle (set inline per-spark in JS) and fades out within ~0.7s. */
+.xp-burst {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+}
+.xp-burst::before {
+  content: "";
+  position: absolute;
+  inset: -8px;
+  border-radius: 999px;
+  background: radial-gradient(circle, rgba(228, 200, 135, 0.4), transparent 70%);
+  opacity: 0;
+  /* --glow-delay defaults to immediate (toasts); the AI Teacher flag
+     intro (ai-teacher.css) sets it inline to land partway through its
+     longer wave instead of firing at t=0. */
+  animation: xp-burst-glow 0.6s ease-out var(--glow-delay, 0ms) forwards;
+}
+.xp-burst__spark {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--gold-300);
+  opacity: 0;
+  transform: translate(-50%, -50%) rotate(var(--angle, 0deg)) translateX(0) scale(0);
+  animation: xp-spark-burst 0.7s ease-out var(--delay, 0ms) forwards;
+}
+.xp-burst--badge .xp-burst__spark {
+  width: 6px;
+  height: 6px;
+  background: var(--gold-500);
+  box-shadow: 0 0 6px 1px rgba(228, 200, 135, 0.6);
+}
+@keyframes xp-burst-glow {
+  0% { opacity: 0; transform: scale(0.6); }
+  40% { opacity: 1; }
+  100% { opacity: 0; transform: scale(1.5); }
+}
+@keyframes xp-spark-burst {
+  0% { transform: translate(-50%, -50%) rotate(var(--angle, 0deg)) translateX(0) scale(0); opacity: 0; }
+  25% { opacity: 1; }
+  100% { transform: translate(-50%, -50%) rotate(var(--angle, 0deg)) translateX(38px) scale(1); opacity: 0; }
+}
+
+@media (max-width: 560px) {
+  .xp-toast-host { left: var(--space-sm); right: var(--space-sm); align-items: stretch; }
+  .xp-toast { justify-content: center; }
+}
+
+/* NOTE: the header pill (.progress-toggle--pill) itself is hidden
+   below 900px (see the "Progress/XP control" media queries above) —
+   mobile always shows the ☰-menu row instead — so no narrow-phone
+   width tuning is needed for it here any more. This used to also hide
+   .progress-toggle__dot below 560px to save space, which silently
+   collapsed the streak/XP separator into unreadable text like
+   "1 65 XP" any time the pill *was* visible at that width; removed
+   along with the now-unreachable pill-at-mobile-widths case. */
+
+/* progress.html — full page (reuses .progress-track / .progress-label
+   and .badge-grid / .badge-chip above) */
+.progress-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: var(--space-sm);
+}
+.progress-stat {
+  text-align: center;
+  padding: var(--space-md);
+  border-radius: var(--radius-md);
+  border: var(--border-hairline);
+  background: var(--color-surface-raised);
+}
+.progress-stat strong { display: block; font-family: var(--font-display); font-size: var(--step-3); color: var(--color-accent); }
+.progress-stat span { display: block; font-size: var(--step--1); color: var(--color-text-muted); margin-top: 0.2em; }
+
+.progress-levels-list { display: flex; flex-direction: column; gap: var(--space-md); }
+
+.badge-grid--page {
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: var(--space-sm);
+}
+.badge-grid--page .badge-chip { padding: var(--space-sm); }
+.badge-grid--page .badge-chip__icon { font-size: 1.8rem; }
+.badge-grid--page .badge-chip__name { font-size: var(--step--1); }
+
+/* Topics Completed (progress.html #progress-topics, and the compact
+   one-line summary in the header panel — see topicListHtml() /
+   topicSummaryHtml() in progress.js). Open-ended (grows as lessons are
+   added), so unlike .badge-grid this only ever lists earned topics —
+   no locked placeholders to maintain. */
+.topic-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 0.5em;
+}
+.topic-list li {
+  padding: 0.6em 0.9em;
+  border-radius: var(--radius-sm);
+  border: var(--border-hairline);
+  background: var(--color-surface-raised);
+  font-size: var(--step--1);
+}
+.topic-list li::before { content: "📘 "; }

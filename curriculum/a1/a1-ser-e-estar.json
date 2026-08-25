@@ -1,0 +1,105 @@
+{
+  "id": "a1-ser-e-estar",
+  "level": "A1",
+  "order": 1,
+  "skill": "grammar",
+  "title": "Ser e Estar",
+  "subtitle": "Os dois verbos mais importantes do português — domine-os primeiro.",
+  "objectives": [
+    "Conjugar ser e estar no presente do indicativo",
+    "Escolher corretamente entre ser e estar em qualquer frase",
+    "Formar frases negativas e perguntas com os dois verbos"
+  ],
+  "content": {
+    "intro": "O português tem dois verbos onde o inglês tem só um: \"to be\". Aprender quando usar cada um é a base de tudo o que vem depois.",
+    "explanation": "<p><strong>Ser</strong> é usado para características permanentes ou duradouras: identidade, profissão, nacionalidade, personalidade, material, hora e data (\"eu sou professor\", \"são três horas\"). <strong>Estar</strong> é usado para estados temporários, localização e condições que podem mudar (\"eu estou cansado\", \"o livro está na mesa\").</p><p>Uma forma prática de lembrar: se a característica muda com facilidade ou depende do momento, use <em>estar</em>. Se ela define \"o que a coisa é\", use <em>ser</em>. Compare: <strong>\"Ele é chato\"</strong> (característica permanente da personalidade) versus <strong>\"Ele está chato hoje\"</strong> (só hoje, algo temporário).</p>",
+    "rules": [
+      "Ser: identidade, profissão, nacionalidade, característica permanente, hora, data, material — \"Eu sou médico\", \"São dez horas\"",
+      "Estar: localização, estado temporário, sentimento passageiro, resultado de uma mudança — \"Estou em casa\", \"Estou feliz hoje\"",
+      "Negativa: sujeito + não + verbo — \"Eu não sou de lá\", \"Ela não está aqui\"",
+      "Pergunta: entonação sobe no final, ou inverte-se a ordem — \"Você é brasileiro?\", \"Está tudo bem?\"",
+      "Ser + adjetivo descreve o que algo/alguém É; estar + adjetivo descreve como algo/alguém ESTÁ agora"
+    ],
+    "table": {
+      "caption": "Ser e Estar — presente do indicativo",
+      "headers": ["Pronome", "Ser", "Estar"],
+      "rows": [
+        ["eu", "sou", "estou"],
+        ["você / ele / ela", "é", "está"],
+        ["nós", "somos", "estamos"],
+        ["vocês / eles / elas", "são", "estão"]
+      ]
+    },
+    "examples": [
+      "Eu sou de Portugal, mas estou no Brasil agora.",
+      "Ela é médica e está no hospital hoje.",
+      "Nós somos estudantes e estamos na biblioteca.",
+      "O café é quente. O café está frio agora.",
+      "Vocês são simpáticos e estão sempre de bom humor."
+    ],
+    "commonMistakes": [
+      { "wrong": "\"Eu sou cansado\" (para dizer que está cansado agora)", "right": "\"Eu estou cansado\"", "why": "Cansaço é um estado temporário — usa-se \"estar\", não \"ser\"." },
+      { "wrong": "\"O livro está um presente\"", "right": "\"O livro é um presente\"", "why": "Identidade/definição do que algo é usa \"ser\", não \"estar\"." },
+      { "wrong": "\"Ela está brasileira\"", "right": "\"Ela é brasileira\"", "why": "Nacionalidade é permanente — sempre usa \"ser\"." }
+    ],
+    "tip": "Quando tiver dúvida, pergunte-se: \"isso pode mudar amanhã?\". Se sim, provavelmente é \"estar\". Se não, provavelmente é \"ser\"."
+  },
+  "exercises": [
+    {
+      "id": "se-fill",
+      "type": "fill-blank",
+      "title": "Complete com Ser ou Estar",
+      "instructions": "Escolha a forma correta de ser ou estar para cada frase.",
+      "items": [
+        { "id": "se1", "prompt": "Eu ___ engenheiro.", "answers": [["sou"]], "options": ["sou", "estou"], "explanation": "Profissão é uma característica permanente — usa-se \"ser\"." },
+        { "id": "se2", "prompt": "Nós ___ muito ocupados esta semana.", "answers": [["estamos"]], "options": ["estamos", "somos"], "explanation": "Estar ocupado é temporário — usa-se \"estar\"." },
+        { "id": "se3", "prompt": "Ela ___ alta e magra.", "answers": [["é"]], "options": ["é", "está"], "explanation": "Características físicas duradouras usam \"ser\"." },
+        { "id": "se4", "prompt": "O restaurante ___ perto daqui.", "answers": [["fica", "está"]], "options": ["está", "sou"], "explanation": "Localização usa \"estar\" (ou o verbo \"ficar\", visto em lições futuras)." }
+      ]
+    },
+    {
+      "id": "se-mc",
+      "type": "multiple-choice",
+      "title": "Escolha a Forma Correta",
+      "instructions": "Escolha a opção que completa a frase corretamente.",
+      "items": [
+        { "id": "se5", "prompt": "Vocês ___ de onde?", "options": ["são", "estão"], "answerIndex": 0, "explanation": "Origem/nacionalidade usa \"ser\"." },
+        { "id": "se6", "prompt": "A porta ___ aberta agora.", "options": ["é", "está"], "answerIndex": 1, "explanation": "O estado atual da porta (aberta agora, pode mudar) usa \"estar\"." },
+        { "id": "se7", "prompt": "Este relógio ___ de ouro.", "options": ["é", "está"], "answerIndex": 0, "explanation": "Material de que algo é feito usa \"ser\"." }
+      ]
+    },
+    {
+      "id": "se-correction",
+      "type": "correction",
+      "title": "Corrija os Erros",
+      "instructions": "Cada frase usa o verbo errado. Escreva a versão correta.",
+      "items": [
+        { "id": "se8", "incorrect": "Eu sou com fome agora.", "answer": ["Eu estou com fome agora", "Eu estou com fome agora."], "explanation": "Fome é um estado temporário — usa-se \"estar com fome\"." },
+        { "id": "se9", "incorrect": "Nossa casa está muito grande.", "answer": ["Nossa casa é muito grande", "Nossa casa é muito grande."], "explanation": "O tamanho da casa é uma característica permanente — usa-se \"ser\"." }
+      ]
+    },
+    {
+      "id": "se-match",
+      "type": "matching",
+      "title": "Ser ou Estar? Associe o Uso",
+      "instructions": "Associe cada frase ao uso gramatical correto.",
+      "items": [
+        { "id": "se10", "pairs": [
+          { "left": "Eu sou professor.", "right": "Profissão" },
+          { "left": "Eu estou em São Paulo.", "right": "Localização" },
+          { "left": "Ela é muito paciente.", "right": "Característica permanente" },
+          { "left": "Ele está nervoso hoje.", "right": "Estado temporário" }
+        ], "explanation": "Cada uso de ser/estar corresponde a uma categoria diferente de significado." }
+      ]
+    }
+  ],
+  "summary": [
+    "Ser é para identidade, profissão, nacionalidade e características permanentes.",
+    "Estar é para localização, estados temporários e condições que podem mudar.",
+    "Pergunte-se \"isso pode mudar facilmente?\" para decidir entre os dois."
+  ],
+  "related": [
+    { "lessonId": "a1-pronomes-pessoais", "label": "Pronomes Pessoais" },
+    { "lessonId": "a1-adjetivos-e-concordancia", "label": "Adjetivos e Concordância" }
+  ]
+}

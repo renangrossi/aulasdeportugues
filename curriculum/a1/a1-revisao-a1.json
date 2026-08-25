@@ -1,0 +1,104 @@
+{
+  "id": "a1-revisao-a1",
+  "level": "A1",
+  "order": 20,
+  "skill": "grammar",
+  "title": "Revisão Geral do A1",
+  "subtitle": "Um mix de tudo o que você aprendeu neste nível, em um só lugar.",
+  "objectives": [
+    "Revisar ser/estar, verbos regulares e irregulares, artigos e pronomes",
+    "Praticar todos os tópicos do A1 em exercícios combinados",
+    "Identificar pontos que ainda precisam de mais prática antes do A2"
+  ],
+  "content": {
+    "intro": "Parabéns por chegar até aqui! Esta lição não introduz gramática nova — ela combina os vinte tópicos do A1 em uma única sessão de revisão, do jeito que apareceriam em uma conversa real.",
+    "explanation": "<p>Ao longo do A1 você aprendeu: <strong>ser e estar</strong>, os <strong>pronomes pessoais</strong>, <strong>gênero e número</strong> dos substantivos, <strong>artigos</strong>, o <strong>presente do indicativo</strong> (regular e irregular), <strong>contrações</strong> de preposição e artigo, <strong>adjetivos</strong>, <strong>possessivos</strong>, <strong>demonstrativos</strong>, <strong>números</strong>, <strong>preposições</strong>, o <strong>presente contínuo</strong>, <strong>conjunções</strong>, formas de <strong>pergunta</strong>, <strong>há/tem</strong>, o <strong>imperativo</strong> e os <strong>diminutivos</strong>.</p><p>Essa é exatamente a base gramatical necessária para começar o nível A2, onde você vai aprender a falar sobre o passado e comparar coisas e pessoas.</p>",
+    "rules": [
+      "Ser = identidade/permanente; Estar = localização/temporário",
+      "Verbos regulares: -ar → -o/-a/-amos/-am; -er → -o/-e/-emos/-em; -ir → -o/-e/-imos/-em",
+      "Irregulares essenciais: vou, tenho, faço, posso, quero, sei",
+      "Artigos e possessivos sempre concordam com o substantivo, não com quem fala",
+      "Perguntas de sim/não mantêm a ordem da afirmação — só muda a entonação/pontuação"
+    ],
+    "examples": [
+      "Eu sou estudante e estou aprendendo português.",
+      "Nós temos uma aula às oito horas da manhã.",
+      "Ela está estudando no momento, mas normalmente estuda à noite.",
+      "Qual é o seu nome, e onde você mora?",
+      "Por favor, fale mais devagar — ainda estou aprendendo!"
+    ],
+    "commonMistakes": [
+      { "wrong": "Misturar ser e estar por insegurança geral", "right": "voltar à pergunta-chave: isso pode mudar amanhã?", "why": "Essa pergunta simples resolve a maioria dos casos de dúvida entre ser e estar." },
+      { "wrong": "Esquecer a concordância de gênero/número em artigos, adjetivos e possessivos", "right": "checar sempre gênero e número do substantivo primeiro", "why": "A concordância é a base da gramática do português e vale a pena revisar constantemente." },
+      { "wrong": "Traduzir estruturas do inglês palavra por palavra", "right": "aprender a estrutura própria do português (ex.: adjetivo depois do substantivo)", "why": "Tradução literal costuma gerar frases estranhas — é melhor internalizar o padrão típico de cada estrutura em português." }
+    ],
+    "tip": "Se algum tópico desta revisão ainda parece difícil, volte à lição específica sobre ele antes de seguir para o A2 — a gramática do A2 constrói diretamente sobre esta base."
+  },
+  "exercises": [
+    {
+      "id": "rev-mc",
+      "type": "multiple-choice",
+      "title": "Revisão Combinada: Múltipla Escolha",
+      "instructions": "Escolha a resposta correta para cada pergunta, misturando os tópicos do A1.",
+      "items": [
+        { "id": "rv1", "prompt": "Eu ___ muito cansado hoje.", "options": ["sou", "estou"], "answerIndex": 1, "explanation": "Estado temporário usa \"estar\"." },
+        { "id": "rv2", "prompt": "Nós ___ (ir) ao cinema amanhã.", "options": ["vamos", "vai", "vou"], "answerIndex": 0, "explanation": "Primeira pessoa do plural de \"ir\": vamos." },
+        { "id": "rv3", "prompt": "___ é o seu endereço?", "options": ["Qual", "O que", "Quem"], "answerIndex": 0, "explanation": "Pergunta específica com \"ser\" usa \"qual\"." }
+      ]
+    },
+    {
+      "id": "rev-fill",
+      "type": "fill-blank",
+      "title": "Revisão Combinada: Complete as Frases",
+      "instructions": "Complete cada frase com a palavra correta.",
+      "items": [
+        { "id": "rv4", "prompt": "As chaves estão ___ (em + a) mesa.", "answers": [["na"]], "options": ["na", "no", "da"], "explanation": "\"Em\" + \"a\" = \"na\"." },
+        { "id": "rv5", "prompt": "___ (my, fem.) casa fica perto daqui.", "answers": [["Minha"]], "options": ["Minha", "Meu", "Seu"], "explanation": "\"Casa\" é feminino, então usa-se \"minha\"." },
+        { "id": "rv6", "prompt": "Eu não ___ (saber) a resposta certa.", "answers": [["sei"]], "explanation": "Primeira pessoa de \"saber\": sei." }
+      ]
+    },
+    {
+      "id": "rev-correction",
+      "type": "correction",
+      "title": "Revisão Combinada: Corrija os Erros",
+      "instructions": "Cada frase tem um erro de gramática do nível A1. Escreva a versão correta.",
+      "items": [
+        { "id": "rv7", "incorrect": "Ela é com fome agora.", "answer": ["Ela está com fome agora", "Ela está com fome agora."], "explanation": "Fome é um estado temporário — usa-se \"estar\"." },
+        { "id": "rv8", "incorrect": "Eu preciso de estudar mais.", "answer": ["Eu preciso estudar mais", "Eu preciso estudar mais."], "explanation": "\"Precisar\" + infinitivo não leva \"de\"." },
+        { "id": "rv9", "incorrect": "As menina são altas.", "answer": ["As meninas são altas", "As meninas são altas."], "explanation": "\"Menina\" precisa estar no plural para concordar com \"as\" e \"são\"." }
+      ]
+    },
+    {
+      "id": "rev-match",
+      "type": "matching",
+      "title": "Revisão Combinada: Associação",
+      "instructions": "Associe cada pergunta à resposta mais lógica.",
+      "items": [
+        { "id": "rv10", "pairs": [
+          { "left": "Qual é o seu nome?", "right": "Meu nome é Ana." },
+          { "left": "Onde você mora?", "right": "Eu moro em Curitiba." },
+          { "left": "Por que você estuda português?", "right": "Porque eu quero morar no Brasil." },
+          { "left": "Quantos anos você tem?", "right": "Eu tenho vinte e cinco anos." }
+        ], "explanation": "Cada pergunta pede um tipo específico de resposta, conforme a palavra interrogativa usada." }
+      ]
+    },
+    {
+      "id": "rev-writing",
+      "type": "writing",
+      "title": "Escreva Sobre Você",
+      "instructions": "Escreva um parágrafo de 5 a 8 frases sobre sua rotina, usando pelo menos três tópicos desta revisão (ser/estar, verbos no presente, artigos, possessivos, etc.).",
+      "items": [
+        { "id": "rv11", "prompt": "Descreva um dia normal da sua semana: onde você mora, o que você faz, do que você gosta e por que você está aprendendo português." }
+      ]
+    }
+  ],
+  "summary": [
+    "O nível A1 cobre a base completa do presente: ser/estar, verbos regulares e irregulares, artigos, pronomes e perguntas.",
+    "Concordância de gênero e número é a espinha dorsal da gramática portuguesa.",
+    "Com essa base, você está pronto para o A2: passado, comparações e mais vocabulário do cotidiano."
+  ],
+  "related": [
+    { "lessonId": "a1-ser-e-estar", "label": "Ser e Estar" },
+    { "lessonId": "a1-diminutivos-e-aumentativos", "label": "Diminutivos e Aumentativos" }
+  ]
+}

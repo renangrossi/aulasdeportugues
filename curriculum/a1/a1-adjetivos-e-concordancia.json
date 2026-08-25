@@ -1,0 +1,88 @@
+{
+  "id": "a1-adjetivos-e-concordancia",
+  "level": "A1",
+  "order": 8,
+  "skill": "grammar",
+  "title": "Adjetivos e Concordância",
+  "subtitle": "Adjetivos mudam de forma para combinar com o substantivo que descrevem.",
+  "objectives": [
+    "Formar o feminino e o plural de adjetivos comuns",
+    "Fazer a concordância de gênero e número entre substantivo e adjetivo",
+    "Posicionar corretamente o adjetivo na frase"
+  ],
+  "content": {
+    "intro": "Em inglês, adjetivos nunca mudam de forma. Em português, eles quase sempre concordam com o substantivo — em gênero e em número.",
+    "explanation": "<p>A maioria dos adjetivos terminados em <strong>-o</strong> muda para <strong>-a</strong> no feminino: alto/alta, bonito/bonita. Adjetivos terminados em <strong>-e</strong> ou em consoante geralmente não mudam entre masculino e feminino: inteligente (m/f), fácil (m/f). Para o plural, a regra é a mesma dos substantivos: acrescenta-se -s (alto → altos) ou -es, dependendo da terminação.</p><p>Diferente do inglês, onde o adjetivo vem antes do substantivo (\"a red car\"), em português o adjetivo geralmente vem <strong>depois</strong> do substantivo: \"um carro vermelho\". Alguns adjetivos podem vir antes para dar ênfase ou um tom mais poético, mas a posição padrão é depois.</p>",
+    "rules": [
+      "Masculino em -o → feminino em -a: bonito/bonita, alto/alta",
+      "Adjetivos em -e ou consoante geralmente não mudam de gênero: forte, feliz, inteligente",
+      "Plural: acrescenta -s (altos, bonitas) ou segue as mesmas regras dos substantivos",
+      "Posição padrão: substantivo + adjetivo (um carro vermelho, uma casa grande)",
+      "O adjetivo sempre concorda em gênero E número com o substantivo que descreve"
+    ],
+    "table": {
+      "caption": "Concordância de adjetivos",
+      "headers": ["Masc. singular", "Fem. singular", "Masc. plural", "Fem. plural"],
+      "rows": [
+        ["alto", "alta", "altos", "altas"],
+        ["feliz", "feliz", "felizes", "felizes"],
+        ["inteligente", "inteligente", "inteligentes", "inteligentes"]
+      ]
+    },
+    "examples": [
+      "Ela é muito inteligente e simpática.",
+      "Os carros novos são caros.",
+      "As casas grandes ficam naquele bairro.",
+      "Ele tem um cachorro pequeno e feliz.",
+      "As meninas são altas e fortes."
+    ],
+    "commonMistakes": [
+      { "wrong": "\"A menina é alto\"", "right": "\"A menina é alta\"", "why": "O adjetivo precisa concordar em gênero com o substantivo feminino \"menina\"." },
+      { "wrong": "\"Os livros interessante\"", "right": "\"Os livros interessantes\"", "why": "O adjetivo precisa concordar em número (plural) com \"livros\"." },
+      { "wrong": "\"Red car\" traduzido como \"vermelho carro\"", "right": "\"carro vermelho\"", "why": "Em português, o adjetivo geralmente vem depois do substantivo, ao contrário do inglês." }
+    ],
+    "tip": "Sempre que usar um adjetivo, pergunte-se duas coisas: o substantivo é masculino ou feminino? É singular ou plural? O adjetivo precisa combinar nas duas categorias."
+  },
+  "exercises": [
+    {
+      "id": "adj-fill",
+      "type": "fill-blank",
+      "title": "Complete com o Adjetivo Certo",
+      "instructions": "Complete cada frase com a forma correta do adjetivo indicado.",
+      "items": [
+        { "id": "aj1", "prompt": "A casa é muito ___ (grande).", "answers": [["grande"]], "explanation": "\"Grande\" termina em -e e não muda entre masculino e feminino." },
+        { "id": "aj2", "prompt": "Os meninos são muito ___ (esperto).", "answers": [["espertos"]], "explanation": "Masculino plural: espertos." },
+        { "id": "aj3", "prompt": "As flores são ___ (bonito).", "answers": [["bonitas"]], "explanation": "Feminino plural: bonitas." }
+      ]
+    },
+    {
+      "id": "adj-mc",
+      "type": "multiple-choice",
+      "title": "Escolha a Forma Correta",
+      "instructions": "Escolha a opção com a concordância correta.",
+      "items": [
+        { "id": "aj4", "prompt": "Qual frase está correta?", "options": ["Ela é muito simpático.", "Ela é muito simpática.", "Ela é muito simpáticas."], "answerIndex": 1, "explanation": "\"Simpática\" concorda em gênero feminino singular com \"ela\"." },
+        { "id": "aj5", "prompt": "Qual frase está correta?", "options": ["Os carros são caro.", "Os carros são caros.", "Os carro são caros."], "answerIndex": 1, "explanation": "Tanto o substantivo quanto o adjetivo precisam estar no plural." }
+      ]
+    },
+    {
+      "id": "adj-order",
+      "type": "ordering",
+      "title": "Monte a Frase",
+      "instructions": "Coloque as palavras na ordem correta, lembrando que o adjetivo geralmente vem depois do substantivo.",
+      "items": [
+        { "id": "aj6", "prompt": "carro / um / tenho / vermelho / eu", "words": ["Eu", "tenho", "um", "carro", "vermelho"], "explanation": "Sujeito + verbo + artigo + substantivo + adjetivo." },
+        { "id": "aj7", "prompt": "grande / muito / é / a / casa", "words": ["A", "casa", "é", "muito", "grande"], "explanation": "Artigo + substantivo + verbo + advérbio + adjetivo." }
+      ]
+    }
+  ],
+  "summary": [
+    "Adjetivos concordam em gênero e número com o substantivo que descrevem.",
+    "Adjetivos em -o mudam para -a no feminino; em -e ou consoante, geralmente não mudam.",
+    "A posição padrão do adjetivo é depois do substantivo, ao contrário do inglês."
+  ],
+  "related": [
+    { "lessonId": "a1-ser-e-estar", "label": "Ser e Estar" },
+    { "lessonId": "a1-possessivos", "label": "Pronomes Possessivos" }
+  ]
+}

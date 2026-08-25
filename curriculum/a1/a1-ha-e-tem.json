@@ -1,0 +1,79 @@
+{
+  "id": "a1-ha-e-tem",
+  "level": "A1",
+  "order": 17,
+  "skill": "grammar",
+  "title": "Há e Tem: Existência",
+  "subtitle": "Como dizer \"there is/there are\" em português.",
+  "objectives": [
+    "Usar \"há\" e \"tem\" para expressar existência",
+    "Reconhecer que \"há\" e \"tem\" (nesse uso) não variam no plural",
+    "Usar \"há\" também para expressar tempo decorrido"
+  ],
+  "content": {
+    "intro": "Em inglês, \"there is\" e \"there are\" mudam conforme o singular ou plural. Em português, a forma de existência não muda — nem no singular nem no plural.",
+    "explanation": "<p><strong>Há</strong> (do verbo \"haver\") e <strong>tem</strong> (do verbo \"ter\", usado de forma impessoal) significam \"there is/there are\". \"Há\" é mais formal e mais comum na escrita; \"tem\", nesse sentido impessoal, é extremamente comum na fala cotidiana do Brasil. Os dois <strong>não mudam</strong> para o plural: \"há um livro\" / \"há dois livros\"; \"tem um livro\" / \"tem dois livros\".</p><p>\"Há\" também é usado para expressar tempo decorrido, equivalente a \"ago\" ou \"for\": \"eu moro aqui há dois anos\" (I've lived here for two years / I moved here two years ago).</p>",
+    "rules": [
+      "Há / tem + substantivo = there is/there are (existência)",
+      "Não variam no plural: \"há três pessoas\", nunca \"hão três pessoas\"",
+      "\"Tem\" (impessoal) é mais informal e comum na fala; \"há\" é mais formal/escrito",
+      "\"Há\" + período de tempo = ago / for: \"há dois anos\" (two years ago)",
+      "\"Tem\" impessoal não deve ser confundido com \"tem\" pessoal (você tem, ele tem)"
+    ],
+    "examples": [
+      "Há um restaurante bom perto daqui.",
+      "Tem muitas pessoas na festa hoje.",
+      "Há três quartos neste apartamento.",
+      "Eu moro nesta cidade há cinco anos.",
+      "Não tem ninguém em casa agora."
+    ],
+    "commonMistakes": [
+      { "wrong": "\"Hão dois livros na mesa\"", "right": "\"Há dois livros na mesa\"", "why": "\"Há\", nesse uso, nunca varia no plural — é sempre a mesma forma." },
+      { "wrong": "Confundir \"há\" (existência/tempo) com \"a\" (preposição)", "right": "usar \"há\" com o acento grave e o \"h\" quando indicar existência ou tempo decorrido", "why": "São palavras diferentes: \"a\" é artigo/preposição; \"há\" vem do verbo haver." },
+      { "wrong": "\"Eu moro aqui por dois anos atrás\"", "right": "\"Eu moro aqui há dois anos\"", "why": "Para tempo decorrido contado a partir de agora, \"há\" é a forma natural em português." }
+    ],
+    "tip": "Na fala cotidiana do Brasil, \"tem\" é usado com muita frequência no lugar de \"há\" — os dois estão corretos, mas \"tem\" soa mais casual e \"há\" mais formal/escrito."
+  },
+  "exercises": [
+    {
+      "id": "hatem-fill",
+      "type": "fill-blank",
+      "title": "Complete com Há ou Tem",
+      "instructions": "Complete cada frase com \"há\" ou \"tem\" (ambos aceitos, quando apropriado).",
+      "items": [
+        { "id": "ht1", "prompt": "___ dois carros na garagem.", "answers": [["Há", "Tem"]], "explanation": "Ambas as formas expressam existência; não variam no plural." },
+        { "id": "ht2", "prompt": "Eu trabalho nesta empresa ___ três anos.", "answers": [["há"]], "explanation": "Tempo decorrido usa especificamente \"há\", não \"tem\"." },
+        { "id": "ht3", "prompt": "___ muita gente na praia hoje.", "answers": [["Há", "Tem"]], "explanation": "Existência de pessoas — \"há\"/\"tem\" funcionam igualmente." }
+      ]
+    },
+    {
+      "id": "hatem-mc",
+      "type": "multiple-choice",
+      "title": "Escolha a Frase Correta",
+      "instructions": "Escolha a versão gramaticalmente correta.",
+      "items": [
+        { "id": "ht4", "prompt": "Qual frase está correta?", "options": ["Hão muitas opções no cardápio.", "Há muitas opções no cardápio.", "Há muita opção no cardápio."], "answerIndex": 1, "explanation": "\"Há\" não varia no plural, e concorda em número com o restante da frase." },
+        { "id": "ht5", "prompt": "Como se diz \"I've lived here for ten years\"?", "options": ["Eu moro aqui tem dez anos.", "Eu moro aqui há dez anos.", "Eu moro aqui a dez anos."], "answerIndex": 1, "explanation": "Tempo decorrido usa \"há\", com h e acento grave." }
+      ]
+    },
+    {
+      "id": "hatem-tf",
+      "type": "true-false",
+      "title": "Verdadeiro ou Falso",
+      "instructions": "Leia cada afirmação sobre \"há\" e \"tem\".",
+      "items": [
+        { "id": "ht6", "statement": "\"Há\" varia entre singular e plural, como \"there is/there are\" em inglês.", "answer": false, "explanation": "\"Há\" não varia — é a mesma forma para singular e plural." },
+        { "id": "ht7", "statement": "\"Tem\", usado de forma impessoal, é comum na fala cotidiana do Brasil.", "answer": true, "explanation": "Exatamente — é extremamente frequente no português falado, embora \"há\" seja mais formal." }
+      ]
+    }
+  ],
+  "summary": [
+    "Há e tem (impessoal) significam \"there is/there are\" e não variam no plural.",
+    "\"Há\" também expressa tempo decorrido, equivalente a \"ago\"/\"for\".",
+    "\"Tem\" é mais informal/falado; \"há\" é mais formal/escrito."
+  ],
+  "related": [
+    { "lessonId": "a1-verbos-irregulares-no-presente", "label": "Verbos Irregulares no Presente" },
+    { "lessonId": "a1-palavras-interrogativas", "label": "Palavras Interrogativas" }
+  ]
+}

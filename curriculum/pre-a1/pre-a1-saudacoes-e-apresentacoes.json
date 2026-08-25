@@ -1,0 +1,96 @@
+{
+  "id": "pre-a1-saudacoes-e-apresentacoes",
+  "level": "PRE-A1",
+  "order": 2,
+  "skill": "functional",
+  "title": "Saudações e Apresentações",
+  "subtitle": "As primeiras palavras para cumprimentar alguém e dizer quem você é.",
+  "objectives": [
+    "Cumprimentar alguém em diferentes horários do dia",
+    "Perguntar e dizer o nome de alguém",
+    "Usar formas de despedida apropriadas"
+  ],
+  "content": {
+    "intro": "Toda conversa começa com um cumprimento. Estas são as primeiras palavras que todo estudante de português precisa saber de cor.",
+    "explanation": "<p>Em português, o cumprimento muda de acordo com o horário do dia: <strong>bom dia</strong> (de manhã), <strong>boa tarde</strong> (à tarde) e <strong>boa noite</strong> (à noite — e também para se despedir à noite). \"Oi\" e \"olá\" funcionam a qualquer hora e são mais informais.</p><p>Para perguntar o nome de alguém, usa-se <strong>\"Qual é o seu nome?\"</strong> ou, de forma mais direta, <strong>\"Como você se chama?\"</strong>. Para responder, basta dizer <strong>\"Meu nome é...\"</strong> ou <strong>\"Eu me chamo...\"</strong>.</p>",
+    "rules": [
+      "\"Oi\" e \"Olá\" = cumprimento informal, a qualquer hora",
+      "\"Bom dia\" = manhã até por volta do meio-dia",
+      "\"Boa tarde\" = do meio-dia até o entardecer",
+      "\"Boa noite\" = à noite — serve tanto para cumprimentar quanto para se despedir",
+      "\"Tchau\" = despedida informal e comum; \"Até logo\" / \"Até mais\" = \"see you later\"",
+      "\"Prazer\" ou \"Muito prazer\" = usado ao ser apresentado a alguém pela primeira vez"
+    ],
+    "examples": [
+      "Bom dia! Como você está?",
+      "Oi, tudo bem? Meu nome é Carlos.",
+      "Qual é o seu nome?",
+      "Muito prazer em conhecer você!",
+      "Boa noite, até amanhã!"
+    ],
+    "commonMistakes": [
+      { "wrong": "Boa noite (usado ao meio-dia)", "right": "Bom dia ou Boa tarde", "why": "\"Boa noite\" só é usado ao anoitecer, nunca de manhã ou no início da tarde." },
+      { "wrong": "\"Eu sou Carlos\" para todos os contextos de apresentação de nome", "right": "\"Meu nome é Carlos\" / \"Eu me chamo Carlos\"", "why": "\"Eu sou\" também funciona, mas as formas com \"nome\" ou \"chamar\" são as mais naturais para apresentar o nome." },
+      { "wrong": "Responder \"Tudo bem?\" só com \"Sim\"", "right": "\"Tudo bem, e você?\"", "why": "É comum devolver a pergunta — ignorar isso soa abrupto em uma conversa." }
+    ],
+    "tip": "Pratique dizendo seu próprio nome em voz alta com \"Meu nome é...\" — é a primeira frase completa que todo estudante deveria conseguir dizer sem pensar."
+  },
+  "exercises": [
+    {
+      "id": "saud-mc",
+      "type": "multiple-choice",
+      "title": "Escolha a Saudação Certa",
+      "instructions": "Escolha o cumprimento mais apropriado para cada horário ou situação.",
+      "items": [
+        { "id": "sa1", "prompt": "São 8h da manhã. Você encontra seu professor. O que você diz?", "options": ["Boa noite", "Bom dia", "Boa tarde"], "answerIndex": 1, "explanation": "\"Bom dia\" é usado pela manhã." },
+        { "id": "sa2", "prompt": "São 21h. Você chega em uma festa. O que você diz?", "options": ["Bom dia", "Boa tarde", "Boa noite"], "answerIndex": 2, "explanation": "À noite, o cumprimento certo é \"boa noite\"." },
+        { "id": "sa3", "prompt": "Você conhece alguém pela primeira vez. O que você diz depois de se apresentar?", "options": ["Tchau", "Muito prazer", "Bom dia"], "answerIndex": 1, "explanation": "\"Muito prazer\" é a expressão usada ao conhecer alguém novo." }
+      ]
+    },
+    {
+      "id": "saud-match",
+      "type": "matching",
+      "title": "Associe a Expressão ao Momento",
+      "instructions": "Associe cada expressão à situação correspondente.",
+      "items": [
+        { "id": "sa4", "pairs": [
+          { "left": "Bom dia", "right": "Cumprimento da manhã" },
+          { "left": "Boa tarde", "right": "Cumprimento da tarde" },
+          { "left": "Boa noite", "right": "Cumprimento (ou despedida) da noite" },
+          { "left": "Tchau", "right": "Despedida informal" },
+          { "left": "Muito prazer", "right": "Ao conhecer alguém" }
+        ], "explanation": "Cada expressão tem seu momento certo de uso no dia a dia." }
+      ]
+    },
+    {
+      "id": "saud-fill",
+      "type": "fill-blank",
+      "title": "Complete o Diálogo",
+      "instructions": "Complete cada frase do diálogo com a palavra correta.",
+      "items": [
+        { "id": "sa5", "prompt": "— Oi! Qual é o seu ___?", "answers": [["nome"]], "options": ["nome", "dia", "prazer"], "explanation": "\"Nome\" é a palavra usada para perguntar como alguém se chama." },
+        { "id": "sa6", "prompt": "— Meu ___ é Beatriz.", "answers": [["nome"]], "options": ["nome", "tarde", "noite"], "explanation": "\"Meu nome é...\" é a forma padrão de se apresentar." },
+        { "id": "sa7", "prompt": "— Muito ___ em conhecer você!", "answers": [["prazer"]], "options": ["prazer", "obrigado", "dia"], "explanation": "\"Muito prazer\" é a expressão usada ao conhecer alguém pela primeira vez." }
+      ]
+    },
+    {
+      "id": "saud-order",
+      "type": "ordering",
+      "title": "Monte a Frase",
+      "instructions": "Coloque as palavras na ordem correta para formar uma frase de apresentação.",
+      "items": [
+        { "id": "sa8", "prompt": "é / meu / João / nome", "words": ["Meu", "nome", "é", "João"], "explanation": "Sujeito (Meu nome) + verbo (é) + nome." },
+        { "id": "sa9", "prompt": "você / está / como", "words": ["Como", "você", "está"], "explanation": "Pergunta comum sobre o bem-estar de alguém: \"Como você está?\"." }
+      ]
+    }
+  ],
+  "summary": [
+    "Bom dia, boa tarde e boa noite mudam conforme o horário do dia.",
+    "\"Meu nome é...\" ou \"Eu me chamo...\" são as formas padrão de se apresentar.",
+    "\"Muito prazer\" é a expressão certa ao conhecer alguém pela primeira vez."
+  ],
+  "related": [
+    { "lessonId": "pre-a1-alfabeto-e-sons", "label": "O Alfabeto e os Sons do Português" },
+    { "lessonId": "pre-a1-ser-estar-e-pronomes", "label": "Ser, Estar e os Pronomes" }
+  ]
+}

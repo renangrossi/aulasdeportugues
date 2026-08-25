@@ -1,0 +1,95 @@
+{
+  "id": "a1-genero-e-numero-dos-substantivos",
+  "level": "A1",
+  "order": 3,
+  "skill": "grammar",
+  "title": "Gênero e Número dos Substantivos",
+  "subtitle": "Masculino, feminino, singular e plural — as quatro formas de todo substantivo.",
+  "objectives": [
+    "Identificar o gênero de substantivos comuns e suas exceções",
+    "Formar o plural de substantivos regulares",
+    "Reconhecer os principais padrões irregulares de plural"
+  ],
+  "content": {
+    "intro": "Você já viu o básico de gênero na lição Pre-A1 sobre pessoas e objetos. Agora vamos aprofundar as regras e aprender a formar o plural corretamente.",
+    "explanation": "<p>Além da regra geral (-o masculino, -a feminino), muitos substantivos terminam em outras letras e precisam ser memorizados: os terminados em <strong>-ção</strong> são femininos (a nação, a informação), os terminados em <strong>-ema</strong> costumam ser masculinos mesmo terminando em -a (o problema, o sistema).</p><p>Para formar o <strong>plural</strong>, a regra geral é acrescentar <strong>-s</strong> (casa → casas). Palavras terminadas em <strong>-r</strong>, <strong>-z</strong> e <strong>-n</strong> recebem <strong>-es</strong> (mulher → mulheres). Palavras terminadas em <strong>-m</strong> mudam para <strong>-ns</strong> (homem → homens). Palavras terminadas em <strong>-ão</strong> têm três padrões possíveis de plural: -ões (o mais comum), -ães ou -ãos.</p>",
+    "rules": [
+      "Plural regular: acrescenta -s (livro → livros, mesa → mesas)",
+      "Terminados em -r, -z, -n: acrescenta -es (mulher → mulheres, professor → professores)",
+      "Terminados em -m: muda para -ns (homem → homens, jovem → jovens)",
+      "Terminados em -ão: geralmente -ões (coração → corações), às vezes -ães (pão → pães) ou -ãos (mão → mãos)",
+      "Substantivos em -ção, -são, -dade são sempre femininos (nação, decisão, cidade)"
+    ],
+    "table": {
+      "caption": "Padrões de plural com -ão",
+      "headers": ["Singular", "Plural", "Padrão"],
+      "rows": [
+        ["coração", "corações", "-ões (mais comum)"],
+        ["limão", "limões", "-ões"],
+        ["pão", "pães", "-ães (menos comum)"],
+        ["mão", "mãos", "-ãos (poucas palavras)"]
+      ]
+    },
+    "examples": [
+      "Eu tenho dois irmãos e uma irmã.",
+      "As mulheres trabalham neste hospital.",
+      "Os corações dos pacientes estão bem.",
+      "A informação é muito importante.",
+      "Eu comprei três pães na padaria."
+    ],
+    "commonMistakes": [
+      { "wrong": "\"coraçãos\" (plural de coração)", "right": "corações", "why": "Palavras em -ão geralmente formam plural em -ões, não simplesmente acrescentando -s." },
+      { "wrong": "\"a problema\"", "right": "o problema", "why": "Substantivos terminados em -ema são majoritariamente masculinos, apesar de terminarem em -a." },
+      { "wrong": "\"mulhers\" (plural de mulher)", "right": "mulheres", "why": "Palavras terminadas em -r formam plural com -es, não apenas -s." }
+    ],
+    "tip": "Não existe uma fórmula 100% confiável para o plural de palavras em -ão — a melhor estratégia é aprender cada palavra frequente junto com seu plural específico."
+  },
+  "exercises": [
+    {
+      "id": "gen-fill",
+      "type": "fill-blank",
+      "title": "Escreva o Plural",
+      "instructions": "Complete cada frase com a forma plural correta da palavra indicada.",
+      "items": [
+        { "id": "gn1", "prompt": "Eu tenho dois ___ (irmão).", "answers": [["irmãos"]], "explanation": "\"Irmão\" segue o padrão -ãos (uma das exceções ao padrão mais comum -ões)." },
+        { "id": "gn2", "prompt": "As ___ (mulher) estão na reunião.", "answers": [["mulheres"]], "explanation": "Palavras em -r formam plural com -es." },
+        { "id": "gn3", "prompt": "Eu comprei dois ___ (pão) frescos.", "answers": [["pães"]], "explanation": "\"Pão\" é uma das poucas palavras com plural em -ães." }
+      ]
+    },
+    {
+      "id": "gen-mc",
+      "type": "multiple-choice",
+      "title": "Escolha o Gênero Correto",
+      "instructions": "Escolha o artigo correto para cada substantivo.",
+      "items": [
+        { "id": "gn4", "prompt": "___ sistema está funcionando bem.", "options": ["O", "A"], "answerIndex": 0, "explanation": "\"Sistema\" termina em -a mas é masculino." },
+        { "id": "gn5", "prompt": "___ informação chegou ontem.", "options": ["O", "A"], "answerIndex": 1, "explanation": "Substantivos terminados em -ção são sempre femininos." },
+        { "id": "gn6", "prompt": "___ nação tem uma longa história.", "options": ["O", "A"], "answerIndex": 1, "explanation": "\"Nação\" segue o padrão feminino de -ção." }
+      ]
+    },
+    {
+      "id": "gen-match",
+      "type": "matching",
+      "title": "Associe o Singular ao Plural",
+      "instructions": "Associe cada palavra no singular à sua forma plural correta.",
+      "items": [
+        { "id": "gn7", "pairs": [
+          { "left": "professor", "right": "professores" },
+          { "left": "jovem", "right": "jovens" },
+          { "left": "limão", "right": "limões" },
+          { "left": "mão", "right": "mãos" },
+          { "left": "casa", "right": "casas" }
+        ], "explanation": "Cada terminação segue um padrão diferente de formação do plural." }
+      ]
+    }
+  ],
+  "summary": [
+    "O plural regular acrescenta -s; -r/-z/-n acrescentam -es; -m muda para -ns.",
+    "Palavras em -ão têm três padrões possíveis de plural: -ões, -ães ou -ãos.",
+    "Substantivos em -ção, -são e -dade são sempre femininos, mesmo sem seguir o padrão -a/-o."
+  ],
+  "related": [
+    { "lessonId": "a1-artigos-definidos-e-indefinidos", "label": "Artigos Definidos e Indefinidos" },
+    { "lessonId": "a1-adjetivos-e-concordancia", "label": "Adjetivos e Concordância" }
+  ]
+}

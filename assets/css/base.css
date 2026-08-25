@@ -1,0 +1,171 @@
+/* =======================================================================
+   BASE
+   Reset + element defaults + typography. No component classes here.
+   ======================================================================= */
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  /* Keeps hash-link targets clear of the sticky header (and, where
+     present, the sticky .level-toc sub-nav) so the heading a user
+     jumps to — or is already reading, when the browser re-flows the
+     page on zoom — doesn't end up hidden underneath them. */
+  scroll-padding-top: var(--sticky-offset);
+  /* Reserves the scrollbar's own width permanently (on browsers that
+     support it — no-op elsewhere, incl. iOS Safari's overlay
+     scrollbars, which never needed this) instead of only when a
+     scrollbar is actually present. Without it, anything that
+     temporarily removes the page scrollbar (main.js's mobile-nav
+     overflow:hidden, search.js's overlay) makes the page a scrollbar's
+     width wider for as long as it's open, visibly nudging the header/
+     content sideways and back — the "width jump" this avoids. */
+  scrollbar-gutter: stable;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-size: var(--step-0);
+  line-height: var(--leading-normal);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  transition: background-color var(--duration-base) var(--ease-standard),
+              color var(--duration-base) var(--ease-standard);
+}
+
+img, video { display: block; max-width: 100%; height: auto; }
+
+/* Default icon size — components with a specific size class (e.g.
+   .brand__mark, .card__icon svg) override this via higher specificity. */
+svg { width: 20px; height: 20px; flex-shrink: 0; }
+
+a { color: inherit; text-decoration: none; }
+
+ul, ol { padding: 0; margin: 0; list-style: none; }
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  color: var(--color-text);
+  line-height: var(--leading-tight);
+  font-weight: 600;
+  margin: 0;
+}
+
+h1 { font-size: var(--step-5); letter-spacing: -0.01em; }
+h2 { font-size: var(--step-3); }
+h3 { font-size: var(--step-1); }
+h4 { font-size: var(--step-0); font-weight: 700; }
+
+p { margin: 0 0 1em; }
+p:last-child { margin-bottom: 0; }
+
+small { font-size: var(--step--1); }
+
+/* Small-caps "eyebrow" label used above headings throughout the site */
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2xs);
+  font-family: var(--font-body);
+  font-size: var(--step--1);
+  font-weight: 600;
+  letter-spacing: var(--tracking-wider);
+  text-transform: uppercase;
+  color: var(--color-accent);
+}
+
+.eyebrow::before {
+  content: "";
+  display: inline-block;
+  width: 1.5em;
+  height: 1px;
+  background: currentColor;
+  opacity: 0.6;
+}
+
+/* Focus visibility — never suppressed, always legible on parchment or navy */
+:focus-visible {
+  outline: 3px solid var(--color-focus-ring);
+  outline-offset: 3px;
+  border-radius: var(--radius-sm);
+}
+
+/* Skip link for keyboard users */
+.skip-link {
+  position: absolute;
+  left: var(--space-sm);
+  top: -60px;
+  background: var(--color-primary-strong);
+  color: var(--color-text-on-dark);
+  padding: 0.7em 1.2em;
+  border-radius: var(--radius-sm);
+  z-index: 4000;
+  transition: top var(--duration-fast) var(--ease-standard);
+  font-weight: 600;
+}
+.skip-link:focus { top: var(--space-sm); }
+
+/* Visually-hidden but screen-reader accessible */
+.visually-hidden {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+hr.rule {
+  border: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--color-border-strong) 20%, var(--color-border-strong) 80%, transparent);
+  margin: var(--space-xl) auto;
+  width: 100%;
+  max-width: 320px;
+  opacity: 0.7;
+}
+
+::selection {
+  background: var(--gold-300);
+  color: var(--ink-900);
+}
+
+/* ---------------------------------------------------------------------
+   Native form controls — explicit theme-aware colors
+   `color-scheme` (tokens.css / dark-mode.css) gets the browser's own
+   dark chrome close, but isn't reliable enough on its own for a
+   <select>'s dropdown popup across browsers — some keep rendering the
+   open option list with a light/OS-default background regardless of
+   theme, which is exactly what made dark-mode selects (e.g. the
+   fill-blank/matching dropdowns in exercises.css) hard to read. Setting
+   colors explicitly on both the closed control and its <option>s fixes
+   that in every theme, using the same tokens as the rest of the page —
+   a component-specific class (like .blank-input) can still override
+   these, this is just the shared floor every select gets.
+   --------------------------------------------------------------------- */
+select {
+  font: inherit;
+  color: var(--color-text);
+  background-color: var(--color-surface);
+  border: var(--border-hairline);
+  border-radius: var(--radius-sm);
+}
+select option {
+  color: var(--color-text);
+  background-color: var(--color-surface);
+}

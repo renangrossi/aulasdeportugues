@@ -1,0 +1,78 @@
+{
+  "id": "a1-perguntas-sim-ou-nao",
+  "level": "A1",
+  "order": 15,
+  "skill": "grammar",
+  "title": "Perguntas Sim ou Não",
+  "subtitle": "Como fazer perguntas sem precisar mudar a ordem das palavras.",
+  "objectives": [
+    "Formar perguntas de sim/não usando apenas a entonação",
+    "Responder perguntas de sim/não de forma natural",
+    "Usar \"não é?\" e \"né?\" como confirmação no final da frase"
+  ],
+  "content": {
+    "intro": "Boa notícia: fazer perguntas de sim/não em português é mais simples do que em inglês — na maioria das vezes, não é preciso mudar a ordem das palavras.",
+    "explanation": "<p>Em inglês, uma pergunta como \"Do you speak Portuguese?\" precisa do auxiliar \"do\". Em português, a mesma pergunta é apenas <strong>\"Você fala português?\"</strong> — a mesma ordem de uma afirmação, mas com entonação ascendente no final (na fala) ou um ponto de interrogação (na escrita).</p><p>Para confirmar algo com o interlocutor, é muito comum acrescentar <strong>\"não é?\"</strong> ou, de forma mais informal, <strong>\"né?\"</strong> ao final da frase: \"Está calor hoje, né?\".</p>",
+    "rules": [
+      "Perguntas de sim/não usam a mesma ordem de uma afirmação — muda apenas a entonação/pontuação",
+      "Não existe equivalente a \"do/does\" em português para formar perguntas",
+      "Respostas curtas repetem o verbo: \"Você gosta de café?\" — \"Gosto\" (não apenas \"sim\")",
+      "\"Não é?\" e \"né?\" (informal) são usados para pedir confirmação no final da frase",
+      "A negativa de uma pergunta simplesmente coloca \"não\" antes do verbo: \"Você não vem?\""
+    ],
+    "examples": [
+      "Você fala português?",
+      "Ela mora em São Paulo?",
+      "Vocês querem café?",
+      "Está calor hoje, não é?",
+      "Você não vem à festa?"
+    ],
+    "commonMistakes": [
+      { "wrong": "\"Faz você gosta de café?\" (tentando traduzir \"do\")", "right": "\"Você gosta de café?\"", "why": "Português não usa um verbo auxiliar equivalente a \"do/does\" para formar perguntas." },
+      { "wrong": "Responder apenas \"sim\" quando a pergunta pede mais naturalidade", "right": "repetir o verbo: \"Você gosta?\" — \"Gosto\"", "why": "No português falado, é comum responder repetindo o verbo, não apenas com \"sim/não\"." },
+      { "wrong": "Usar \"não é?\" em toda frase, mesmo sem pedir confirmação", "right": "usar \"não é?\"/\"né?\" só quando quer confirmação do ouvinte", "why": "Essas expressões pedem uma resposta de concordância — usar sem necessidade soa estranho." }
+    ],
+    "tip": "Pratique transformar afirmações em perguntas só mudando a entonação em voz alta: \"Você fala português\" → \"Você fala português?\"."
+  },
+  "exercises": [
+    {
+      "id": "snq-mc",
+      "type": "multiple-choice",
+      "title": "Escolha a Pergunta Correta",
+      "instructions": "Escolha a forma correta de transformar a afirmação em pergunta.",
+      "items": [
+        { "id": "sq1", "prompt": "Afirmação: \"Ela mora aqui.\" Como fica a pergunta?", "options": ["Faz ela mora aqui?", "Ela mora aqui?", "Mora ela aqui?"], "answerIndex": 1, "explanation": "Basta manter a mesma ordem e mudar a entonação/pontuação." },
+        { "id": "sq2", "prompt": "Qual é a resposta mais natural para \"Você gosta de música?\"", "options": ["Sim, eu.", "Gosto.", "Sim é."], "answerIndex": 1, "explanation": "No português falado, é comum responder repetindo o verbo." }
+      ]
+    },
+    {
+      "id": "snq-order",
+      "type": "ordering",
+      "title": "Monte a Pergunta",
+      "instructions": "Coloque as palavras na ordem correta para formar uma pergunta.",
+      "items": [
+        { "id": "sq3", "prompt": "português / você / fala", "words": ["Você", "fala", "português"], "explanation": "A ordem é igual à de uma afirmação — só muda a entonação." },
+        { "id": "sq4", "prompt": "café / vocês / querem", "words": ["Vocês", "querem", "café"], "explanation": "Sujeito + verbo + objeto, como em qualquer afirmação." }
+      ]
+    },
+    {
+      "id": "snq-typing",
+      "type": "typing",
+      "title": "Transforme em Pergunta",
+      "instructions": "Reescreva cada afirmação como uma pergunta de sim/não.",
+      "items": [
+        { "id": "sq5", "prompt": "Transforme em pergunta: \"Ele trabalha em um banco.\"", "answer": ["Ele trabalha em um banco?"], "explanation": "Basta acrescentar o ponto de interrogação — a ordem das palavras não muda." },
+        { "id": "sq6", "prompt": "Transforme em pergunta: \"Vocês moram perto daqui.\"", "answer": ["Vocês moram perto daqui?"], "explanation": "Mesma estrutura da afirmação, apenas com pontuação de pergunta." }
+      ]
+    }
+  ],
+  "summary": [
+    "Perguntas de sim/não mantêm a mesma ordem de uma afirmação — só muda a entonação/pontuação.",
+    "Não existe equivalente a \"do/does\" em português.",
+    "Respostas curtas costumam repetir o verbo, e não apenas dizer \"sim\"."
+  ],
+  "related": [
+    { "lessonId": "a1-conjuncoes-basicas", "label": "Conjunções Básicas" },
+    { "lessonId": "a1-palavras-interrogativas", "label": "Palavras Interrogativas" }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "id": "pre-a1-numeros-horas-e-datas",
+  "level": "PRE-A1",
+  "order": 3,
+  "skill": "vocabulary",
+  "title": "Números, Horas e Datas",
+  "subtitle": "Contar, dizer as horas e falar sobre o calendário.",
+  "objectives": [
+    "Contar de 0 a 20 em português",
+    "Perguntar e dizer as horas",
+    "Nomear os dias da semana e os meses do ano"
+  ],
+  "content": {
+    "intro": "Números estão em todo lugar: preços, horários, endereços, idades. Vamos começar pelo básico e construir a partir daí.",
+    "explanation": "<p>Os números de 0 a 10 em português são: <strong>zero, um, dois, três, quatro, cinco, seis, sete, oito, nove, dez</strong>. De 11 a 20, muitos terminam em \"-ze\" ou seguem um padrão próprio: onze, doze, treze, catorze, quinze, dezesseis, dezessete, dezoito, dezenove, vinte.</p><p>Para perguntar as horas, usa-se <strong>\"Que horas são?\"</strong>. A resposta usa \"é\" para uma hora (\"É uma hora\") e \"são\" para as demais (\"São duas horas\"). Os dias da semana no Brasil são numerados: segunda-feira, terça-feira, quarta-feira, quinta-feira, sexta-feira, sábado e domingo.</p>",
+    "rules": [
+      "0-10: zero, um, dois, três, quatro, cinco, seis, sete, oito, nove, dez",
+      "11-20: onze, doze, treze, catorze, quinze, dezesseis, dezessete, dezoito, dezenove, vinte",
+      "\"Que horas são?\" pergunta as horas; \"São X horas\" responde (exceto \"É uma hora\", no singular)",
+      "Dias da semana: segunda, terça, quarta, quinta e sexta-feira; depois sábado e domingo (sem \"-feira\")",
+      "Meses do ano são sempre escritos com letra minúscula: janeiro, fevereiro, março..."
+    ],
+    "table": {
+      "caption": "Dias da semana",
+      "headers": ["Português", "Abreviação comum"],
+      "rows": [
+        ["segunda-feira", "seg."],
+        ["terça-feira", "ter."],
+        ["quarta-feira", "qua."],
+        ["quinta-feira", "qui."],
+        ["sexta-feira", "sex."],
+        ["sábado", "sáb."],
+        ["domingo", "dom."]
+      ]
+    },
+    "examples": [
+      "Eu tenho vinte e cinco anos.",
+      "Que horas são? São três horas.",
+      "Hoje é segunda-feira.",
+      "Meu aniversário é em março.",
+      "A reunião é às dez horas."
+    ],
+    "commonMistakes": [
+      { "wrong": "\"São uma hora\"", "right": "\"É uma hora\"", "why": "Para uma hora exata, usa-se o verbo no singular: \"é\", não \"são\"." },
+      { "wrong": "Domingo-feira", "right": "domingo", "why": "Sábado e domingo nunca levam \"-feira\" — só de segunda a sexta." },
+      { "wrong": "Escrever meses com letra maiúscula (Março)", "right": "março (minúscula)", "why": "Em português, meses e dias da semana são escritos com letra minúscula, diferente do inglês." }
+    ],
+    "tip": "Pratique dizendo a hora atual em voz alta, todos os dias, até que \"que horas são\" e a resposta saiam automaticamente."
+  },
+  "exercises": [
+    {
+      "id": "num-fill",
+      "type": "fill-blank",
+      "title": "Complete com o Número",
+      "instructions": "Escreva o número por extenso em português.",
+      "items": [
+        { "id": "nh1", "prompt": "Eu tenho ___ (7) irmãos.", "answers": [["sete"]], "explanation": "7 = sete." },
+        { "id": "nh2", "prompt": "Ela mora no número ___ (15) da rua.", "answers": [["quinze"]], "explanation": "15 = quinze." },
+        { "id": "nh3", "prompt": "Este livro custa ___ (20) reais.", "answers": [["vinte"]], "explanation": "20 = vinte." }
+      ]
+    },
+    {
+      "id": "num-mc",
+      "type": "multiple-choice",
+      "title": "Horas e Dias",
+      "instructions": "Escolha a resposta correta.",
+      "items": [
+        { "id": "nh4", "prompt": "Como se pergunta as horas em português?", "options": ["Quantas horas?", "Que horas são?", "Qual hora?"], "answerIndex": 1, "explanation": "A forma correta e mais comum é \"Que horas são?\"." },
+        { "id": "nh5", "prompt": "Qual dia da semana NÃO leva \"-feira\"?", "options": ["Terça", "Sábado", "Quinta"], "answerIndex": 1, "explanation": "Sábado e domingo são exceções — nunca levam \"-feira\"." },
+        { "id": "nh6", "prompt": "\"São duas horas\" — por que \"são\" e não \"é\"?", "options": ["Porque é plural (duas)", "Porque é uma pergunta", "Não há motivo, os dois funcionam"], "answerIndex": 0, "explanation": "Só \"uma hora\" usa \"é\" (singular); todas as outras horas usam \"são\"." }
+      ]
+    },
+    {
+      "id": "num-match",
+      "type": "matching",
+      "title": "Associe o Mês ao Número",
+      "instructions": "Associe cada mês à sua posição no ano.",
+      "items": [
+        { "id": "nh7", "pairs": [
+          { "left": "janeiro", "right": "1º mês" },
+          { "left": "abril", "right": "4º mês" },
+          { "left": "julho", "right": "7º mês" },
+          { "left": "dezembro", "right": "12º mês" }
+        ], "explanation": "O calendário brasileiro segue a mesma ordem do calendário internacional." }
+      ]
+    },
+    {
+      "id": "num-typing",
+      "type": "typing",
+      "title": "Escreva a Hora",
+      "instructions": "Escreva a resposta completa para cada pergunta sobre horas.",
+      "items": [
+        { "id": "nh8", "prompt": "Que horas são? (1:00)", "answer": ["É uma hora", "É uma hora."], "explanation": "Uma hora exata usa \"é\", não \"são\"." },
+        { "id": "nh9", "prompt": "Que horas são? (4:00)", "answer": ["São quatro horas", "São quatro horas."], "explanation": "A partir de duas horas, usa-se sempre \"são\"." }
+      ]
+    }
+  ],
+  "summary": [
+    "Números de 0 a 20 têm um padrão próprio que vale a pena memorizar cedo.",
+    "\"É uma hora\", mas \"são duas, três, quatro...\" horas.",
+    "Sábado e domingo não levam \"-feira\"; meses e dias são escritos em minúscula."
+  ],
+  "related": [
+    { "lessonId": "pre-a1-saudacoes-e-apresentacoes", "label": "Saudações e Apresentações" },
+    { "lessonId": "pre-a1-linguagem-de-sala-de-aula", "label": "Linguagem de Sala de Aula" }
+  ]
+}

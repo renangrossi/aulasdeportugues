@@ -1,0 +1,81 @@
+{
+  "id": "pre-a1-linguagem-de-sala-de-aula",
+  "level": "PRE-A1",
+  "order": 4,
+  "skill": "functional",
+  "title": "Linguagem de Sala de Aula",
+  "subtitle": "As frases que você vai usar em toda aula, desde o primeiro dia.",
+  "objectives": [
+    "Pedir para repetir ou falar mais devagar",
+    "Dizer que não entendeu ou perguntar o significado de uma palavra",
+    "Usar expressões de cortesia como por favor e obrigado"
+  ],
+  "content": {
+    "intro": "Estas frases não ensinam gramática — elas mantêm a aula funcionando. Aprenda-as de cor antes de qualquer outra coisa.",
+    "explanation": "<p>Quando você não entende algo, a frase mais útil é <strong>\"Não entendi\"</strong> ou <strong>\"Pode repetir, por favor?\"</strong>. Para pedir que alguém fale mais devagar, use <strong>\"Pode falar mais devagar, por favor?\"</strong>. Para perguntar o significado de uma palavra nova, diga <strong>\"O que significa...?\"</strong> ou <strong>\"Como se diz... em português?\"</strong>.</p><p>\"Por favor\" e \"obrigado/obrigada\" (a forma muda conforme quem fala: obrigad<strong>o</strong> para homens, obrigad<strong>a</strong> para mulheres) devem acompanhar quase todo pedido — é a base da educação no dia a dia.</p>",
+    "rules": [
+      "\"Não entendi\" = eu não compreendi o que foi dito",
+      "\"Pode repetir, por favor?\" = pedido educado de repetição",
+      "\"Pode falar mais devagar?\" = pedido para diminuir a velocidade da fala",
+      "\"O que significa ___?\" = pergunta pelo significado de uma palavra",
+      "\"Como se diz ___ em português?\" = pergunta como traduzir algo",
+      "Obrigado (homem falando) / Obrigada (mulher falando) = thank you"
+    ],
+    "examples": [
+      "Desculpa, não entendi. Pode repetir, por favor?",
+      "Pode falar mais devagar, por favor?",
+      "O que significa a palavra \"saudade\"?",
+      "Como se diz \"desk\" em português?",
+      "Muito obrigada pela explicação!"
+    ],
+    "commonMistakes": [
+      { "wrong": "Usar \"obrigado\" sempre, mesmo sendo mulher", "right": "obrigada, se quem fala é mulher", "why": "A palavra concorda com o gênero de quem agradece, não com quem recebe o agradecimento." },
+      { "wrong": "\"O que é significa...?\"", "right": "\"O que significa...?\"", "why": "O verbo \"significar\" já contém o sentido de \"é\" — não se usa os dois juntos." },
+      { "wrong": "Ficar em silêncio quando não entende", "right": "\"Não entendi, pode repetir?\"", "why": "Pedir esclarecimento é normal e esperado — professores preferem isso ao silêncio." }
+    ],
+    "tip": "Escreva estas frases em um cartão e mantenha por perto durante as primeiras semanas de aula — elas resolvem 90% das situações de trava na conversa."
+  },
+  "exercises": [
+    {
+      "id": "sala-mc",
+      "type": "multiple-choice",
+      "title": "Qual Frase Usar?",
+      "instructions": "Escolha a frase mais apropriada para cada situação.",
+      "items": [
+        { "id": "ls1", "prompt": "Você não entendeu o que o professor disse. O que você diz?", "options": ["Muito obrigado", "Não entendi, pode repetir?", "Que horas são?"], "answerIndex": 1, "explanation": "Essa é a frase padrão para pedir esclarecimento." },
+        { "id": "ls2", "prompt": "O professor está falando muito rápido. O que você diz?", "options": ["Pode falar mais devagar, por favor?", "Boa noite", "Qual é o seu nome?"], "answerIndex": 0, "explanation": "Essa frase pede especificamente para reduzir a velocidade da fala." },
+        { "id": "ls3", "prompt": "Você quer saber o que uma palavra nova significa. O que você pergunta?", "options": ["Como você está?", "O que significa essa palavra?", "Onde você mora?"], "answerIndex": 1, "explanation": "Essa é a pergunta padrão para pedir o significado de uma palavra." }
+      ]
+    },
+    {
+      "id": "sala-tf",
+      "type": "true-false",
+      "title": "Verdadeiro ou Falso",
+      "instructions": "Leia cada afirmação sobre cortesia em português.",
+      "items": [
+        { "id": "ls4", "statement": "\"Obrigado\" e \"obrigada\" mudam conforme o gênero de quem fala.", "answer": true, "explanation": "Um homem diz \"obrigado\"; uma mulher diz \"obrigada\"." },
+        { "id": "ls5", "statement": "É rude pedir para o professor repetir uma explicação.", "answer": false, "explanation": "Pelo contrário — pedir esclarecimento é normal e mostra que você está prestando atenção." },
+        { "id": "ls6", "statement": "\"Como se diz X em português?\" é usado para pedir uma tradução.", "answer": true, "explanation": "Exatamente — é a pergunta usada quando você sabe a palavra em outro idioma, mas não em português." }
+      ]
+    },
+    {
+      "id": "sala-correction",
+      "type": "correction",
+      "title": "Corrija as Frases",
+      "instructions": "Cada frase tem um pequeno erro. Escreva a versão correta.",
+      "items": [
+        { "id": "ls7", "incorrect": "O que é significa \"saudade\"?", "answer": ["O que significa saudade", "O que significa \"saudade\"?"], "explanation": "\"Significar\" já funciona como o verbo da frase — não se repete \"é\"." },
+        { "id": "ls8", "incorrect": "Obrigado, disse a professora.", "answer": ["Obrigada, disse a professora", "Obrigada, disse a professora."], "explanation": "Como quem fala é mulher (a professora), a forma correta é \"obrigada\"." }
+      ]
+    }
+  ],
+  "summary": [
+    "\"Não entendi, pode repetir?\" e \"Pode falar mais devagar?\" resolvem a maioria das travas em sala de aula.",
+    "\"O que significa...?\" e \"Como se diz... em português?\" ajudam a aprender palavras novas.",
+    "Obrigado/obrigada concorda com o gênero de quem fala, não de quem ouve."
+  ],
+  "related": [
+    { "lessonId": "pre-a1-numeros-horas-e-datas", "label": "Números, Horas e Datas" },
+    { "lessonId": "pre-a1-pessoas-e-objetos", "label": "Pessoas e Objetos: O/A, Um/Uma" }
+  ]
+}

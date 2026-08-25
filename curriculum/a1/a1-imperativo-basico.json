@@ -1,0 +1,88 @@
+{
+  "id": "a1-imperativo-basico",
+  "level": "A1",
+  "order": 18,
+  "skill": "grammar",
+  "title": "Imperativo Básico",
+  "subtitle": "Como dar ordens, pedidos e instruções simples.",
+  "objectives": [
+    "Formar o imperativo afirmativo de verbos regulares para \"você\"",
+    "Usar o imperativo para instruções e pedidos do dia a dia",
+    "Suavizar ordens com \"por favor\" e a entonação certa"
+  ],
+  "content": {
+    "intro": "O imperativo é usado para pedir, instruir ou dar ordens. É uma das formas mais úteis para situações práticas: receitas, instruções, pedidos.",
+    "explanation": "<p>Para formar o imperativo afirmativo com \"você\", pega-se a forma da terceira pessoa do presente do indicativo (a mesma de \"ele/ela\"): <strong>fala</strong>(r) → <em>Fale!</em>, <strong>come</strong>(r) → <em>Coma!</em>, <strong>abre</strong>(rir) → <em>Abra!</em>. Repare que a vogal final muda: verbos -ar terminam em -e no imperativo, e verbos -er/-ir terminam em -a.</p><p>Para tornar um pedido mais educado, acrescente <strong>\"por favor\"</strong> no início ou no fim da frase: \"Por favor, feche a porta\" / \"Feche a porta, por favor\".</p>",
+    "rules": [
+      "Verbos -ar: troca -ar por -e (falar → fale, estudar → estude)",
+      "Verbos -er: troca -er por -a (comer → coma, beber → beba)",
+      "Verbos -ir: troca -ir por -a (abrir → abra, decidir → decida)",
+      "Para \"vocês\", acrescenta-se -m: falem, comam, abram",
+      "\"Por favor\" antes ou depois do verbo torna o pedido mais educado"
+    ],
+    "table": {
+      "caption": "Imperativo afirmativo (você / vocês)",
+      "headers": ["Infinitivo", "Você", "Vocês"],
+      "rows": [
+        ["falar", "fale", "falem"],
+        ["comer", "coma", "comam"],
+        ["abrir", "abra", "abram"],
+        ["escrever", "escreva", "escrevam"]
+      ]
+    },
+    "examples": [
+      "Fale mais devagar, por favor.",
+      "Abra a janela, está muito quente aqui.",
+      "Escreva seu nome aqui, por favor.",
+      "Comam devagar, crianças!",
+      "Por favor, feche a porta ao sair."
+    ],
+    "commonMistakes": [
+      { "wrong": "\"Fala mais devagar\" (usando a forma do presente indicativo no lugar do imperativo, em contexto formal)", "right": "\"Fale mais devagar\"", "why": "O imperativo formal muda a vogal final; \"fala\" é presente do indicativo, \"fale\" é imperativo." },
+      { "wrong": "\"Coma!\" pronunciado/escrito como \"Come!\"", "right": "\"Coma!\"", "why": "Verbos -er trocam para -a no imperativo, não mantêm -e." },
+      { "wrong": "Dar uma ordem direta sem suavizar em contextos formais", "right": "acrescentar \"por favor\" ou usar entonação gentil", "why": "Sem suavização, o imperativo pode soar mais brusco do que o pretendido." }
+    ],
+    "tip": "No português falado do dia a dia, é comum usar também o presente do indicativo para pedidos informais (\"Você fecha a porta?\"), mas o imperativo continua sendo a forma mais direta e comum para instruções."
+  },
+  "exercises": [
+    {
+      "id": "imp-fill",
+      "type": "fill-blank",
+      "title": "Complete com o Imperativo",
+      "instructions": "Complete cada frase com a forma correta do imperativo (você).",
+      "items": [
+        { "id": "im1", "prompt": "___ (falar) mais alto, por favor.", "answers": [["Fale"]], "explanation": "Verbo -ar: fale." },
+        { "id": "im2", "prompt": "___ (comer) toda a comida do prato.", "answers": [["Coma"]], "explanation": "Verbo -er: coma." },
+        { "id": "im3", "prompt": "___ (abrir) a porta, por favor.", "answers": [["Abra"]], "explanation": "Verbo -ir: abra." }
+      ]
+    },
+    {
+      "id": "imp-mc",
+      "type": "multiple-choice",
+      "title": "Escolha a Forma Correta",
+      "instructions": "Escolha a forma imperativa correta.",
+      "items": [
+        { "id": "im4", "prompt": "Como se diz \"Write here, please\" (imperativo)?", "options": ["Escreve aqui, por favor.", "Escreva aqui, por favor.", "Escrever aqui, por favor."], "answerIndex": 1, "explanation": "\"Escrever\" é -er, então o imperativo troca para -a: escreva." },
+        { "id": "im5", "prompt": "Qual é o imperativo de \"estudar\" para \"vocês\"?", "options": ["estude", "estudem", "estudam"], "answerIndex": 1, "explanation": "Plural do imperativo acrescenta -m: estudem." }
+      ]
+    },
+    {
+      "id": "imp-order",
+      "type": "ordering",
+      "title": "Monte a Frase",
+      "instructions": "Coloque as palavras na ordem correta.",
+      "items": [
+        { "id": "im6", "prompt": "favor / a / feche / porta / por", "words": ["Feche", "a", "porta", "por", "favor"], "explanation": "Imperativo + objeto + expressão de cortesia." }
+      ]
+    }
+  ],
+  "summary": [
+    "O imperativo troca a vogal final: -ar → -e; -er/-ir → -a (para \"você\").",
+    "Para \"vocês\", acrescenta-se -m à forma de \"você\".",
+    "\"Por favor\" suaviza pedidos e ordens, tornando-os mais educados."
+  ],
+  "related": [
+    { "lessonId": "a1-presente-continuo", "label": "Presente Contínuo" },
+    { "lessonId": "a1-diminutivos-e-aumentativos", "label": "Diminutivos e Aumentativos" }
+  ]
+}

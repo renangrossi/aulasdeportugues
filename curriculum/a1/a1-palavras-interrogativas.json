@@ -1,0 +1,86 @@
+{
+  "id": "a1-palavras-interrogativas",
+  "level": "A1",
+  "order": 16,
+  "skill": "grammar",
+  "title": "Palavras Interrogativas",
+  "subtitle": "O quê, quem, onde, quando, por quê, como, qual — as sete perguntas essenciais.",
+  "objectives": [
+    "Usar as principais palavras interrogativas do português",
+    "Formar perguntas completas com cada uma delas",
+    "Diferenciar \"qual\" e \"que\" ao perguntar sobre escolhas"
+  ],
+  "content": {
+    "intro": "Estas sete palavras abrem a porta para qualquer conversa — com elas, você consegue perguntar quase tudo.",
+    "explanation": "<p><strong>O que</strong> pergunta sobre coisas ou ações (\"O que você quer?\"). <strong>Quem</strong> pergunta sobre pessoas (\"Quem é você?\"). <strong>Onde</strong> pergunta sobre lugar (\"Onde você mora?\"). <strong>Quando</strong> pergunta sobre tempo (\"Quando você chega?\"). <strong>Como</strong> pergunta sobre modo (\"Como você está?\"). <strong>Qual/Quais</strong> pergunta sobre escolha entre opções (\"Qual é o seu nome?\").</p><p>A diferença entre <strong>que</strong> e <strong>qual</strong> confunde muitos estudantes: \"que\" pergunta de forma mais geral ou pede uma definição (\"Que dia é hoje?\"), enquanto \"qual\" pergunta sobre uma escolha específica entre opções (\"Qual desses dois você prefere?\"). Na prática, \"qual\" é frequentemente usado onde o inglês usaria \"what\", especialmente antes do verbo \"ser\": \"Qual é o seu nome?\" (não \"O que é o seu nome?\").</p>",
+    "rules": [
+      "O que = what (coisas, ações): O que você faz?",
+      "Quem = who (pessoas): Quem chegou primeiro?",
+      "Onde = where (lugar): Onde fica o banheiro?",
+      "Quando = when (tempo): Quando é a reunião?",
+      "Por que = why (causa): Por que você saiu cedo?",
+      "Como = how (modo): Como você faz isso?",
+      "Qual/Quais = which (escolha): Qual é o seu nome? Quais são suas cores favoritas?"
+    ],
+    "examples": [
+      "O que você está fazendo?",
+      "Quem é essa pessoa?",
+      "Onde fica a estação de trem?",
+      "Quando você volta para casa?",
+      "Como se diz isso em português?",
+      "Qual é o seu número de telefone?"
+    ],
+    "commonMistakes": [
+      { "wrong": "\"O que é o seu nome?\"", "right": "\"Qual é o seu nome?\"", "why": "Ao perguntar por algo específico com o verbo \"ser\", o correto costuma ser \"qual\", não \"o que\"." },
+      { "wrong": "\"Que é isso?\" (usado como \"who\")", "right": "\"O que é isso?\" (para coisas) / \"Quem é essa pessoa?\" (para pessoas)", "why": "\"Que/o que\" pergunta sobre coisas; \"quem\" pergunta sobre pessoas — não se confundem." },
+      { "wrong": "Esquecer o acento em \"até quando\", \"onde\", etc. ao formar frases escritas", "right": "manter a acentuação correta de cada palavra interrogativa", "why": "Palavras como \"onde\" e \"quando\" têm ortografia fixa que deve ser respeitada na escrita." }
+    ],
+    "tip": "Memorize as sete palavras em uma frase só, na ordem: \"O quê, quem, onde, quando, por quê, como, qual\" — repita em voz alta até virar automático."
+  },
+  "exercises": [
+    {
+      "id": "interr-fill",
+      "type": "fill-blank",
+      "title": "Complete com a Palavra Certa",
+      "instructions": "Escolha a palavra interrogativa correta.",
+      "items": [
+        { "id": "in1", "prompt": "___ você mora?", "answers": [["Onde"]], "options": ["Onde", "Quando", "Quem"], "explanation": "Pergunta sobre lugar usa \"onde\"." },
+        { "id": "in2", "prompt": "___ é essa mulher ao seu lado?", "answers": [["Quem"]], "options": ["Quem", "O que", "Como"], "explanation": "Pergunta sobre pessoa usa \"quem\"." },
+        { "id": "in3", "prompt": "___ é o seu prato favorito?", "answers": [["Qual"]], "options": ["Qual", "Que", "Quem"], "explanation": "Escolha específica com o verbo \"ser\" usa \"qual\"." }
+      ]
+    },
+    {
+      "id": "interr-mc",
+      "type": "multiple-choice",
+      "title": "Escolha a Pergunta Certa",
+      "instructions": "Escolha a palavra interrogativa mais adequada.",
+      "items": [
+        { "id": "in4", "prompt": "Você quer saber a razão de algo. Qual palavra usar?", "options": ["Como", "Por que", "Onde"], "answerIndex": 1, "explanation": "\"Por que\" pergunta sobre causa/razão." },
+        { "id": "in5", "prompt": "Você quer saber o horário de um evento. Qual palavra usar?", "options": ["Quando", "Quem", "Qual"], "answerIndex": 0, "explanation": "\"Quando\" pergunta sobre tempo." }
+      ]
+    },
+    {
+      "id": "interr-match",
+      "type": "matching",
+      "title": "Associe a Pergunta ao Tipo de Resposta",
+      "instructions": "Associe cada palavra interrogativa ao tipo de resposta que ela pede.",
+      "items": [
+        { "id": "in6", "pairs": [
+          { "left": "Onde", "right": "um lugar" },
+          { "left": "Quando", "right": "um momento no tempo" },
+          { "left": "Quem", "right": "uma pessoa" },
+          { "left": "Como", "right": "um modo ou maneira" }
+        ], "explanation": "Cada palavra interrogativa direciona para um tipo específico de resposta." }
+      ]
+    }
+  ],
+  "summary": [
+    "O que, quem, onde, quando, por que, como e qual cobrem a maioria das perguntas do dia a dia.",
+    "\"Qual\" pergunta sobre escolha específica; \"o que\" pergunta de forma mais geral.",
+    "Praticar as sete palavras juntas ajuda a memorizá-las rapidamente."
+  ],
+  "related": [
+    { "lessonId": "a1-perguntas-sim-ou-nao", "label": "Perguntas Sim ou Não" },
+    { "lessonId": "a1-ha-e-tem", "label": "Há e Tem: Existência" }
+  ]
+}

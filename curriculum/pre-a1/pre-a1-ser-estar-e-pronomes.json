@@ -1,0 +1,94 @@
+{
+  "id": "pre-a1-ser-estar-e-pronomes",
+  "level": "PRE-A1",
+  "order": 7,
+  "skill": "grammar",
+  "title": "Ser, Estar e os Pronomes",
+  "subtitle": "Uma primeira apresentação aos dois verbos mais importantes do português.",
+  "objectives": [
+    "Reconhecer os pronomes pessoais do português",
+    "Usar ser e estar nas frases mais básicas e comuns",
+    "Diferenciar, de forma simples, quando usar cada um"
+  ],
+  "content": {
+    "intro": "Esta é só uma primeira apresentação — o A1 tem uma lição inteira dedicada a esse tema. Por enquanto, o objetivo é reconhecer as formas mais usadas no dia a dia.",
+    "explanation": "<p>Os pronomes pessoais em português são: <strong>eu, você, ele/ela, nós, vocês, eles/elas</strong>. (Em Portugal e em algumas regiões do Brasil também se usa \"tu\", mas na maior parte do Brasil \"você\" é a forma padrão.)</p><p>O português tem <strong>dois</strong> verbos que traduzem \"to be\": <strong>ser</strong>, para características permanentes (\"eu sou brasileiro\"), e <strong>estar</strong>, para estados temporários e localização (\"eu estou cansado\", \"eu estou em casa\"). Por enquanto, memorize só as formas mais usadas: eu sou/estou, você é/está, nós somos/estamos.</p>",
+    "rules": [
+      "Pronomes: eu, você, ele, ela, nós, vocês, eles, elas",
+      "Ser (eu sou, você é, nós somos) = identidade, profissão, características permanentes",
+      "Estar (eu estou, você está, nós estamos) = localização e estados temporários",
+      "\"Você\" é a forma padrão de \"you\" no Brasil, tanto formal quanto informal",
+      "\"Vocês\" é sempre o plural de \"você\" — não existe \"yous\" em português"
+    ],
+    "table": {
+      "caption": "Ser e Estar — formas essenciais",
+      "headers": ["Pronome", "Ser", "Estar"],
+      "rows": [
+        ["eu", "sou", "estou"],
+        ["você / ele / ela", "é", "está"],
+        ["nós", "somos", "estamos"],
+        ["vocês / eles / elas", "são", "estão"]
+      ]
+    },
+    "examples": [
+      "Eu sou estudante de português.",
+      "Ela é muito simpática.",
+      "Nós estamos em casa agora.",
+      "Você está bem hoje?",
+      "Eles são de São Paulo."
+    ],
+    "commonMistakes": [
+      { "wrong": "\"Eu estou estudante\"", "right": "\"Eu sou estudante\"", "why": "Profissão e identidade usam \"ser\", nunca \"estar\"." },
+      { "wrong": "\"Eu sou em casa\"", "right": "\"Eu estou em casa\"", "why": "Localização sempre usa \"estar\", nunca \"ser\"." },
+      { "wrong": "Usar \"tu\" e \"você\" misturados na mesma frase", "right": "escolher um só e manter a concordância", "why": "\"Tu\" pede outra conjugação verbal; misturar as duas formas soa estranho — no Brasil, prefira \"você\"." }
+    ],
+    "tip": "Não se preocupe em entender toda a regra de ser/estar agora — a primeira lição do nível A1 é inteiramente dedicada a esse tema, com muito mais prática."
+  },
+  "exercises": [
+    {
+      "id": "sep-mc",
+      "type": "multiple-choice",
+      "title": "Ser ou Estar?",
+      "instructions": "Escolha o verbo correto para cada frase.",
+      "items": [
+        { "id": "sp1", "prompt": "Eu ___ professor.", "options": ["sou", "estou"], "answerIndex": 0, "explanation": "Profissão usa \"ser\"." },
+        { "id": "sp2", "prompt": "Nós ___ no Brasil agora.", "options": ["somos", "estamos"], "answerIndex": 1, "explanation": "Localização usa \"estar\"." },
+        { "id": "sp3", "prompt": "Ela ___ muito inteligente.", "options": ["é", "está"], "answerIndex": 0, "explanation": "Característica pessoal permanente usa \"ser\"." }
+      ]
+    },
+    {
+      "id": "sep-match",
+      "type": "matching",
+      "title": "Associe o Pronome à Forma de Ser",
+      "instructions": "Associe cada pronome à forma correta do verbo ser.",
+      "items": [
+        { "id": "sp4", "pairs": [
+          { "left": "eu", "right": "sou" },
+          { "left": "você", "right": "é" },
+          { "left": "nós", "right": "somos" },
+          { "left": "eles", "right": "são" }
+        ], "explanation": "Cada pronome tem sua própria forma do verbo ser." }
+      ]
+    },
+    {
+      "id": "sep-fill",
+      "type": "fill-blank",
+      "title": "Complete com Ser ou Estar",
+      "instructions": "Complete cada frase com a forma correta de ser ou estar.",
+      "items": [
+        { "id": "sp5", "prompt": "Vocês ___ cansados hoje?", "answers": [["estão"]], "options": ["estão", "são"], "explanation": "\"Cansado\" é um estado temporário — usa-se \"estar\"." },
+        { "id": "sp6", "prompt": "Eu ___ de São Paulo.", "answers": [["sou"]], "options": ["sou", "estou"], "explanation": "Origem/nacionalidade usa \"ser\"." },
+        { "id": "sp7", "prompt": "Nós ___ estudantes de português.", "answers": [["somos"]], "options": ["somos", "estamos"], "explanation": "Identidade/ocupação usa \"ser\"." }
+      ]
+    }
+  ],
+  "summary": [
+    "Os pronomes principais são eu, você, ele/ela, nós, vocês, eles/elas.",
+    "Ser é para identidade e características permanentes; estar é para localização e estados temporários.",
+    "O tema será aprofundado logo na primeira lição do nível A1."
+  ],
+  "related": [
+    { "lessonId": "pre-a1-verbos-basicos-e-querer", "label": "Verbos Básicos: Querer e Precisar" },
+    { "lessonId": "pre-a1-leitura-e-escuta-de-sobrevivencia", "label": "Leitura e Escuta de Sobrevivência" }
+  ]
+}

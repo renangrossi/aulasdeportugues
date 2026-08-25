@@ -1,0 +1,143 @@
+/* =======================================================================
+   LAYOUT
+   Page-level structure and responsive behaviour that isn't owned by a
+   single component.
+   ======================================================================= */
+
+.site-main { display: block; }
+
+.container {
+  max-width: var(--content-max);
+  margin: 0 auto;
+  padding-left: var(--space-md);
+  padding-right: var(--space-md);
+}
+
+/* Sections without an explicit surface class sit on the plain white
+   body background; .section--surface is used explicitly where a
+   change of tone is wanted, instead of an automatic odd/even rule. */
+
+/* Two-column layout (used by Mission / About CEFR sections) */
+.split {
+  display: grid;
+  gap: var(--space-2xl);
+  grid-template-columns: 1.1fr 0.9fr;
+  align-items: center;
+}
+@media (max-width: 860px) {
+  .split { grid-template-columns: 1fr; gap: var(--space-lg); }
+}
+.split--reverse { direction: rtl; }
+.split--reverse > * { direction: ltr; }
+
+.figure {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 2px solid var(--color-red);
+  box-shadow: var(--shadow-md);
+  position: relative;
+  background: var(--color-surface);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.figure img { width: 100%; height: auto; max-height: 480px; object-fit: contain; display: block; margin: 0 auto; }
+.figure figcaption {
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  padding: var(--space-sm) var(--space-md);
+  background: linear-gradient(0deg, rgba(16,27,48,0.85), transparent);
+  color: var(--parchment-100);
+  font-size: var(--step--1);
+}
+
+/* CEFR ladder (visual list of levels with connecting rule) */
+.ladder { position: relative; display: flex; flex-direction: column; gap: var(--space-md); }
+.ladder::before {
+  content: "";
+  position: absolute;
+  left: 27px; top: 8px; bottom: 8px;
+  width: 1px;
+  background: var(--color-border-strong);
+  opacity: 0.5;
+}
+.ladder__rung { position: relative; display: flex; gap: var(--space-md); align-items: flex-start; padding-left: 0; }
+.ladder__code {
+  position: relative;
+  z-index: 1;
+  flex-shrink: 0;
+  width: 56px; height: 56px;
+  border-radius: 50%;
+  background: var(--color-surface-raised);
+  border: 2px solid var(--color-border-strong);
+  color: var(--color-accent);
+  font-family: var(--font-display);
+  font-size: var(--step-0);
+  display: flex; align-items: center; justify-content: center;
+}
+.ladder__code--compact { font-size: var(--step--1); letter-spacing: -0.03em; }
+.ladder__body h3 { font-size: var(--step-0); }
+.ladder__body p { color: var(--color-text-muted); font-size: var(--step--1); }
+.ladder__link { display: inline-flex; align-items: center; gap: 0.4em; margin-top: 0.5em; font-weight: 700; font-size: var(--step--1); color: var(--color-accent); }
+.ladder__link svg { width: 15px; height: 15px; }
+.ladder__link:hover { text-decoration: underline; }
+
+/* Level page: section tabs / anchored jump list */
+.level-toc {
+  position: sticky;
+  top: calc(var(--header-height) + 1px);
+  z-index: 500;
+  background: var(--color-surface);
+  border-bottom: var(--border-hairline);
+}
+.level-toc__inner {
+  max-width: var(--content-max);
+  margin: 0 auto;
+  padding: var(--space-sm) var(--space-md);
+  display: flex;
+  gap: var(--space-sm);
+  overflow-x: auto;
+  scrollbar-width: thin;
+}
+.level-toc a {
+  flex-shrink: 0;
+  font-size: var(--step--1);
+  font-weight: 600;
+  color: var(--color-text-muted);
+  padding: 0.4em 0.9em;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  white-space: nowrap;
+}
+.level-toc a:hover, .level-toc a:focus-visible { color: var(--color-primary); border-color: var(--color-border); }
+.level-toc a.is-active { color: var(--color-text-on-dark); background: var(--color-primary); border-color: var(--color-primary); }
+
+/* Responsive images used as section headers on level/hub pages */
+.section-banner {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 460px;
+  object-fit: contain;
+  object-position: center;
+  margin: 0 auto var(--space-lg);
+  border-radius: var(--radius-lg);
+  border: 2px solid var(--color-red);
+  box-shadow: var(--shadow-sm);
+  background: var(--color-surface);
+}
+@media (max-width: 640px) {
+  .section-banner { max-height: 320px; }
+}
+
+@media (max-width: 640px) {
+  .section { padding: var(--space-xl) var(--space-sm); }
+  .hero__inner { padding: var(--space-xl) var(--space-sm); }
+  h1 { font-size: var(--step-4); }
+}
+
+.print-hidden { }
+@media print {
+  .site-header, .back-to-top, .theme-toggle, .nav-toggle, .site-footer { display: none; }
+}
