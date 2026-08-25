@@ -1,0 +1,78 @@
+{
+  "id": "a2-adverbios-de-frequencia-e-modo",
+  "level": "A2",
+  "order": 7,
+  "skill": "grammar",
+  "title": "Advérbios de Frequência e Modo",
+  "subtitle": "Sempre, nunca, rapidamente — como dizer com que frequência e de que jeito algo acontece.",
+  "objectives": [
+    "Usar os principais advérbios de frequência",
+    "Formar advérbios de modo com -mente",
+    "Posicionar advérbios corretamente na frase"
+  ],
+  "content": {
+    "intro": "Advérbios de frequência dizem \"com que frequência\"; advérbios de modo dizem \"de que jeito\". Juntos, eles dão muito mais detalhe e naturalidade às suas frases.",
+    "explanation": "<p>Os advérbios de frequência mais comuns, do mais ao menos frequente, são: <strong>sempre</strong>, <strong>geralmente/normalmente</strong>, <strong>frequentemente</strong>, <strong>às vezes</strong>, <strong>raramente</strong>, <strong>nunca</strong>. Eles costumam vir antes do verbo principal (\"eu <strong>sempre</strong> estudo à noite\") ou no início/fim da frase.</p><p>Advérbios de modo descrevem como uma ação acontece e, na maioria das vezes, são formados acrescentando <strong>-mente</strong> ao adjetivo no feminino: rápid<strong>a</strong> → rapidamente; fácil → facilmente; cuidados<strong>a</strong> → cuidadosamente. Quando há mais de um advérbio em -mente seguido, apenas o último leva a terminação completa: \"ela fala clara <strong>e</strong> calmamente\".</p>",
+    "rules": [
+      "Frequência (do mais ao menos comum): sempre, geralmente, frequentemente, às vezes, raramente, nunca",
+      "Advérbios de frequência geralmente vêm antes do verbo principal: \"eu sempre chego cedo\"",
+      "Modo com -mente: adjetivo (forma feminina) + -mente (rápida → rapidamente)",
+      "Vários advérbios em -mente seguidos: só o último leva -mente completo (clara e calmamente)",
+      "\"Nunca\" antes do verbo dispensa o \"não\"; depois do verbo, exige \"não\" antes (não... nunca)"
+    ],
+    "examples": [
+      "Eu sempre tomo café da manhã antes de sair.",
+      "Ela nunca chega atrasada às reuniões.",
+      "Nós às vezes jantamos fora nos fins de semana.",
+      "Ele fala português muito bem e naturalmente.",
+      "Eu não vou lá nunca mais."
+    ],
+    "commonMistakes": [
+      { "wrong": "\"Eu como sempre pizza aos sábados\" (posição pouco natural)", "right": "\"Eu sempre como pizza aos sábados\"", "why": "Advérbios de frequência costumam vir antes do verbo principal, não depois do objeto." },
+      { "wrong": "\"rapidamente e cuidadosamente\" (repetindo -mente nos dois)", "right": "\"rápida e cuidadosamente\"", "why": "Quando há dois ou mais advérbios em -mente seguidos, só o último mantém a terminação completa." },
+      { "wrong": "\"Eu nunca não vou\" (dupla negação incorreta)", "right": "\"Eu nunca vou\" (nunca antes do verbo) ou \"Eu não vou nunca\" (não antes, nunca depois)", "why": "A negação dupla com \"não\" e \"nunca\" segue um padrão específico — nunca os dois antes do verbo ao mesmo tempo." }
+    ],
+    "tip": "Para formar um advérbio de modo, sempre parta da forma feminina do adjetivo, mesmo que a frase seja sobre algo masculino: \"rápido\" → \"rápida\" → \"rapidamente\"."
+  },
+  "exercises": [
+    {
+      "id": "adv-fill",
+      "type": "fill-blank",
+      "title": "Forme o Advérbio",
+      "instructions": "Complete cada frase com o advérbio de modo formado a partir do adjetivo indicado.",
+      "items": [
+        { "id": "adva", "prompt": "Ela dirige muito ___ (cuidadoso).", "answers": [["cuidadosamente"]], "explanation": "Cuidadosa + mente = cuidadosamente." },
+        { "id": "advb", "prompt": "Ele explicou tudo muito ___ (claro).", "answers": [["claramente"]], "explanation": "Clara + mente = claramente." },
+        { "id": "advc", "prompt": "Nós resolvemos o problema ___ (fácil).", "answers": [["facilmente"]], "explanation": "Fácil + mente = facilmente (sem mudança de forma, pois já termina em -l)." }
+      ]
+    },
+    {
+      "id": "adv-mc",
+      "type": "multiple-choice",
+      "title": "Escolha o Advérbio de Frequência",
+      "instructions": "Escolha o advérbio de frequência mais adequado.",
+      "items": [
+        { "id": "advd", "prompt": "Ela come carne uma vez por ano, no máximo. Qual advérbio descreve isso melhor?", "options": ["sempre", "raramente", "geralmente"], "answerIndex": 1, "explanation": "\"Raramente\" indica uma frequência muito baixa." },
+        { "id": "adve", "prompt": "Ele nunca falta ao trabalho, nem uma vez. Qual advérbio descreve isso melhor?", "options": ["às vezes", "nunca", "sempre"], "answerIndex": 2, "explanation": "\"Sempre\" indica frequência máxima, sem exceções." }
+      ]
+    },
+    {
+      "id": "adv-order",
+      "type": "ordering",
+      "title": "Monte a Frase",
+      "instructions": "Coloque as palavras na ordem correta, posicionando o advérbio de frequência naturalmente.",
+      "items": [
+        { "id": "advf", "prompt": "cedo / eu / sempre / acordo", "words": ["Eu", "sempre", "acordo", "cedo"], "explanation": "Sujeito + advérbio de frequência + verbo + advérbio de modo/tempo." }
+      ]
+    }
+  ],
+  "summary": [
+    "Advérbios de frequência (sempre, geralmente, às vezes, raramente, nunca) geralmente vêm antes do verbo.",
+    "Advérbios de modo se formam com -mente a partir da forma feminina do adjetivo.",
+    "Em uma sequência de advérbios em -mente, só o último mantém a terminação completa."
+  ],
+  "related": [
+    { "lessonId": "a2-comparativos-e-superlativos", "label": "Comparativos e Superlativos" },
+    { "lessonId": "a2-quantificadores", "label": "Quantificadores" }
+  ]
+}

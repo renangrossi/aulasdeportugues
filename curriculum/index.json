@@ -1,5 +1,5 @@
 {
-  "_readme": "Fonte única de verdade para a sequência do currículo. status: 'published' = o HTML gerado existe e está linkado na página do nível; 'drafted' = curriculum/{nivel}/{id}.json existe, ainda não construído; 'planned' = identificado no desenho pedagógico do curso, ainda sem JSON. Pre-A1 e A1 estão 100% publicados nesta primeira fase (Fase 1 do plano). A2 até C2 têm seu roteiro completo definido aqui para orientar as próximas fases, mas ainda não foram escritos -- as páginas de nível mostram esses tópicos como 'Em breve' em vez de fingir que já existem.",
+  "_readme": "Fonte única de verdade para a sequência do currículo. status: 'published' = o HTML gerado existe e está linkado na página do nível; 'drafted' = curriculum/{nivel}/{id}.json existe, ainda não construído; 'planned' = identificado no desenho pedagógico do curso, ainda sem JSON. Pre-A1, A1 e A2 estão 100% publicados. B1 até C2 têm seu roteiro completo definido aqui para orientar as próximas fases, mas ainda não foram escritos -- as páginas de nível mostram esses tópicos como 'Em breve' em vez de fingir que já existem.",
   "levels": {
     "PRE-A1": {
       "units": [
@@ -53,21 +53,21 @@
       "units": [
         {
           "id": "1",
-          "title": "Gramática Elementar (13 tópicos planejados)",
+          "title": "Gramática Elementar (13 lições)",
           "lessons": [
-            { "id": "a2-preterito-perfeito-verbos-regulares", "status": "planned", "title": "Pretérito Perfeito: Verbos Regulares" },
-            { "id": "a2-preterito-perfeito-irregulares", "status": "planned", "title": "Pretérito Perfeito: Verbos Irregulares" },
-            { "id": "a2-preterito-imperfeito", "status": "planned", "title": "Pretérito Imperfeito" },
-            { "id": "a2-perfeito-vs-imperfeito", "status": "planned", "title": "Perfeito vs. Imperfeito" },
-            { "id": "a2-futuro-simples-e-futuro-perto", "status": "planned", "title": "Futuro Simples e Futuro Perto" },
-            { "id": "a2-comparativos-e-superlativos", "status": "planned", "title": "Comparativos e Superlativos" },
-            { "id": "a2-adverbios-de-frequencia-e-modo", "status": "planned", "title": "Advérbios de Frequência e Modo" },
-            { "id": "a2-quantificadores", "status": "planned", "title": "Quantificadores" },
-            { "id": "a2-preposicoes-de-movimento", "status": "planned", "title": "Preposições de Movimento" },
-            { "id": "a2-por-e-para-introducao", "status": "planned", "title": "Por e Para: Introdução" },
-            { "id": "a2-pronomes-relativos", "status": "planned", "title": "Pronomes Relativos" },
-            { "id": "a2-verbos-reflexivos", "status": "planned", "title": "Verbos Reflexivos" },
-            { "id": "a2-condicional-simples", "status": "planned", "title": "Condicional Simples" }
+            { "id": "a2-preterito-perfeito-verbos-regulares", "status": "published" },
+            { "id": "a2-preterito-perfeito-irregulares", "status": "published" },
+            { "id": "a2-preterito-imperfeito", "status": "published" },
+            { "id": "a2-perfeito-vs-imperfeito", "status": "published" },
+            { "id": "a2-futuro-simples-e-futuro-perto", "status": "published" },
+            { "id": "a2-comparativos-e-superlativos", "status": "published" },
+            { "id": "a2-adverbios-de-frequencia-e-modo", "status": "published" },
+            { "id": "a2-quantificadores", "status": "published" },
+            { "id": "a2-preposicoes-de-movimento", "status": "published" },
+            { "id": "a2-por-e-para-introducao", "status": "published" },
+            { "id": "a2-pronomes-relativos", "status": "published" },
+            { "id": "a2-verbos-reflexivos", "status": "published" },
+            { "id": "a2-condicional-simples", "status": "published" }
           ]
         }
       ]

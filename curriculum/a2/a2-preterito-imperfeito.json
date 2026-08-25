@@ -1,0 +1,88 @@
+{
+  "id": "a2-preterito-imperfeito",
+  "level": "A2",
+  "order": 3,
+  "skill": "grammar",
+  "title": "Pretérito Imperfeito",
+  "subtitle": "Como as coisas costumavam ser — hábitos e descrições no passado.",
+  "objectives": [
+    "Conjugar verbos regulares e os principais irregulares no pretérito imperfeito",
+    "Usar o imperfeito para hábitos, descrições e ações contínuas no passado",
+    "Diferenciar, em um primeiro contato, o imperfeito do pretérito perfeito"
+  ],
+  "content": {
+    "intro": "Enquanto o pretérito perfeito conta o que aconteceu uma vez, o pretérito imperfeito descreve como as coisas costumavam ser — sem um ponto final definido.",
+    "explanation": "<p>O pretérito imperfeito é usado para <strong>hábitos passados</strong> (\"eu <strong>brincava</strong> na rua todos os dias quando era criança\"), <strong>descrições</strong> no passado (\"a casa <strong>era</strong> grande e <strong>tinha</strong> um jardim\") e ações <strong>em progresso</strong> no passado, sem foco no início ou fim.</p><p>A formação é bem regular: verbos -ar terminam em <strong>-ava</strong> (falava), verbos -er e -ir terminam em <strong>-ia</strong> (comia, abria). Os únicos irregulares comuns são <strong>ser</strong> (era, era, éramos, eram), <strong>ter</strong> (tinha, tinha, tínhamos, tinham), <strong>vir</strong> (vinha) e <strong>pôr</strong> (punha).</p>",
+    "rules": [
+      "Verbos -ar: -ava, -ava, -ávamos, -avam (falava, falava, falávamos, falavam)",
+      "Verbos -er/-ir: -ia, -ia, -íamos, -iam (comia, comia, comíamos, comiam)",
+      "Ser (irregular): era, era, éramos, eram",
+      "Ter (irregular): tinha, tinha, tínhamos, tinham",
+      "Use o imperfeito para: hábitos passados, descrições e ações em progresso sem ponto final marcado"
+    ],
+    "table": {
+      "caption": "Pretérito imperfeito — modelos e irregulares",
+      "headers": ["Pronome", "Falar (-ar)", "Comer (-er)", "Ser", "Ter"],
+      "rows": [
+        ["eu", "falava", "comia", "era", "tinha"],
+        ["você/ele/ela", "falava", "comia", "era", "tinha"],
+        ["nós", "falávamos", "comíamos", "éramos", "tínhamos"],
+        ["vocês/eles/elas", "falavam", "comiam", "eram", "tinham"]
+      ]
+    },
+    "examples": [
+      "Quando eu era criança, eu morava em uma cidade pequena.",
+      "Nós brincávamos no parque todos os fins de semana.",
+      "A casa era grande e tinha um jardim enorme.",
+      "Ela sempre chegava cedo ao trabalho.",
+      "Eles não sabiam a resposta certa."
+    ],
+    "commonMistakes": [
+      { "wrong": "Usar o imperfeito para um evento único e concluído (\"Ontem eu comia pizza\")", "right": "\"Ontem eu comi pizza\" (pretérito perfeito)", "why": "Um evento único, concluído em um momento específico, pede pretérito perfeito, não imperfeito." },
+      { "wrong": "\"Eu eras\" (confundindo pessoas gramaticais)", "right": "\"Eu era\"", "why": "\"Eras\" não existe no português padrão do Brasil — \"eu\" e \"você/ele/ela\" compartilham a mesma forma \"era\"." },
+      { "wrong": "\"Nós falavamos\" (sem acento)", "right": "\"Nós falávamos\"", "why": "A primeira pessoa do plural do imperfeito de verbos -ar sempre leva acento na sílaba tônica." }
+    ],
+    "tip": "Pergunte-se: isso aconteceu uma vez só, com começo e fim claros? Use o perfeito. Isso era um hábito, uma descrição, ou algo em andamento sem fim marcado? Use o imperfeito."
+  },
+  "exercises": [
+    {
+      "id": "pi-fill",
+      "type": "fill-blank",
+      "title": "Conjugue no Imperfeito",
+      "instructions": "Complete cada frase com a forma correta do verbo no pretérito imperfeito.",
+      "items": [
+        { "id": "pia", "prompt": "Quando eu era criança, eu ___ (morar) no interior.", "answers": [["morava"]], "explanation": "Verbo -ar, imperfeito, primeira pessoa: morava." },
+        { "id": "pib", "prompt": "Nós ___ (ser) muito amigos na escola.", "answers": [["éramos"]], "explanation": "Primeira pessoa do plural de \"ser\" no imperfeito: éramos." },
+        { "id": "pic", "prompt": "Ela sempre ___ (ter) muitas ideias criativas.", "answers": [["tinha"]], "explanation": "Terceira pessoa do singular de \"ter\" no imperfeito: tinha." }
+      ]
+    },
+    {
+      "id": "pi-mc",
+      "type": "multiple-choice",
+      "title": "Escolha a Forma Correta",
+      "instructions": "Escolha a conjugação correta.",
+      "items": [
+        { "id": "pid", "prompt": "\"Todos os domingos, nós ___ à praia.\" (hábito no passado)", "options": ["fomos", "íamos", "vamos"], "answerIndex": 1, "explanation": "Um hábito repetido no passado usa o imperfeito: íamos." },
+        { "id": "pie", "prompt": "Qual frase descreve corretamente uma casa no passado?", "options": ["A casa foi grande.", "A casa era grande.", "A casa é grande."], "answerIndex": 1, "explanation": "Descrições no passado usam o imperfeito: era." }
+      ]
+    },
+    {
+      "id": "pi-writing",
+      "type": "writing",
+      "title": "Descreva Sua Infância",
+      "instructions": "Escreva de 3 a 5 frases sobre como era sua vida quando você era criança, usando o pretérito imperfeito.",
+      "items": [
+        { "id": "pif", "prompt": "Onde você morava? O que você fazia nos fins de semana? Como era sua casa ou sua escola?" }
+      ]
+    }
+  ],
+  "summary": [
+    "O imperfeito descreve hábitos, descrições e ações em progresso no passado, sem ponto final marcado.",
+    "Verbos -ar terminam em -ava; verbos -er/-ir terminam em -ia.",
+    "Ser (era) e ter (tinha) são os irregulares mais frequentes desse tempo verbal."
+  ],
+  "related": [
+    { "lessonId": "a2-preterito-perfeito-irregulares", "label": "Pretérito Perfeito: Verbos Irregulares" },
+    { "lessonId": "a2-perfeito-vs-imperfeito", "label": "Perfeito vs. Imperfeito" }
+  ]
+}

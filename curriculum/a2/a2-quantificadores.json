@@ -1,0 +1,80 @@
+{
+  "id": "a2-quantificadores",
+  "level": "A2",
+  "order": 8,
+  "skill": "grammar",
+  "title": "Quantificadores",
+  "subtitle": "Muito, pouco, algum, nenhum, todo, cada — dizendo quanto ou quantos.",
+  "objectives": [
+    "Usar os principais quantificadores do português",
+    "Fazer a concordância de gênero e número dos quantificadores",
+    "Diferenciar \"todo\" de \"todo o\" e \"cada\" de \"todo\""
+  ],
+  "content": {
+    "intro": "Quantificadores respondem à pergunta \"quanto?\" ou \"quantos?\" — e, como a maioria das palavras em português, a maior parte deles concorda em gênero e número com o substantivo.",
+    "explanation": "<p><strong>Muito/muita/muitos/muitas</strong> e <strong>pouco/pouca/poucos/poucas</strong> concordam com o substantivo: \"muito dinheiro\", \"muitas pessoas\". <strong>Algum/alguma/alguns/algumas</strong> indica quantidade indefinida positiva; <strong>nenhum/nenhuma</strong> é o oposto, negativo (e, diferente do inglês, o português aceita dupla negação: \"eu não tenho nenhum problema\").</p><p><strong>Todo/toda</strong> (sem artigo) significa \"cada\" (\"toda manhã\" = every morning); <strong>todo o / toda a</strong> (com artigo) significa \"a totalidade de\" (\"toda a manhã\" = the whole morning). <strong>Cada</strong> é invariável (não muda para plural) e sempre acompanha um substantivo singular: \"cada aluno\", nunca \"cada alunos\".</p>",
+    "rules": [
+      "Muito/muita/muitos/muitas e pouco/pouca/poucos/poucas concordam com o substantivo",
+      "Algum/alguma/alguns/algumas (positivo) vs. nenhum/nenhuma (negativo)",
+      "Todo/toda (sem artigo) = \"cada\"; todo o/toda a (com artigo) = \"a totalidade de\"",
+      "Cada é invariável e sempre acompanha substantivo singular: cada aluno, cada pessoa",
+      "\"Não\" + verbo + \"nenhum\" é uma dupla negação gramaticalmente correta em português"
+    ],
+    "examples": [
+      "Eu tenho muito trabalho esta semana.",
+      "Há poucas pessoas na sala hoje.",
+      "Alguns alunos chegaram atrasados.",
+      "Eu não tenho nenhum problema com isso.",
+      "Toda manhã eu tomo café antes de sair.",
+      "Cada aluno recebeu um livro novo."
+    ],
+    "commonMistakes": [
+      { "wrong": "\"Cada alunos\"", "right": "\"Cada aluno\"", "why": "\"Cada\" é sempre seguido de substantivo singular, mesmo referindo-se a um grupo." },
+      { "wrong": "\"Toda a manhã eu corro\" (querendo dizer \"every morning\")", "right": "\"Toda manhã eu corro\" (sem artigo)", "why": "Sem o artigo \"a\", \"todo/toda\" significa \"cada\"; com o artigo, significa \"a totalidade de\", mudando o sentido." },
+      { "wrong": "\"Eu não tenho nenhuma problemas\" (concordância errada)", "right": "\"Eu não tenho nenhum problema\"", "why": "\"Nenhum/nenhuma\" concorda em gênero com o substantivo — \"problema\" é masculino, então \"nenhum\"." }
+    ],
+    "tip": "Lembre-se do contraste \"todo\" vs. \"todo o\": sem artigo = \"cada\"; com artigo = \"inteiro/completo\". É uma das distinções mais úteis (e mais esquecidas) deste tópico."
+  },
+  "exercises": [
+    {
+      "id": "quant-fill",
+      "type": "fill-blank",
+      "title": "Complete com o Quantificador",
+      "instructions": "Complete cada frase com a forma correta do quantificador indicado.",
+      "items": [
+        { "id": "quanta", "prompt": "Eu tenho ___ (much) tempo livre hoje.", "answers": [["muito"]], "options": ["muito", "muita", "muitos"], "explanation": "\"Tempo\" é masculino singular: muito." },
+        { "id": "quantb", "prompt": "Há ___ (few) opções no cardápio.", "answers": [["poucas"]], "options": ["poucas", "pouco", "poucos"], "explanation": "\"Opções\" é feminino plural: poucas." },
+        { "id": "quantc", "prompt": "___ (each) pessoa recebeu um presente.", "answers": [["Cada"]], "options": ["Cada", "Todo", "Algum"], "explanation": "\"Cada\" é invariável e sempre acompanha substantivo singular." }
+      ]
+    },
+    {
+      "id": "quant-mc",
+      "type": "multiple-choice",
+      "title": "Todo ou Todo o?",
+      "instructions": "Escolha a forma correta conforme o significado desejado.",
+      "items": [
+        { "id": "quantd", "prompt": "Você quer dizer \"every day\" (cada dia). Qual opção usar?", "options": ["Todo dia", "Todo o dia", "Cada os dias"], "answerIndex": 0, "explanation": "Sem artigo, \"todo\" significa \"cada\"." },
+        { "id": "quante", "prompt": "Você quer dizer \"the whole day\" (o dia inteiro). Qual opção usar?", "options": ["Todo dia", "Todo o dia", "Cada dia"], "answerIndex": 1, "explanation": "Com o artigo \"o\", \"todo o\" significa \"a totalidade de\"." }
+      ]
+    },
+    {
+      "id": "quant-correction",
+      "type": "correction",
+      "title": "Corrija as Frases",
+      "instructions": "Corrija o erro de concordância em cada frase.",
+      "items": [
+        { "id": "quantf", "incorrect": "Eu não tenho nenhuma dinheiro.", "answer": ["Eu não tenho nenhum dinheiro", "Eu não tenho nenhum dinheiro."], "explanation": "\"Dinheiro\" é masculino, então usa-se \"nenhum\"." },
+        { "id": "quantg", "incorrect": "Cada alunos trouxe seu material.", "answer": ["Cada aluno trouxe seu material", "Cada aluno trouxe seu material."], "explanation": "\"Cada\" sempre acompanha um substantivo no singular." }
+      ]
+    }
+  ],
+  "summary": [
+    "Muito/pouco e algum/nenhum concordam em gênero e número com o substantivo.",
+    "Todo/toda (sem artigo) = \"cada\"; todo o/toda a (com artigo) = \"a totalidade de\".",
+    "\"Cada\" é invariável e sempre vem acompanhado de substantivo singular."
+  ],
+  "related": [
+    { "lessonId": "a2-adverbios-de-frequencia-e-modo", "label": "Advérbios de Frequência e Modo" },
+    { "lessonId": "a2-pronomes-relativos", "label": "Pronomes Relativos" }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "id": "a2-comparativos-e-superlativos",
+  "level": "A2",
+  "order": 6,
+  "skill": "grammar",
+  "title": "Comparativos e Superlativos",
+  "subtitle": "Mais, menos, tão... e os quatro irregulares que fogem da regra.",
+  "objectives": [
+    "Formar comparativos de superioridade, inferioridade e igualdade",
+    "Formar superlativos relativos e absolutos",
+    "Usar os quatro comparativos irregulares mais comuns"
+  ],
+  "content": {
+    "intro": "Comparar pessoas, lugares e coisas é uma das habilidades mais úteis do dia a dia — e o português tem um sistema bem regular para isso, com apenas quatro exceções importantes.",
+    "explanation": "<p>Para comparar com <strong>superioridade</strong>, usa-se <strong>mais... (do) que</strong>: \"este carro é <strong>mais</strong> rápido <strong>do que</strong> aquele\". Para <strong>inferioridade</strong>, <strong>menos... (do) que</strong>. Para <strong>igualdade</strong>, <strong>tão... quanto/como</strong>: \"ela é <strong>tão</strong> inteligente <strong>quanto</strong> o irmão\".</p><p>O <strong>superlativo relativo</strong> destaca algo dentro de um grupo: <strong>o mais/menos + adjetivo + de</strong> (\"o mais alto <strong>da</strong> turma\"). O <strong>superlativo absoluto</strong> intensifica sem comparar com nada: acrescenta-se <strong>-íssimo/-íssima</strong> ao adjetivo (\"lindo\" → \"lind<strong>íssimo</strong>\") ou usa-se \"muito + adjetivo\".</p><p>Quatro adjetivos têm formas comparativas irregulares: <strong>bom → melhor</strong>, <strong>mau → pior</strong>, <strong>grande → maior</strong>, <strong>pequeno → menor</strong> — nunca se diz \"mais bom\" ou \"mais grande\".</p>",
+    "rules": [
+      "Superioridade: mais + adjetivo + (do) que",
+      "Inferioridade: menos + adjetivo + (do) que",
+      "Igualdade: tão + adjetivo + quanto/como",
+      "Superlativo relativo: o/a mais/menos + adjetivo + de",
+      "Superlativo absoluto: adjetivo + -íssimo/-íssima, ou muito + adjetivo",
+      "Irregulares: bom→melhor, mau→pior, grande→maior, pequeno→menor"
+    ],
+    "table": {
+      "caption": "Comparativos irregulares",
+      "headers": ["Adjetivo", "Comparativo"],
+      "rows": [
+        ["bom", "melhor (nunca \"mais bom\")"],
+        ["mau/ruim", "pior (nunca \"mais mau\")"],
+        ["grande", "maior (nunca \"mais grande\")"],
+        ["pequeno", "menor (nunca \"mais pequeno\")"]
+      ]
+    },
+    "examples": [
+      "Este restaurante é melhor do que aquele.",
+      "Ela é tão alta quanto o irmão dela.",
+      "Este é o carro mais caro da loja.",
+      "A cidade é lindíssima à noite.",
+      "Meu irmão mais velho é maior do que eu."
+    ],
+    "commonMistakes": [
+      { "wrong": "\"Mais bom\"", "right": "\"Melhor\"", "why": "\"Bom\" tem uma forma comparativa própria e irregular: melhor." },
+      { "wrong": "\"Mais grande\"", "right": "\"Maior\"", "why": "\"Grande\" também tem forma irregular: maior." },
+      { "wrong": "\"Tão alta que\" (usando \"que\" no lugar de \"quanto/como\")", "right": "\"Tão alta quanto/como\"", "why": "A comparação de igualdade usa \"quanto\" ou \"como\", não \"que\" — \"que\" é reservado para comparações de superioridade/inferioridade." }
+    ],
+    "tip": "Memorize os quatro irregulares (melhor, pior, maior, menor) como um bloco só — eles aparecem com muita frequência e a forma regular equivalente simplesmente não existe em português."
+  },
+  "exercises": [
+    {
+      "id": "comp-fill",
+      "type": "fill-blank",
+      "title": "Complete a Comparação",
+      "instructions": "Complete cada frase com a forma comparativa correta.",
+      "items": [
+        { "id": "compa", "prompt": "Este filme é ___ (bom, comparativo) do que o outro.", "answers": [["melhor"]], "explanation": "\"Bom\" tem forma irregular: melhor." },
+        { "id": "compb", "prompt": "Minha casa é ___ (grande, comparativo) do que a sua.", "answers": [["maior"]], "explanation": "\"Grande\" tem forma irregular: maior." },
+        { "id": "compc", "prompt": "Ela é tão simpática ___ a irmã dela.", "answers": [["quanto", "como"]], "explanation": "Igualdade usa \"quanto\" ou \"como\"." }
+      ]
+    },
+    {
+      "id": "comp-mc",
+      "type": "multiple-choice",
+      "title": "Escolha a Forma Correta",
+      "instructions": "Escolha a versão gramaticalmente correta.",
+      "items": [
+        { "id": "compd", "prompt": "Qual frase está correta?", "options": ["Este café é mais bom.", "Este café é melhor.", "Este café é mais melhor."], "answerIndex": 1, "explanation": "\"Melhor\" já é a forma comparativa — não se combina com \"mais\"." },
+        { "id": "compe", "prompt": "Qual é o superlativo absoluto de \"caro\"?", "options": ["mais caro", "caríssimo", "o mais caro"], "answerIndex": 1, "explanation": "O superlativo absoluto intensifica sem comparar: caríssimo." }
+      ]
+    },
+    {
+      "id": "comp-match",
+      "type": "matching",
+      "title": "Associe o Adjetivo ao Comparativo",
+      "instructions": "Associe cada adjetivo à sua forma comparativa irregular.",
+      "items": [
+        { "id": "compf", "pairs": [
+          { "left": "bom", "right": "melhor" },
+          { "left": "mau", "right": "pior" },
+          { "left": "grande", "right": "maior" },
+          { "left": "pequeno", "right": "menor" }
+        ], "explanation": "Esses quatro adjetivos têm formas comparativas próprias, sem usar \"mais\"." }
+      ]
+    }
+  ],
+  "summary": [
+    "Mais/menos... (do) que comparam superioridade/inferioridade; tão... quanto/como compara igualdade.",
+    "O superlativo relativo usa \"o mais/menos... de\"; o absoluto usa -íssimo ou \"muito\".",
+    "Bom, mau, grande e pequeno têm comparativos irregulares: melhor, pior, maior, menor."
+  ],
+  "related": [
+    { "lessonId": "a2-adverbios-de-frequencia-e-modo", "label": "Advérbios de Frequência e Modo" },
+    { "lessonId": "a2-quantificadores", "label": "Quantificadores" }
+  ]
+}

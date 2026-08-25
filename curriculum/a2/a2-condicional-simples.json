@@ -1,0 +1,88 @@
+{
+  "id": "a2-condicional-simples",
+  "level": "A2",
+  "order": 13,
+  "skill": "grammar",
+  "title": "Condicional Simples",
+  "subtitle": "Eu gostaria, eu poderia — o tempo verbal da educação e da hipótese.",
+  "objectives": [
+    "Conjugar verbos regulares no condicional simples",
+    "Usar o condicional para pedidos educados e desejos",
+    "Reconhecer os mesmos verbos irregulares do futuro simples no condicional"
+  ],
+  "content": {
+    "intro": "Se você já quis pedir algo educadamente em português — \"eu gostaria de um café\" — você já usou o condicional sem saber o nome dele.",
+    "explanation": "<p>O condicional simples é formado da mesma maneira que o futuro simples — infinitivo completo + terminação — mas com terminações diferentes: <strong>-ia, -ia, -íamos, -iam</strong>. Fal<strong>ar</strong> + ia = falar<strong>ia</strong>; com<strong>er</strong> + ia = comer<strong>ia</strong>.</p><p>É usado principalmente para <strong>pedidos educados</strong> (\"eu <strong>gostaria</strong> de uma água, por favor\"), <strong>desejos hipotéticos</strong> (\"eu <strong>viajaria</strong> pelo mundo se pudesse\") e <strong>conselhos</strong> (\"no seu lugar, eu <strong>falaria</strong> com ela\"). Os mesmos verbos irregulares do futuro simples (fazer, dizer, trazer) mantêm a mesma raiz irregular no condicional: far<strong>ia</strong>, dir<strong>ia</strong>, trar<strong>ia</strong>.</p>",
+    "rules": [
+      "Terminações: -ia, -ia, -íamos, -iam, acrescentadas ao infinitivo completo",
+      "Falar → falaria, falaria, falaríamos, falariam",
+      "Uso principal: pedidos educados (eu gostaria de...)",
+      "Também usado para desejos hipotéticos e conselhos",
+      "Os irregulares do futuro simples (fazer→far-, dizer→dir-, trazer→trar-) mantêm a mesma raiz no condicional"
+    ],
+    "table": {
+      "caption": "Condicional simples — \"gostar\"",
+      "headers": ["Pronome", "Forma"],
+      "rows": [
+        ["eu", "gostaria"],
+        ["você/ele/ela", "gostaria"],
+        ["nós", "gostaríamos"],
+        ["vocês/eles/elas", "gostariam"]
+      ]
+    },
+    "examples": [
+      "Eu gostaria de um copo de água, por favor.",
+      "Você poderia me ajudar com isso?",
+      "No seu lugar, eu falaria com ela hoje mesmo.",
+      "Nós adoraríamos ir à festa.",
+      "Ele disse que faria o trabalho até sexta."
+    ],
+    "commonMistakes": [
+      { "wrong": "\"Eu quero um café\" quando a intenção é ser mais educado", "right": "\"Eu gostaria de um café\"", "why": "\"Gostaria\" (condicional) soa mais educado e indireto do que \"quero\" (presente), especialmente em pedidos formais." },
+      { "wrong": "\"Eu faria\" pronunciado como \"eu fazeria\"", "right": "\"Eu faria\"", "why": "\"Fazer\" no condicional usa a raiz irregular \"far-\", igual ao futuro simples: faria, não \"fazeria\"." },
+      { "wrong": "Confundir o condicional (-ia) com o imperfeito (-ia) de verbos -er/-ir", "right": "observar se o verbo inteiro (infinitivo) está preservado antes da terminação", "why": "O condicional mantém o infinitivo completo antes de -ia (falar+ia); o imperfeito de -er/-ir remove a terminação antes de -ia (com+ia) — repare a diferença na raiz." }
+    ],
+    "tip": "\"Eu gostaria de...\" é uma das frases mais úteis do português educado — pratique-a com diferentes verbos até sair automaticamente em qualquer pedido."
+  },
+  "exercises": [
+    {
+      "id": "cond-fill",
+      "type": "fill-blank",
+      "title": "Conjugue no Condicional",
+      "instructions": "Complete cada frase com a forma correta do condicional simples.",
+      "items": [
+        { "id": "conda", "prompt": "Eu ___ (gostar) de saber mais sobre o assunto.", "answers": [["gostaria"]], "explanation": "Primeira pessoa do condicional: gostaria." },
+        { "id": "condb", "prompt": "Vocês ___ (poder) me ajudar amanhã?", "answers": [["poderiam"]], "explanation": "Terceira pessoa do plural do condicional: poderiam." },
+        { "id": "condc", "prompt": "Ela disse que ___ (fazer) o possível.", "answers": [["faria"]], "explanation": "\"Fazer\" no condicional é irregular: faria." }
+      ]
+    },
+    {
+      "id": "cond-mc",
+      "type": "multiple-choice",
+      "title": "Escolha a Forma Mais Educada",
+      "instructions": "Escolha a opção mais educada para cada pedido.",
+      "items": [
+        { "id": "condd", "prompt": "Você está em um restaurante e quer pedir água de forma educada. O que você diz?", "options": ["Eu quero água.", "Eu gostaria de água, por favor.", "Dá água."], "answerIndex": 1, "explanation": "O condicional \"gostaria\" é a forma mais educada de pedir algo." },
+        { "id": "conde", "prompt": "Qual é a forma correta do condicional de \"dizer\" para \"eu\"?", "options": ["dizeria", "diria", "disseria"], "answerIndex": 1, "explanation": "\"Dizer\" no condicional usa a raiz irregular \"dir-\": diria." }
+      ]
+    },
+    {
+      "id": "cond-writing",
+      "type": "writing",
+      "title": "O Que Você Faria?",
+      "instructions": "Escreva de 3 a 4 frases usando o condicional para descrever o que você faria se ganhasse na loteria.",
+      "items": [
+        { "id": "condf", "prompt": "Use pelo menos três verbos diferentes no condicional (eu viajaria, eu compraria, eu ajudaria...)." }
+      ]
+    }
+  ],
+  "summary": [
+    "O condicional simples acrescenta -ia/-ia/-íamos/-iam ao infinitivo completo.",
+    "É usado principalmente para pedidos educados, desejos hipotéticos e conselhos.",
+    "Os mesmos verbos irregulares do futuro simples mantêm a raiz irregular no condicional."
+  ],
+  "related": [
+    { "lessonId": "a2-futuro-simples-e-futuro-perto", "label": "Futuro Simples e Futuro Perto" },
+    { "lessonId": "a2-verbos-reflexivos", "label": "Verbos Reflexivos" }
+  ]
+}

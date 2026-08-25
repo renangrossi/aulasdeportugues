@@ -1,0 +1,69 @@
+{
+  "id": "a2-preposicoes-de-movimento",
+  "level": "A2",
+  "order": 9,
+  "skill": "grammar",
+  "title": "Preposições de Movimento",
+  "subtitle": "Para, a, até, por, de — a direção que uma ação percorre.",
+  "objectives": [
+    "Usar as principais preposições de movimento e direção",
+    "Diferenciar \"para\" e \"a\" com verbos de movimento",
+    "Usar \"por\" para indicar passagem através de um lugar"
+  ],
+  "content": {
+    "intro": "Depois de aprender as preposições de lugar fixo no A1, é hora de aprender as que descrevem movimento — de onde, para onde, e por onde algo se desloca.",
+    "explanation": "<p><strong>Para</strong> indica destino, especialmente quando há a ideia de permanência ou de uma viagem mais longa: \"eu vou <strong>para</strong> o Brasil\" (para morar/ficar um tempo). <strong>A</strong> também indica destino, mas sugere um movimento mais rápido, de ida e volta: \"eu vou <strong>à</strong> padaria\" (rapidinho, volto logo). <strong>Até</strong> marca o ponto final de um trajeto: \"caminhei <strong>até</strong> a praça\". <strong>Por</strong> indica passagem através de um lugar: \"passei <strong>pela</strong> praça\" (atravessando). <strong>De</strong> indica origem: \"eu vim <strong>de</strong> São Paulo\".</p>",
+    "rules": [
+      "Para = destino com ideia de permanência/estadia mais longa",
+      "A = destino com ideia de ida rápida, volta prevista",
+      "Até = ponto final de um trajeto",
+      "Por (+ pelo/pela) = passagem através de um lugar",
+      "De = ponto de origem"
+    ],
+    "examples": [
+      "Eu vou para o Rio de Janeiro no próximo mês (vou morar lá um tempo).",
+      "Eu vou à farmácia comprar um remédio (volto logo).",
+      "Nós caminhamos até o final da praia.",
+      "Ele passou pela minha casa esta manhã.",
+      "Ela veio de Portugal para estudar aqui."
+    ],
+    "commonMistakes": [
+      { "wrong": "Usar \"para\" e \"a\" como sinônimos perfeitos em qualquer contexto", "right": "escolher conforme a ideia de permanência (para) ou ida rápida (a)", "why": "Embora às vezes intercambiáveis na fala informal, a distinção de sentido existe e é útil para expressar a intenção com precisão." },
+      { "wrong": "\"Passei por a praça\" (sem a contração)", "right": "\"Passei pela praça\"", "why": "\"Por\" + \"a\" sempre se contrai em \"pela\", assim como as demais contrações obrigatórias com artigo definido." },
+      { "wrong": "\"Eu vim para São Paulo\" (para indicar origem)", "right": "\"Eu vim de São Paulo\"", "why": "Origem sempre usa \"de\"; \"para\" indica destino, não origem." }
+    ],
+    "tip": "Pergunte-se: isso é uma ida rápida, com volta prevista (a), uma mudança mais permanente (para), um trajeto até um ponto (até), uma passagem através de algo (por), ou uma origem (de)?"
+  },
+  "exercises": [
+    {
+      "id": "mov-fill",
+      "type": "fill-blank",
+      "title": "Complete com a Preposição",
+      "instructions": "Escolha a preposição de movimento mais adequada.",
+      "items": [
+        { "id": "mova", "prompt": "Eu vou ___ o Japão morar por dois anos.", "answers": [["para"]], "options": ["para", "a", "de"], "explanation": "Estadia mais longa/permanente usa \"para\"." },
+        { "id": "movb", "prompt": "Nós caminhamos ___ o final da rua.", "answers": [["até"]], "options": ["até", "por", "de"], "explanation": "\"Até\" marca o ponto final de um trajeto." },
+        { "id": "movc", "prompt": "Ela é ___ Portugal.", "answers": [["de"]], "options": ["de", "para", "até"], "explanation": "Origem sempre usa \"de\"." }
+      ]
+    },
+    {
+      "id": "mov-mc",
+      "type": "multiple-choice",
+      "title": "Escolha a Preposição Certa",
+      "instructions": "Escolha a preposição mais adequada.",
+      "items": [
+        { "id": "movd", "prompt": "Você vai comprar pão e volta logo. Qual verbo/preposição usar?", "options": ["Vou para a padaria.", "Vou à padaria.", "Vou de padaria."], "answerIndex": 1, "explanation": "Uma ida rápida com volta prevista usa \"a\"." },
+        { "id": "move", "prompt": "\"Ele passou ___ o parque a caminho do trabalho.\"", "options": ["pelo", "para o", "ao"], "answerIndex": 0, "explanation": "\"Por\" (contraído em \"pelo\") indica passagem através de um lugar." }
+      ]
+    }
+  ],
+  "summary": [
+    "Para indica destino com permanência; a indica destino com ida rápida.",
+    "Até marca o ponto final de um trajeto; por indica passagem através de um lugar.",
+    "De sempre indica origem, nunca destino."
+  ],
+  "related": [
+    { "lessonId": "a2-por-e-para-introducao", "label": "Por e Para: Introdução" },
+    { "lessonId": "a2-quantificadores", "label": "Quantificadores" }
+  ]
+}

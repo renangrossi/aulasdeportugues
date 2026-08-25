@@ -1,0 +1,90 @@
+{
+  "id": "a2-preterito-perfeito-verbos-regulares",
+  "level": "A2",
+  "order": 1,
+  "skill": "grammar",
+  "title": "Pretérito Perfeito: Verbos Regulares",
+  "subtitle": "Como contar o que já aconteceu, de uma vez só, no passado.",
+  "objectives": [
+    "Conjugar verbos regulares -ar, -er e -ir no pretérito perfeito",
+    "Usar o pretérito perfeito para ações concluídas no passado",
+    "Reconhecer marcadores de tempo comuns desse tempo verbal"
+  ],
+  "content": {
+    "intro": "Agora que o presente está sólido, é hora de contar o que já aconteceu. O pretérito perfeito é o tempo verbal mais usado para narrar eventos passados e concluídos.",
+    "explanation": "<p>O pretérito perfeito descreve uma ação <strong>completa</strong>, geralmente pontual, que aconteceu em um momento específico do passado: \"eu <strong>falei</strong> com ela ontem\". Para formar o pretérito perfeito regular, remove-se a terminação do infinitivo e acrescenta-se a terminação correspondente: <strong>falar</strong> → falei, falou, falamos, falaram; <strong>comer</strong> → comi, comeu, comemos, comeram; <strong>abrir</strong> → abri, abriu, abrimos, abriram.</p><p>Repare que \"eu\" e \"nós\" têm terminações bem diferentes do presente, enquanto \"você/ele/ela\" e \"vocês/eles/elas\" seguem um padrão mais previsível.</p>",
+    "rules": [
+      "Verbos -ar: -ei, -ou, -amos, -aram (falei, falou, falamos, falaram)",
+      "Verbos -er: -i, -eu, -emos, -eram (comi, comeu, comemos, comeram)",
+      "Verbos -ir: -i, -iu, -imos, -iram (abri, abriu, abrimos, abriram)",
+      "Marcadores comuns: ontem, anteontem, na semana passada, no ano passado, há dois dias",
+      "\"Nós\" no pretérito perfeito de verbos -ar é idêntico ao presente (falamos) — o contexto/marcador de tempo é que diferencia"
+    ],
+    "table": {
+      "caption": "Pretérito perfeito — três verbos modelo",
+      "headers": ["Pronome", "Falar (-ar)", "Comer (-er)", "Abrir (-ir)"],
+      "rows": [
+        ["eu", "falei", "comi", "abri"],
+        ["você/ele/ela", "falou", "comeu", "abriu"],
+        ["nós", "falamos", "comemos", "abrimos"],
+        ["vocês/eles/elas", "falaram", "comeram", "abriram"]
+      ]
+    },
+    "examples": [
+      "Eu falei com o professor ontem.",
+      "Nós comemos em um restaurante novo na semana passada.",
+      "Ela abriu a própria empresa no ano passado.",
+      "Eles estudaram muito para a prova.",
+      "Você já assistiu a esse filme?"
+    ],
+    "commonMistakes": [
+      { "wrong": "\"Eu falo com ela ontem\" (usando o presente para um evento passado)", "right": "\"Eu falei com ela ontem\"", "why": "Um marcador de passado como \"ontem\" exige o pretérito perfeito, não o presente." },
+      { "wrong": "\"Nós falámos\" (confundindo com a grafia de Portugal)", "right": "\"Nós falamos\"", "why": "No português do Brasil, a primeira pessoa do plural do pretérito perfeito de verbos -ar não leva acento." },
+      { "wrong": "\"Elas comeu\" (sem concordância de número)", "right": "\"Elas comeram\"", "why": "O verbo precisa concordar em número com o sujeito plural." }
+    ],
+    "tip": "Associe o pretérito perfeito a uma linha do tempo: é sempre um ponto específico e concluído no passado, nunca algo que ainda está acontecendo."
+  },
+  "exercises": [
+    {
+      "id": "pp1-fill",
+      "type": "fill-blank",
+      "title": "Conjugue no Pretérito Perfeito",
+      "instructions": "Complete cada frase com a forma correta do verbo no pretérito perfeito.",
+      "items": [
+        { "id": "pp1a", "prompt": "Eu ___ (estudar) português ontem à noite.", "answers": [["estudei"]], "explanation": "Primeira pessoa, verbo -ar: estudei." },
+        { "id": "pp1b", "prompt": "Ela ___ (vender) o carro na semana passada.", "answers": [["vendeu"]], "explanation": "Terceira pessoa do singular, verbo -er: vendeu." },
+        { "id": "pp1c", "prompt": "Nós ___ (decidir) viajar juntos.", "answers": [["decidimos"]], "explanation": "Primeira pessoa do plural, verbo -ir: decidimos." },
+        { "id": "pp1d", "prompt": "Eles ___ (trabalhar) até tarde ontem.", "answers": [["trabalharam"]], "explanation": "Terceira pessoa do plural, verbo -ar: trabalharam." }
+      ]
+    },
+    {
+      "id": "pp1-mc",
+      "type": "multiple-choice",
+      "title": "Escolha a Forma Correta",
+      "instructions": "Escolha a conjugação correta do pretérito perfeito.",
+      "items": [
+        { "id": "pp1e", "prompt": "Qual é a forma de \"abrir\" para \"você\", no pretérito perfeito?", "options": ["abre", "abriu", "abria"], "answerIndex": 1, "explanation": "Terceira pessoa do singular do pretérito perfeito: abriu." },
+        { "id": "pp1f", "prompt": "Qual frase está no pretérito perfeito?", "options": ["Eu como todo dia.", "Eu comi ontem.", "Eu estou comendo."], "answerIndex": 1, "explanation": "\"Comi\" é a forma do pretérito perfeito, associada ao marcador \"ontem\"." }
+      ]
+    },
+    {
+      "id": "pp1-correction",
+      "type": "correction",
+      "title": "Corrija as Frases",
+      "instructions": "Cada frase tem um erro de conjugação. Escreva a versão correta.",
+      "items": [
+        { "id": "pp1g", "incorrect": "Ontem, eu falo com meu irmão.", "answer": ["Ontem, eu falei com meu irmão", "Ontem, eu falei com meu irmão."], "explanation": "O marcador \"ontem\" exige o pretérito perfeito: falei." },
+        { "id": "pp1h", "incorrect": "Nós comemos lá na semana que vem.", "answer": ["Nós comemos lá na semana passada", "Nós vamos comer lá na semana que vem."], "explanation": "\"Semana que vem\" é futuro, incompatível com o pretérito perfeito \"comemos\" — ou se corrige o marcador, ou o tempo verbal." }
+      ]
+    }
+  ],
+  "summary": [
+    "O pretérito perfeito narra ações completas em um ponto específico do passado.",
+    "Verbos -ar, -er e -ir têm terminações próprias: -ei/-ou/-amos/-aram; -i/-eu/-emos/-eram; -i/-iu/-imos/-iram.",
+    "Marcadores como ontem, na semana passada e há dois dias sinalizam esse tempo verbal."
+  ],
+  "related": [
+    { "lessonId": "a2-preterito-perfeito-irregulares", "label": "Pretérito Perfeito: Verbos Irregulares" },
+    { "lessonId": "a2-perfeito-vs-imperfeito", "label": "Perfeito vs. Imperfeito" }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "id": "a2-verbos-reflexivos",
+  "level": "A2",
+  "order": 12,
+  "skill": "grammar",
+  "title": "Verbos Reflexivos",
+  "subtitle": "Levantar-se, chamar-se, vestir-se — quando a ação volta para quem a pratica.",
+  "objectives": [
+    "Conjugar verbos reflexivos com o pronome correto em cada pessoa",
+    "Reconhecer verbos que são sempre ou quase sempre reflexivos",
+    "Posicionar o pronome reflexivo antes ou depois do verbo"
+  ],
+  "content": {
+    "intro": "Verbos reflexivos descrevem uma ação que a pessoa pratica em si mesma — como \"se levantar\" ou \"se vestir\". São extremamente comuns nas rotinas diárias.",
+    "explanation": "<p>Um verbo reflexivo é acompanhado de um pronome que \"devolve\" a ação ao próprio sujeito: <strong>eu me levanto</strong>, <strong>você se levanta</strong>, <strong>nós nos levantamos</strong>, <strong>eles se levantam</strong>. Cada pessoa gramatical tem seu próprio pronome reflexivo: me, se, nos, se.</p><p>Alguns verbos são sempre (ou quase sempre) reflexivos, mesmo sem uma tradução direta reflexiva em outros idiomas: <strong>chamar-se</strong> (\"eu me chamo Ana\"), <strong>queixar-se</strong>, <strong>arrepender-se</strong>. Outros são reflexivos apenas quando a ação realmente volta para o sujeito, como <strong>vestir-se</strong> (\"eu me visto\" = eu visto a mim mesmo) versus <strong>vestir</strong> sem pronome (\"eu visto meu filho\" = visto outra pessoa).</p>",
+    "rules": [
+      "Pronomes reflexivos: me (eu), se (você/ele/ela), nos (nós), se (vocês/eles/elas)",
+      "O pronome geralmente vem antes do verbo na fala cotidiana: eu me levanto",
+      "Verbos quase sempre reflexivos: chamar-se, queixar-se, arrepender-se, esquecer-se",
+      "Muitos verbos podem ser reflexivos ou não, conforme o sentido: vestir(-se), levantar(-se), machucar(-se)",
+      "Com infinitivo, o pronome pode vir grudado ao verbo: \"vou me vestir\" ou \"vou vestir-me\""
+    ],
+    "table": {
+      "caption": "Levantar-se — presente do indicativo",
+      "headers": ["Pronome", "Forma"],
+      "rows": [
+        ["eu", "me levanto"],
+        ["você/ele/ela", "se levanta"],
+        ["nós", "nos levantamos"],
+        ["vocês/eles/elas", "se levantam"]
+      ]
+    },
+    "examples": [
+      "Eu me chamo Marina.",
+      "Ele se levanta às seis da manhã todos os dias.",
+      "Nós nos preparamos para a viagem com antecedência.",
+      "Vocês se lembram do meu aniversário?",
+      "Ela se vestiu rapidamente para não se atrasar."
+    ],
+    "commonMistakes": [
+      { "wrong": "\"Eu chamo Ana\" (esquecendo o pronome reflexivo)", "right": "\"Eu me chamo Ana\"", "why": "\"Chamar-se\" é essencialmente sempre reflexivo em português — o pronome é obrigatório." },
+      { "wrong": "\"Eu se levanto\" (pronome errado para a pessoa)", "right": "\"Eu me levanto\"", "why": "Cada pessoa gramatical usa seu próprio pronome reflexivo — \"se\" é de você/ele/ela, não de eu." },
+      { "wrong": "\"Nós se levantamos\"", "right": "\"Nós nos levantamos\"", "why": "\"Nós\" sempre usa o pronome reflexivo \"nos\", nunca \"se\"." }
+    ],
+    "tip": "Pergunte-se: a ação volta para a mesma pessoa que a pratica? Se sim, o verbo provavelmente precisa do pronome reflexivo correspondente."
+  },
+  "exercises": [
+    {
+      "id": "refl-fill",
+      "type": "fill-blank",
+      "title": "Complete com o Pronome Reflexivo",
+      "instructions": "Complete cada frase com o pronome reflexivo correto.",
+      "items": [
+        { "id": "refla", "prompt": "Eu ___ chamo Pedro.", "answers": [["me"]], "explanation": "Primeira pessoa: pronome \"me\"." },
+        { "id": "reflb", "prompt": "Nós ___ preparamos para a prova com cuidado.", "answers": [["nos"]], "explanation": "Primeira pessoa do plural: pronome \"nos\"." },
+        { "id": "reflc", "prompt": "Ela ___ veste muito bem.", "answers": [["se"]], "explanation": "Terceira pessoa do singular: pronome \"se\"." }
+      ]
+    },
+    {
+      "id": "refl-mc",
+      "type": "multiple-choice",
+      "title": "Escolha a Forma Correta",
+      "instructions": "Escolha a forma correta do verbo reflexivo.",
+      "items": [
+        { "id": "refld", "prompt": "Qual frase está correta?", "options": ["Eu se levanto cedo.", "Eu me levanto cedo.", "Eu nos levanto cedo."], "answerIndex": 1, "explanation": "Primeira pessoa sempre usa o pronome \"me\"." },
+        { "id": "refle", "prompt": "Qual verbo é quase sempre reflexivo?", "options": ["comer", "chamar-se", "estudar"], "answerIndex": 1, "explanation": "\"Chamar-se\" é essencialmente sempre usado com o pronome reflexivo." }
+      ]
+    },
+    {
+      "id": "refl-order",
+      "type": "ordering",
+      "title": "Monte a Frase",
+      "instructions": "Coloque as palavras na ordem correta.",
+      "items": [
+        { "id": "reflf", "prompt": "manhã / levanta / ele / cedo / se / toda", "words": ["Ele", "se", "levanta", "cedo", "toda", "manhã"], "explanation": "Sujeito + pronome reflexivo + verbo + advérbio de modo + expressão de tempo." }
+      ]
+    }
+  ],
+  "summary": [
+    "Verbos reflexivos usam os pronomes me, se, nos, se, um para cada pessoa gramatical.",
+    "Chamar-se, queixar-se e arrepender-se são quase sempre reflexivos.",
+    "Muitos verbos alternam entre reflexivo e não reflexivo conforme quem recebe a ação."
+  ],
+  "related": [
+    { "lessonId": "a2-pronomes-relativos", "label": "Pronomes Relativos" },
+    { "lessonId": "a2-condicional-simples", "label": "Condicional Simples" }
+  ]
+}

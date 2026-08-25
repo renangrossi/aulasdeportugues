@@ -1,0 +1,79 @@
+{
+  "id": "a2-por-e-para-introducao",
+  "level": "A2",
+  "order": 10,
+  "skill": "grammar",
+  "title": "Por e Para: Introdução",
+  "subtitle": "As duas preposições que mais confundem — o primeiro contato com a distinção.",
+  "objectives": [
+    "Reconhecer os usos mais básicos de \"por\" e \"para\"",
+    "Diferenciar finalidade (para) de causa/troca (por)",
+    "Evitar os erros mais comuns de tradução direta do inglês \"for\""
+  ],
+  "content": {
+    "intro": "Em inglês, \"for\" cobre boa parte do que o português divide entre \"por\" e \"para\". Esta lição é só o primeiro contato — o B1 retoma o tema com muito mais profundidade.",
+    "explanation": "<p><strong>Para</strong> indica <strong>finalidade, destino ou destinatário</strong>: \"este presente é <strong>para</strong> você\" (destinatário); \"estudo <strong>para</strong> passar na prova\" (finalidade); \"vou <strong>para</strong> casa\" (destino).</p><p><strong>Por</strong> indica <strong>causa, motivo, troca ou meio</strong>: \"não fui <strong>por</strong> causa da chuva\" (causa); \"paguei cem reais <strong>por</strong> esse livro\" (troca); \"mandei a mensagem <strong>por</strong> e-mail\" (meio). \"Por\" também expressa duração aproximada: \"morei lá <strong>por</strong> dois anos\".</p>",
+    "rules": [
+      "Para = finalidade (\"para quê\"), destino, destinatário",
+      "Por = causa/motivo (\"por quê\"), troca, meio, duração aproximada",
+      "\"Obrigado por\" (agradecendo por algo) vs. \"pronto para\" (preparado para algo)",
+      "Por + o/a = pelo/pela (contração obrigatória)",
+      "Este tópico é retomado com mais profundidade no nível B1"
+    ],
+    "examples": [
+      "Este livro é para você.",
+      "Obrigado por me ajudar ontem.",
+      "Troquei meu carro por um mais novo.",
+      "Estudo português para conseguir um trabalho melhor.",
+      "Ele viajou por três semanas."
+    ],
+    "commonMistakes": [
+      { "wrong": "\"Obrigado para você\" (traduzindo \"thank you for\" literalmente)", "right": "\"Obrigado por você\" ou \"Obrigado por me ajudar\"", "why": "Agradecimento usa \"por\", não \"para\" — mesmo que \"for\" em inglês sugira o contrário à primeira vista." },
+      { "wrong": "\"Este presente é por você\"", "right": "\"Este presente é para você\"", "why": "Destinatário de algo usa \"para\", não \"por\"." },
+      { "wrong": "Tentar traduzir \"for\" sempre da mesma forma", "right": "analisar o sentido da frase: finalidade/destino (para) ou causa/troca (por)", "why": "\"For\" em inglês não distingue os dois sentidos que o português separa claramente." }
+    ],
+    "tip": "Truque rápido: se você consegue substituir por \"com o objetivo de\" ou \"destinado a\", use \"para\". Se consegue substituir por \"por causa de\" ou \"em troca de\", use \"por\"."
+  },
+  "exercises": [
+    {
+      "id": "pp3-fill",
+      "type": "fill-blank",
+      "title": "Complete com Por ou Para",
+      "instructions": "Escolha a preposição correta.",
+      "items": [
+        { "id": "pp3a", "prompt": "Este bolo é ___ o aniversário da minha filha.", "answers": [["para"]], "options": ["para", "por"], "explanation": "Finalidade/destinatário do bolo — usa-se \"para\"." },
+        { "id": "pp3b", "prompt": "Obrigado ___ o convite!", "answers": [["pelo"]], "options": ["pelo", "para o"], "explanation": "Agradecimento sempre usa \"por\" (aqui contraído: pelo)." },
+        { "id": "pp3c", "prompt": "Eu paguei cinquenta reais ___ este livro.", "answers": [["por"]], "options": ["por", "para"], "explanation": "Troca/pagamento usa \"por\"." }
+      ]
+    },
+    {
+      "id": "pp3-mc",
+      "type": "multiple-choice",
+      "title": "Escolha a Preposição Certa",
+      "instructions": "Escolha a preposição correta para cada frase.",
+      "items": [
+        { "id": "pp3d", "prompt": "\"Não fomos à praia ___ causa da chuva.\"", "options": ["por", "para"], "answerIndex": 0, "explanation": "Causa/motivo sempre usa \"por\"." },
+        { "id": "pp3e", "prompt": "\"Estou estudando ___ passar no exame.\"", "options": ["por", "para"], "answerIndex": 1, "explanation": "Finalidade (o objetivo do estudo) usa \"para\"." }
+      ]
+    },
+    {
+      "id": "pp3-correction",
+      "type": "correction",
+      "title": "Corrija as Frases",
+      "instructions": "Cada frase tem \"por\" ou \"para\" trocados. Escreva a versão correta.",
+      "items": [
+        { "id": "pp3f", "incorrect": "Este presente é por minha mãe.", "answer": ["Este presente é para minha mãe", "Este presente é para minha mãe."], "explanation": "Destinatário de um presente usa \"para\"." },
+        { "id": "pp3g", "incorrect": "Obrigada para sua ajuda.", "answer": ["Obrigada por sua ajuda", "Obrigada por sua ajuda."], "explanation": "Agradecimento sempre usa \"por\"." }
+      ]
+    }
+  ],
+  "summary": [
+    "Para indica finalidade, destino e destinatário.",
+    "Por indica causa, troca, meio e duração aproximada.",
+    "\"Obrigado por\" é uma das combinações mais comuns onde estudantes erram por analogia com o inglês."
+  ],
+  "related": [
+    { "lessonId": "a2-preposicoes-de-movimento", "label": "Preposições de Movimento" },
+    { "lessonId": "a2-condicional-simples", "label": "Condicional Simples" }
+  ]
+}

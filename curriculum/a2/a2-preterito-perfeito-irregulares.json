@@ -1,0 +1,97 @@
+{
+  "id": "a2-preterito-perfeito-irregulares",
+  "level": "A2",
+  "order": 2,
+  "skill": "grammar",
+  "title": "Pretérito Perfeito: Verbos Irregulares",
+  "subtitle": "Ser, ir, ter, fazer, poder e mais — os irregulares que aparecem em toda história contada no passado.",
+  "objectives": [
+    "Conjugar os verbos irregulares mais frequentes no pretérito perfeito",
+    "Reconhecer que ser e ir compartilham exatamente a mesma forma",
+    "Usar esses verbos para contar experiências e eventos passados"
+  ],
+  "content": {
+    "intro": "Assim como no presente, os verbos mais usados do português também são os mais irregulares no passado. A boa notícia: são poucos e valem muito a pena memorizar.",
+    "explanation": "<p>Um detalhe curioso: <strong>ser</strong> e <strong>ir</strong> têm exatamente a mesma conjugação no pretérito perfeito — <em>fui, foi, fomos, foram</em>. O contexto da frase é o que diferencia: \"eu <strong>fui</strong> médico\" (ser) versus \"eu <strong>fui</strong> ao hospital\" (ir).</p><p>Outros irregulares seguem seus próprios padrões: <strong>ter</strong> → tive, teve, tivemos, tiveram; <strong>fazer</strong> → fiz, fez, fizemos, fizeram; <strong>poder</strong> → pude, pôde, pudemos, puderam; <strong>querer</strong> → quis, quis, quisemos, quiseram; <strong>saber</strong> → soube, soube, soubemos, souberam; <strong>estar</strong> → estive, esteve, estivemos, estiveram.</p>",
+    "rules": [
+      "Ser / Ir (idênticos): fui, foi, fomos, foram",
+      "Ter: tive, teve, tivemos, tiveram",
+      "Fazer: fiz, fez, fizemos, fizeram",
+      "Poder: pude, pôde, pudemos, puderam",
+      "Querer: quis, quis, quisemos, quiseram",
+      "Saber: soube, soube, soubemos, souberam",
+      "Estar: estive, esteve, estivemos, estiveram"
+    ],
+    "table": {
+      "caption": "Pretérito perfeito — irregulares essenciais",
+      "headers": ["Pronome", "Ser/Ir", "Ter", "Fazer", "Estar"],
+      "rows": [
+        ["eu", "fui", "tive", "fiz", "estive"],
+        ["você/ele/ela", "foi", "teve", "fez", "esteve"],
+        ["nós", "fomos", "tivemos", "fizemos", "estivemos"],
+        ["vocês/eles/elas", "foram", "tiveram", "fizeram", "estiveram"]
+      ]
+    },
+    "examples": [
+      "Eu fui ao mercado esta manhã.",
+      "Ela foi minha professora no ano passado.",
+      "Nós tivemos uma reunião muito longa ontem.",
+      "Ele fez o trabalho sozinho.",
+      "Eu estive em Portugal em janeiro."
+    ],
+    "commonMistakes": [
+      { "wrong": "\"Eu foi\" (usando a forma de ele/ela para eu)", "right": "\"Eu fui\"", "why": "Cada pessoa gramatical tem sua própria forma — \"fui\" é sempre primeira pessoa." },
+      { "wrong": "\"Eu fazi\" ou \"eu fazei\"", "right": "\"Eu fiz\"", "why": "\"Fazer\" no pretérito perfeito muda completamente a raiz na primeira pessoa: fiz." },
+      { "wrong": "Confundir \"foi\" (ser/ir) com \"fui\" pela pessoa errada", "right": "fui = eu; foi = você/ele/ela", "why": "As duas formas são parecidas mas pertencem a pessoas gramaticais diferentes." }
+    ],
+    "tip": "Como ser e ir compartilham a mesma conjugação, use o contexto da frase para decidir o significado — geralmente fica claro pelo resto da frase (\"fui ao...\" = ir; \"fui um/uma...\" = ser)."
+  },
+  "exercises": [
+    {
+      "id": "pp2-fill",
+      "type": "fill-blank",
+      "title": "Conjugue o Verbo Irregular",
+      "instructions": "Complete cada frase com a forma correta do verbo indicado no pretérito perfeito.",
+      "items": [
+        { "id": "pp2a", "prompt": "Eu ___ (ir) à festa no sábado.", "answers": [["fui"]], "explanation": "Primeira pessoa de \"ir\" no pretérito perfeito: fui." },
+        { "id": "pp2b", "prompt": "Nós ___ (ter) muitos problemas ontem.", "answers": [["tivemos"]], "explanation": "Primeira pessoa do plural de \"ter\": tivemos." },
+        { "id": "pp2c", "prompt": "Ela ___ (fazer) o jantar sozinha.", "answers": [["fez"]], "explanation": "Terceira pessoa do singular de \"fazer\": fez." },
+        { "id": "pp2d", "prompt": "Eu não ___ (poder) ir à reunião ontem.", "answers": [["pude"]], "explanation": "Primeira pessoa de \"poder\" no pretérito perfeito: pude." }
+      ]
+    },
+    {
+      "id": "pp2-mc",
+      "type": "multiple-choice",
+      "title": "Ser ou Ir no Passado?",
+      "instructions": "Escolha o significado correto de \"foi\" em cada frase.",
+      "items": [
+        { "id": "pp2e", "prompt": "\"Ela foi médica por vinte anos.\" Aqui, \"foi\" vem de:", "options": ["ser", "ir"], "answerIndex": 0, "explanation": "Profissão passada indica o verbo \"ser\"." },
+        { "id": "pp2f", "prompt": "\"Ela foi ao consultório ontem.\" Aqui, \"foi\" vem de:", "options": ["ser", "ir"], "answerIndex": 1, "explanation": "Movimento até um lugar indica o verbo \"ir\"." }
+      ]
+    },
+    {
+      "id": "pp2-match",
+      "type": "matching",
+      "title": "Associe o Verbo à Forma \"Eu\"",
+      "instructions": "Associe cada verbo no infinitivo à sua forma irregular na primeira pessoa do pretérito perfeito.",
+      "items": [
+        { "id": "pp2g", "pairs": [
+          { "left": "ser/ir", "right": "fui" },
+          { "left": "ter", "right": "tive" },
+          { "left": "fazer", "right": "fiz" },
+          { "left": "querer", "right": "quis" },
+          { "left": "saber", "right": "soube" }
+        ], "explanation": "Cada verbo irregular muda de raiz de forma própria no pretérito perfeito." }
+      ]
+    }
+  ],
+  "summary": [
+    "Ser e ir compartilham exatamente a mesma conjugação no pretérito perfeito: fui, foi, fomos, foram.",
+    "Ter, fazer, poder, querer, saber e estar têm raízes próprias que precisam ser memorizadas.",
+    "O contexto da frase sempre esclarece se \"fui/foi\" vem de ser ou de ir."
+  ],
+  "related": [
+    { "lessonId": "a2-preterito-perfeito-verbos-regulares", "label": "Pretérito Perfeito: Verbos Regulares" },
+    { "lessonId": "a2-preterito-imperfeito", "label": "Pretérito Imperfeito" }
+  ]
+}

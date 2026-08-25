@@ -1,0 +1,88 @@
+{
+  "id": "a2-futuro-simples-e-futuro-perto",
+  "level": "A2",
+  "order": 5,
+  "skill": "grammar",
+  "title": "Futuro Simples e Futuro Perto",
+  "subtitle": "Duas formas de falar do futuro — uma para o dia a dia, outra para a escrita.",
+  "objectives": [
+    "Formar o futuro perto com ir + infinitivo",
+    "Conjugar o futuro simples de verbos regulares",
+    "Escolher a forma mais natural conforme o contexto"
+  ],
+  "content": {
+    "intro": "O português tem duas formas de futuro, assim como o inglês tem \"will\" e \"going to\" — e a escolha entre elas segue uma lógica parecida.",
+    "explanation": "<p>O <strong>futuro perto</strong> (também chamado de futuro perifrástico) é formado com <strong>ir</strong> conjugado no presente + <strong>infinitivo</strong>: \"eu <strong>vou falar</strong>\", \"nós <strong>vamos viajar</strong>\". É de longe a forma mais usada na fala cotidiana do Brasil.</p><p>O <strong>futuro simples</strong> é formado acrescentando terminações diretamente ao infinitivo completo (sem remover nada): fal<strong>ar</strong> + ei = falar<strong>ei</strong>; com<strong>er</strong> + á = comer<strong>á</strong>. É mais comum na escrita formal, em previsões e promessas.</p>",
+    "rules": [
+      "Futuro perto: ir (presente) + infinitivo — vou falar, vai comer, vamos abrir, vão estudar",
+      "Futuro simples: infinitivo completo + -ei/-á/-emos/-ão — falarei, falará, falaremos, falarão",
+      "O futuro perto é a forma padrão na fala cotidiana do Brasil",
+      "O futuro simples aparece mais em notícias, promessas formais e previsões",
+      "Poucos verbos são irregulares no futuro simples: fazer → farei; dizer → direi; trazer → trarei"
+    ],
+    "table": {
+      "caption": "Futuro simples — \"falar\"",
+      "headers": ["Pronome", "Forma"],
+      "rows": [
+        ["eu", "falarei"],
+        ["você/ele/ela", "falará"],
+        ["nós", "falaremos"],
+        ["vocês/eles/elas", "falarão"]
+      ]
+    },
+    "examples": [
+      "Eu vou viajar para o Brasil no próximo mês.",
+      "Nós vamos estudar juntos amanhã.",
+      "O governo anunciará novas medidas na próxima semana.",
+      "Eu farei o possível para ajudar.",
+      "Vocês vão gostar muito da viagem."
+    ],
+    "commonMistakes": [
+      { "wrong": "\"Eu vou a falar\" (acrescentando \"a\" desnecessariamente)", "right": "\"Eu vou falar\"", "why": "O futuro perto não usa preposição entre \"ir\" e o infinitivo, diferente do \"going to\" em inglês que às vezes confunde por analogia com outras estruturas." },
+      { "wrong": "\"Eu falarei\" pronunciado sem o -ei final", "right": "manter a terminação -ei completa: falarei", "why": "A terminação do futuro simples é essencial para identificar a pessoa gramatical e o tempo verbal." },
+      { "wrong": "Usar apenas o futuro simples na fala cotidiana", "right": "preferir o futuro perto (ir + infinitivo) na fala informal", "why": "O futuro simples soa formal/escrito demais para uma conversa comum no dia a dia brasileiro." }
+    ],
+    "tip": "Na dúvida, use o futuro perto (vou + infinitivo) — é natural em quase qualquer contexto falado e muito mais fácil de formar do que o futuro simples."
+  },
+  "exercises": [
+    {
+      "id": "fut-fill",
+      "type": "fill-blank",
+      "title": "Complete com o Futuro",
+      "instructions": "Complete cada frase com a forma indicada do futuro.",
+      "items": [
+        { "id": "futa", "prompt": "Eu ___ ___ (ir + estudar) medicina. (futuro perto)", "answers": [["vou"], ["estudar"]], "explanation": "Futuro perto: vou + infinitivo." },
+        { "id": "futb", "prompt": "Nós ___ (chegar) às oito horas. (futuro simples)", "answers": [["chegaremos"]], "explanation": "Futuro simples, primeira pessoa do plural: chegaremos." },
+        { "id": "futc", "prompt": "Ela ___ (fazer) o relatório amanhã. (futuro simples, irregular)", "answers": [["fará"]], "explanation": "\"Fazer\" no futuro simples é irregular: farei, fará, faremos, farão." }
+      ]
+    },
+    {
+      "id": "fut-mc",
+      "type": "multiple-choice",
+      "title": "Escolha a Forma Mais Natural",
+      "instructions": "Escolha a forma mais adequada para uma conversa informal.",
+      "items": [
+        { "id": "futd", "prompt": "Em uma conversa informal, qual é a forma mais natural?", "options": ["Eu comprarei um carro novo.", "Eu vou comprar um carro novo.", "Eu compraria um carro novo."], "answerIndex": 1, "explanation": "O futuro perto é a forma mais natural na fala cotidiana." },
+        { "id": "fute", "prompt": "Qual verbo é irregular no futuro simples?", "options": ["falar", "dizer", "comer"], "answerIndex": 1, "explanation": "\"Dizer\" no futuro simples é irregular: direi, dirá, diremos, dirão." }
+      ]
+    },
+    {
+      "id": "fut-order",
+      "type": "ordering",
+      "title": "Monte a Frase",
+      "instructions": "Coloque as palavras na ordem correta.",
+      "items": [
+        { "id": "futf", "prompt": "amanhã / trabalhar / vou / eu", "words": ["Eu", "vou", "trabalhar", "amanhã"], "explanation": "Sujeito + ir (presente) + infinitivo + advérbio de tempo." }
+      ]
+    }
+  ],
+  "summary": [
+    "Futuro perto (ir + infinitivo) é a forma mais comum na fala cotidiana do Brasil.",
+    "Futuro simples (infinitivo + terminação) é mais usado na escrita formal e em previsões.",
+    "Poucos verbos são irregulares no futuro simples: fazer, dizer, trazer, entre outros."
+  ],
+  "related": [
+    { "lessonId": "a2-condicional-simples", "label": "Condicional Simples" },
+    { "lessonId": "a2-perfeito-vs-imperfeito", "label": "Perfeito vs. Imperfeito" }
+  ]
+}

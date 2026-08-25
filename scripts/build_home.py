@@ -71,6 +71,23 @@ def skill_cards_html():
             </div>""" for name, desc, icon in SKILLS)
 
 
+def count_stats(index):
+    total_lessons = 0
+    total_items = 0
+    for level_code, _, level_slug in site_chrome.LEVELS:
+        lv = index["levels"].get(level_code.upper(), {})
+        for unit in lv.get("units", []):
+            for entry in unit["lessons"]:
+                if entry["status"] != "published":
+                    continue
+                total_lessons += 1
+                path = ROOT / "curriculum" / level_slug / f"{entry['id']}.json"
+                lesson = json.load(open(path, encoding="utf-8"))
+                for ex in lesson["exercises"]:
+                    total_items += len(ex.get("items", []))
+    return total_lessons, total_items
+
+
 def main():
     index = load_index()
     rel = ""
@@ -78,6 +95,9 @@ def main():
     description = "Aprenda português brasileiro do zero à fluência: gramática, vocabulário, leitura e exercícios interativos gratuitos, alinhados ao QECR."
 
     breadcrumb = '<li aria-current="page">Início</li>'
+
+    total_lessons, total_items = count_stats(index)
+    items_round = (total_items // 10) * 10  # arredonda pra baixo, "200+" em vez de "204"
 
     hero = f"""<section class="hero" id="missao">
         <div class="hero__inner">
@@ -90,9 +110,9 @@ def main():
                     <a class="btn btn--ghost" href="#gramatica">Ver o currículo completo</a>
                 </div>
                 <dl class="hero__stats">
-                    <div class="hero__stat"><dt>28</dt><dd>lições interativas prontas</dd></div>
+                    <div class="hero__stat"><dt>{total_lessons}</dt><dd>lições interativas prontas</dd></div>
                     <div class="hero__stat"><dt>7</dt><dd>níveis do QECR, Pre-A1 a C2</dd></div>
-                    <div class="hero__stat"><dt>200+</dt><dd>exercícios com correção automática</dd></div>
+                    <div class="hero__stat"><dt>{items_round}+</dt><dd>exercícios com correção automática</dd></div>
                 </dl>
             </div>
         </div>

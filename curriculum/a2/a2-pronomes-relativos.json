@@ -1,0 +1,78 @@
+{
+  "id": "a2-pronomes-relativos",
+  "level": "A2",
+  "order": 11,
+  "skill": "grammar",
+  "title": "Pronomes Relativos",
+  "subtitle": "Que, quem, onde — conectando duas frases em uma só, mais fluida.",
+  "objectives": [
+    "Usar \"que\" como o pronome relativo mais comum",
+    "Usar \"quem\" depois de preposição para pessoas",
+    "Usar \"onde\" para lugares"
+  ],
+  "content": {
+    "intro": "Pronomes relativos evitam repetição e deixam suas frases mais naturais, conectando uma informação extra a um substantivo já mencionado.",
+    "explanation": "<p><strong>Que</strong> é o pronome relativo mais usado em português — substitui pessoas, coisas ou ideias e nunca muda de forma: \"o livro <strong>que</strong> eu li\", \"a mulher <strong>que</strong> trabalha aqui\". <strong>Quem</strong> é usado especificamente para pessoas, quase sempre depois de uma preposição: \"a pessoa <strong>com quem</strong> eu falei\", \"o amigo <strong>para quem</strong> comprei o presente\". <strong>Onde</strong> substitui um lugar já mencionado: \"a cidade <strong>onde</strong> eu nasci\".</p><p>Sem pronome relativo, seriam duas frases separadas: \"Eu li um livro. O livro era interessante\" → com relativo: \"O livro <strong>que</strong> eu li era interessante\".</p>",
+    "rules": [
+      "Que = pronome relativo mais comum, para pessoas, coisas e ideias, invariável",
+      "Quem = para pessoas, normalmente depois de preposição (com quem, para quem, de quem)",
+      "Onde = para lugares já mencionados antes",
+      "\"Que\" nunca muda de forma, independente de gênero ou número do antecedente",
+      "Combinar duas frases com um pronome relativo é mais natural do que repetir o substantivo"
+    ],
+    "examples": [
+      "O filme que assistimos ontem foi ótimo.",
+      "Esta é a professora de quem te falei.",
+      "A casa onde eu morava era pequena.",
+      "O amigo com quem eu viajei mora em Lisboa.",
+      "As pessoas que trabalham aqui são muito simpáticas."
+    ],
+    "commonMistakes": [
+      { "wrong": "\"A pessoa que eu falei\" (sem a preposição necessária)", "right": "\"A pessoa com quem eu falei\"", "why": "Quando o verbo pede uma preposição (falar com alguém), ela precisa aparecer antes de \"quem\"." },
+      { "wrong": "Usar \"quem\" sem preposição, no lugar de \"que\"", "right": "\"O homem que chegou\" (não \"quem chegou\", sem preposição, como sujeito direto)", "why": "\"Quem\" sem preposição soa estranho como sujeito da oração relativa — \"que\" é o padrão nesse caso." },
+      { "wrong": "\"O lugar que eu nasci\" (usando \"que\" para lugar)", "right": "\"O lugar onde eu nasci\"", "why": "\"Onde\" é a escolha natural para lugares, embora \"que\" com preposição também seja possível em registros mais formais." }
+    ],
+    "tip": "Na dúvida entre que/quem, pergunte-se: o pronome vem depois de uma preposição e se refere a uma pessoa? Se sim, use \"quem\". Caso contrário, \"que\" quase sempre funciona."
+  },
+  "exercises": [
+    {
+      "id": "rel-fill",
+      "type": "fill-blank",
+      "title": "Complete com o Pronome Relativo",
+      "instructions": "Complete cada frase com que, quem ou onde.",
+      "items": [
+        { "id": "rela", "prompt": "O livro ___ eu comprei é muito bom.", "answers": [["que"]], "explanation": "\"Que\" é o pronome relativo padrão para coisas." },
+        { "id": "relb", "prompt": "Esta é a cidade ___ eu cresci.", "answers": [["onde"]], "explanation": "\"Onde\" substitui um lugar já mencionado." },
+        { "id": "relc", "prompt": "O colega com ___ eu trabalho é muito competente.", "answers": [["quem"]], "explanation": "Pessoa depois de preposição usa \"quem\"." }
+      ]
+    },
+    {
+      "id": "rel-mc",
+      "type": "multiple-choice",
+      "title": "Escolha o Pronome Correto",
+      "instructions": "Escolha o pronome relativo mais adequado.",
+      "items": [
+        { "id": "reld", "prompt": "\"A pessoa ___ eu confio mais é minha mãe.\"", "options": ["que", "em quem", "onde"], "answerIndex": 1, "explanation": "\"Confiar em alguém\" pede a preposição \"em\" antes de \"quem\"." },
+        { "id": "rele", "prompt": "\"A casa ___ ela mora é linda.\"", "options": ["onde", "quem", "que"], "answerIndex": 0, "explanation": "Lugar já mencionado usa \"onde\"." }
+      ]
+    },
+    {
+      "id": "rel-order",
+      "type": "ordering",
+      "title": "Monte a Frase",
+      "instructions": "Coloque as palavras na ordem correta.",
+      "items": [
+        { "id": "relf", "prompt": "ontem / li / que / o / livro / interessante / era", "words": ["O", "livro", "que", "li", "ontem", "era", "interessante"], "explanation": "Substantivo + pronome relativo + oração + verbo principal + complemento." }
+      ]
+    }
+  ],
+  "summary": [
+    "Que é o pronome relativo mais comum, para pessoas, coisas e ideias, e nunca muda de forma.",
+    "Quem é usado para pessoas, quase sempre depois de uma preposição.",
+    "Onde substitui um lugar já mencionado na frase."
+  ],
+  "related": [
+    { "lessonId": "a2-verbos-reflexivos", "label": "Verbos Reflexivos" },
+    { "lessonId": "a2-quantificadores", "label": "Quantificadores" }
+  ]
+}

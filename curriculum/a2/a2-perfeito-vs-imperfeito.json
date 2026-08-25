@@ -1,0 +1,78 @@
+{
+  "id": "a2-perfeito-vs-imperfeito",
+  "level": "A2",
+  "order": 4,
+  "skill": "grammar",
+  "title": "Perfeito vs. Imperfeito",
+  "subtitle": "O contraste que dá vida a qualquer história contada no passado.",
+  "objectives": [
+    "Escolher corretamente entre pretérito perfeito e imperfeito",
+    "Combinar os dois tempos na mesma narrativa",
+    "Reconhecer o padrão clássico de \"ação interrompendo uma cena de fundo\""
+  ],
+  "content": {
+    "intro": "Esta é uma das distinções mais importantes do português — e uma das que mais gera dúvida em quem já domina outros idiomas com apenas um tempo de passado simples.",
+    "explanation": "<p>Pense no imperfeito como o <strong>cenário de fundo</strong> de uma história — o que estava acontecendo, como as coisas eram — e no perfeito como os <strong>eventos específicos</strong> que aconteceram dentro desse cenário. O padrão mais clássico: \"Eu <strong>estava</strong> dormindo (imperfeito, cenário) quando o telefone <strong>tocou</strong> (perfeito, evento pontual)\".</p><p>Na prática: uma ação <em>interrompe</em> outra que já estava em andamento. O que estava em andamento (a cena de fundo) vai no imperfeito; o que interrompe (o evento específico) vai no perfeito.</p>",
+    "rules": [
+      "Imperfeito = cenário de fundo, descrição, hábito, ação em andamento",
+      "Perfeito = evento específico, pontual, que aconteceu e terminou",
+      "Padrão clássico: [imperfeito, ação em andamento] + quando + [perfeito, ação que interrompe]",
+      "Uma narrativa completa geralmente mistura os dois tempos, não usa só um deles",
+      "Se a frase responde \"como as coisas eram?\" → imperfeito. Se responde \"o que aconteceu?\" → perfeito"
+    ],
+    "examples": [
+      "Eu estava cozinhando quando o telefone tocou.",
+      "Quando eu era jovem, eu viajava muito — mas no ano passado eu não viajei nenhuma vez.",
+      "Ela estava triste porque perdeu o emprego.",
+      "Fazia muito frio naquele dia, então nós ficamos em casa.",
+      "Enquanto ele dirigia, ela dormiu no banco de trás."
+    ],
+    "commonMistakes": [
+      { "wrong": "\"Eu dormia quando ele chegou\" usado incorretamente para um evento único, sem sentido de interrupção", "right": "avaliar se realmente há uma ação de fundo sendo interrompida", "why": "O padrão imperfeito+perfeito só se aplica quando uma ação estava em andamento e outra a interrompe — não é uma regra automática para toda frase com \"quando\"." },
+      { "wrong": "Usar só o perfeito em toda uma narrativa, ignorando descrições", "right": "usar o imperfeito para descrever cenário, pessoas e sentimentos dentro da narrativa", "why": "Uma história em português real mistura os dois tempos — só perfeito soa como uma lista de eventos, sem contexto." },
+      { "wrong": "\"Ontem eu estava no cinema\" quando a intenção é dizer que foi uma única vez, pontual", "right": "\"Ontem eu fui ao cinema\"", "why": "Ir a um lugar uma vez, de forma pontual, é perfeito; \"estava\" sugere uma condição/estado mais duradouro ou uma cena de fundo." }
+    ],
+    "tip": "Leia a frase em voz alta e pergunte: isso é o pano de fundo da cena, ou é o que realmente aconteceu? A resposta decide entre imperfeito e perfeito quase sempre."
+  },
+  "exercises": [
+    {
+      "id": "pxi-fill",
+      "type": "fill-blank",
+      "title": "Complete com o Tempo Certo",
+      "instructions": "Escolha entre pretérito perfeito e imperfeito para cada verbo.",
+      "items": [
+        { "id": "pxia", "prompt": "Eu ___ (dormir) quando o alarme ___ (tocar).", "answers": [["dormia"], ["tocou"]], "explanation": "Dormir é a ação de fundo (imperfeito); tocar é o evento que interrompe (perfeito)." },
+        { "id": "pxib", "prompt": "Quando eu era criança, eu ___ (morar) em uma fazenda.", "answers": [["morava"]], "explanation": "Descrição de uma condição duradoura no passado — imperfeito." },
+        { "id": "pxic", "prompt": "Ontem, eu ___ (ir) ao médico.", "answers": [["fui"]], "explanation": "Evento pontual, único, com marcador \"ontem\" — pretérito perfeito." }
+      ]
+    },
+    {
+      "id": "pxi-mc",
+      "type": "multiple-choice",
+      "title": "Escolha o Tempo Verbal Certo",
+      "instructions": "Escolha a versão correta de cada frase.",
+      "items": [
+        { "id": "pxid", "prompt": "Qual frase descreve corretamente uma interrupção?", "options": ["Eu comia quando ela chegou.", "Eu comi quando ela chegava.", "Eu como quando ela chegou."], "answerIndex": 0, "explanation": "\"Comia\" (em andamento) é interrompido por \"chegou\" (evento pontual)." },
+        { "id": "pxie", "prompt": "Qual frase é uma descrição pura do passado, sem evento específico?", "options": ["O céu ficou azul.", "O céu era azul.", "O céu fica azul."], "answerIndex": 1, "explanation": "Uma descrição do estado das coisas no passado usa o imperfeito." }
+      ]
+    },
+    {
+      "id": "pxi-order",
+      "type": "ordering",
+      "title": "Monte a Frase",
+      "instructions": "Coloque as palavras na ordem correta, respeitando o padrão imperfeito + perfeito.",
+      "items": [
+        { "id": "pxif", "prompt": "quando / dormindo / tocou / eu / estava / o / telefone", "words": ["Eu", "estava", "dormindo", "quando", "o", "telefone", "tocou"], "explanation": "Cenário de fundo (estava dormindo) + evento que interrompe (tocou)." }
+      ]
+    }
+  ],
+  "summary": [
+    "Imperfeito descreve o cenário de fundo; perfeito narra o evento específico que acontece dentro dele.",
+    "O padrão clássico é: [imperfeito] + quando + [perfeito].",
+    "Uma narrativa completa em português quase sempre mistura os dois tempos verbais."
+  ],
+  "related": [
+    { "lessonId": "a2-preterito-imperfeito", "label": "Pretérito Imperfeito" },
+    { "lessonId": "a2-preterito-perfeito-verbos-regulares", "label": "Pretérito Perfeito: Verbos Regulares" }
+  ]
+}

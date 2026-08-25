@@ -9,11 +9,11 @@ reconstruída inteiramente para o português.
 
 **Ao vivo:** https://renangrossi.github.io/aulasdeportugues/
 
-## Estado atual (Fase 1)
+## Estado atual
 
-- **Pre-A1 e A1 estão 100% publicados**: 28 lições, 90 blocos de
-  exercícios, 204 itens corrigíveis automaticamente.
-- **A2 até C2 têm o roteiro pedagógico completo definido** em
+- **Pre-A1, A1 e A2 estão 100% publicados**: 41 lições, 128 blocos de
+  exercícios, 284 itens corrigíveis automaticamente.
+- **B1 até C2 têm o roteiro pedagógico completo definido** em
   `curriculum/index.json` (status `"planned"`), com páginas de nível já
   no ar mostrando cada tópico como "Em breve" — não é uma promessa vaga,
   é a lista real do que vem a seguir.
