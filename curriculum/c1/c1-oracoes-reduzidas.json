@@ -1,0 +1,87 @@
+{
+  "id": "c1-oracoes-reduzidas",
+  "level": "C1",
+  "order": 2,
+  "skill": "grammar",
+  "title": "Orações Reduzidas",
+  "subtitle": "Dizer mais com menos palavras, usando infinitivo, gerúndio e particípio.",
+  "objectives": [
+    "Formar orações reduzidas de infinitivo, gerúndio e particípio",
+    "Transformar orações desenvolvidas (com conjunção) em orações reduzidas",
+    "Reconhecer o sentido de tempo, causa ou condição embutido em cada tipo"
+  ],
+  "content": {
+    "intro": "Orações reduzidas são um recurso de estilo típico da escrita mais elaborada — elas condensam uma ideia que, de outra forma, precisaria de uma conjunção e um verbo conjugado.",
+    "explanation": "<p>Uma oração <strong>desenvolvida</strong> tem conjunção + verbo conjugado: \"<strong>quando</strong> ela <strong>chegou</strong> em casa, ligou a televisão\". A versão <strong>reduzida de infinitivo</strong> troca isso por \"<strong>ao</strong> chegar em casa, ela ligou a televisão\" — sem conjugar o verbo, e frequentemente introduzida por uma preposição (ao, para, sem, antes de, depois de).</p><p>A <strong>reduzida de gerúndio</strong> costuma expressar uma ação simultânea ou uma causa: \"<strong>chegando</strong> em casa, ela ligou a televisão\" (ao chegar / porque chegou). A <strong>reduzida de particípio</strong> expressa uma ação já concluída, geralmente no início da frase: \"<strong>terminado</strong> o trabalho, todos foram embora\" (depois que o trabalho foi terminado).</p>",
+    "rules": [
+      "Reduzida de infinitivo: preposição (ao, para, sem, antes de, depois de) + infinitivo",
+      "Reduzida de gerúndio: gerúndio sozinho, no início ou meio da frase, expressando simultaneidade/causa",
+      "Reduzida de particípio: particípio sozinho, geralmente no início, expressando uma ação já concluída",
+      "Orações reduzidas são mais comuns na escrita elaborada do que na fala cotidiana",
+      "O sujeito da oração reduzida geralmente é o mesmo da oração principal"
+    ],
+    "table": {
+      "caption": "Desenvolvida vs. reduzida",
+      "headers": ["Oração desenvolvida", "Oração reduzida"],
+      "rows": [
+        ["Quando ela chegou em casa, ligou a TV.", "Ao chegar em casa, ela ligou a TV."],
+        ["Como ele estava cansado, foi dormir cedo.", "Estando cansado, ele foi dormir cedo."],
+        ["Depois que o trabalho foi terminado, saímos.", "Terminado o trabalho, saímos."]
+      ]
+    },
+    "examples": [
+      "Ao sair de casa, lembrei-me de trancar a porta.",
+      "Estudando todos os dias, ela melhorou muito seu português.",
+      "Concluída a reunião, todos voltaram ao trabalho.",
+      "Antes de decidir, é importante pensar com calma.",
+      "Sem perceber, ele deixou as chaves em casa."
+    ],
+    "commonMistakes": [
+      { "wrong": "\"Ao chegando em casa\" (misturando preposição com gerúndio)", "right": "\"Ao chegar em casa\" (infinitivo) ou \"Chegando em casa\" (gerúndio sozinho)", "why": "A preposição \"ao\" sempre pede infinitivo, nunca gerúndio; o gerúndio funciona sozinho, sem preposição." },
+      { "wrong": "\"Terminando o trabalho\" quando a intenção é indicar uma ação já concluída no passado", "right": "\"Terminado o trabalho\"", "why": "O particípio (não o gerúndio) é a forma correta para indicar uma ação já concluída antes da oração principal." },
+      { "wrong": "Usar orações reduzidas em excesso na fala cotidiana", "right": "reservá-las principalmente para a escrita mais formal/elaborada", "why": "Na fala, orações desenvolvidas com conjunção soam mais naturais e são mais comuns." }
+    ],
+    "tip": "Para transformar uma oração desenvolvida em reduzida, pergunte-se: a ideia é de tempo/condição (infinitivo com preposição), simultaneidade/causa (gerúndio), ou uma ação já concluída (particípio)?"
+  },
+  "exercises": [
+    {
+      "id": "reduz-fill",
+      "type": "fill-blank",
+      "title": "Transforme em Oração Reduzida",
+      "instructions": "Complete a versão reduzida de cada oração desenvolvida.",
+      "items": [
+        { "id": "reduza", "prompt": "\"Quando ela terminou de estudar, saiu para passear.\" → ___ (ao + terminar) de estudar, ela saiu para passear.", "answers": [["Ao terminar"]], "explanation": "Reduzida de infinitivo: ao terminar." },
+        { "id": "reduzb", "prompt": "\"Como estava com pressa, ele nem tomou café.\" → ___ (estar) com pressa, ele nem tomou café. (gerúndio)", "answers": [["Estando"]], "explanation": "Reduzida de gerúndio: estando." },
+        { "id": "reduzc", "prompt": "\"Depois que a prova foi corrigida, os resultados saíram.\" → ___ (corrigir, particípio) a prova, os resultados saíram.", "answers": [["Corrigida"]], "explanation": "Reduzida de particípio, concordando com \"a prova\" (feminino): corrigida." }
+      ]
+    },
+    {
+      "id": "reduz-mc",
+      "type": "multiple-choice",
+      "title": "Identifique o Tipo de Oração Reduzida",
+      "instructions": "Identifique o tipo de oração reduzida em cada frase.",
+      "items": [
+        { "id": "reduzd", "prompt": "\"Vendo o resultado, ela sorriu.\" Que tipo de oração reduzida é essa?", "options": ["Infinitivo", "Gerúndio", "Particípio"], "answerIndex": 1, "explanation": "\"Vendo\" é gerúndio." },
+        { "id": "reduze", "prompt": "\"Encerrado o prazo, não é mais possível se inscrever.\" Que tipo de oração reduzida é essa?", "options": ["Infinitivo", "Gerúndio", "Particípio"], "answerIndex": 2, "explanation": "\"Encerrado\" é particípio, indicando uma ação já concluída." }
+      ]
+    },
+    {
+      "id": "reduz-order",
+      "type": "ordering",
+      "title": "Monte a Frase",
+      "instructions": "Coloque as palavras na ordem correta.",
+      "items": [
+        { "id": "reduzf", "prompt": "de / lembrei / sair / me / ao / trancar / a / porta", "words": ["Ao", "sair", "lembrei-me", "de", "trancar", "a", "porta"], "explanation": "Oração reduzida de infinitivo no início, seguida da oração principal." }
+      ]
+    }
+  ],
+  "summary": [
+    "Reduzida de infinitivo: preposição + infinitivo (ao chegar, antes de sair).",
+    "Reduzida de gerúndio: expressa simultaneidade ou causa (chegando em casa).",
+    "Reduzida de particípio: expressa uma ação já concluída (terminado o trabalho)."
+  ],
+  "related": [
+    { "lessonId": "c1-subjuntivo-em-contextos-complexos", "label": "Subjuntivo em Contextos Complexos" },
+    { "lessonId": "c1-escrita-formal", "label": "Escrita Formal" }
+  ]
+}

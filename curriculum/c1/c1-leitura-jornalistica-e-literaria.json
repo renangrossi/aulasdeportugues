@@ -1,0 +1,71 @@
+{
+  "id": "c1-leitura-jornalistica-e-literaria",
+  "level": "C1",
+  "order": 5,
+  "skill": "reading",
+  "title": "Leitura Jornalística e Literária",
+  "subtitle": "Lendo um texto real, sem simplificação, e entendendo suas nuances.",
+  "objectives": [
+    "Identificar marcas de registro jornalístico e literário em um texto",
+    "Inferir o significado de palavras pelo contexto, sem tradução",
+    "Distinguir informação objetiva de opinião em um texto"
+  ],
+  "content": {
+    "intro": "Até aqui, os textos das lições foram escritos pensando no seu nível. Esta lição usa um texto no estilo de uma crônica — um gênero muito brasileiro, que mistura observação do cotidiano com reflexão pessoal — para praticar leitura em um registro mais próximo do real.",
+    "explanation": "<p>Textos <strong>jornalísticos</strong> (notícias) tendem a ser objetivos: frases mais diretas, respostas às perguntas \"o quê, quem, quando, onde, por quê\" logo no início, verbos no pretérito perfeito. Textos <strong>literários</strong> — como a crônica, um gênero curto e muito popular no Brasil — são mais subjetivos, com frases mais elaboradas, metáforas e opinião pessoal do autor.</p><p>Ao ler um texto mais avançado, você não precisa entender cada palavra: use o <strong>contexto</strong> para inferir o sentido de palavras desconhecidas, preste atenção nos <strong>conectores</strong> (que você já estudou no B2) para entender a lógica entre as ideias, e separe o que é <strong>fato relatado</strong> do que é <strong>opinião do autor</strong>.</p>",
+    "rules": [
+      "Textos jornalísticos: objetivos, diretos, respondem o/quem/quando/onde/por quê logo no início",
+      "Crônicas e textos literários: subjetivos, reflexivos, com opinião pessoal do autor",
+      "Use conectores (contudo, portanto, além disso) para acompanhar a lógica do texto",
+      "Infira palavras desconhecidas pelo contexto antes de recorrer ao dicionário",
+      "Separe fato objetivo de opinião — procure verbos como \"acho\", \"parece\", \"na minha opinião\""
+    ],
+    "examples": [
+      "Notícia: \"O prefeito anunciou ontem um novo plano de transporte público.\"",
+      "Crônica: \"Outro dia, no ônibus lotado, percebi que a cidade grande ensina paciência de um jeito que nenhum curso ensinaria.\"",
+      "Opinião marcada: \"Na minha opinião, essa decisão foi precipitada.\"",
+      "Fato objetivo: \"A prefeitura confirmou o investimento de dez milhões de reais.\"",
+      "Inferência pelo contexto: \"apesar do trânsito caótico\" — \"caótico\" sugere algo desorganizado e difícil, mesmo sem tradução."
+    ],
+    "commonMistakes": [
+      { "wrong": "Parar a leitura na primeira palavra desconhecida para procurar no dicionário", "right": "continuar lendo, inferir pelo contexto, e só consultar o dicionário se necessário depois", "why": "Interromper a leitura constantemente quebra a compreensão do sentido geral do texto." },
+      { "wrong": "Tratar toda informação de um texto de opinião como fato objetivo", "right": "identificar marcadores de opinião (acho, acredito, acredito que, na minha visão)", "why": "Textos como crônicas misturam fato e opinião — reconhecer a diferença é uma habilidade central de leitura crítica." },
+      { "wrong": "Esperar que um texto literário siga a mesma estrutura direta de uma notícia", "right": "aceitar que textos literários podem ser mais indiretos, reflexivos e não lineares", "why": "Textos literários frequentemente priorizam estilo e reflexão sobre clareza informativa direta." }
+    ],
+    "tip": "Leia o texto abaixo duas vezes: a primeira, só para captar a ideia geral; a segunda, prestando atenção aos conectores e a quais frases são fato e quais são opinião do narrador."
+  },
+  "exercises": [
+    {
+      "id": "leit-rc",
+      "type": "reading-comprehension",
+      "title": "Leia a Crônica e Responda",
+      "instructions": "Leia o texto (ou ouça, usando o botão de áudio) e responda às perguntas de compreensão.",
+      "passage": "<button type=\"button\" class=\"tts-btn tts-btn--passage\" data-tts data-tts-target=\"#texto-cronica\" aria-label=\"Ouvir o texto\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M11 5 6 9H2v6h4l5 4V5Z\"/><path d=\"M15.5 8.5a5 5 0 0 1 0 7\"/><path d=\"M19 5a10 10 0 0 1 0 14\"/></svg></button><p id=\"texto-cronica\">Outro dia, no ônibus lotado das seis da tarde, reparei em algo curioso: ninguém falava, mas todo mundo parecia se entender. Um senhor cedeu o lugar a uma senhora carregando sacolas, sem que ela precisasse pedir. Uma moça segurou a porta para um rapaz que corria, ofegante, atrás do ônibus. Pequenos gestos, quase invisíveis, que sustentam a cidade grande todos os dias. Confesso que, por muito tempo, achei São Paulo uma cidade fria, apressada demais para gentilezas. Talvez eu estivesse errado. Talvez a gentileza aqui simplesmente tenha aprendido a se disfarçar de pressa, de silêncio, de um gesto rápido no meio do caos. Segundo pesquisas recentes, paulistanos passam, em média, mais de duas horas por dia no trânsito. Ainda assim, entre um sinal fechado e outro, a cidade encontra tempo para pequenas gentilezas que ninguém reparou que precisava ver.</p>",
+      "items": [
+        { "id": "lta", "prompt": "Onde a cena descrita no texto acontece?", "options": ["Em um restaurante", "Em um ônibus lotado", "Em um parque"], "answerIndex": 1, "explanation": "O texto começa descrevendo a cena \"no ônibus lotado das seis da tarde\"." },
+        { "id": "ltb", "prompt": "Qual é a opinião inicial do narrador sobre São Paulo?", "options": ["Que é uma cidade gentil", "Que é uma cidade fria e apressada", "Que é uma cidade pequena"], "answerIndex": 1, "explanation": "O texto diz: \"achei São Paulo uma cidade fria, apressada demais para gentilezas\"." },
+        { "id": "ltc", "prompt": "Qual informação do texto é um fato objetivo (não opinião)?", "options": ["\"Talvez eu estivesse errado.\"", "Paulistanos passam mais de duas horas por dia no trânsito, segundo pesquisas.", "\"Achei São Paulo uma cidade fria.\""], "answerIndex": 1, "explanation": "Essa frase cita uma pesquisa como fonte, marcando-a como informação objetiva, não opinião pessoal." },
+        { "id": "ltd", "prompt": "O que a expressão \"disfarçar de pressa\" sugere sobre a gentileza na cidade?", "options": ["Que a gentileza não existe", "Que a gentileza aparece de forma discreta, escondida na rotina apressada", "Que as pessoas fingem ser gentis"], "answerIndex": 1, "explanation": "A expressão sugere que a gentileza existe, mas de forma sutil, escondida no ritmo acelerado da cidade." }
+      ]
+    },
+    {
+      "id": "leit-vocab",
+      "type": "vocabulary",
+      "title": "Vocabulário em Contexto",
+      "instructions": "Infira o significado de cada palavra pelo contexto do texto.",
+      "items": [
+        { "id": "lte", "prompt": "\"Ofegante\" (um rapaz correndo atrás do ônibus, ofegante) sugere:", "options": ["Rindo muito", "Respirando com dificuldade, cansado", "Andando devagar"], "answerIndex": 1, "explanation": "O contexto (correr atrás do ônibus) sugere cansaço e respiração ofegante." },
+        { "id": "ltf", "prompt": "\"Sustentam a cidade grande\" sugere que esses pequenos gestos:", "options": ["Destroem a cidade", "Mantêm a cidade funcionando de forma mais humana", "Não têm nenhum efeito"], "answerIndex": 1, "explanation": "\"Sustentar\" sugere apoio, algo que mantém algo funcionando." }
+      ]
+    }
+  ],
+  "summary": [
+    "Textos jornalísticos priorizam objetividade; textos literários priorizam reflexão e estilo pessoal.",
+    "Inferir pelo contexto é mais eficiente do que parar a leitura a cada palavra desconhecida.",
+    "Separar fato de opinião é uma habilidade central de leitura crítica em qualquer idioma."
+  ],
+  "related": [
+    { "lessonId": "c1-estruturas-enfaticas-e-inversao", "label": "Estruturas Enfáticas e Inversão" },
+    { "lessonId": "c1-escrita-formal", "label": "Escrita Formal" }
+  ]
+}

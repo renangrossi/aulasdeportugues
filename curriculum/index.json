@@ -1,5 +1,5 @@
 {
-  "_readme": "Fonte única de verdade para a sequência do currículo. status: 'published' = o HTML gerado existe e está linkado na página do nível; 'drafted' = curriculum/{nivel}/{id}.json existe, ainda não construído; 'planned' = identificado no desenho pedagógico do curso, ainda sem JSON. Pre-A1, A1, A2, B1 e B2 estão 100% publicados. C1 e C2 têm seu roteiro completo definido aqui para orientar as próximas fases, mas ainda não foram escritos -- as páginas de nível mostram esses tópicos como 'Em breve' em vez de fingir que já existem.",
+  "_readme": "Fonte única de verdade para a sequência do currículo. status: 'published' = o HTML gerado existe e está linkado na página do nível; 'drafted' = curriculum/{nivel}/{id}.json existe, ainda não construído; 'planned' = identificado no desenho pedagógico do curso, ainda sem JSON. Pre-A1, A1, A2, B1, B2 e C1 estão 100% publicados. C2 tem seu roteiro completo definido aqui para orientar a próxima fase, mas ainda não foi escrito -- a página de nível mostra esses tópicos como 'Em breve' em vez de fingir que já existem.",
   "levels": {
     "PRE-A1": {
       "units": [
@@ -117,14 +117,14 @@
       "units": [
         {
           "id": "1",
-          "title": "Gramática Avançada (6 tópicos planejados)",
+          "title": "Gramática Avançada (6 lições)",
           "lessons": [
-            { "id": "c1-subjuntivo-em-contextos-complexos", "status": "planned", "title": "Subjuntivo em Contextos Complexos" },
-            { "id": "c1-oracoes-reduzidas", "status": "planned", "title": "Orações Reduzidas" },
-            { "id": "c1-estruturas-enfaticas-e-inversao", "status": "planned", "title": "Estruturas Enfáticas e Inversão" },
-            { "id": "c1-variacao-linguistica-regional", "status": "planned", "title": "Variação Linguística Regional" },
-            { "id": "c1-leitura-jornalistica-e-literaria", "status": "planned", "title": "Leitura Jornalística e Literária" },
-            { "id": "c1-escrita-formal", "status": "planned", "title": "Escrita Formal" }
+            { "id": "c1-subjuntivo-em-contextos-complexos", "status": "published" },
+            { "id": "c1-oracoes-reduzidas", "status": "published" },
+            { "id": "c1-estruturas-enfaticas-e-inversao", "status": "published" },
+            { "id": "c1-variacao-linguistica-regional", "status": "published" },
+            { "id": "c1-leitura-jornalistica-e-literaria", "status": "published" },
+            { "id": "c1-escrita-formal", "status": "published" }
           ]
         }
       ]

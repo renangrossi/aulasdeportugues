@@ -11,12 +11,12 @@ reconstruída inteiramente para o português.
 
 ## Estado atual
 
-- **Pre-A1, A1, A2, B1 e B2 estão 100% publicados**: 62 lições, 191
-  blocos de exercícios, 407 itens corrigíveis automaticamente.
-- **C1 e C2 têm o roteiro pedagógico completo definido** em
-  `curriculum/index.json` (status `"planned"`), com páginas de nível já
-  no ar mostrando cada tópico como "Em breve" — não é uma promessa vaga,
-  é a lista real do que vem a seguir.
+- **Pre-A1, A1, A2, B1, B2 e C1 estão 100% publicados**: 68 lições,
+  208 blocos de exercícios, 440 itens corrigíveis automaticamente.
+- **C2 tem o roteiro pedagógico completo definido** em
+  `curriculum/index.json` (status `"planned"`), com a página de nível
+  já no ar mostrando cada tópico como "Em breve" — não é uma promessa
+  vaga, é a lista real do que vem a seguir.
 - Sem "AI Teacher" (Cloudflare Worker + LLM) nesta fase — pode ser
   adicionado depois, do mesmo jeito que no site em inglês, se fizer
   sentido no futuro.

@@ -1,0 +1,79 @@
+{
+  "id": "c1-subjuntivo-em-contextos-complexos",
+  "level": "C1",
+  "order": 1,
+  "skill": "grammar",
+  "title": "Subjuntivo em Contextos Complexos",
+  "subtitle": "Quando a mesma frase muda de sentido conforme o modo verbal escolhido.",
+  "objectives": [
+    "Usar o subjuntivo em orações relativas com antecedente hipotético ou inexistente",
+    "Reconhecer verbos de opinião que mudam de modo conforme a afirmação é negada ou não",
+    "Usar oxalá e outras expressões que sempre exigem o subjuntivo"
+  ],
+  "content": {
+    "intro": "Você já domina o sistema completo do subjuntivo. Esta lição explora os casos mais sutis, onde a escolha entre indicativo e subjuntivo muda o próprio significado da frase.",
+    "explanation": "<p>Em orações relativas (com \"que\"), o modo verbal revela se o antecedente <strong>existe</strong> ou é apenas <strong>hipotético</strong>: \"conheço alguém que <strong>fala</strong> francês\" (indicativo — essa pessoa existe, eu a conheço) versus \"procuro alguém que <strong>fale</strong> francês\" (subjuntivo — essa pessoa pode não existir ainda; é uma busca).</p><p>Verbos de opinião como <strong>achar</strong> e <strong>acreditar</strong> usam indicativo na afirmativa (\"acho que ele <strong>vem</strong>\"), mas mudam para subjuntivo quando <strong>negados</strong>, porque a negação introduz dúvida: \"não acho que ele <strong>venha</strong>\". Expressões como <strong>oxalá</strong> (que expressa um desejo forte, quase uma súplica) sempre exigem o subjuntivo: \"oxalá ele <strong>chegue</strong> bem\".</p>",
+    "rules": [
+      "Antecedente existente/específico → indicativo (conheço alguém que fala francês)",
+      "Antecedente hipotético/inexistente/buscado → subjuntivo (procuro alguém que fale francês)",
+      "Achar/acreditar/pensar (afirmativo) → indicativo; negados → subjuntivo",
+      "Oxalá, tomara que, quem dera → sempre subjuntivo (desejo/súplica)",
+      "\"Talvez\" antes do verbo pede subjuntivo; depois do verbo, aceita indicativo em registro mais informal"
+    ],
+    "examples": [
+      "Tenho um amigo que mora em Lisboa. (existe, indicativo)",
+      "Preciso de um funcionário que fale três idiomas. (hipotético, subjuntivo)",
+      "Acho que ela tem razão. / Não acho que ela tenha razão.",
+      "Oxalá tudo dê certo amanhã.",
+      "Quem me dera ter mais tempo livre."
+    ],
+    "commonMistakes": [
+      { "wrong": "\"Procuro alguém que fala francês\" (indicativo, quando a pessoa é hipotética)", "right": "\"Procuro alguém que fale francês\"", "why": "Quando a existência da pessoa/coisa não é garantida, o subjuntivo é obrigatório na oração relativa." },
+      { "wrong": "\"Não acho que ele vem\" (indicativo depois de negação de opinião)", "right": "\"Não acho que ele venha\"", "why": "A negação de verbos de opinião introduz incerteza, exigindo o subjuntivo na oração seguinte." },
+      { "wrong": "\"Oxalá ele chega bem\" (indicativo depois de oxalá)", "right": "\"Oxalá ele chegue bem\"", "why": "\"Oxalá\" é uma das poucas expressões que exigem subjuntivo de forma absoluta, sem exceção." }
+    ],
+    "tip": "Ao usar uma oração relativa, pergunte-se: eu tenho certeza de que essa pessoa/coisa existe assim como descrevo? Se não, o subjuntivo é a escolha certa."
+  },
+  "exercises": [
+    {
+      "id": "subjcx-fill",
+      "type": "fill-blank",
+      "title": "Complete com o Modo Certo",
+      "instructions": "Complete cada frase, escolhendo entre indicativo e subjuntivo conforme o contexto.",
+      "items": [
+        { "id": "subjcxa", "prompt": "Tenho uma amiga que ___ (morar) no Japão. (existe, é uma pessoa real)", "answers": [["mora"]], "explanation": "Antecedente existente e específico: indicativo." },
+        { "id": "subjcxb", "prompt": "Preciso de alguém que ___ (saber) consertar computadores. (ainda não sei se existe)", "answers": [["saiba"]], "explanation": "Antecedente hipotético: subjuntivo." },
+        { "id": "subjcxc", "prompt": "Não acredito que ela ___ (ir) atrasar de novo.", "answers": [["vá"]], "explanation": "Opinião negada: subjuntivo." }
+      ]
+    },
+    {
+      "id": "subjcx-mc",
+      "type": "multiple-choice",
+      "title": "Existe ou é Hipotético?",
+      "instructions": "Escolha a forma correta conforme o antecedente é conhecido ou hipotético.",
+      "items": [
+        { "id": "subjcxd", "prompt": "\"Este é o livro que eu ___ ontem.\" (livro específico, já comprado)", "options": ["comprei", "comprasse"], "answerIndex": 0, "explanation": "Antecedente específico e real: indicativo." },
+        { "id": "subjcxe", "prompt": "\"Estou buscando uma casa que ___ perto da praia.\" (ainda não encontrei)", "options": ["fica", "fique"], "answerIndex": 1, "explanation": "Antecedente hipotético/buscado: subjuntivo." }
+      ]
+    },
+    {
+      "id": "subjcx-correction",
+      "type": "correction",
+      "title": "Corrija o Modo Verbal",
+      "instructions": "Cada frase usa o modo verbal errado. Escreva a versão correta.",
+      "items": [
+        { "id": "subjcxf", "incorrect": "Oxalá o exame não é muito difícil.", "answer": ["Oxalá o exame não seja muito difícil", "Oxalá o exame não seja muito difícil."], "explanation": "\"Oxalá\" sempre exige o subjuntivo." },
+        { "id": "subjcxg", "incorrect": "Não acho que essa solução funcionará.", "answer": ["Não acho que essa solução funcione", "Não acho que essa solução funcione."], "explanation": "Opinião negada exige subjuntivo, não futuro do indicativo." }
+      ]
+    }
+  ],
+  "summary": [
+    "Antecedentes existentes/específicos usam indicativo; hipotéticos/inexistentes usam subjuntivo.",
+    "Verbos de opinião (achar, acreditar) mudam para subjuntivo quando negados.",
+    "Oxalá, tomara que e quem dera sempre exigem o subjuntivo, sem exceção."
+  ],
+  "related": [
+    { "lessonId": "c1-oracoes-reduzidas", "label": "Orações Reduzidas" },
+    { "lessonId": "c1-estruturas-enfaticas-e-inversao", "label": "Estruturas Enfáticas e Inversão" }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "id": "c1-estruturas-enfaticas-e-inversao",
+  "level": "C1",
+  "order": 3,
+  "skill": "grammar",
+  "title": "Estruturas Enfáticas e Inversão",
+  "subtitle": "Foi ela quem fez isso — destacando a parte mais importante da frase.",
+  "objectives": [
+    "Formar frases de destaque com \"foi... que/quem\"",
+    "Usar a inversão da ordem sujeito-verbo para dar ênfase literária",
+    "Reconhecer essas estruturas em textos jornalísticos e literários"
+  ],
+  "content": {
+    "intro": "Até agora suas frases seguiram a ordem natural sujeito-verbo-objeto. Esta lição mostra como o português reorganiza essa ordem para colocar holofote sobre uma parte específica da frase.",
+    "explanation": "<p>A estrutura de destaque mais comum é o <strong>\"foi... que/quem\"</strong> (em inglês, \"it was... who/that\"): \"Maria fez o bolo\" → \"<strong>Foi Maria quem fez</strong> o bolo\" (destaca quem fez); \"Eu comprei o carro ontem\" → \"<strong>Foi ontem que eu comprei</strong> o carro\" (destaca quando). Essa construção é chamada de <strong>frase clivada</strong> e é extremamente comum tanto na fala quanto na escrita.</p><p>A <strong>inversão</strong> — colocar o verbo antes do sujeito, ou um advérbio/adjetivo no início da frase — é um recurso mais literário/formal para dar ênfase: \"<strong>Grande</strong> foi a surpresa de todos\" (em vez de \"a surpresa de todos foi grande\"); \"<strong>Poucas vezes</strong> vi algo tão bonito\" (advérbio de frequência no início, invertendo a ordem natural).</p>",
+    "rules": [
+      "Frase clivada: foi + elemento destacado + que/quem + resto da frase",
+      "\"Quem\" para pessoas destacadas; \"que\" para outros elementos (tempo, lugar, objeto)",
+      "Inversão literária: adjetivo/advérbio no início + verbo + sujeito",
+      "A inversão é mais comum na escrita formal/literária do que na fala cotidiana",
+      "Ambas as estruturas reorganizam a informação para dar destaque a uma parte específica da frase"
+    ],
+    "table": {
+      "caption": "Frase neutra vs. frase de destaque",
+      "headers": ["Frase neutra", "Frase de destaque (clivada)"],
+      "rows": [
+        ["Ela escreveu o livro.", "Foi ela quem escreveu o livro."],
+        ["Eu encontrei a solução ontem.", "Foi ontem que eu encontrei a solução."],
+        ["Ele fez isso por amor.", "Foi por amor que ele fez isso."]
+      ]
+    },
+    "examples": [
+      "Foi você quem me ensinou isso.",
+      "Foi naquele verão que tudo mudou.",
+      "Grande foi o esforço de toda a equipe.",
+      "Raras vezes se via tanta dedicação.",
+      "Foi por essa razão que decidimos mudar de estratégia."
+    ],
+    "commonMistakes": [
+      { "wrong": "\"Foi ela que fez o bolo\" quando o destaque é uma pessoa (usando \"que\" em vez de \"quem\")", "right": "\"Foi ela quem fez o bolo\"", "why": "Embora \"que\" também seja aceito coloquialmente, \"quem\" é a escolha mais precisa e formal para destacar pessoas." },
+      { "wrong": "Usar a estrutura clivada em excesso, tornando o texto repetitivo", "right": "reservá-la para os pontos que realmente merecem destaque", "why": "Como todo recurso de ênfase, o efeito se perde se usado em toda frase." },
+      { "wrong": "Inverter a ordem sujeito-verbo em contextos muito informais", "right": "reservar a inversão para textos mais formais/literários", "why": "A inversão soa artificial ou pomposa na fala cotidiana — é um recurso majoritariamente escrito." }
+    ],
+    "tip": "Ao revisar um texto, identifique a informação mais importante de cada frase e experimente reescrevê-la como uma frase clivada (\"foi... que/quem\") — é um recurso simples que aumenta muito o impacto de uma ideia central."
+  },
+  "exercises": [
+    {
+      "id": "enfase-fill",
+      "type": "fill-blank",
+      "title": "Complete a Frase de Destaque",
+      "instructions": "Complete cada frase clivada com \"que\" ou \"quem\".",
+      "items": [
+        { "id": "enfasea", "prompt": "Foi meu pai ___ me ensinou a nadar.", "answers": [["quem"]], "explanation": "Destacando uma pessoa: quem." },
+        { "id": "enfaseb", "prompt": "Foi em 2020 ___ tudo começou.", "answers": [["que"]], "explanation": "Destacando um período de tempo: que." }
+      ]
+    },
+    {
+      "id": "enfase-mc",
+      "type": "multiple-choice",
+      "title": "Transforme em Frase de Destaque",
+      "instructions": "Escolha a versão clivada correta de cada frase.",
+      "items": [
+        { "id": "enfasec", "prompt": "Frase original: \"Ana resolveu o problema.\" Qual é a versão de destaque correta?", "options": ["Foi Ana quem resolveu o problema.", "Foi Ana que resolveu quem o problema.", "Ana foi quem resolveu o problema quem."], "answerIndex": 0, "explanation": "\"Foi Ana quem resolveu o problema\" destaca corretamente quem praticou a ação." },
+        { "id": "enfased", "prompt": "Qual frase usa inversão literária corretamente?", "options": ["A surpresa de todos foi grande.", "Grande foi a surpresa de todos.", "Foi grande a de todos surpresa."], "answerIndex": 1, "explanation": "\"Grande foi a surpresa de todos\" inverte o adjetivo para o início, dando ênfase." }
+      ]
+    },
+    {
+      "id": "enfase-order",
+      "type": "ordering",
+      "title": "Monte a Frase de Destaque",
+      "instructions": "Coloque as palavras na ordem correta para formar uma frase clivada.",
+      "items": [
+        { "id": "enfasee", "prompt": "ideia / foi / que / teve / ela / essa", "words": ["Foi", "ela", "que", "teve", "essa", "ideia"], "explanation": "Foi + elemento destacado + que + resto da frase." }
+      ]
+    }
+  ],
+  "summary": [
+    "A frase clivada (\"foi... que/quem\") destaca um elemento específico da frase.",
+    "\"Quem\" é usado para destacar pessoas; \"que\" para os demais elementos.",
+    "A inversão (adjetivo/advérbio no início) é um recurso mais literário/formal de ênfase."
+  ],
+  "related": [
+    { "lessonId": "c1-oracoes-reduzidas", "label": "Orações Reduzidas" },
+    { "lessonId": "c1-leitura-jornalistica-e-literaria", "label": "Leitura Jornalística e Literária" }
+  ]
+}

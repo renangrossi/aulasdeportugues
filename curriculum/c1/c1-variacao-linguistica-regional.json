@@ -1,0 +1,92 @@
+{
+  "id": "c1-variacao-linguistica-regional",
+  "level": "C1",
+  "order": 4,
+  "skill": "vocabulary",
+  "title": "Variação Linguística Regional",
+  "subtitle": "O Brasil tem um só idioma oficial e uma riqueza enorme de jeitos de falar.",
+  "objectives": [
+    "Reconhecer as principais diferenças de vocabulário entre regiões do Brasil",
+    "Entender a distribuição regional do uso de \"tu\" e \"você\"",
+    "Valorizar a variação linguística como riqueza, não como erro"
+  ],
+  "content": {
+    "intro": "Um dos sinais de fluência real é reconhecer que não existe um único \"português correto\" falado — existe uma riqueza de variações regionais, todas igualmente válidas.",
+    "explanation": "<p>O uso de <strong>tu</strong> versus <strong>você</strong> varia muito pelo Brasil: no Rio Grande do Sul, em partes do Pará, Maranhão e Santa Catarina, \"tu\" é comum no dia a dia (às vezes com a conjugação verbal simplificada: \"tu vai\" em vez de \"tu vais\"); no restante do país, \"você\" domina quase totalmente. O uso de <strong>\"a gente\"</strong> no lugar de \"nós\" é extremamente comum em todo o Brasil falado, com o verbo na terceira pessoa do singular: \"a gente vai\" (não \"a gente vamos\").</p><p>O vocabulário também muda bastante: a mesma raiz é chamada de <strong>mandioca</strong>, <strong>aipim</strong> ou <strong>macaxeira</strong> dependendo da região; a tangerina pode ser <strong>mexerica</strong>, <strong>bergamota</strong> ou <strong>tangerina</strong>; \"moleque\"/\"guri\"/\"menino\" variam conforme o estado. Reconhecer essas diferenças evita a suposição errada de que existe apenas um jeito \"certo\" de falar português brasileiro.</p>",
+    "rules": [
+      "Tu é comum no Rio Grande do Sul e em partes do Norte/Nordeste; você domina no restante do país",
+      "\"A gente\" (informal, muito comum) + verbo na terceira pessoa do singular substitui \"nós\"",
+      "Vocabulário regional: mandioca/aipim/macaxeira, mexerica/bergamota/tangerina",
+      "Sotaques regionais variam bastante, mas nenhum é \"mais correto\" que outro",
+      "A norma culta escrita é relativamente uniforme; é a fala que revela a maior diversidade regional"
+    ],
+    "table": {
+      "caption": "Mesma coisa, palavras diferentes por região",
+      "headers": ["Conceito", "Variações regionais"],
+      "rows": [
+        ["mandioca (a raiz)", "mandioca, aipim (RJ/SP), macaxeira (Norte/Nordeste)"],
+        ["tangerina (a fruta)", "tangerina, mexerica (SP), bergamota (Sul)"],
+        ["menino/moleque", "menino, guri (Sul), menino/rapaz (várias regiões)"],
+        ["pronome de 2ª pessoa", "você (maioria do país), tu (RS, partes do Norte/Nordeste)"]
+      ]
+    },
+    "examples": [
+      "No Rio Grande do Sul: \"Tu vai no mercado?\" / No Rio de Janeiro: \"Você vai ao mercado?\"",
+      "A gente sempre janta cedo lá em casa.",
+      "Em São Paulo, chamam de mexerica; no Sul, muitos dizem bergamota.",
+      "No Norte do Brasil, a mandioca é chamada de macaxeira.",
+      "Cada região tem expressões e um ritmo de fala próprios — todos igualmente corretos."
+    ],
+    "commonMistakes": [
+      { "wrong": "Achar que existe um único \"português certo\" do Brasil, ignorando a diversidade regional", "right": "reconhecer que a variação regional é riqueza linguística, não erro", "why": "Nenhuma variedade regional do português brasileiro é gramaticalmente \"superior\" às outras — todas seguem uma lógica interna coerente." },
+      { "wrong": "\"A gente vamos\" (concordando \"a gente\" com a primeira pessoa do plural)", "right": "\"A gente vai\"", "why": "\"A gente\" é gramaticalmente terceira pessoa do singular, mesmo significando \"nós\"." },
+      { "wrong": "Estranhar ou corrigir alguém que usa \"tu\" com conjugação simplificada (tu vai)", "right": "reconhecer isso como uma variação regional legítima, comum na fala do Sul e de partes do Norte/Nordeste", "why": "Embora a norma culta prescreva \"tu vais\", a forma simplificada é amplamente usada e compreendida nessas regiões." }
+    ],
+    "tip": "Ao viajar ou conversar com brasileiros de diferentes regiões, preste atenção às palavras regionais — é uma das formas mais divertidas e naturais de expandir seu vocabulário e sua compreensão cultural do Brasil."
+  },
+  "exercises": [
+    {
+      "id": "var-mc",
+      "type": "multiple-choice",
+      "title": "Reconheça a Variação Regional",
+      "instructions": "Escolha a resposta correta sobre variação regional do português brasileiro.",
+      "items": [
+        { "id": "vara", "prompt": "Em qual região do Brasil o uso de \"tu\" é mais comum na fala cotidiana?", "options": ["São Paulo", "Rio Grande do Sul", "Distrito Federal"], "answerIndex": 1, "explanation": "O Rio Grande do Sul é uma das regiões onde \"tu\" é muito usado no dia a dia." },
+        { "id": "varb", "prompt": "Qual é a conjugação correta de \"a gente\"?", "options": ["a gente vai", "a gente vamos", "a gente vão"], "answerIndex": 0, "explanation": "\"A gente\" é gramaticalmente terceira pessoa do singular." }
+      ]
+    },
+    {
+      "id": "var-match",
+      "type": "matching",
+      "title": "Associe as Palavras Equivalentes",
+      "instructions": "Associe cada palavra regional ao seu equivalente mais neutro/comum.",
+      "items": [
+        { "id": "varc", "pairs": [
+          { "left": "macaxeira", "right": "mandioca" },
+          { "left": "mexerica", "right": "tangerina" },
+          { "left": "bergamota", "right": "tangerina" },
+          { "left": "guri", "right": "menino" }
+        ], "explanation": "Todas essas palavras se referem à mesma coisa, com variação apenas de região." }
+      ]
+    },
+    {
+      "id": "var-tf",
+      "type": "true-false",
+      "title": "Verdadeiro ou Falso",
+      "instructions": "Leia cada afirmação sobre variação regional.",
+      "items": [
+        { "id": "vard", "statement": "Existe uma única forma \"correta\" de falar português no Brasil, e as demais são erradas.", "answer": false, "explanation": "Todas as variações regionais seguem uma lógica gramatical própria e são igualmente legítimas." },
+        { "id": "vare", "statement": "\"You\" na maior parte do Brasil é traduzido como \"você\", mas em algumas regiões \"tu\" é mais comum.", "answer": true, "explanation": "Exatamente — a escolha entre tu e você tem uma distribuição regional real no Brasil." }
+      ]
+    }
+  ],
+  "summary": [
+    "Tu é comum no Rio Grande do Sul e em partes do Norte/Nordeste; você domina o restante do país.",
+    "\"A gente\" (informal) substitui \"nós\", sempre com verbo na terceira pessoa do singular.",
+    "O vocabulário varia bastante por região — mandioca/aipim/macaxeira, mexerica/bergamota/tangerina."
+  ],
+  "related": [
+    { "lessonId": "c1-estruturas-enfaticas-e-inversao", "label": "Estruturas Enfáticas e Inversão" },
+    { "lessonId": "c1-leitura-jornalistica-e-literaria", "label": "Leitura Jornalística e Literária" }
+  ]
+}

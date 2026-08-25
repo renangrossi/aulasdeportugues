@@ -1,0 +1,87 @@
+{
+  "id": "c1-escrita-formal",
+  "level": "C1",
+  "order": 6,
+  "skill": "writing",
+  "title": "Escrita Formal",
+  "subtitle": "Estruturando um texto dissertativo, do jeito que universidades e provas esperam.",
+  "objectives": [
+    "Estruturar um texto dissertativo-argumentativo em introdução, desenvolvimento e conclusão",
+    "Usar impessoalização e evitar marcas de oralidade na escrita formal",
+    "Escrever uma redação curta e coesa sobre um tema social"
+  ],
+  "content": {
+    "intro": "Depois de dominar gramática, vocabulário e leitura em nível avançado, esta lição junta tudo em uma habilidade prática: escrever um texto formal bem estruturado, como se espera em exames como o CELPE-Bras ou o ENEM.",
+    "explanation": "<p>Um texto dissertativo-argumentativo segue uma estrutura clara: <strong>introdução</strong> (apresenta o tema e a tese/opinião central, sem entrar em detalhes ainda), <strong>desenvolvimento</strong> (um ou dois parágrafos, cada um com um argumento, exemplo ou dado que sustenta a tese, conectados por conectores como os do B2), e <strong>conclusão</strong> (retoma a tese e, frequentemente, propõe uma solução ou reflexão final).</p><p>A escrita formal evita marcas de oralidade: contrações informais (pra, tá), gírias, repetições e frases muito curtas e soltas. Prefere-se a <strong>impessoalização</strong> — construções que não colocam o autor em primeira pessoa o tempo todo, como o se indeterminado (\"discute-se muito sobre...\") e frases como \"é importante ressaltar que...\", \"sabe-se que...\".</p>",
+    "rules": [
+      "Introdução: apresenta o tema e a tese central, sem detalhamento",
+      "Desenvolvimento: um argumento por parágrafo, com exemplo/dado, conectado por conectores formais",
+      "Conclusão: retoma a tese e propõe uma reflexão ou solução final",
+      "Evite contrações informais, gírias e repetições na escrita formal",
+      "Prefira construções impessoais: discute-se, sabe-se que, é importante ressaltar que"
+    ],
+    "table": {
+      "caption": "Estrutura de um texto dissertativo-argumentativo",
+      "headers": ["Parte", "Função"],
+      "rows": [
+        ["Introdução", "Apresenta o tema e a tese central"],
+        ["Desenvolvimento 1", "Primeiro argumento, com exemplo/dado"],
+        ["Desenvolvimento 2", "Segundo argumento, com exemplo/dado"],
+        ["Conclusão", "Retoma a tese e propõe uma reflexão/solução"]
+      ]
+    },
+    "examples": [
+      "Discute-se, atualmente, o impacto das redes sociais na saúde mental dos jovens.",
+      "É importante ressaltar que essa mudança não afeta apenas grandes cidades, mas também áreas rurais.",
+      "Diante do exposto, conclui-se que políticas públicas voltadas à educação digital são fundamentais.",
+      "Sabe-se que a falta de acesso à internet ainda é uma realidade em muitas regiões do país.",
+      "Portanto, medidas concretas precisam ser adotadas para reduzir essa desigualdade."
+    ],
+    "commonMistakes": [
+      { "wrong": "Começar a redação já com um argumento detalhado, sem introduzir o tema", "right": "apresentar o tema e a tese de forma geral na introdução, deixando os detalhes para o desenvolvimento", "why": "A introdução tem a função de situar o leitor antes de entrar em argumentos específicos." },
+      { "wrong": "Usar \"eu acho\" repetidamente ao longo do texto", "right": "variar com construções impessoais (é importante notar, sabe-se que, discute-se)", "why": "O excesso de primeira pessoa é uma marca de oralidade que a escrita formal evita." },
+      { "wrong": "Terminar o texto sem retomar a tese ou propor uma reflexão final", "right": "fechar com uma conclusão que resume o argumento e aponta um caminho", "why": "Um texto sem conclusão clara parece incompleto, mesmo que os argumentos do desenvolvimento sejam bons." }
+    ],
+    "tip": "Antes de escrever, faça um rascunho rápido só com a tese (uma frase) e os dois ou três argumentos principais — isso evita que o texto perca o fio da meada no meio do desenvolvimento."
+  },
+  "exercises": [
+    {
+      "id": "escf-mc",
+      "type": "multiple-choice",
+      "title": "Reconheça a Estrutura",
+      "instructions": "Identifique a função de cada trecho em um texto dissertativo.",
+      "items": [
+        { "id": "escfa", "prompt": "\"Diante do exposto, conclui-se que a proposta merece ser aprovada.\" Que parte do texto é essa?", "options": ["Introdução", "Desenvolvimento", "Conclusão"], "answerIndex": 2, "explanation": "Retoma a tese e fecha o argumento — é a conclusão." },
+        { "id": "escfb", "prompt": "Qual frase é mais adequada para uma escrita formal?", "options": ["Eu acho que tá certo isso.", "Considera-se que essa medida é adequada.", "Pra mim, tá tudo certo."], "answerIndex": 1, "explanation": "A construção impessoal é típica da escrita formal, evitando contrações e marcas de oralidade." }
+      ]
+    },
+    {
+      "id": "escf-correction",
+      "type": "correction",
+      "title": "Formalize a Frase",
+      "instructions": "Reescreva cada frase informal em um estilo mais formal, adequado a um texto dissertativo.",
+      "items": [
+        { "id": "escfc", "incorrect": "Eu acho que a gente devia mudar isso.", "answer": ["Considera-se que essa mudança é necessária", "É importante que essa mudança seja feita."], "explanation": "A versão formal evita a primeira pessoa e usa construção impessoal." },
+        { "id": "escfd", "incorrect": "Isso tá causando um monte de problema.", "answer": ["Isso tem causado diversos problemas", "Essa situação tem gerado diversos problemas."], "explanation": "A versão formal evita a contração \"tá\" e a expressão informal \"um monte de\"." }
+      ]
+    },
+    {
+      "id": "escf-writing",
+      "type": "writing",
+      "title": "Escreva uma Redação Curta",
+      "instructions": "Escreva um texto dissertativo-argumentativo curto (6-10 frases) sobre o tema: \"O uso das redes sociais está aproximando ou afastando as pessoas?\" Siga a estrutura de introdução, desenvolvimento e conclusão, e use ao menos dois conectores formais e uma construção impessoal.",
+      "items": [
+        { "id": "escfe", "prompt": "Estruture seu texto com uma tese clara na introdução, um ou dois argumentos no desenvolvimento, e uma conclusão que retome sua posição." }
+      ]
+    }
+  ],
+  "summary": [
+    "Um texto dissertativo-argumentativo se estrutura em introdução, desenvolvimento e conclusão.",
+    "A escrita formal evita contrações, gírias e repetições típicas da fala.",
+    "Construções impessoais (discute-se, sabe-se que) substituem o excesso de primeira pessoa."
+  ],
+  "related": [
+    { "lessonId": "c1-leitura-jornalistica-e-literaria", "label": "Leitura Jornalística e Literária" },
+    { "lessonId": "c1-oracoes-reduzidas", "label": "Orações Reduzidas" }
+  ]
+}
