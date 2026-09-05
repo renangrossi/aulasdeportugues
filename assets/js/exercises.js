@@ -66,6 +66,21 @@
     });
   }
 
+  // Author-supplied item ids (e.g. "n5") are only meant to be unique
+  // within one exercise block's JSON, but can repeat across topics on
+  // the same page. Building radio "name"/element "id" attributes
+  // straight from item.id therefore risks duplicate DOM ids: a
+  // <label for> resolves to the *first* element in the document with
+  // that id, so clicking an option could silently check/focus a
+  // same-id control in a completely different, earlier exercise
+  // instead of the one clicked. A monotonically increasing counter
+  // guarantees every generated id is unique for the life of the page,
+  // regardless of what item ids the JSON reuses.
+  var uidCounter = 0;
+  function uniqueId(base) {
+    return "q_" + base + "_" + (uidCounter++);
+  }
+
   function shuffled(arr) {
     var a = arr.slice();
     for (var i = a.length - 1; i > 0; i--) {
@@ -409,22 +424,38 @@
   }
 
   // ---- multiple-choice / vocabulary / reading-comprehension question ----
+  // Options are displayed in a shuffled order (Fisher-Yates, via the
+  // shared shuffled() helper) so the correct answer doesn't keep landing
+  // in the same position across every question -- an audit of this
+  // course's curriculum data showed correct answers heavily concentrated
+  // at option B (55.6%). Each rendered <input> keeps `value` set to the
+  // option's *original* index into item.options (origIndex below), not
+  // its on-screen position, so item.answerIndex, extractChoice() (used by
+  // the "save answers" print feature) and any other code that reasons
+  // about option identity by original index keeps working unchanged --
+  // only the DOM order changes, once, at render time. Shuffling happens
+  // exactly once per page load (here, when the item is first built), not
+  // on every re-render/reset, so retrying a question never reshuffles
+  // the options out from under the student mid-attempt.
   function renderChoice(item, index) {
     var wrap = itemShell(index, item.prompt);
     var fieldset = el("fieldset");
     fieldset.appendChild(el("legend", { class: "visually-hidden", text: "Escolha uma resposta" }));
     var list = el("div", { class: "option-list" });
-    var name = "q_" + item.id;
+    var name = uniqueId(item.id);
     var optionEls = [];
 
-    (item.options || []).forEach(function (opt, i) {
-      var inputId = name + "_" + i;
-      var input = el("input", { type: "radio", name: name, id: inputId, value: String(i) });
+    var options = item.options || [];
+    var order = shuffled(options.map(function (opt, i) { return i; }));
+
+    order.forEach(function (origIndex) {
+      var inputId = name + "_" + origIndex;
+      var input = el("input", { type: "radio", name: name, id: inputId, value: String(origIndex) });
       var label = el("label", { class: "option", for: inputId }, [
         input,
-        el("span", { class: "option__label", text: opt }),
+        el("span", { class: "option__label", text: options[origIndex] }),
       ]);
-      optionEls.push({ input: input, label: label });
+      optionEls.push({ input: input, label: label, origIndex: origIndex });
       list.appendChild(label);
     });
 
@@ -452,14 +483,15 @@
         wrap.classList.remove("is-locked");
       },
       grade: function () {
-        var chosen = optionEls.findIndex(function (o) { return o.input.checked; });
+        var checkedEntry = optionEls.find(function (o) { return o.input.checked; });
+        var chosen = checkedEntry ? checkedEntry.origIndex : -1;
         var correct = chosen === item.answerIndex;
-        optionEls.forEach(function (o, i) {
+        optionEls.forEach(function (o) {
           o.input.disabled = true;
-          if (i === item.answerIndex) {
+          if (o.origIndex === item.answerIndex) {
             o.label.classList.add("is-correct");
             o.label.appendChild(el("span", { class: "option__tag", "aria-hidden": "true", text: "\u2713 correta" }));
-          } else if (i === chosen) {
+          } else if (o.origIndex === chosen) {
             o.label.classList.add("is-incorrect");
             o.label.appendChild(el("span", { class: "option__tag", "aria-hidden": "true", text: "\u2717 sua resposta" }));
           }
@@ -480,7 +512,7 @@
     var fieldset = el("fieldset");
     fieldset.appendChild(el("legend", { class: "visually-hidden", text: "Verdadeiro ou falso" }));
     var list = el("div", { class: "option-list tf-options" });
-    var name = "q_" + item.id;
+    var name = uniqueId(item.id);
     var trueId = name + "_t", falseId = name + "_f";
     var trueInput = el("input", { type: "radio", name: name, id: trueId, value: "true" });
     var falseInput = el("input", { type: "radio", name: name, id: falseId, value: "false" });
@@ -631,11 +663,12 @@
   function renderCorrection(item, index) {
     var wrap = itemShell(index, null);
     wrap.appendChild(el("p", { class: "exercise-item__source", html: "&ldquo;" + item.incorrect + "&rdquo;" }));
-    var label = el("label", { class: "exercise-item__prompt", for: "q_" + item.id });
+    var qid = uniqueId(item.id);
+    var label = el("label", { class: "exercise-item__prompt", for: qid });
     label.appendChild(el("span", { class: "exercise-item__number", "aria-hidden": "true", text: String(index + 1) }));
     label.appendChild(document.createTextNode("Escreva a frase correta:"));
     wrap.appendChild(label);
-    var input = el("input", { type: "text", id: "q_" + item.id, class: "answer-input", autocomplete: "off", spellcheck: "false" });
+    var input = el("input", { type: "text", id: qid, class: "answer-input", autocomplete: "off", spellcheck: "false" });
     wrap.appendChild(input);
 
     var fb = feedbackNode(item.explanation || "");
@@ -927,8 +960,6 @@
     actions.appendChild(retryAllBtn);
     actions.appendChild(printBtn);
     container.appendChild(actions);
-    var topicSaveBtn = maybeAddTopicSaveButton(printBtn, container);
-    if (topicSaveBtn) topicSaveBtn.style.display = "none";
 
     var lastResults = null;
 
@@ -958,7 +989,6 @@
       retryBtn.style.display = anyIncorrect ? "" : "none";
       retryAllBtn.style.display = "";
       printBtn.style.display = "";
-      if (topicSaveBtn) topicSaveBtn.style.display = "";
       // Each result gets the id of the item it came from (built[i] and
       // data.items[i] are always positionally aligned -- see `built`
       // above). This is what lets assets/js/mastery.js track per-item
@@ -1009,7 +1039,6 @@
       retryBtn.style.display = "none";
       retryAllBtn.style.display = "none";
       printBtn.style.display = "none";
-      if (topicSaveBtn) topicSaveBtn.style.display = "none";
       var firstOpen = itemsWrap.querySelector(".exercise-item:not(.is-locked)");
       if (firstOpen) firstOpen.scrollIntoView({ behavior: "smooth", block: "center" });
     });
@@ -1021,7 +1050,6 @@
       retryBtn.style.display = "none";
       retryAllBtn.style.display = "none";
       printBtn.style.display = "none";
-      if (topicSaveBtn) topicSaveBtn.style.display = "none";
     });
   }
 
@@ -1062,7 +1090,6 @@
     var saveBtn = el("button", { type: "button", class: "btn btn--ghost print-hidden", text: "Salvar minhas respostas" });
     actions.appendChild(saveBtn);
     container.appendChild(actions);
-    maybeAddTopicSaveButton(saveBtn, container);
 
     saveBtn.addEventListener("click", function () {
       performSaveAnswers(container, data, function () {
@@ -1349,28 +1376,126 @@
     });
   }
 
-  // Appends a "Save Topic Answers" button right beside `primaryBtn`
-  // (the block's own "Save my answers" button) whenever this exercise
-  // lives inside a Test Yourself topic <section class="ty-topic">.
-  // Every exercise in a topic gets one, and every one of them saves
-  // the whole topic — not just the exercise it sits next to — per the
-  // shared collectTopicAnswers() above.
-  function maybeAddTopicSaveButton(primaryBtn, container) {
-    var topicSection = container.closest(".ty-topic[id]");
-    if (!topicSection) return null;
-    var heading = topicSection.querySelector(".section__head h2, h2, h3");
-    var topicTitle = heading ? heading.textContent.trim() : "este t\u00f3pico";
+  function buildSaveAllAnswersButton(ariaLabel, onClick) {
+    var label = "Salvar Todas as Respostas";
     var btn = el("button", {
       type: "button",
-      class: "btn btn--ghost print-hidden",
-      text: "Salvar Respostas do T\u00f3pico",
-      "aria-label": "Salvar todas as respostas do t\u00f3pico: " + topicTitle,
+      class: "btn btn--accent print-hidden save-all-answers-btn",
+      text: label,
+      "aria-label": ariaLabel,
     });
-    primaryBtn.parentNode.insertBefore(btn, primaryBtn.nextSibling);
+    var revertTimer = null;
     btn.addEventListener("click", function () {
-      performTopicSave(topicSection);
+      onClick();
+      if (revertTimer) clearTimeout(revertTimer);
+      btn.textContent = "Salvo \u2713";
+      revertTimer = setTimeout(function () {
+        btn.textContent = label;
+        revertTimer = null;
+      }, 1500);
     });
     return btn;
+  }
+
+  function findLastSubmitActionsRow(root) {
+    var blocks = root.querySelectorAll(".exercise-block");
+    for (var i = blocks.length - 1; i >= 0; i--) {
+      var actions = blocks[i].querySelector(".exercise-actions");
+      var firstBtn = actions ? actions.querySelector("button") : null;
+      if (firstBtn && firstBtn.textContent === "Enviar") return actions;
+    }
+    return null;
+  }
+
+  function insertBesideSubmit(actionsRow, btn) {
+    var submitBtn = actionsRow.querySelector("button");
+    if (submitBtn && submitBtn.nextSibling) {
+      actionsRow.insertBefore(btn, submitBtn.nextSibling);
+    } else {
+      actionsRow.appendChild(btn);
+    }
+  }
+
+  // Individual lesson pages have exactly one exercise-bearing section.
+  // Unlike the sibling courses, which all use id="practice", this
+  // course's own build_lesson.py translates the section id itself, so
+  // the live id is "exercicios".
+  function addPracticeSaveAllButton() {
+    var practice = document.getElementById("exercicios");
+    if (!practice) return;
+    if (practice.querySelector(".save-all-answers-btn")) return;
+    var actionsRow = findLastSubmitActionsRow(practice);
+    if (!actionsRow) return;
+
+    var heading = practice.querySelector(".section__head h2, h2, h3");
+    var label = heading ? heading.textContent.trim() : "Exerc\u00edcios";
+
+    var btn = buildSaveAllAnswersButton(
+      "Salvar todas as respostas: " + label,
+      function () { submitUnsubmittedBlocksIn([practice]); performGenericSave([practice], label); }
+    );
+    insertBesideSubmit(actionsRow, btn);
+  }
+
+  // This course has no Test Yourself page today; kept for parity with
+  // the sibling courses in case one is added later (harmless no-op
+  // when there are no .ty-topic sections).
+  function addTestYourselfTopicSaveButtons() {
+    document.querySelectorAll(".ty-topic[id]").forEach(function (topicSection) {
+      var actionsRow = findLastSubmitActionsRow(topicSection);
+      if (!actionsRow) return;
+      var heading = topicSection.querySelector(".section__head h2, h2, h3");
+      var topicTitle = heading ? heading.textContent.trim() : "este t\u00f3pico";
+      var btn = buildSaveAllAnswersButton(
+        "Salvar todas as respostas do t\u00f3pico: " + topicTitle,
+        function () { performTopicSave(topicSection); }
+      );
+      insertBesideSubmit(actionsRow, btn);
+    });
+  }
+
+  function submitUnsubmittedBlocksIn(roots) {
+    roots.forEach(function (root) {
+      root.querySelectorAll(".exercise-block").forEach(function (block) {
+        var submitBtn = block.querySelector(".exercise-actions > button.btn--accent");
+        if (submitBtn && submitBtn.textContent === "Enviar" && submitBtn.style.display !== "none") submitBtn.click();
+      });
+    });
+  }
+
+  function collectAnswersInRoots(roots) {
+    var exercises = [];
+    roots.forEach(function (root) {
+      root.querySelectorAll(".exercise-block").forEach(function (block) {
+        var script = block.querySelector("script.exercise-data");
+        if (!script) return;
+        try {
+          var data = JSON.parse(script.textContent);
+          exercises.push(collectExerciseAnswers(block, data));
+        } catch (e) {
+          if (window.console) console.error("Could not collect answers for an exercise block", e);
+        }
+      });
+    });
+    return exercises;
+  }
+
+  function buildGenericPrintHeaderText(label) {
+    var levelCode = (document.body.getAttribute("data-level-code") || "").trim();
+    var parts = [];
+    if (levelCode) parts.push(levelCode);
+    parts.push(label);
+    return parts.join(" - ");
+  }
+
+  function performGenericSave(roots, label) {
+    var exercises = collectAnswersInRoots(roots);
+    var fakeData = { type: null, title: label + " - Respostas Salvas" };
+    performSaveAnswers(document.body, fakeData, function () {
+      var wrap = el("div", { class: "exercise-block saved-summary-root" });
+      exercises.forEach(function (ex) { wrap.appendChild(buildExerciseSummaryNode(ex)); });
+      return wrapWithPrintHeader(buildGenericPrintHeaderText(label), wrap);
+    });
   }
 
   function init() {
@@ -1389,6 +1514,8 @@
         if (window.console) console.error("Exercise parse error", e);
       }
     });
+    addTestYourselfTopicSaveButtons();
+    addPracticeSaveAllButton();
     maybeAddTestSaveButton();
   }
 
@@ -1399,9 +1526,8 @@
   // instead of being wired per-level. Runs once; leaves the existing
   // "Back to <level>" / "Continue to <next level>" links untouched.
   function maybeAddTestSaveButton() {
-    if (!document.querySelector(".ty-topic[id]")) return;
-    var bottomNav = document.querySelector("#bottom .lesson-nav");
-    if (!bottomNav || document.getElementById("ty-save-all-btn")) return;
+    var topics = document.querySelectorAll(".ty-topic[id]");
+    if (!topics.length || document.getElementById("ty-save-all-btn")) return;
     var levelCode = document.body.getAttribute("data-level-code") || "";
     var wrap = el("div", { class: "lesson-nav", style: "justify-content:center;border-top:none;padding-top:0;" });
     var btn = el("button", {
@@ -1415,7 +1541,13 @@
       performTestSave();
     });
     wrap.appendChild(btn);
-    bottomNav.parentNode.insertBefore(wrap, bottomNav);
+    var bottomNav = document.querySelector("#bottom .lesson-nav");
+    if (bottomNav) {
+      bottomNav.parentNode.insertBefore(wrap, bottomNav);
+    } else {
+      var lastTopic = topics[topics.length - 1];
+      lastTopic.parentNode.insertBefore(wrap, lastTopic.nextSibling);
+    }
   }
 
   if (document.readyState === "loading") {
