@@ -1376,6 +1376,7 @@
     });
   }
 
+  // === COURSE-ENGINE:SAVE-ALL-ANSWERS-BLOCK:START ===
   function buildSaveAllAnswersButton(ariaLabel, onClick) {
     var label = "Salvar Todas as Respostas";
     var btn = el("button", {
@@ -1388,7 +1389,7 @@
     btn.addEventListener("click", function () {
       onClick();
       if (revertTimer) clearTimeout(revertTimer);
-      btn.textContent = "Salvo \u2713";
+      btn.textContent = "Salvo ✓";
       revertTimer = setTimeout(function () {
         btn.textContent = label;
         revertTimer = null;
@@ -1397,6 +1398,14 @@
     return btn;
   }
 
+  // Finds the .exercise-actions row of the last exercise-block within
+  // `root` that actually has a Submit ("Enviar") button -- i.e.
+  // the last *graded* block, searching backwards through document
+  // order. A "writing" block's actions row only ever has a
+  // "Salvar minhas respostas" button (no grading, so no Submit), so
+  // this skips over one should a Practice section or Test Yourself
+  // topic ever end with one, rather than assuming the very last DOM
+  // block is graded.
   function findLastSubmitActionsRow(root) {
     var blocks = root.querySelectorAll(".exercise-block");
     for (var i = blocks.length - 1; i >= 0; i--) {
@@ -1407,6 +1416,13 @@
     return null;
   }
 
+  // Inserts `btn` as the row's second control, immediately after
+  // Submit -- [Enviar] [Salvar Todas as Respostas] -- rather than at
+  // the end of the row (after Retry/Retry all/Save my answers, which
+  // only reveal themselves once that one exercise has been graded).
+  // The new button stays visible before, during and after that
+  // exercise's own Submit/Retry cycle, since what it saves is the
+  // whole section/topic, not just this one exercise.
   function insertBesideSubmit(actionsRow, btn) {
     var submitBtn = actionsRow.querySelector("button");
     if (submitBtn && submitBtn.nextSibling) {
@@ -1416,10 +1432,11 @@
     }
   }
 
-  // Individual lesson pages have exactly one exercise-bearing section.
-  // Unlike the sibling courses, which all use id="practice", this
-  // course's own build_lesson.py translates the section id itself, so
-  // the live id is "exercicios".
+  // Individual lesson pages have exactly one exercise-bearing section,
+  // id="exercicios" (same id every lesson page uses,
+  // verified across the whole site). The button is inserted beside
+  // that section's own last Submit button and saves every exercise
+  // block inside it.
   function addPracticeSaveAllButton() {
     var practice = document.getElementById("exercicios");
     if (!practice) return;
@@ -1428,32 +1445,38 @@
     if (!actionsRow) return;
 
     var heading = practice.querySelector(".section__head h2, h2, h3");
-    var label = heading ? heading.textContent.trim() : "Exerc\u00edcios";
+    var label = heading ? heading.textContent.trim() : "Exercícios";
 
     var btn = buildSaveAllAnswersButton(
-      "Salvar todas as respostas: " + label,
+      "Salvar todas as respostas: " + label + "",
       function () { submitUnsubmittedBlocksIn([practice]); performGenericSave([practice], label); }
     );
     insertBesideSubmit(actionsRow, btn);
   }
 
-  // This course has no Test Yourself page today; kept for parity with
-  // the sibling courses in case one is added later (harmless no-op
-  // when there are no .ty-topic sections).
+  // Test Yourself: every .ty-topic (including the last) gets its own
+  // "Salvar Todas as Respostas" button beside its own last Submit button,
+  // scoped to only that topic's own exercises (never another topic's).
   function addTestYourselfTopicSaveButtons() {
     document.querySelectorAll(".ty-topic[id]").forEach(function (topicSection) {
       var actionsRow = findLastSubmitActionsRow(topicSection);
       if (!actionsRow) return;
       var heading = topicSection.querySelector(".section__head h2, h2, h3");
-      var topicTitle = heading ? heading.textContent.trim() : "este t\u00f3pico";
+      var topicTitle = heading ? heading.textContent.trim() : "este tópico";
       var btn = buildSaveAllAnswersButton(
-        "Salvar todas as respostas do t\u00f3pico: " + topicTitle,
+        "Salvar todas as respostas do tópico: " + topicTitle,
         function () { performTopicSave(topicSection); }
       );
       insertBesideSubmit(actionsRow, btn);
     });
   }
 
+  // `roots` is an array of sections whose .exercise-block children
+  // should all be graded (if not already) and then saved together --
+  // used by addPracticeSaveAllButton above so grading an un-submitted
+  // block, the score UI, and mastery/progress recording all happen
+  // exactly as they would if the student clicked that block's own
+  // Submit by hand.
   function submitUnsubmittedBlocksIn(roots) {
     roots.forEach(function (root) {
       root.querySelectorAll(".exercise-block").forEach(function (block) {
@@ -1490,13 +1513,14 @@
 
   function performGenericSave(roots, label) {
     var exercises = collectAnswersInRoots(roots);
-    var fakeData = { type: null, title: label + " - Respostas Salvas" };
+    var fakeData = { type: null, title: label + " — Respostas Salvas" };
     performSaveAnswers(document.body, fakeData, function () {
       var wrap = el("div", { class: "exercise-block saved-summary-root" });
       exercises.forEach(function (ex) { wrap.appendChild(buildExerciseSummaryNode(ex)); });
       return wrapWithPrintHeader(buildGenericPrintHeaderText(label), wrap);
     });
   }
+  // === COURSE-ENGINE:SAVE-ALL-ANSWERS-BLOCK:END ===
 
   function init() {
     document.querySelectorAll(".exercise-block").forEach(function (container) {
@@ -1525,6 +1549,7 @@
   // (one or more <section class="ty-topic">), so this stays generic
   // instead of being wired per-level. Runs once; leaves the existing
   // "Back to <level>" / "Continue to <next level>" links untouched.
+  // === COURSE-ENGINE:PAGE-WIDE-SAVE-BUTTON:START ===
   function maybeAddTestSaveButton() {
     var topics = document.querySelectorAll(".ty-topic[id]");
     if (!topics.length || document.getElementById("ty-save-all-btn")) return;
@@ -1534,13 +1559,20 @@
       type: "button",
       id: "ty-save-all-btn",
       class: "btn btn--accent print-hidden",
-      text: "Salvar Todas as Respostas do Teste Voc\u00ea Mesmo",
-      "aria-label": "Salvar todas as respostas de todos os t\u00f3picos do Teste Voc\u00ea Mesmo" + (levelCode ? " " + levelCode : ""),
+      text: "Salvar Todas as Respostas do Teste Você Mesmo",
+      "aria-label": "Salvar todas as respostas de todos os tópicos do Teste Você Mesmo" + (levelCode ? " " + levelCode : ""),
     });
     btn.addEventListener("click", function () {
       performTestSave();
     });
     wrap.appendChild(btn);
+    // Every test-yourself.html on the site was expected to close with a
+    // <section id="bottom"> holding the "Back to <level>" nav row, but
+    // some course templates omit it entirely -- the page just ends
+    // after the last topic's </section>, so this button would silently
+    // never appear at all if we only ever looked for it there. Falling
+    // back to appending right after the last topic keeps the button
+    // working regardless of whether that closing section exists.
     var bottomNav = document.querySelector("#bottom .lesson-nav");
     if (bottomNav) {
       bottomNav.parentNode.insertBefore(wrap, bottomNav);
@@ -1549,6 +1581,7 @@
       lastTopic.parentNode.insertBefore(wrap, lastTopic.nextSibling);
     }
   }
+  // === COURSE-ENGINE:PAGE-WIDE-SAVE-BUTTON:END ===
 
   if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", init);
