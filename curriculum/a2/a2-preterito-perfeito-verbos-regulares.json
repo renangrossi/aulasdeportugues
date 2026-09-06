@@ -76,6 +76,24 @@
         { "id": "pp1g", "incorrect": "Ontem, eu falo com meu irmão.", "answer": ["Ontem, eu falei com meu irmão", "Ontem, eu falei com meu irmão."], "explanation": "O marcador \"ontem\" exige o pretérito perfeito: falei." },
         { "id": "pp1h", "incorrect": "Nós comemos lá na semana que vem.", "answer": ["Nós comemos lá na semana passada", "Nós vamos comer lá na semana que vem."], "explanation": "\"Semana que vem\" é futuro, incompatível com o pretérito perfeito \"comemos\" — ou se corrige o marcador, ou o tempo verbal." }
       ]
+    },
+    {
+      "id": "pp1-fill2",
+      "type": "fill-blank",
+      "title": "Mais Prática com o Pretérito Perfeito",
+      "items": [
+        { "id": "pp1i", "prompt": "Vocês ___ (escrever) a carta ontem.", "answers": [["escreveram"]], "options": ["escreveram", "escreveu", "escrevemos"], "explanation": "Terceira pessoa do plural, verbo -er: escreveram." },
+        { "id": "pp1j", "prompt": "Eu ___ (morar) em Curitiba por dois anos.", "answers": [["morei"]], "options": ["morei", "morou", "moramos"], "explanation": "Primeira pessoa, verbo -ar: morei." }
+      ]
+    },
+    {
+      "id": "pp1-mc2",
+      "type": "multiple-choice",
+      "title": "Mais Escolhas de Pretérito Perfeito",
+      "items": [
+        { "id": "pp1k", "prompt": "Qual é a forma de \"comer\" para \"eles\", no pretérito perfeito?", "options": ["comeram", "comeu", "comem"], "answerIndex": 0, "explanation": "Terceira pessoa do plural: comeram." },
+        { "id": "pp1l", "prompt": "Qual marcador de tempo combina com o pretérito perfeito?", "options": ["ontem", "amanhã", "sempre"], "answerIndex": 0, "explanation": "Ontem marca um ponto específico no passado." }
+      ]
     }
   ],
   "summary": [

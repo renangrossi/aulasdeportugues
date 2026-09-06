@@ -74,6 +74,15 @@
       "items": [
         { "id": "condf", "prompt": "Use pelo menos três verbos diferentes no condicional (eu viajaria, eu compraria, eu ajudaria...)." }
       ]
+    },
+    {
+      "id": "cond-tf",
+      "type": "true-false",
+      "title": "Verdadeiro ou Falso?",
+      "items": [
+        { "id": "condg", "statement": "O condicional simples acrescenta a terminação ao infinitivo completo do verbo.", "answer": true, "explanation": "Como em falar + ia = falaria." },
+        { "id": "condh", "statement": "\"Gostaria\" soa mais educado do que \"quero\" em um pedido.", "answer": true, "explanation": "O condicional suaviza pedidos e desejos." }
+      ]
     }
   ],
   "summary": [

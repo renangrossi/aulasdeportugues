@@ -80,6 +80,33 @@
           { "left": "pequeno", "right": "menor" }
         ], "explanation": "Esses quatro adjetivos têm formas comparativas próprias, sem usar \"mais\"." }
       ]
+    },
+    {
+      "id": "comp-fill2",
+      "type": "fill-blank",
+      "title": "Mais Prática com Comparativos",
+      "items": [
+        { "id": "compg", "prompt": "Este livro é ___ (mau, comparativo) do que aquele.", "answers": [["pior"]], "options": ["pior", "mais mau", "mais ruim"], "explanation": "Mau tem forma irregular: pior." },
+        { "id": "comph", "prompt": "Ela é a pessoa ___ (bom, superlativo relativo) da equipe.", "answers": [["melhor"]], "options": ["melhor", "mais bom", "boíssima"], "explanation": "Bom tem forma irregular: melhor." }
+      ]
+    },
+    {
+      "id": "comp-mc2",
+      "type": "multiple-choice",
+      "title": "Mais Escolhas de Comparativos",
+      "items": [
+        { "id": "compi", "prompt": "Qual é o comparativo irregular de \"pequeno\"?", "options": ["menor", "mais pequeno", "pequeníssimo"], "answerIndex": 0, "explanation": "Pequeno → menor." },
+        { "id": "compj", "prompt": "Qual sufixo forma o superlativo absoluto?", "options": ["-íssimo/-íssima", "-ão", "-inho"], "answerIndex": 0, "explanation": "O superlativo absoluto usa -íssimo/-íssima." }
+      ]
+    },
+    {
+      "id": "comp-tf",
+      "type": "true-false",
+      "title": "Verdadeiro ou Falso?",
+      "items": [
+        { "id": "compk", "statement": "\"Mais grande\" é a forma correta do comparativo de \"grande\".", "answer": false, "explanation": "A forma correta é \"maior\"." },
+        { "id": "compl", "statement": "O superlativo relativo usa \"de\" para indicar o grupo de comparação.", "answer": true, "explanation": "Como em \"o mais alto da turma\"." }
+      ]
     }
   ],
   "summary": [

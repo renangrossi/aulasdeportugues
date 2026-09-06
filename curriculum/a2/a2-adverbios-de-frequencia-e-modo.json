@@ -64,6 +64,15 @@
       "items": [
         { "id": "advf", "prompt": "cedo / eu / sempre / acordo", "words": ["Eu", "sempre", "acordo", "cedo"], "explanation": "Sujeito + advérbio de frequência + verbo + advérbio de modo/tempo." }
       ]
+    },
+    {
+      "id": "adv-tf",
+      "type": "true-false",
+      "title": "Verdadeiro ou Falso?",
+      "items": [
+        { "id": "advg", "statement": "Advérbios de modo em -mente se formam a partir da forma feminina do adjetivo.", "answer": true, "explanation": "Cuidadosa + mente, clara + mente." },
+        { "id": "advh", "statement": "Advérbios de frequência geralmente vêm depois do verbo, nunca antes.", "answer": false, "explanation": "Eles geralmente vêm antes do verbo, como em \"sempre acordo\"." }
+      ]
     }
   ],
   "summary": [

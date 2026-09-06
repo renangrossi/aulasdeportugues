@@ -74,6 +74,15 @@
       "items": [
         { "id": "reflf", "prompt": "manhã / levanta / ele / cedo / se / toda", "words": ["Ele", "se", "levanta", "cedo", "toda", "manhã"], "explanation": "Sujeito + pronome reflexivo + verbo + advérbio de modo + expressão de tempo." }
       ]
+    },
+    {
+      "id": "refl-tf",
+      "type": "true-false",
+      "title": "Verdadeiro ou Falso?",
+      "items": [
+        { "id": "reflg", "statement": "\"Nós\" sempre usa o pronome reflexivo \"nos\".", "answer": true, "explanation": "Nunca se usa \"se\" com \"nós\"." },
+        { "id": "reflh", "statement": "\"Se\" é o pronome reflexivo correto para a primeira pessoa do singular.", "answer": false, "explanation": "A primeira pessoa do singular usa \"me\", não \"se\"." }
+      ]
     }
   ],
   "summary": [

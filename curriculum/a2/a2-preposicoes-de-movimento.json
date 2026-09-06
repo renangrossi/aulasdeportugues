@@ -55,6 +55,30 @@
         { "id": "movd", "prompt": "Você vai comprar pão e volta logo. Qual verbo/preposição usar?", "options": ["Vou para a padaria.", "Vou à padaria.", "Vou de padaria."], "answerIndex": 1, "explanation": "Uma ida rápida com volta prevista usa \"a\"." },
         { "id": "move", "prompt": "\"Ele passou ___ o parque a caminho do trabalho.\"", "options": ["pelo", "para o", "ao"], "answerIndex": 0, "explanation": "\"Por\" (contraído em \"pelo\") indica passagem através de um lugar." }
       ]
+    },
+    {
+      "id": "mov-fill2",
+      "type": "fill-blank",
+      "title": "Mais Prática com Preposições de Movimento",
+      "items": [
+        { "id": "movf", "prompt": "Ele viajou ___ São Paulo a trabalho, mas volta amanhã.", "answers": [["a"]], "options": ["a", "para", "de"], "explanation": "Uma ida rápida com volta prevista usa \"a\"." }
+      ]
+    },
+    {
+      "id": "mov-mc2",
+      "type": "multiple-choice",
+      "title": "Mais Escolhas de Preposições",
+      "items": [
+        { "id": "movg", "prompt": "Qual preposição indica passagem através de um lugar?", "options": ["por", "para", "até"], "answerIndex": 0, "explanation": "Por indica passagem através de algo." }
+      ]
+    },
+    {
+      "id": "mov-tf",
+      "type": "true-false",
+      "title": "Verdadeiro ou Falso?",
+      "items": [
+        { "id": "movh", "statement": "\"De\" sempre indica origem, nunca destino.", "answer": true, "explanation": "Essa é sua função constante nesta lição." }
+      ]
     }
   ],
   "summary": [

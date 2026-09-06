@@ -66,6 +66,14 @@
         { "id": "quantf", "incorrect": "Eu não tenho nenhuma dinheiro.", "answer": ["Eu não tenho nenhum dinheiro", "Eu não tenho nenhum dinheiro."], "explanation": "\"Dinheiro\" é masculino, então usa-se \"nenhum\"." },
         { "id": "quantg", "incorrect": "Cada alunos trouxe seu material.", "answer": ["Cada aluno trouxe seu material", "Cada aluno trouxe seu material."], "explanation": "\"Cada\" sempre acompanha um substantivo no singular." }
       ]
+    },
+    {
+      "id": "quant-tf",
+      "type": "true-false",
+      "title": "Verdadeiro ou Falso?",
+      "items": [
+        { "id": "quanth", "statement": "\"Cada\" é invariável e sempre acompanha um substantivo singular.", "answer": true, "explanation": "Essa é exatamente sua função gramatical." }
+      ]
     }
   ],
   "summary": [

@@ -74,6 +74,23 @@
       "items": [
         { "id": "futf", "prompt": "amanhã / trabalhar / vou / eu", "words": ["Eu", "vou", "trabalhar", "amanhã"], "explanation": "Sujeito + ir (presente) + infinitivo + advérbio de tempo." }
       ]
+    },
+    {
+      "id": "fut-mc2",
+      "type": "multiple-choice",
+      "title": "Mais Escolhas de Futuro",
+      "items": [
+        { "id": "futg", "prompt": "Qual é a estrutura do futuro perto?", "options": ["ir (presente) + infinitivo", "infinitivo + terminação", "presente do indicativo"], "answerIndex": 0, "explanation": "O futuro perto usa ir conjugado + infinitivo." },
+        { "id": "futh", "prompt": "Qual forma é mais comum na escrita formal e em previsões?", "options": ["futuro simples", "futuro perto", "presente"], "answerIndex": 0, "explanation": "O futuro simples é mais formal e escrito." }
+      ]
+    },
+    {
+      "id": "fut-tf",
+      "type": "true-false",
+      "title": "Verdadeiro ou Falso?",
+      "items": [
+        { "id": "futi", "statement": "O futuro perto é a forma mais usada na fala cotidiana do Brasil.", "answer": true, "explanation": "É a forma padrão na fala do dia a dia." }
+      ]
     }
   ],
   "summary": [
