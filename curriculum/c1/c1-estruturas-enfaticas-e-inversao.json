@@ -72,6 +72,49 @@
       "items": [
         { "id": "enfasee", "prompt": "ideia / foi / que / teve / ela / essa", "words": ["Foi", "ela", "que", "teve", "essa", "ideia"], "explanation": "Foi + elemento destacado + que + resto da frase." }
       ]
+    },
+    {
+      "id": "enfase-fill2",
+      "type": "fill-blank",
+      "title": "Mais Prática com Frases de Destaque",
+      "items": [
+        { "id": "enfasef", "prompt": "Foi minha irmã ___ me emprestou o carro.", "answers": [["quem"]], "explanation": "Destacando uma pessoa: quem.", "options": ["quem", "que"] },
+        { "id": "enfaseg", "prompt": "Foi na França ___ eles se conheceram.", "answers": [["que"]], "explanation": "Destacando um lugar: que.", "options": ["que", "quem"] },
+        { "id": "enfaseh", "prompt": "Foi o professor ___ resolveu o problema.", "answers": [["quem"]], "explanation": "Destacando uma pessoa: quem.", "options": ["quem", "que"] },
+        { "id": "enfasei", "prompt": "Foi por isso ___ ela chorou.", "answers": [["que"]], "explanation": "Destacando a causa: que.", "options": ["que", "quem"] },
+        { "id": "enfasej", "prompt": "___ foi a alegria de todos ao receber a notícia.", "answers": [["Grande"]], "explanation": "Inversão literária, adjetivo no início.", "options": ["Grande", "A grande", "Grandemente"] },
+        { "id": "enfasek", "prompt": "___ vi tanta dedicação num só projeto.", "answers": [["Poucas vezes"]], "explanation": "Inversão com advérbio de frequência no início.", "options": ["Poucas vezes", "Vezes poucas", "Poucas vez"] },
+        { "id": "enfasel", "prompt": "Foi o diretor ___ tomou essa decisão.", "answers": [["quem"]], "explanation": "Destacando uma pessoa: quem.", "options": ["quem", "que"] },
+        { "id": "enfasem", "prompt": "Foi ontem à noite ___ tudo aconteceu.", "answers": [["que"]], "explanation": "Destacando o tempo: que.", "options": ["que", "quem"] }
+      ]
+    },
+    {
+      "id": "enfase-mc2",
+      "type": "multiple-choice",
+      "title": "Mais Escolhas de Estruturas Enfáticas",
+      "items": [
+        { "id": "enfasen", "prompt": "Qual pronome destaca uma pessoa em uma frase clivada?", "options": ["quem", "que", "qual"], "answerIndex": 0, "explanation": "Quem é a escolha mais precisa para pessoas." },
+        { "id": "enfaseo", "prompt": "Qual pronome destaca tempo, lugar ou objeto?", "options": ["que", "quem", "qual"], "answerIndex": 0, "explanation": "Que é usado para os demais elementos." },
+        { "id": "enfasep", "prompt": "A inversão literária é mais comum em qual contexto?", "options": ["escrita formal/literária", "fala cotidiana", "mensagens de texto"], "answerIndex": 0, "explanation": "É um recurso majoritariamente escrito." },
+        { "id": "enfaseq", "prompt": "\"Grande foi a surpresa\" é um exemplo de...", "options": ["inversão", "frase clivada", "oração reduzida"], "answerIndex": 0, "explanation": "O adjetivo vem antes do verbo, invertendo a ordem natural." },
+        { "id": "enfaser", "prompt": "\"Foi ela quem escreveu o livro\" é um exemplo de...", "options": ["frase clivada", "inversão", "oração reduzida"], "answerIndex": 0, "explanation": "É a estrutura clivada foi... quem." },
+        { "id": "enfases", "prompt": "O que a frase clivada e a inversão têm em comum?", "options": ["ambas reorganizam a frase para dar destaque", "ambas são exclusivas da fala informal", "ambas eliminam o sujeito"], "answerIndex": 0, "explanation": "Ambas dão destaque a uma parte específica da frase." },
+        { "id": "enfaset", "prompt": "Usar a estrutura clivada em toda frase de um texto tende a...", "options": ["tornar o texto repetitivo, perdendo o efeito", "aumentar sempre o impacto", "ser gramaticalmente obrigatório"], "answerIndex": 0, "explanation": "O efeito de ênfase se perde com o uso excessivo." },
+        { "id": "enfaseu", "prompt": "\"Foi por essa razão que decidimos mudar\" destaca qual elemento?", "options": ["a razão/causa", "a pessoa", "o tempo"], "answerIndex": 0, "explanation": "A frase destaca a causa da decisão." }
+      ]
+    },
+    {
+      "id": "enfase-tf",
+      "type": "true-false",
+      "title": "Verdadeiro ou Falso?",
+      "items": [
+        { "id": "enfasev", "statement": "\"Quem\" é a escolha mais precisa para destacar pessoas em uma frase clivada.", "answer": true, "explanation": "É a forma mais precisa e formal." },
+        { "id": "enfasew", "statement": "A inversão soa natural e comum na fala cotidiana informal.", "answer": false, "explanation": "Ela soa artificial/pomposa na fala cotidiana." },
+        { "id": "enfasex", "statement": "A frase clivada é extremamente comum tanto na fala quanto na escrita.", "answer": true, "explanation": "É um recurso muito versátil, usado em ambos os registros." },
+        { "id": "enfasey", "statement": "\"Foi ela que fez o bolo\" nunca é aceito, nem coloquialmente.", "answer": false, "explanation": "É aceito coloquialmente, embora \"quem\" seja mais preciso/formal." },
+        { "id": "enfasez", "statement": "A inversão coloca o verbo antes do sujeito, ou um advérbio/adjetivo no início da frase.", "answer": true, "explanation": "Essa é exatamente sua estrutura." },
+        { "id": "enfaseaa", "statement": "Essas estruturas de destaque nunca aparecem em textos jornalísticos.", "answer": false, "explanation": "Elas são comuns em textos jornalísticos e literários." }
+      ]
     }
   ],
   "summary": [

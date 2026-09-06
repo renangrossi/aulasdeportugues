@@ -65,6 +65,47 @@
         { "id": "subjcxf", "incorrect": "Oxalá o exame não é muito difícil.", "answer": ["Oxalá o exame não seja muito difícil", "Oxalá o exame não seja muito difícil."], "explanation": "\"Oxalá\" sempre exige o subjuntivo." },
         { "id": "subjcxg", "incorrect": "Não acho que essa solução funcionará.", "answer": ["Não acho que essa solução funcione", "Não acho que essa solução funcione."], "explanation": "Opinião negada exige subjuntivo, não futuro do indicativo." }
       ]
+    },
+    {
+      "id": "subjcx-fill2",
+      "type": "fill-blank",
+      "title": "Mais Prática com o Subjuntivo",
+      "items": [
+        { "id": "subjcxh", "prompt": "Conheço um médico que ___ (falar) alemão fluentemente.", "answers": [["fala"]], "explanation": "Antecedente existente e conhecido: indicativo.", "options": ["fala", "fale"] },
+        { "id": "subjcxi", "prompt": "Procuro um apartamento que ___ (ter) dois quartos.", "answers": [["tenha"]], "explanation": "Antecedente hipotético: subjuntivo.", "options": ["tenha", "tem"] },
+        { "id": "subjcxj", "prompt": "Não creio que ele ___ (estar) certo desta vez.", "answers": [["esteja"]], "explanation": "Opinião negada: subjuntivo.", "options": ["esteja", "está"] },
+        { "id": "subjcxk", "prompt": "Tomara que ___ (chover) amanhã, precisamos da água.", "answers": [["chova"]], "explanation": "Tomara que sempre exige subjuntivo.", "options": ["chova", "chove"] },
+        { "id": "subjcxl", "prompt": "Há alguém aqui que ___ (saber) consertar isso?", "answers": [["saiba"]], "explanation": "Existência incerta: subjuntivo.", "options": ["saiba", "sabe"] },
+        { "id": "subjcxm", "prompt": "Acredito que ela ___ (ter) razão.", "answers": [["tem"]], "explanation": "Opinião afirmativa: indicativo.", "options": ["tem", "tenha"] },
+        { "id": "subjcxn", "prompt": "Quem me dera ___ (ter) mais tempo livre.", "answers": [["ter"]], "explanation": "Quem me dera + infinitivo é a construção comum nesse desejo.", "options": ["ter", "tenha"] }
+      ]
+    },
+    {
+      "id": "subjcx-mc2",
+      "type": "multiple-choice",
+      "title": "Mais Escolhas de Subjuntivo",
+      "items": [
+        { "id": "subjcxo", "prompt": "\"Talvez\" antes do verbo pede qual modo?", "options": ["subjuntivo", "indicativo", "infinitivo"], "answerIndex": 0, "explanation": "Talvez antes do verbo exige o subjuntivo." },
+        { "id": "subjcxp", "prompt": "\"Conheço alguém que fala francês\" usa indicativo porque...", "options": ["a pessoa existe e é conhecida", "é uma busca hipotética", "é uma negação"], "answerIndex": 0, "explanation": "O antecedente é real e específico." },
+        { "id": "subjcxq", "prompt": "Qual expressão sempre exige o subjuntivo, sem exceção?", "options": ["oxalá", "acho que", "sei que"], "answerIndex": 0, "explanation": "Oxalá é uma das expressões absolutas do subjuntivo." },
+        { "id": "subjcxr", "prompt": "\"Acho que\" (afirmativo) usa qual modo?", "options": ["indicativo", "subjuntivo", "imperativo"], "answerIndex": 0, "explanation": "Verbos de opinião afirmativos usam indicativo." },
+        { "id": "subjcxs", "prompt": "\"Não acho que\" (negado) usa qual modo?", "options": ["subjuntivo", "indicativo", "infinitivo"], "answerIndex": 0, "explanation": "A negação introduz dúvida, exigindo o subjuntivo." },
+        { "id": "subjcxt", "prompt": "Em uma oração relativa, o que determina indicativo vs. subjuntivo?", "options": ["se o antecedente existe/é conhecido ou é hipotético", "o tempo verbal da oração anterior", "a pessoa gramatical"], "answerIndex": 0, "explanation": "Essa é a distinção central desta lição." },
+        { "id": "subjcxu", "prompt": "\"Procuro uma casa que fique perto da praia\" usa subjuntivo porque...", "options": ["a casa ainda não foi encontrada", "a casa já existe e é conhecida", "é uma pergunta"], "answerIndex": 0, "explanation": "É uma busca, não uma casa específica já identificada." }
+      ]
+    },
+    {
+      "id": "subjcx-tf",
+      "type": "true-false",
+      "title": "Verdadeiro ou Falso?",
+      "items": [
+        { "id": "subjcxv", "statement": "Verbos de opinião como achar e acreditar sempre usam o subjuntivo.", "answer": false, "explanation": "Na afirmativa, usam indicativo; só mudam para subjuntivo quando negados." },
+        { "id": "subjcxw", "statement": "A negação de um verbo de opinião pode mudar o modo verbal para subjuntivo.", "answer": true, "explanation": "É exatamente isso que acontece com \"não acho que\"." },
+        { "id": "subjcxx", "statement": "Oxalá, tomara que e quem dera sempre exigem o subjuntivo.", "answer": true, "explanation": "São expressões de desejo/súplica sem exceção." },
+        { "id": "subjcxy", "statement": "Um antecedente hipotético em uma oração relativa exige o indicativo.", "answer": false, "explanation": "Um antecedente hipotético exige o subjuntivo, não o indicativo." },
+        { "id": "subjcxz", "statement": "\"Talvez\" depois do verbo aceita o indicativo em registro mais informal.", "answer": true, "explanation": "A posição de talvez influencia a rigidez da regra." },
+        { "id": "subjcxaa", "statement": "O subjuntivo em orações relativas revela se o antecedente existe ou é apenas hipotético.", "answer": true, "explanation": "Essa é a função central discutida nesta lição." }
+      ]
     }
   ],
   "summary": [
