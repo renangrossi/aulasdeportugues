@@ -74,6 +74,14 @@
       "items": [
         { "id": "discavf", "prompt": "Escreva 3 a 4 frases relatando uma pergunta e um pedido/ordem que alguém fez a você recentemente." }
       ]
+    },
+    {
+      "id": "discav-tf",
+      "type": "true-false",
+      "title": "Verdadeiro ou Falso?",
+      "items": [
+        { "id": "discavg", "statement": "Perguntas de sim/não relatadas usam \"se\", enquanto perguntas com palavra interrogativa mantêm a própria palavra.", "answer": true, "explanation": "Essa é exatamente a distinção desta lição." }
+      ]
     }
   ],
   "summary": [

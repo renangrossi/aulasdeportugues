@@ -77,6 +77,30 @@
           { "left": "dar-lhe-ei", "right": "muito formal/literário" }
         ], "explanation": "Cada estrutura tem um registro típico de uso." }
       ]
+    },
+    {
+      "id": "colavc-fill2",
+      "type": "fill-blank",
+      "title": "Mais Prática com Colocação Pronominal",
+      "items": [
+        { "id": "colavcf", "prompt": "Vou ___ (explicar + lhe, com hífen) tudo amanhã.", "answers": [["explicar-lhe"]], "options": ["explicar-lhe", "lhe explicar", "explicarlhe"], "explanation": "Infinitivo + pronome, ligado por hífen." }
+      ]
+    },
+    {
+      "id": "colavc-mc2",
+      "type": "multiple-choice",
+      "title": "Mais Escolhas de Colocação Pronominal",
+      "items": [
+        { "id": "colavcg", "prompt": "A mesóclise é típica de qual registro?", "options": ["muito formal/literário", "informal falado", "neutro"], "answerIndex": 0, "explanation": "A mesóclise é reservada a contextos muito formais/literários." }
+      ]
+    },
+    {
+      "id": "colavc-tf",
+      "type": "true-false",
+      "title": "Verdadeiro ou Falso?",
+      "items": [
+        { "id": "colavch", "statement": "Na fala cotidiana do Brasil, a mesóclise é amplamente usada.", "answer": false, "explanation": "Na fala, prefere-se o futuro perto com próclise." }
+      ]
     }
   ],
   "summary": [

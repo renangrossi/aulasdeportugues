@@ -81,6 +81,15 @@
           { "left": "fiel", "right": "a" }
         ], "explanation": "Cada verbo/adjetivo tem uma regência própria, memorizada individualmente." }
       ]
+    },
+    {
+      "id": "reg-tf",
+      "type": "true-false",
+      "title": "Verdadeiro ou Falso?",
+      "items": [
+        { "id": "regg", "statement": "\"Gostar\" sempre exige a preposição \"de\".", "answer": true, "explanation": "Gostar de música, gostar de alguém, etc." },
+        { "id": "regh", "statement": "\"Namorar\" exige a preposição \"com\".", "answer": false, "explanation": "Namorar é transitivo direto, sem preposição." }
+      ]
     }
   ],
   "summary": [

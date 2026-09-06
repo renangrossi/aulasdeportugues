@@ -74,6 +74,15 @@
       "items": [
         { "id": "conectf", "prompt": "Tema sugerido: \"Trabalhar de casa é melhor do que trabalhar no escritório?\" Use conectores de oposição, conclusão e adição." }
       ]
+    },
+    {
+      "id": "conect-tf",
+      "type": "true-false",
+      "title": "Verdadeiro ou Falso?",
+      "items": [
+        { "id": "conectg", "statement": "\"Contudo\" e \"todavia\" são alternativas formais a \"mas\".", "answer": true, "explanation": "Ambos introduzem oposição em registro mais formal." },
+        { "id": "conecth", "statement": "\"Portanto\" pode ser usado sem qualquer relação lógica de causa e efeito.", "answer": false, "explanation": "Conectores de conclusão exigem uma relação lógica real entre as ideias." }
+      ]
     }
   ],
   "summary": [
