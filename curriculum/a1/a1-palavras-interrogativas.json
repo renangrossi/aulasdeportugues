@@ -72,6 +72,48 @@
           { "left": "Como", "right": "um modo ou maneira" }
         ], "explanation": "Cada palavra interrogativa direciona para um tipo específico de resposta." }
       ]
+    },
+    {
+      "id": "interr-fill2",
+      "type": "fill-blank",
+      "title": "Mais Prática com Palavras Interrogativas",
+      "items": [
+        { "id": "in7", "prompt": "___ é isso na sua mão?", "answers": [["O que"]], "options": ["O que", "Quem", "Qual"], "explanation": "Pergunta sobre uma coisa usa \"o que\"." },
+        { "id": "in8", "prompt": "___ você chega em casa?", "answers": [["Quando"]], "options": ["Quando", "Onde", "Como"], "explanation": "Pergunta sobre tempo usa \"quando\"." },
+        { "id": "in9", "prompt": "___ você está se sentindo hoje?", "answers": [["Como"]], "options": ["Como", "Onde", "Quem"], "explanation": "Pergunta sobre modo usa \"como\"." },
+        { "id": "in10", "prompt": "___ você não veio ontem?", "answers": [["Por que"]], "options": ["Por que", "Onde", "Qual"], "explanation": "Pergunta sobre causa usa \"por que\"." },
+        { "id": "in11", "prompt": "___ dessas duas camisas você prefere?", "answers": [["Qual"]], "options": ["Qual", "Que", "Quem"], "explanation": "Escolha entre opções usa \"qual\"." },
+        { "id": "in12", "prompt": "___ fica a farmácia mais próxima?", "answers": [["Onde"]], "options": ["Onde", "Quando", "Quem"], "explanation": "Pergunta sobre lugar usa \"onde\"." },
+        { "id": "in13", "prompt": "___ é a capital do Brasil?", "answers": [["Qual"]], "options": ["Qual", "Que", "Quem"], "explanation": "Pergunta específica com \"ser\" usa \"qual\"." }
+      ]
+    },
+    {
+      "id": "interr-mc2",
+      "type": "multiple-choice",
+      "title": "Mais Escolhas de Palavras Interrogativas",
+      "items": [
+        { "id": "in14", "prompt": "Qual palavra pergunta sobre pessoas?", "options": ["quem", "onde", "quando"], "answerIndex": 0, "explanation": "\"Quem\" pergunta sobre pessoas." },
+        { "id": "in15", "prompt": "Qual palavra pergunta sobre modo/maneira?", "options": ["como", "qual", "quem"], "answerIndex": 0, "explanation": "\"Como\" pergunta sobre modo." },
+        { "id": "in16", "prompt": "\"Qual é o seu nome?\" usa \"qual\" porque...", "options": ["pergunta com o verbo ser costuma usar qual", "nome é sempre plural", "é uma exceção sem explicação"], "answerIndex": 0, "explanation": "Antes do verbo ser, \"qual\" é o padrão." },
+        { "id": "in17", "prompt": "Qual palavra pergunta sobre causa/razão?", "options": ["por que", "como", "onde"], "answerIndex": 0, "explanation": "\"Por que\" pergunta sobre causa." },
+        { "id": "in18", "prompt": "\"Que dia é hoje?\" usa \"que\" para...", "options": ["uma pergunta mais geral", "uma escolha específica", "uma pessoa"], "answerIndex": 0, "explanation": "\"Que\" pergunta de forma mais geral que \"qual\"." },
+        { "id": "in19", "prompt": "Qual é o erro em \"O que é o seu nome?\"", "options": ["deveria ser \"qual\", não \"o que\"", "está perfeito", "deveria ser \"quem\""], "answerIndex": 0, "explanation": "\"Qual é o seu nome?\" é a forma correta." },
+        { "id": "in20", "prompt": "Qual palavra pergunta sobre tempo?", "options": ["quando", "onde", "como"], "answerIndex": 0, "explanation": "\"Quando\" pergunta sobre tempo." }
+      ]
+    },
+    {
+      "id": "interr-tf",
+      "type": "true-false",
+      "title": "Verdadeiro ou Falso?",
+      "items": [
+        { "id": "in21", "statement": "\"Quem\" pergunta sobre pessoas.", "answer": true, "explanation": "Essa é sua função." },
+        { "id": "in22", "statement": "\"Onde\" pergunta sobre tempo.", "answer": false, "explanation": "Onde pergunta sobre lugar; quando pergunta sobre tempo." },
+        { "id": "in23", "statement": "\"Qual\" é usado para perguntar sobre uma escolha específica entre opções.", "answer": true, "explanation": "Essa é a diferença central entre qual e que." },
+        { "id": "in24", "statement": "\"Que\" é usado exclusivamente para perguntar sobre pessoas.", "answer": false, "explanation": "\"Quem\" pergunta sobre pessoas; \"que\" é mais geral." },
+        { "id": "in25", "statement": "As sete palavras interrogativas cobrem a maioria das perguntas do dia a dia.", "answer": true, "explanation": "Essa é a ideia central da lição." },
+        { "id": "in26", "statement": "\"Como você está?\" pergunta sobre modo/maneira.", "answer": true, "explanation": "Como pergunta sobre modo." },
+        { "id": "in27", "statement": "\"Qual é o seu número de telefone?\" usa \"qual\" para uma escolha específica.", "answer": true, "explanation": "É o padrão antes do verbo ser." }
+      ]
     }
   ],
   "summary": [

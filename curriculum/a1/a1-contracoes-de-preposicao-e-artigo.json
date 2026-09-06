@@ -75,6 +75,46 @@
         { "id": "ct7", "prompt": "As malas estão ___ carro.", "options": ["no", "na", "do"], "answerIndex": 0, "explanation": "\"Em\" + \"o\" = \"no\" (localização dentro do carro)." },
         { "id": "ct8", "prompt": "Este presente é ___ minha mãe.", "options": ["do", "da", "no"], "answerIndex": 1, "explanation": "\"De\" + \"a\" = \"da\" (posse: pertence à mãe)." }
       ]
+    },
+    {
+      "id": "contr-fill2",
+      "type": "fill-blank",
+      "title": "Mais Contrações para Praticar",
+      "items": [
+        { "id": "ct9", "prompt": "Os livros estão ___ mesa.", "answers": [["na"]], "options": ["na", "no", "da"], "explanation": "\"Em\" + \"a\" = \"na\"." },
+        { "id": "ct10", "prompt": "Este presente é ___ minhas amigas.", "answers": [["das"]], "options": ["das", "dos", "nas"], "explanation": "\"De\" + \"as\" = \"das\"." },
+        { "id": "ct11", "prompt": "Nós chegamos ___ oito horas.", "answers": [["às"]], "options": ["às", "aos", "nas"], "explanation": "\"A\" + \"as\" = \"às\"." },
+        { "id": "ct12", "prompt": "Ele mora ___ Estados Unidos.", "answers": [["nos"]], "options": ["nos", "dos", "aos"], "explanation": "\"Em\" + \"os\" = \"nos\"." },
+        { "id": "ct13", "prompt": "Eu vou ___ médico amanhã.", "answers": [["ao"]], "options": ["ao", "no", "do"], "explanation": "\"A\" + \"o\" = \"ao\"." },
+        { "id": "ct14", "prompt": "As chaves ___ carro estão aqui.", "answers": [["do"]], "options": ["do", "no", "ao"], "explanation": "\"De\" + \"o\" = \"do\"." },
+        { "id": "ct15", "prompt": "Ela vai ___ festa hoje à noite.", "answers": [["à"]], "options": ["à", "na", "da"], "explanation": "\"A\" + \"a\" = \"à\" (com crase)." }
+      ]
+    },
+    {
+      "id": "contr-mc2",
+      "type": "multiple-choice",
+      "title": "Mais Escolhas de Contrações",
+      "items": [
+        { "id": "ct16", "prompt": "Qual é a contração de \"de\" + \"os\"?", "options": ["dos", "das", "nos"], "answerIndex": 0, "explanation": "De + os = dos." },
+        { "id": "ct17", "prompt": "Qual é a contração de \"em\" + \"as\"?", "options": ["nas", "das", "às"], "answerIndex": 0, "explanation": "Em + as = nas." },
+        { "id": "ct18", "prompt": "Qual é a contração de \"a\" + \"os\"?", "options": ["aos", "dos", "nos"], "answerIndex": 0, "explanation": "A + os = aos." },
+        { "id": "ct19", "prompt": "As contrações são obrigatórias com...", "options": ["artigo definido", "artigo indefinido", "nenhum artigo"], "answerIndex": 0, "explanation": "Com artigo definido, a contração é sempre obrigatória." },
+        { "id": "ct20", "prompt": "Com artigos indefinidos, contrações como \"num/numa\" são...", "options": ["opcionais", "obrigatórias", "impossíveis"], "answerIndex": 0, "explanation": "Com artigos indefinidos a contração é opcional." },
+        { "id": "ct21", "prompt": "\"Eu moro em a cidade\" está incorreto porque...", "options": ["em + a deve virar na", "em nunca combina com artigos", "cidade é sempre masculino"], "answerIndex": 0, "explanation": "A contração é obrigatória." }
+      ]
+    },
+    {
+      "id": "contr-tf",
+      "type": "true-false",
+      "title": "Verdadeiro ou Falso?",
+      "items": [
+        { "id": "ct22", "statement": "\"De\" + \"o\" sempre vira \"do\".", "answer": true, "explanation": "Essa contração é sempre obrigatória." },
+        { "id": "ct23", "statement": "\"A\" + \"a\" vira \"à\", com acento grave (crase).", "answer": true, "explanation": "Isso é a chamada crase." },
+        { "id": "ct24", "statement": "É correto dizer \"nós vamos a a praia\".", "answer": false, "explanation": "O correto é \"nós vamos à praia\"." },
+        { "id": "ct25", "statement": "Contrações de preposição e artigo definido são opcionais em português.", "answer": false, "explanation": "Elas são obrigatórias com artigo definido." },
+        { "id": "ct26", "statement": "\"Em\" + \"o\" vira \"no\".", "answer": true, "explanation": "Essa contração é sempre obrigatória." },
+        { "id": "ct27", "statement": "\"Ao\", \"à\", \"aos\" e \"às\" vêm da preposição \"a\" combinada com artigos.", "answer": true, "explanation": "Todas essas formas vêm da preposição \"a\"." }
+      ]
     }
   ],
   "summary": [

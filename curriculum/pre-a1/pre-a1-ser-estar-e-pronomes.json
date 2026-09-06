@@ -80,6 +80,15 @@
         { "id": "sp6", "prompt": "Eu ___ de São Paulo.", "answers": [["sou"]], "options": ["sou", "estou"], "explanation": "Origem/nacionalidade usa \"ser\"." },
         { "id": "sp7", "prompt": "Nós ___ estudantes de português.", "answers": [["somos"]], "options": ["somos", "estamos"], "explanation": "Identidade/ocupação usa \"ser\"." }
       ]
+    },
+    {
+      "id": "sep-tf",
+      "type": "true-false",
+      "title": "Verdadeiro ou Falso?",
+      "items": [
+        { "id": "sp8", "statement": "\"Estar\" é usado para localização e estados temporários.", "answer": true, "explanation": "\"Estou em casa\" (localização), \"estou cansado\" (estado temporário)." },
+        { "id": "sp9", "statement": "\"Ser\" é usado para descrever onde alguém está agora.", "answer": false, "explanation": "Localização usa \"estar\", não \"ser\"." }
+      ]
     }
   ],
   "summary": [

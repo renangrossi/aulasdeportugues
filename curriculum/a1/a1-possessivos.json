@@ -78,6 +78,45 @@
           { "left": "eles", "right": "seu (ou deles)" }
         ], "explanation": "Cada pronome pessoal tem seu possessivo correspondente." }
       ]
+    },
+    {
+      "id": "poss-fill2",
+      "type": "fill-blank",
+      "title": "Mais Prática com Possessivos",
+      "items": [
+        { "id": "ps7", "prompt": "___ (seus) amigos chegaram cedo.", "answers": [["seus"]], "options": ["seus", "sua", "suas"], "explanation": "Amigos é masculino plural, então usa-se \"seus\"." },
+        { "id": "ps8", "prompt": "Este é o carro ___ (dele).", "answers": [["dele"]], "options": ["dele", "dela", "seu"], "explanation": "\"Dele\" evita a ambiguidade de \"seu\"." },
+        { "id": "ps9", "prompt": "___ (minhas) chaves estão na mesa.", "answers": [["Minhas"]], "options": ["Minhas", "Meus", "Minha"], "explanation": "Chaves é feminino plural, então usa-se \"minhas\"." },
+        { "id": "ps10", "prompt": "___ (nossos) filhos estudam juntos.", "answers": [["Nossos"]], "options": ["Nossos", "Nossas", "Nosso"], "explanation": "Filhos é masculino plural, então usa-se \"nossos\"." },
+        { "id": "ps11", "prompt": "Ela perdeu a bolsa ___ (dela).", "answers": [["dela"]], "options": ["dela", "dele", "sua"], "explanation": "\"Dela\" evita a ambiguidade de \"sua\"." },
+        { "id": "ps12", "prompt": "___ (sua) casa é muito bonita.", "answers": [["Sua"]], "options": ["Sua", "Seu", "Suas"], "explanation": "Casa é feminino singular, então usa-se \"sua\"." }
+      ]
+    },
+    {
+      "id": "poss-mc2",
+      "type": "multiple-choice",
+      "title": "Mais Escolhas de Possessivos",
+      "items": [
+        { "id": "ps13", "prompt": "Qual possessivo concorda com \"livros\" (masculino plural)?", "options": ["meus", "minhas", "minha"], "answerIndex": 0, "explanation": "Meus concorda em gênero e número com livros." },
+        { "id": "ps14", "prompt": "Por que \"seu/sua\" pode ser ambíguo?", "options": ["pode significar \"seu\", \"dele\" ou \"dela\"", "nunca muda de forma", "só existe no plural"], "answerIndex": 0, "explanation": "Seu/sua cobre várias possibilidades de dono." },
+        { "id": "ps15", "prompt": "Qual possessivo concorda com \"casas\" (feminino plural)?", "options": ["nossas", "nossos", "nosso"], "answerIndex": 0, "explanation": "Nossas concorda em gênero e número com casas." },
+        { "id": "ps16", "prompt": "O possessivo em português concorda com...", "options": ["a coisa possuída", "o dono/possuidor", "nenhum dos dois"], "answerIndex": 0, "explanation": "Diferente do inglês, o possessivo concorda com o que é possuído." },
+        { "id": "ps17", "prompt": "Qual é a forma mais clara para \"his book\", evitando ambiguidade?", "options": ["o livro dele", "seu livro", "nosso livro"], "answerIndex": 0, "explanation": "\"O livro dele\" elimina a ambiguidade de \"seu\"." },
+        { "id": "ps18", "prompt": "Qual possessivo é usado por \"nós\"?", "options": ["nosso/nossa", "seu/sua", "meu/minha"], "answerIndex": 0, "explanation": "Nosso/nossa corresponde a \"nós\"." }
+      ]
+    },
+    {
+      "id": "poss-tf",
+      "type": "true-false",
+      "title": "Verdadeiro ou Falso?",
+      "items": [
+        { "id": "ps19", "statement": "O possessivo em português concorda com a coisa possuída, não com o dono.", "answer": true, "explanation": "Essa é a regra central desta lição." },
+        { "id": "ps20", "statement": "\"Seu/sua\" nunca é ambíguo.", "answer": false, "explanation": "Pode significar \"seu\", \"dele\" ou \"dela\"." },
+        { "id": "ps21", "statement": "\"Meu\" e \"minha\" mudam conforme o substantivo, não conforme quem fala.", "answer": true, "explanation": "O gênero de quem fala não importa aqui." },
+        { "id": "ps22", "statement": "\"Dele/dela\" pode ser usado para evitar a ambiguidade de \"seu/sua\".", "answer": true, "explanation": "É a estratégia recomendada nesta lição." },
+        { "id": "ps23", "statement": "\"Nosso\" é o possessivo usado por \"eu\".", "answer": false, "explanation": "Nosso é usado por \"nós\"; \"eu\" usa meu/minha." },
+        { "id": "ps24", "statement": "Em inglês, \"his car\" e \"her car\" mudam conforme o gênero do dono.", "answer": true, "explanation": "Isso contrasta com o sistema português." }
+      ]
     }
   ],
   "summary": [

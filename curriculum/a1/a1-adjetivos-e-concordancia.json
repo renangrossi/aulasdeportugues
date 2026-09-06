@@ -74,6 +74,47 @@
         { "id": "aj6", "prompt": "carro / um / tenho / vermelho / eu", "words": ["Eu", "tenho", "um", "carro", "vermelho"], "explanation": "Sujeito + verbo + artigo + substantivo + adjetivo." },
         { "id": "aj7", "prompt": "grande / muito / é / a / casa", "words": ["A", "casa", "é", "muito", "grande"], "explanation": "Artigo + substantivo + verbo + advérbio + adjetivo." }
       ]
+    },
+    {
+      "id": "adj-fill2",
+      "type": "fill-blank",
+      "title": "Mais Prática com Adjetivos",
+      "items": [
+        { "id": "aj8", "prompt": "O menino é muito ___ (feliz).", "answers": [["feliz"]], "options": ["feliz", "felizo", "felize"], "explanation": "Feliz não muda entre masculino e feminino." },
+        { "id": "aj9", "prompt": "As casas são ___ (grande).", "answers": [["grandes"]], "options": ["grandes", "grande", "grandas"], "explanation": "Plural regular: grandes." },
+        { "id": "aj10", "prompt": "Ele tem olhos ___ (azul).", "answers": [["azuis"]], "options": ["azuis", "azuls", "azules"], "explanation": "Azul faz plural em azuis." },
+        { "id": "aj11", "prompt": "A prova foi muito ___ (difícil).", "answers": [["difícil"]], "options": ["difícil", "difícila", "difícel"], "explanation": "Difícil não muda entre masculino e feminino." },
+        { "id": "aj12", "prompt": "Os alunos são ___ (inteligente).", "answers": [["inteligentes"]], "options": ["inteligentes", "inteligente", "inteligentas"], "explanation": "Plural regular: inteligentes." },
+        { "id": "aj13", "prompt": "Minha irmã é muito ___ (simpático).", "answers": [["simpática"]], "options": ["simpática", "simpático", "simpáticas"], "explanation": "Feminino singular: simpática." },
+        { "id": "aj14", "prompt": "Os carros são ___ (rápido).", "answers": [["rápidos"]], "options": ["rápidos", "rápido", "rápidas"], "explanation": "Masculino plural: rápidos." }
+      ]
+    },
+    {
+      "id": "adj-mc2",
+      "type": "multiple-choice",
+      "title": "Mais Escolhas de Concordância",
+      "items": [
+        { "id": "aj15", "prompt": "Qual é o feminino de \"bonito\"?", "options": ["bonita", "bonito", "bonitas"], "answerIndex": 0, "explanation": "Bonito muda para bonita no feminino." },
+        { "id": "aj16", "prompt": "Qual adjetivo NÃO muda entre masculino e feminino?", "options": ["forte", "alto", "bonito"], "answerIndex": 0, "explanation": "Forte termina em consoante e não muda de gênero." },
+        { "id": "aj17", "prompt": "Onde o adjetivo geralmente vem em português?", "options": ["depois do substantivo", "antes do substantivo", "no início da frase"], "answerIndex": 0, "explanation": "A posição padrão é depois do substantivo." },
+        { "id": "aj18", "prompt": "Qual é o plural de \"feliz\"?", "options": ["felizes", "felizs", "felizos"], "answerIndex": 0, "explanation": "Feliz faz plural em felizes." },
+        { "id": "aj19", "prompt": "\"A menina é alto\" está incorreto porque...", "options": ["o adjetivo não concorda em gênero", "alto é sempre invariável", "menina não pode ter adjetivo"], "answerIndex": 0, "explanation": "O adjetivo precisa concordar com o substantivo feminino." },
+        { "id": "aj20", "prompt": "Qual frase respeita a ordem padrão do português?", "options": ["um carro vermelho", "um vermelho carro", "vermelho um carro"], "answerIndex": 0, "explanation": "O adjetivo vem depois do substantivo." },
+        { "id": "aj21", "prompt": "Qual é o plural de \"inteligente\"?", "options": ["inteligentes", "inteligenta", "inteligents"], "answerIndex": 0, "explanation": "Plural regular: inteligentes." }
+      ]
+    },
+    {
+      "id": "adj-tf",
+      "type": "true-false",
+      "title": "Verdadeiro ou Falso?",
+      "items": [
+        { "id": "aj22", "statement": "Adjetivos em português sempre concordam em gênero e número com o substantivo.", "answer": true, "explanation": "Essa é a regra geral de concordância." },
+        { "id": "aj23", "statement": "Em inglês, adjetivos mudam de forma para concordar com o substantivo.", "answer": false, "explanation": "Em inglês, adjetivos nunca mudam de forma." },
+        { "id": "aj24", "statement": "\"Fácil\" é um adjetivo que não muda entre masculino e feminino.", "answer": true, "explanation": "Fácil termina em consoante e não muda de gênero." },
+        { "id": "aj25", "statement": "O adjetivo em português vem sempre antes do substantivo, como em inglês.", "answer": false, "explanation": "A posição padrão é depois do substantivo." },
+        { "id": "aj26", "statement": "\"Os livros interessante\" está gramaticalmente correto.", "answer": false, "explanation": "Falta a concordância de número: deveria ser interessantes." },
+        { "id": "aj27", "statement": "Adjetivos terminados em -o geralmente mudam para -a no feminino.", "answer": true, "explanation": "Como em bonito/bonita, alto/alta." }
+      ]
     }
   ],
   "summary": [

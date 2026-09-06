@@ -90,6 +90,34 @@
       "items": [
         { "id": "rv11", "prompt": "Descreva um dia normal da sua semana: onde você mora, o que você faz, do que você gosta e por que você está aprendendo português." }
       ]
+    },
+    {
+      "id": "rev-mc2",
+      "type": "multiple-choice",
+      "title": "Mais Revisão Combinada",
+      "items": [
+        { "id": "rv12", "prompt": "Ela ___ estudando agora, mas normalmente estuda à noite.", "options": ["está", "é", "tem"], "answerIndex": 0, "explanation": "Presente contínuo usa \"estar\"." },
+        { "id": "rv13", "prompt": "\"Precisar\" + infinitivo leva qual preposição?", "options": ["nenhuma", "de", "a"], "answerIndex": 0, "explanation": "Precisar + infinitivo não leva preposição." },
+        { "id": "rv14", "prompt": "Qual é o plural correto de \"a casa grande\"?", "options": ["as casas grandes", "as casa grandes", "as casas grande"], "answerIndex": 0, "explanation": "Artigo, substantivo e adjetivo concordam todos no plural." }
+      ]
+    },
+    {
+      "id": "rev-fill2",
+      "type": "fill-blank",
+      "title": "Mais Revisão: Complete as Frases",
+      "items": [
+        { "id": "rv15", "prompt": "Nós ___ (ter) uma reunião amanhã.", "answers": [["temos"]], "options": ["temos", "tem", "têm"], "explanation": "Primeira pessoa do plural de \"ter\": temos." },
+        { "id": "rv16", "prompt": "___ é a capital do seu país?", "answers": [["Qual"]], "options": ["Qual", "Que", "Quem"], "explanation": "Pergunta específica com \"ser\" usa \"qual\"." }
+      ]
+    },
+    {
+      "id": "rev-tf",
+      "type": "true-false",
+      "title": "Verdadeiro ou Falso?",
+      "items": [
+        { "id": "rv17", "statement": "Ser é usado para características permanentes; estar para estados temporários.", "answer": true, "explanation": "Essa é a distinção central entre os dois verbos." },
+        { "id": "rv18", "statement": "A concordância de gênero e número é a base da gramática do português.", "answer": true, "explanation": "Ela aparece em artigos, adjetivos, possessivos e demonstrativos." }
+      ]
     }
   ],
   "summary": [
