@@ -80,6 +80,15 @@
           { "left": "mais-que-perfeito (tivesse falado)", "right": "hipótese sobre o passado" }
         ], "explanation": "Cada tempo do subjuntivo tem um papel próprio dentro do sistema." }
       ]
+    },
+    {
+      "id": "subjc-tf",
+      "type": "true-false",
+      "title": "Verdadeiro ou Falso?",
+      "items": [
+        { "id": "subjcg", "statement": "O pretérito perfeito do subjuntivo expressa dúvida sobre algo já concluído.", "answer": true, "explanation": "Como em \"duvido que ele tenha terminado\"." },
+        { "id": "subjch", "statement": "O mais-que-perfeito do subjuntivo é usado para hipóteses sobre o presente.", "answer": false, "explanation": "Ele é usado para hipóteses sobre o passado, não o presente." }
+      ]
     }
   ],
   "summary": [

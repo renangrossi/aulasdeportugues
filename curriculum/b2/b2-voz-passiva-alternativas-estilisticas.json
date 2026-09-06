@@ -73,6 +73,23 @@
       "items": [
         { "id": "passalte", "prompt": "Reescreva as três frases de forma mais natural, explicando brevemente sua escolha." }
       ]
+    },
+    {
+      "id": "passalt-mc2",
+      "type": "multiple-choice",
+      "title": "Mais Escolhas de Voz Passiva",
+      "items": [
+        { "id": "passaltf", "prompt": "Qual estrutura foca no estado resultante, não na ação?", "options": ["estar + particípio", "ser + particípio", "se apassivador"], "answerIndex": 0, "explanation": "Estar + particípio descreve o estado atual." }
+      ]
+    },
+    {
+      "id": "passalt-tf",
+      "type": "true-false",
+      "title": "Verdadeiro ou Falso?",
+      "items": [
+        { "id": "passaltg", "statement": "A passiva formal com \"ser\" é mais comum em textos jornalísticos e jurídicos.", "answer": true, "explanation": "Ela soa burocrática/distante em contextos informais." },
+        { "id": "passalth", "statement": "O se apassivador é uma alternativa mais formal do que a passiva com \"ser\".", "answer": false, "explanation": "É o contrário: o se apassivador soa mais natural/menos formal." }
+      ]
     }
   ],
   "summary": [

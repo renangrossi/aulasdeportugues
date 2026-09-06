@@ -75,6 +75,14 @@
         { "id": "crasef", "incorrect": "Prefiro chá à café pela manhã.", "answer": ["Prefiro chá a café pela manhã", "Prefiro chá a café pela manhã."], "explanation": "\"Café\" é masculino — não aceita artigo \"a\", então não há crase." },
         { "id": "craseg", "incorrect": "Ela sempre chega a tempo à reuniões.", "answer": ["Ela sempre chega a tempo às reuniões", "Ela sempre chega a tempo às reuniões."], "explanation": "\"Reuniões\" é feminino plural e aceita artigo — a crase correta é \"às\", não \"a\"." }
       ]
+    },
+    {
+      "id": "crase-tf",
+      "type": "true-false",
+      "title": "Verdadeiro ou Falso?",
+      "items": [
+        { "id": "craseh", "statement": "Crase é a fusão da preposição \"a\" com o artigo feminino \"a/as\".", "answer": true, "explanation": "Essa é exatamente sua definição." }
+      ]
     }
   ],
   "summary": [

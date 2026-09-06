@@ -73,6 +73,23 @@
       "items": [
         { "id": "reg2e", "prompt": "Versão formal: um e-mail curto e educado. Versão informal: uma mensagem rápida de texto." }
       ]
+    },
+    {
+      "id": "reg2-mc2",
+      "type": "multiple-choice",
+      "title": "Mais Escolhas de Registro",
+      "items": [
+        { "id": "reg2f", "prompt": "Qual pronome de tratamento indica maior formalidade?", "options": ["o senhor/a senhora", "você", "tu"], "answerIndex": 0, "explanation": "O senhor/a senhora marca distância e formalidade." }
+      ]
+    },
+    {
+      "id": "reg2-tf",
+      "type": "true-false",
+      "title": "Verdadeiro ou Falso?",
+      "items": [
+        { "id": "reg2g", "statement": "Registro envolve apenas o vocabulário usado, nada mais.", "answer": false, "explanation": "Também envolve estrutura, tratamento e saudações/despedidas." },
+        { "id": "reg2h", "statement": "\"Prezados\" é uma saudação padrão em e-mails formais.", "answer": true, "explanation": "É a saudação formal mais comum em e-mails profissionais." }
+      ]
     }
   ],
   "summary": [
