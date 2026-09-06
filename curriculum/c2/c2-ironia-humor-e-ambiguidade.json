@@ -63,6 +63,44 @@
       "items": [
         { "id": "irone", "prompt": "Escreva duas versões claras: uma em que o relatório é do cliente, outra em que é do gerente." }
       ]
+    },
+    {
+      "id": "iron-fill",
+      "type": "fill-blank",
+      "title": "Mais Prática com Ironia e Ambiguidade",
+      "items": [
+        { "id": "ironf", "prompt": "Depois de um dia péssimo: \"Que sorte a minha!\" — essa frase é um exemplo de ___.", "answers": [["ironia"]], "explanation": "Comunica o oposto do sentido literal.", "options": ["ironia", "eufemismo", "hipérbole"] },
+        { "id": "irong", "prompt": "\"Vi o cachorro correndo\" é considerada uma frase ___ porque permite duas leituras.", "answers": [["ambígua"]], "explanation": "Não fica claro quem estava correndo.", "options": ["ambígua", "irônica", "clara"] },
+        { "id": "ironh", "prompt": "Um jogo de palavras baseado em som ou duplo sentido é chamado de ___.", "answers": [["trocadilho"]], "explanation": "Essa é a definição de trocadilho.", "options": ["trocadilho", "eufemismo", "antítese"] },
+        { "id": "ironi", "prompt": "\"Ele é tão pontual que chega sempre um dia depois\" é um exemplo de ___ sobre atraso.", "answers": [["ironia"]], "explanation": "Comunica o oposto do sentido literal.", "options": ["ironia", "trocadilho", "eufemismo"] },
+        { "id": "ironj", "prompt": "A principal pista para identificar ironia na fala é a ___.", "answers": [["entonação"]], "explanation": "A entonação sinaliza a intenção irônica.", "options": ["entonação", "ortografia", "pontuação"] },
+        { "id": "ironk", "prompt": "Trocadilhos raramente sobrevivem à ___ literal para outro idioma.", "answers": [["tradução"]], "explanation": "Dependem do som/sentido específico do português.", "options": ["tradução", "leitura", "escrita"] }
+      ]
+    },
+    {
+      "id": "iron-mc2",
+      "type": "multiple-choice",
+      "title": "Mais Escolhas de Ironia e Ambiguidade",
+      "items": [
+        { "id": "ironl", "prompt": "A ironia comunica...", "options": ["o oposto do sentido literal", "exatamente o sentido literal", "uma pergunta"], "answerIndex": 0, "explanation": "Essa é a definição de ironia." },
+        { "id": "ironm", "prompt": "O que geralmente revela uma ironia, já que não há marcação gramatical específica?", "options": ["o contexto", "a ortografia", "a conjugação verbal"], "answerIndex": 0, "explanation": "O contexto é a principal pista." },
+        { "id": "ironn", "prompt": "\"Vi o cachorro correndo\" é ambígua porque...", "options": ["não fica claro quem estava correndo", "o cachorro não existe", "falta um verbo"], "answerIndex": 0, "explanation": "A frase permite duas leituras gramaticalmente válidas." },
+        { "id": "irono", "prompt": "Em contratos e instruções, a ambiguidade estrutural deve ser...", "options": ["eliminada, reescrevendo a frase", "mantida para soar mais formal", "ignorada"], "answerIndex": 0, "explanation": "A clareza é essencial nesses contextos." },
+        { "id": "ironp", "prompt": "Trocadilhos costumam explorar...", "options": ["duplo sentido ou semelhança sonora entre palavras", "apenas rimas", "apenas sinônimos"], "answerIndex": 0, "explanation": "Essa é a base de um trocadilho." },
+        { "id": "ironq", "prompt": "Interpretar uma frase irônica literalmente é um erro porque...", "options": ["ignora a intenção real do falante, revelada pelo contexto", "a frase está gramaticalmente errada", "a ironia sempre usa aspas"], "answerIndex": 0, "explanation": "A ironia depende do contexto para ser corretamente interpretada." }
+      ]
+    },
+    {
+      "id": "iron-tf2",
+      "type": "true-false",
+      "title": "Mais Verdadeiro ou Falso",
+      "items": [
+        { "id": "ironr", "statement": "A ironia sempre é marcada por um sinal gramatical específico no texto escrito.", "answer": false, "explanation": "Ela depende do contexto, não de uma marcação gramatical." },
+        { "id": "irons", "statement": "Ambiguidades estruturais devem ser eliminadas em contextos que exigem precisão, como contratos.", "answer": true, "explanation": "A clareza é essencial nesses contextos." },
+        { "id": "ironu2", "statement": "Trocadilhos geralmente se baseiam em som ou duplo sentido das palavras.", "answer": true, "explanation": "Essa é a base dos trocadilhos." },
+        { "id": "ironv", "statement": "A entonação é uma pista importante para identificar ironia na fala.", "answer": true, "explanation": "A entonação sinaliza a intenção irônica na fala." },
+        { "id": "ironw", "statement": "Toda frase ambígua deve ser mantida assim, mesmo em textos técnicos.", "answer": false, "explanation": "Em textos técnicos, a ambiguidade deve ser eliminada." }
+      ]
     }
   ],
   "summary": [

@@ -74,6 +74,46 @@
       "items": [
         { "id": "trade", "prompt": "Escreva as duas versões completas, com pelo menos 3-4 frases cada, mantendo o mesmo pedido central nas duas." }
       ]
+    },
+    {
+      "id": "trad-fill",
+      "type": "fill-blank",
+      "title": "Mais Prática com Falsos Cognatos",
+      "items": [
+        { "id": "tradf", "prompt": "\"Push\" em português significa ___.", "answers": [["empurrar"]], "explanation": "Push = empurrar; pull = puxar.", "options": ["empurrar", "puxar", "apertar"] },
+        { "id": "tradg", "prompt": "\"Library\" em português significa ___.", "answers": [["biblioteca"]], "explanation": "Library = biblioteca; livraria = bookstore.", "options": ["biblioteca", "livraria", "escola"] },
+        { "id": "tradh", "prompt": "\"College\" em português geralmente significa ___.", "answers": [["faculdade"]], "explanation": "College = faculdade; colégio = high school.", "options": ["faculdade", "colégio", "escola"] },
+        { "id": "tradi", "prompt": "\"Pretend\" em português significa ___.", "answers": [["fingir"]], "explanation": "Pretend = fingir; pretender = to intend.", "options": ["fingir", "pretender", "imaginar"] },
+        { "id": "tradj", "prompt": "Informal: \"cê topa?\" Formal: \"você teria ___ em participar?\"", "answers": [["interesse"]], "explanation": "Versão formal e educada do convite.", "options": ["interesse", "medo", "pressa"] },
+        { "id": "tradk", "prompt": "\"I pretend to be busy\" traduz-se como \"eu ___ estar ocupado\".", "answers": [["finjo"]], "explanation": "Pretend = fingir, não pretender.", "options": ["finjo", "pretendo", "imagino"] }
+      ]
+    },
+    {
+      "id": "trad-mc2",
+      "type": "multiple-choice",
+      "title": "Mais Escolhas de Falsos Cognatos e Registro",
+      "items": [
+        { "id": "tradl", "prompt": "Qual é o significado real de \"actually\"?", "options": ["na verdade", "atualmente", "realmente ocupado"], "answerIndex": 0, "explanation": "Actually = na verdade." },
+        { "id": "tradm", "prompt": "Qual é o significado real de \"parents\"?", "options": ["pais", "parentes", "primos"], "answerIndex": 0, "explanation": "Parents = pais." },
+        { "id": "tradn", "prompt": "Qual é o significado real de \"library\"?", "options": ["biblioteca", "livraria", "escola"], "answerIndex": 0, "explanation": "Library = biblioteca." },
+        { "id": "trado", "prompt": "\"Currently\" em inglês corresponde a qual palavra em português?", "options": ["atualmente", "na verdade", "frequentemente"], "answerIndex": 0, "explanation": "Currently = atualmente." },
+        { "id": "tradp", "prompt": "Misturar registros na mesma mensagem (começar formal, terminar informal) tende a...", "options": ["quebrar a coerência do texto", "ser sempre recomendado", "não ter efeito nenhum"], "answerIndex": 0, "explanation": "A inconsistência de registro prejudica a coerência." },
+        { "id": "tradq", "prompt": "O que garante comunicação eficaz, além da gramática correta?", "options": ["escolher o registro e vocabulário certos para o contexto", "apenas decorar regras", "evitar qualquer contração"], "answerIndex": 0, "explanation": "Comunicação eficaz depende de mais do que gramática correta." },
+        { "id": "tradr", "prompt": "A partir do nível C2, a prática mais valiosa para continuar evoluindo é...", "options": ["o contato real com o idioma (livros, filmes, conversas)", "parar de estudar gramática", "memorizar mais listas de vocabulário"], "answerIndex": 0, "explanation": "É a recomendação central desta lição final." }
+      ]
+    },
+    {
+      "id": "trad-tf",
+      "type": "true-false",
+      "title": "Verdadeiro ou Falso?",
+      "items": [
+        { "id": "trads", "statement": "\"Pretend\" e \"pretender\" têm exatamente o mesmo significado.", "answer": false, "explanation": "São falsos cognatos, com significados diferentes." },
+        { "id": "tradt", "statement": "Falsos cognatos podem causar erros sutis mesmo em falantes muito avançados.", "answer": true, "explanation": "Por isso merecem atenção mesmo em nível C2." },
+        { "id": "tradu", "statement": "Manter consistência de registro do início ao fim de um texto é importante.", "answer": true, "explanation": "A inconsistência quebra a coerência do texto." },
+        { "id": "tradv", "statement": "\"Parents\" significa \"parentes\" em português.", "answer": false, "explanation": "Parents significa \"pais\"; \"parentes\" se traduz como relatives." },
+        { "id": "tradw", "statement": "Transpor uma mensagem entre registros significa mudar o sentido da mensagem.", "answer": false, "explanation": "A transposição mantém o sentido, ajustando apenas vocabulário e estrutura." },
+        { "id": "tradx", "statement": "\"Actually\" e \"atualmente\" são falsos cognatos clássicos entre inglês e português.", "answer": true, "explanation": "É um dos exemplos mais citados de falso cognato." }
+      ]
     }
   ],
   "summary": [
