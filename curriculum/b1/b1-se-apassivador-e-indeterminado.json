@@ -65,6 +65,14 @@
         { "id": "seindf", "incorrect": "Aluga-se salas comerciais no centro.", "answer": ["Alugam-se salas comerciais no centro", "Alugam-se salas comerciais no centro."], "explanation": "\"Salas\" é plural, então o verbo precisa concordar: alugam-se." },
         { "id": "seindg", "incorrect": "Comem-se bem neste restaurante.", "answer": ["Come-se bem neste restaurante", "Come-se bem neste restaurante."], "explanation": "Sem objeto direto para concordar, o se indeterminado exige o verbo no singular." }
       ]
+    },
+    {
+      "id": "seind-tf",
+      "type": "true-false",
+      "title": "Verdadeiro ou Falso?",
+      "items": [
+        { "id": "seindh", "statement": "O se apassivador faz o verbo concordar com o substantivo; o se indeterminado sempre fica no singular.", "answer": true, "explanation": "Essa é a distinção central entre os dois usos." }
+      ]
     }
   ],
   "summary": [

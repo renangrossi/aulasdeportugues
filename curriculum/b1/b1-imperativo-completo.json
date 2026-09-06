@@ -74,6 +74,22 @@
         { "id": "impcf", "incorrect": "Não fala tão alto, por favor.", "answer": ["Não fale tão alto, por favor", "Não fale tão alto, por favor."], "explanation": "Imperativo negativo sempre usa a forma do subjuntivo: fale." },
         { "id": "impcg", "incorrect": "Não venham tarde, disse ela para o filho.", "answer": ["Não venha tarde, disse ela para o filho", "Não venham tarde, disse ela para os filhos."], "explanation": "Se \"o filho\" é uma única pessoa, o imperativo deve estar no singular: não venha." }
       ]
+    },
+    {
+      "id": "impc-mc2",
+      "type": "multiple-choice",
+      "title": "Mais Escolhas de Imperativo",
+      "items": [
+        { "id": "impch", "prompt": "O imperativo negativo sempre usa qual forma verbal?", "options": ["o subjuntivo", "o indicativo", "o infinitivo"], "answerIndex": 0, "explanation": "O imperativo negativo é sempre idêntico ao presente do subjuntivo." }
+      ]
+    },
+    {
+      "id": "impc-tf",
+      "type": "true-false",
+      "title": "Verdadeiro ou Falso?",
+      "items": [
+        { "id": "impci", "statement": "O imperativo afirmativo de \"tu\" usa o presente do indicativo sem o -s final.", "answer": true, "explanation": "Como em \"fala\" (de falas, sem o -s)." }
+      ]
     }
   ],
   "summary": [

@@ -73,6 +73,15 @@
       "items": [
         { "id": "cond3f", "prompt": "Escreva de 3 a 4 frases usando \"se eu pudesse... eu...\" e outras condicionais hipotéticas parecidas." }
       ]
+    },
+    {
+      "id": "cond3-tf",
+      "type": "true-false",
+      "title": "Verdadeiro ou Falso?",
+      "items": [
+        { "id": "cond3g", "statement": "Condicional real (tipo 1) usa presente do indicativo depois de \"se\".", "answer": true, "explanation": "Como em \"se ela estuda, ela aprende\"." },
+        { "id": "cond3h", "statement": "Condicional hipotética (tipo 3) usa o condicional simples na oração com \"se\".", "answer": false, "explanation": "A oração com \"se\" usa o imperfeito do subjuntivo; o condicional simples fica na oração principal." }
+      ]
     }
   ],
   "summary": [

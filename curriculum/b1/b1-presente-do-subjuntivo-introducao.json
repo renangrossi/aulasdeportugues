@@ -81,6 +81,15 @@
           { "left": "querer", "right": "queira" }
         ], "explanation": "Esses cinco verbos são os irregulares mais frequentes no presente do subjuntivo." }
       ]
+    },
+    {
+      "id": "subj-tf",
+      "type": "true-false",
+      "title": "Verdadeiro ou Falso?",
+      "items": [
+        { "id": "subjg", "statement": "O subjuntivo é usado para expressar fatos certos.", "answer": false, "explanation": "Fatos certos usam o indicativo; o subjuntivo expressa desejo, dúvida ou emoção." },
+        { "id": "subjh", "statement": "\"Talvez\" exige o uso do subjuntivo.", "answer": true, "explanation": "Talvez expressa possibilidade/dúvida, que exige o subjuntivo." }
+      ]
     }
   ],
   "summary": [

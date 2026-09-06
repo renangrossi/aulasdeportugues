@@ -80,6 +80,15 @@
           { "left": "por acaso", "right": "by chance" }
         ], "explanation": "Essas expressões são blocos fixos, memorizados como unidades." }
       ]
+    },
+    {
+      "id": "pp4-tf",
+      "type": "true-false",
+      "title": "Verdadeiro ou Falso?",
+      "items": [
+        { "id": "pp4g", "statement": "\"Por\" introduz o agente da voz passiva.", "answer": true, "explanation": "Como em \"pintado por um artista\"." },
+        { "id": "pp4h", "statement": "\"Por mim\" e \"para mim\" significam exatamente a mesma coisa.", "answer": false, "explanation": "Para mim expressa opinião; por mim tem outro sentido, ligado a indiferença/concordância." }
+      ]
     }
   ],
   "summary": [
