@@ -57,6 +57,56 @@
         { "id": "lte", "prompt": "\"Ofegante\" (um rapaz correndo atrás do ônibus, ofegante) sugere:", "options": ["Rindo muito", "Respirando com dificuldade, cansado", "Andando devagar"], "answerIndex": 1, "explanation": "O contexto (correr atrás do ônibus) sugere cansaço e respiração ofegante." },
         { "id": "ltf", "prompt": "\"Sustentam a cidade grande\" sugere que esses pequenos gestos:", "options": ["Destroem a cidade", "Mantêm a cidade funcionando de forma mais humana", "Não têm nenhum efeito"], "answerIndex": 1, "explanation": "\"Sustentar\" sugere apoio, algo que mantém algo funcionando." }
       ]
+    },
+    {
+      "id": "leit-rc2",
+      "type": "reading-comprehension",
+      "title": "Mais Perguntas sobre a Crônica",
+      "instructions": "Volte ao texto da crônica e responda mais perguntas de compreensão.",
+      "items": [
+        { "id": "ltg", "prompt": "O que a senhora estava carregando quando um senhor cedeu o lugar a ela?", "options": ["Uma criança", "Sacolas", "Uma mala"], "answerIndex": 1, "explanation": "O texto diz \"uma senhora carregando sacolas\"." },
+        { "id": "lth", "prompt": "Por que a moça segurou a porta do ônibus?", "options": ["Para um rapaz que corria atrás do ônibus", "Para sair mais rápido", "Porque estava com frio"], "answerIndex": 0, "explanation": "O texto descreve um rapaz correndo, ofegante, atrás do ônibus." },
+        { "id": "lti", "prompt": "Segundo o texto, quanto tempo os paulistanos passam em média no trânsito por dia?", "options": ["Menos de uma hora", "Mais de duas horas", "O dia inteiro"], "answerIndex": 1, "explanation": "O texto cita pesquisas sobre mais de duas horas diárias no trânsito." },
+        { "id": "ltj", "prompt": "O texto descrito no exercício é mais parecido com qual gênero?", "options": ["uma notícia objetiva", "uma crônica reflexiva", "um manual técnico"], "answerIndex": 1, "explanation": "O texto mistura observação e reflexão pessoal, típico da crônica." }
+      ]
+    },
+    {
+      "id": "leit-vocab2",
+      "type": "vocabulary",
+      "title": "Mais Vocabulário em Contexto",
+      "items": [
+        { "id": "ltk", "prompt": "\"Lotado\" (um ônibus lotado) sugere que o ônibus estava:", "options": ["vazio", "cheio de gente", "quebrado"], "answerIndex": 1, "explanation": "Lotado sugere estar completamente cheio." },
+        { "id": "ltl", "prompt": "\"Caos\" (no meio do caos) sugere:", "options": ["organização perfeita", "desordem, confusão", "silêncio total"], "answerIndex": 1, "explanation": "Caos sugere desordem e confusão." }
+      ]
+    },
+    {
+      "id": "leit-mc",
+      "type": "multiple-choice",
+      "title": "Estratégias de Leitura Avançada",
+      "items": [
+        { "id": "ltm", "prompt": "Textos jornalísticos tendem a responder quais perguntas logo no início?", "options": ["o quê, quem, quando, onde, por quê", "apenas por quê", "nenhuma pergunta específica"], "answerIndex": 0, "explanation": "Essa é a estrutura clássica de uma notícia." },
+        { "id": "ltn", "prompt": "Uma crônica é um gênero...", "options": ["curto, popular no Brasil, misturando observação e reflexão", "exclusivamente técnico", "apenas para notícias urgentes"], "answerIndex": 0, "explanation": "Essa é a definição de crônica usada nesta lição." },
+        { "id": "lto", "prompt": "Qual estratégia é recomendada diante de uma palavra desconhecida?", "options": ["inferir pelo contexto antes de recorrer ao dicionário", "parar a leitura imediatamente", "ignorar o resto do texto"], "answerIndex": 0, "explanation": "Inferir pelo contexto mantém a fluidez da leitura." },
+        { "id": "ltp", "prompt": "Quais palavras costumam marcar opinião pessoal do autor?", "options": ["acho, parece, na minha opinião", "o prefeito anunciou", "dez milhões de reais"], "answerIndex": 0, "explanation": "Esses marcadores sinalizam opinião, não fato." },
+        { "id": "ltq", "prompt": "Textos literários, comparados aos jornalísticos, tendem a ser...", "options": ["mais subjetivos e reflexivos", "mais diretos e objetivos", "sempre mais curtos"], "answerIndex": 0, "explanation": "Textos literários priorizam reflexão e estilo pessoal." },
+        { "id": "ltr", "prompt": "Qual é o papel dos conectores na leitura de um texto mais avançado?", "options": ["ajudar a acompanhar a lógica entre as ideias", "substituir o vocabulário desconhecido", "marcar o fim do texto"], "answerIndex": 0, "explanation": "Conectores revelam a lógica argumentativa do texto." },
+        { "id": "lts", "prompt": "Um fato objetivo em um texto geralmente é apresentado...", "options": ["sem marcadores de opinião, como um dado ou citação", "sempre com \"acho que\"", "apenas em forma de pergunta"], "answerIndex": 0, "explanation": "Fatos objetivos costumam vir como dados ou citações, sem marcador de opinião." },
+        { "id": "ltt", "prompt": "Ler um texto duas vezes (uma para ideia geral, outra para detalhes) é uma estratégia de...", "options": ["leitura eficiente em níveis avançados", "memorização de vocabulário", "tradução literal"], "answerIndex": 0, "explanation": "Essa estratégia é recomendada explicitamente nesta lição." }
+      ]
+    },
+    {
+      "id": "leit-tf",
+      "type": "true-false",
+      "title": "Verdadeiro ou Falso?",
+      "items": [
+        { "id": "ltu", "statement": "Textos jornalísticos tendem a ser mais objetivos do que textos literários.", "answer": true, "explanation": "Essa é a distinção central desta lição." },
+        { "id": "ltv", "statement": "Uma crônica é sempre completamente objetiva, sem opinião do autor.", "answer": false, "explanation": "Crônicas são majoritariamente subjetivas e reflexivas." },
+        { "id": "ltw", "statement": "Inferir palavras pelo contexto é uma habilidade útil na leitura avançada.", "answer": true, "explanation": "É a estratégia recomendada nesta lição." },
+        { "id": "ltx", "statement": "Parar a leitura a cada palavra desconhecida ajuda a manter a compreensão geral do texto.", "answer": false, "explanation": "Isso quebra a compreensão do sentido geral." },
+        { "id": "lty", "statement": "Separar fato de opinião é uma habilidade central da leitura crítica.", "answer": true, "explanation": "Essa é uma das habilidades centrais discutidas na lição." },
+        { "id": "ltz", "statement": "Textos literários sempre seguem uma estrutura linear e direta, como uma notícia.", "answer": false, "explanation": "Textos literários podem ser mais indiretos e não lineares." },
+        { "id": "ltaa", "statement": "Marcadores como \"acho\" e \"na minha opinião\" ajudam a identificar opinião pessoal em um texto.", "answer": true, "explanation": "Esses marcadores sinalizam claramente a opinião do autor." }
+      ]
     }
   ],
   "summary": [

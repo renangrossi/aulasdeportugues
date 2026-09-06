@@ -78,6 +78,49 @@
         { "id": "vard", "statement": "Existe uma única forma \"correta\" de falar português no Brasil, e as demais são erradas.", "answer": false, "explanation": "Todas as variações regionais seguem uma lógica gramatical própria e são igualmente legítimas." },
         { "id": "vare", "statement": "\"You\" na maior parte do Brasil é traduzido como \"você\", mas em algumas regiões \"tu\" é mais comum.", "answer": true, "explanation": "Exatamente — a escolha entre tu e você tem uma distribuição regional real no Brasil." }
       ]
+    },
+    {
+      "id": "var-fill",
+      "type": "fill-blank",
+      "title": "Mais Prática com Variação Regional",
+      "items": [
+        { "id": "varf", "prompt": "No Norte do Brasil, a mandioca é chamada de ___.", "answers": [["macaxeira"]], "explanation": "Macaxeira é o nome regional do Norte/Nordeste.", "options": ["macaxeira", "aipim", "mandioca"] },
+        { "id": "varg", "prompt": "Em São Paulo, a tangerina é chamada de ___.", "answers": [["mexerica"]], "explanation": "Mexerica é o nome comum em São Paulo.", "options": ["mexerica", "bergamota", "tangerina"] },
+        { "id": "varh", "prompt": "No Rio Grande do Sul, é comum dizer \"___ vai\" em vez de \"você vai\".", "answers": [["tu"]], "explanation": "Tu é comum no Rio Grande do Sul.", "options": ["tu", "você", "vós"] },
+        { "id": "vari", "prompt": "\"___ sempre janta cedo lá em casa.\" (substituindo nós, informal)", "answers": [["A gente"]], "explanation": "A gente substitui nós de forma muito comum e informal.", "options": ["A gente", "Nós", "Eles"] },
+        { "id": "varj", "prompt": "No Sul, a tangerina também é chamada de ___.", "answers": [["bergamota"]], "explanation": "Bergamota é o nome comum no Sul.", "options": ["bergamota", "mexerica", "macaxeira"] },
+        { "id": "vark", "prompt": "No Sul, um menino também pode ser chamado de ___.", "answers": [["guri"]], "explanation": "Guri é o termo regional do Sul.", "options": ["guri", "rapaz", "moço"] },
+        { "id": "varl", "prompt": "A ___ escrita é relativamente uniforme, mas a fala revela mais diversidade regional.", "answers": [["norma culta"]], "explanation": "A norma culta escrita varia menos do que a fala.", "options": ["norma culta", "gíria", "sotaque"] },
+        { "id": "varm", "prompt": "\"A gente\" concorda gramaticalmente com a ___ pessoa do singular.", "answers": [["terceira"]], "explanation": "Mesmo significando \"nós\", a gente é gramaticalmente terceira pessoa.", "options": ["terceira", "primeira", "segunda"] }
+      ]
+    },
+    {
+      "id": "var-mc2",
+      "type": "multiple-choice",
+      "title": "Mais Escolhas de Variação Regional",
+      "items": [
+        { "id": "varn", "prompt": "Qual pronome de segunda pessoa domina a maior parte do Brasil?", "options": ["você", "tu", "vós"], "answerIndex": 0, "explanation": "Você domina a maior parte do território brasileiro." },
+        { "id": "varo", "prompt": "\"Tu vai\" (sem o -s) é considerado...", "options": ["uma variação regional legítima", "sempre um erro grave", "exclusivo da escrita formal"], "answerIndex": 0, "explanation": "É uma forma amplamente usada e compreendida nas regiões onde tu é comum." },
+        { "id": "varp", "prompt": "Qual é o equivalente mais neutro de \"macaxeira\"?", "options": ["mandioca", "batata", "milho"], "answerIndex": 0, "explanation": "Macaxeira é uma variação regional de mandioca." },
+        { "id": "varq", "prompt": "A norma culta escrita, comparada à fala, é...", "options": ["relativamente mais uniforme", "muito mais variável", "completamente diferente"], "answerIndex": 0, "explanation": "A fala revela mais diversidade regional do que a escrita." },
+        { "id": "varr", "prompt": "Reconhecer a variação linguística regional como riqueza significa...", "options": ["não tratar nenhuma variedade como \"errada\"", "corrigir sempre quem fala diferente", "usar só a norma culta"], "answerIndex": 0, "explanation": "Todas as variedades regionais são igualmente legítimas." },
+        { "id": "vars", "prompt": "Qual estado é mencionado como uma região onde \"tu\" é comum?", "options": ["Rio Grande do Sul", "São Paulo", "Distrito Federal"], "answerIndex": 0, "explanation": "O Rio Grande do Sul é a região mais associada ao uso de tu." },
+        { "id": "vart", "prompt": "\"Bergamota\" é uma variação regional de qual fruta?", "options": ["tangerina", "laranja", "limão"], "answerIndex": 0, "explanation": "Bergamota é o nome sulista da tangerina." },
+        { "id": "varu", "prompt": "Vocabulário regional (mandioca/aipim/macaxeira) é um exemplo de...", "options": ["variação de vocabulário entre regiões", "erro de ortografia", "gíria exclusivamente jovem"], "answerIndex": 0, "explanation": "É uma variação legítima de vocabulário regional." }
+      ]
+    },
+    {
+      "id": "var-tf2",
+      "type": "true-false",
+      "title": "Mais Verdadeiro ou Falso",
+      "items": [
+        { "id": "varv", "statement": "\"A gente vamos\" é a forma gramaticalmente correta, concordando com a primeira pessoa.", "answer": false, "explanation": "A forma correta é \"a gente vai\", terceira pessoa do singular." },
+        { "id": "varw", "statement": "O uso de \"tu\" ou \"você\" tem uma distribuição regional real no Brasil.", "answer": true, "explanation": "Cada região tende a preferir um dos dois pronomes." },
+        { "id": "varx", "statement": "Nenhuma variedade regional do português brasileiro é gramaticalmente superior às outras.", "answer": true, "explanation": "Todas seguem uma lógica interna coerente." },
+        { "id": "vary", "statement": "O vocabulário para \"mandioca\" é idêntico em todo o Brasil.", "answer": false, "explanation": "Varia entre mandioca, aipim e macaxeira, conforme a região." },
+        { "id": "varz", "statement": "A norma culta escrita revela mais diversidade regional do que a fala.", "answer": false, "explanation": "É o contrário: a fala revela mais diversidade regional." },
+        { "id": "varaa", "statement": "Reconhecer a variação linguística é um sinal de fluência real.", "answer": true, "explanation": "Essa é a ideia central desta lição." }
+      ]
     }
   ],
   "summary": [

@@ -73,6 +73,48 @@
       "items": [
         { "id": "reduzf", "prompt": "de / lembrei / sair / me / ao / trancar / a / porta", "words": ["Ao", "sair", "lembrei-me", "de", "trancar", "a", "porta"], "explanation": "Oração reduzida de infinitivo no início, seguida da oração principal." }
       ]
+    },
+    {
+      "id": "reduz-fill2",
+      "type": "fill-blank",
+      "title": "Mais Prática com Orações Reduzidas",
+      "items": [
+        { "id": "reduzg", "prompt": "\"Antes que ela saísse, eu já tinha ido embora.\" → ___ ela, eu já tinha ido embora.", "answers": [["Antes de sair"]], "explanation": "Reduzida de infinitivo com a preposição antes de.", "options": ["Antes de sair", "Antes saindo", "Antes saído"] },
+        { "id": "reduzh", "prompt": "\"Como não tinha dinheiro, ele não comprou o livro.\" → ___ dinheiro, ele não comprou o livro.", "answers": [["Não tendo"]], "explanation": "Reduzida de gerúndio.", "options": ["Não tendo", "Não ter", "Não tido"] },
+        { "id": "reduzi", "prompt": "\"Depois que o filme acabou, todos aplaudiram.\" → ___ o filme, todos aplaudiram.", "answers": [["Acabado"]], "explanation": "Reduzida de particípio.", "options": ["Acabado", "Acabando", "Acabar"] },
+        { "id": "reduzj", "prompt": "\"Se você seguir as instruções, tudo dará certo.\" → ___ as instruções, tudo dará certo.", "answers": [["Seguindo"]], "explanation": "Reduzida de gerúndio com sentido condicional.", "options": ["Seguindo", "Seguido", "Seguir"] },
+        { "id": "reduzk", "prompt": "\"Quando escrevi a carta, chorei.\" → ___ a carta, chorei.", "answers": [["Ao escrever"]], "explanation": "Reduzida de infinitivo.", "options": ["Ao escrever", "Escrevendo", "Escrito"] },
+        { "id": "reduzl", "prompt": "\"Como estava exausta, foi dormir cedo.\" → ___ exausta, foi dormir cedo.", "answers": [["Estando"]], "explanation": "Reduzida de gerúndio.", "options": ["Estando", "Estar", "Estado"] },
+        { "id": "reduzm", "prompt": "\"Depois que as portas foram fechadas, ninguém mais entrou.\" → ___ as portas, ninguém mais entrou.", "answers": [["Fechadas"]], "explanation": "Reduzida de particípio, concordando com \"as portas\".", "options": ["Fechadas", "Fechando", "Fechado"] }
+      ]
+    },
+    {
+      "id": "reduz-mc2",
+      "type": "multiple-choice",
+      "title": "Mais Escolhas de Orações Reduzidas",
+      "items": [
+        { "id": "reduzn", "prompt": "Qual preposição sempre pede infinitivo, nunca gerúndio?", "options": ["ao", "gerúndio isolado", "particípio isolado"], "answerIndex": 0, "explanation": "Ao sempre exige infinitivo." },
+        { "id": "reduzo", "prompt": "Qual forma reduzida expressa uma ação já concluída?", "options": ["particípio", "gerúndio", "infinitivo"], "answerIndex": 0, "explanation": "O particípio marca uma ação já concluída." },
+        { "id": "reduzp", "prompt": "Qual forma reduzida expressa simultaneidade ou causa?", "options": ["gerúndio", "particípio", "infinitivo"], "answerIndex": 0, "explanation": "O gerúndio expressa simultaneidade/causa." },
+        { "id": "reduzq", "prompt": "\"Sem perceber\" é uma reduzida de...", "options": ["infinitivo", "gerúndio", "particípio"], "answerIndex": 0, "explanation": "Sem sempre pede infinitivo." },
+        { "id": "reduzr", "prompt": "Orações reduzidas são mais comuns em qual contexto?", "options": ["escrita elaborada", "fala cotidiana informal", "mensagens de texto"], "answerIndex": 0, "explanation": "São um recurso típico da escrita mais elaborada." },
+        { "id": "reduzs", "prompt": "O sujeito da oração reduzida geralmente é...", "options": ["o mesmo da oração principal", "sempre diferente", "sempre omitido"], "answerIndex": 0, "explanation": "Geralmente compartilha o sujeito com a oração principal." },
+        { "id": "reduzt", "prompt": "\"Concluída a reunião, todos voltaram ao trabalho\" usa qual forma reduzida?", "options": ["particípio", "gerúndio", "infinitivo"], "answerIndex": 0, "explanation": "Concluída é particípio." }
+      ]
+    },
+    {
+      "id": "reduz-tf",
+      "type": "true-false",
+      "title": "Verdadeiro ou Falso?",
+      "items": [
+        { "id": "reduzu", "statement": "A reduzida de infinitivo é introduzida por uma preposição, como ao ou antes de.", "answer": true, "explanation": "Essa é sua estrutura típica." },
+        { "id": "reduzv", "statement": "O gerúndio isolado pode expressar uma ação simultânea ou uma causa.", "answer": true, "explanation": "Ambos os sentidos são possíveis com o gerúndio." },
+        { "id": "reduzw", "statement": "O particípio isolado expressa uma ação que ainda vai acontecer.", "answer": false, "explanation": "O particípio expressa uma ação já concluída." },
+        { "id": "reduzx", "statement": "\"Ao chegando\" é a forma correta de combinar preposição e verbo.", "answer": false, "explanation": "Ao sempre pede infinitivo: ao chegar." },
+        { "id": "reduzy", "statement": "Orações reduzidas condensam uma ideia que normalmente precisaria de conjunção e verbo conjugado.", "answer": true, "explanation": "Essa é a ideia central desta lição." },
+        { "id": "reduzz", "statement": "Na fala cotidiana, orações reduzidas são mais comuns do que na escrita formal.", "answer": false, "explanation": "É o contrário: são mais comuns na escrita elaborada." },
+        { "id": "reduzaa", "statement": "O particípio em uma oração reduzida concorda em gênero e número com o substantivo relacionado.", "answer": true, "explanation": "Como em \"fechadas as portas\"." }
+      ]
     }
   ],
   "summary": [

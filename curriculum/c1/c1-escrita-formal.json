@@ -73,6 +73,46 @@
       "items": [
         { "id": "escfe", "prompt": "Estruture seu texto com uma tese clara na introdução, um ou dois argumentos no desenvolvimento, e uma conclusão que retome sua posição." }
       ]
+    },
+    {
+      "id": "escf-fill2",
+      "type": "fill-blank",
+      "title": "Mais Prática com Escrita Formal",
+      "items": [
+        { "id": "escff", "prompt": "\"___, políticas públicas voltadas à educação são fundamentais.\"", "answers": [["Diante do exposto"]], "explanation": "Fórmula clássica para introduzir a conclusão.", "options": ["Diante do exposto", "Eu acho que", "Pra mim"] },
+        { "id": "escfg", "prompt": "___ que a falta de acesso à internet ainda é uma realidade em muitas regiões.", "answers": [["Sabe-se"]], "explanation": "Construção impessoal.", "options": ["Sabe-se", "Eu sei", "A gente sabe"] },
+        { "id": "escfh", "prompt": "É importante ___ que essa mudança não afeta só grandes cidades.", "answers": [["ressaltar"]], "explanation": "Verbo típico de construções formais de destaque.", "options": ["ressaltar", "falar", "dizer"] },
+        { "id": "escfi", "prompt": "___ atualmente sobre o impacto das redes sociais na saúde mental.", "answers": [["Discute-se"]], "explanation": "Construção impessoal.", "options": ["Discute-se", "Eu discuto", "A gente discute"] },
+        { "id": "escfj", "prompt": "A introdução de um texto dissertativo apresenta o tema e a ___.", "answers": [["tese"]], "explanation": "A introdução apresenta o tema e a tese central.", "options": ["tese", "conclusão", "gíria"] },
+        { "id": "escfk", "prompt": "O desenvolvimento de um texto dissertativo traz um ___ por parágrafo, com exemplo ou dado.", "answers": [["argumento"]], "explanation": "Cada parágrafo do desenvolvimento traz um argumento.", "options": ["argumento", "resumo", "título"] }
+      ]
+    },
+    {
+      "id": "escf-mc2",
+      "type": "multiple-choice",
+      "title": "Mais Escolhas de Escrita Formal",
+      "items": [
+        { "id": "escfl", "prompt": "Qual é a função da introdução em um texto dissertativo?", "options": ["apresentar o tema e a tese central", "retomar a tese", "dar um exemplo específico"], "answerIndex": 0, "explanation": "A introdução situa o leitor antes dos argumentos." },
+        { "id": "escfm", "prompt": "Qual é a função da conclusão?", "options": ["retomar a tese e propor uma reflexão/solução", "apresentar o tema pela primeira vez", "introduzir um novo argumento"], "answerIndex": 0, "explanation": "A conclusão fecha o texto retomando a tese." },
+        { "id": "escfn", "prompt": "Qual construção é tipicamente impessoal?", "options": ["discute-se", "eu acho", "pra mim"], "answerIndex": 0, "explanation": "Discute-se evita a primeira pessoa." },
+        { "id": "escfo", "prompt": "Qual marca de oralidade deve ser evitada na escrita formal?", "options": ["contrações como pra e tá", "conectores formais", "construções impessoais"], "answerIndex": 0, "explanation": "Contrações informais são marcas de oralidade." },
+        { "id": "escfp", "prompt": "Quantos argumentos, geralmente, aparecem no desenvolvimento de uma redação curta?", "options": ["um ou dois, um por parágrafo", "dez ou mais", "nenhum"], "answerIndex": 0, "explanation": "Um ou dois argumentos bem desenvolvidos bastam em um texto curto." },
+        { "id": "escfq", "prompt": "\"É importante ressaltar que\" é uma construção usada para...", "options": ["introduzir um ponto relevante de forma impessoal", "fazer uma pergunta", "encerrar o texto"], "answerIndex": 0, "explanation": "Introduz um ponto de forma impessoal e formal." }
+      ]
+    },
+    {
+      "id": "escf-tf",
+      "type": "true-false",
+      "title": "Verdadeiro ou Falso?",
+      "items": [
+        { "id": "escfr", "statement": "A escrita formal evita contrações informais, gírias e repetições.", "answer": true, "explanation": "Essa é uma característica central da escrita formal." },
+        { "id": "escfs", "statement": "A introdução deve trazer detalhes específicos e exemplos completos, não a tese geral.", "answer": false, "explanation": "A introdução apresenta o tema de forma geral, sem detalhamento." },
+        { "id": "escft", "statement": "Construções impessoais ajudam a evitar o excesso de primeira pessoa.", "answer": true, "explanation": "Essa é exatamente sua função." },
+        { "id": "escfu", "statement": "A conclusão deve introduzir um argumento totalmente novo, sem relação com o resto do texto.", "answer": false, "explanation": "A conclusão retoma a tese, não introduz um argumento novo." },
+        { "id": "escfv", "statement": "Um texto sem conclusão clara pode parecer incompleto, mesmo com bons argumentos.", "answer": true, "explanation": "A conclusão é essencial para fechar o raciocínio." },
+        { "id": "escfw", "statement": "Fazer um rascunho com a tese e os argumentos principais antes de escrever é uma boa prática.", "answer": true, "explanation": "Isso evita perder o fio da meada durante a escrita." },
+        { "id": "escfx", "statement": "\"Sabe-se que\" é uma construção pessoal, não impessoal.", "answer": false, "explanation": "É uma construção impessoal, evitando a primeira pessoa." }
+      ]
     }
   ],
   "summary": [
