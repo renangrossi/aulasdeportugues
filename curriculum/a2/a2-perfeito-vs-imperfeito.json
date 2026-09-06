@@ -64,6 +64,23 @@
       "items": [
         { "id": "pxif", "prompt": "quando / dormindo / tocou / eu / estava / o / telefone", "words": ["Eu", "estava", "dormindo", "quando", "o", "telefone", "tocou"], "explanation": "Cenário de fundo (estava dormindo) + evento que interrompe (tocou)." }
       ]
+    },
+    {
+      "id": "pxi-mc2",
+      "type": "multiple-choice",
+      "title": "Mais Escolhas de Perfeito vs. Imperfeito",
+      "items": [
+        { "id": "pxig", "prompt": "Qual tempo verbal responde \"o que aconteceu?\"", "options": ["perfeito", "imperfeito", "futuro"], "answerIndex": 0, "explanation": "O perfeito narra o evento específico." },
+        { "id": "pxih", "prompt": "Qual tempo verbal responde \"como as coisas eram?\"", "options": ["imperfeito", "perfeito", "futuro"], "answerIndex": 0, "explanation": "O imperfeito descreve o cenário de fundo." }
+      ]
+    },
+    {
+      "id": "pxi-tf",
+      "type": "true-false",
+      "title": "Verdadeiro ou Falso?",
+      "items": [
+        { "id": "pxii", "statement": "Uma narrativa completa em português geralmente mistura perfeito e imperfeito.", "answer": true, "explanation": "Só usar um dos dois tempos torna a narrativa incompleta ou sem contexto." }
+      ]
     }
   ],
   "summary": [

@@ -65,6 +65,14 @@
         { "id": "pp3f", "incorrect": "Este presente é por minha mãe.", "answer": ["Este presente é para minha mãe", "Este presente é para minha mãe."], "explanation": "Destinatário de um presente usa \"para\"." },
         { "id": "pp3g", "incorrect": "Obrigada para sua ajuda.", "answer": ["Obrigada por sua ajuda", "Obrigada por sua ajuda."], "explanation": "Agradecimento sempre usa \"por\"." }
       ]
+    },
+    {
+      "id": "pp3-tf",
+      "type": "true-false",
+      "title": "Verdadeiro ou Falso?",
+      "items": [
+        { "id": "pp3h", "statement": "\"Para\" indica finalidade, destino e destinatário.", "answer": true, "explanation": "Essas são exatamente suas três funções principais." }
+      ]
     }
   ],
   "summary": [

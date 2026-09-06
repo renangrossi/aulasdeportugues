@@ -83,6 +83,30 @@
           { "left": "saber", "right": "soube" }
         ], "explanation": "Cada verbo irregular muda de raiz de forma própria no pretérito perfeito." }
       ]
+    },
+    {
+      "id": "pp2-fill2",
+      "type": "fill-blank",
+      "title": "Mais Prática com Irregulares",
+      "items": [
+        { "id": "pp2h", "prompt": "Vocês ___ (saber) a verdade ontem.", "answers": [["souberam"]], "options": ["souberam", "sabiam", "sabem"], "explanation": "Terceira pessoa do plural de \"saber\" no pretérito perfeito: souberam." }
+      ]
+    },
+    {
+      "id": "pp2-mc2",
+      "type": "multiple-choice",
+      "title": "Mais Escolhas de Irregulares",
+      "items": [
+        { "id": "pp2i", "prompt": "Qual é a forma de \"estar\" para \"eu\", no pretérito perfeito?", "options": ["estive", "estava", "estou"], "answerIndex": 0, "explanation": "Primeira pessoa de estar no pretérito perfeito: estive." }
+      ]
+    },
+    {
+      "id": "pp2-tf",
+      "type": "true-false",
+      "title": "Verdadeiro ou Falso?",
+      "items": [
+        { "id": "pp2j", "statement": "Ser e ir têm exatamente a mesma conjugação no pretérito perfeito.", "answer": true, "explanation": "Fui, foi, fomos, foram servem para ambos os verbos." }
+      ]
     }
   ],
   "summary": [

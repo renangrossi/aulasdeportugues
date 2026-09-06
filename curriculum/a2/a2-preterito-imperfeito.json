@@ -74,6 +74,22 @@
       "items": [
         { "id": "pif", "prompt": "Onde você morava? O que você fazia nos fins de semana? Como era sua casa ou sua escola?" }
       ]
+    },
+    {
+      "id": "pi-mc2",
+      "type": "multiple-choice",
+      "title": "Mais Escolhas de Imperfeito",
+      "items": [
+        { "id": "pig", "prompt": "Qual é a forma de \"ser\" no imperfeito para \"eles\"?", "options": ["eram", "era", "foram"], "answerIndex": 0, "explanation": "Terceira pessoa do plural de ser no imperfeito: eram." }
+      ]
+    },
+    {
+      "id": "pi-tf",
+      "type": "true-false",
+      "title": "Verdadeiro ou Falso?",
+      "items": [
+        { "id": "pih", "statement": "O imperfeito é usado para hábitos e descrições no passado, sem ponto final marcado.", "answer": true, "explanation": "Essa é exatamente sua função." }
+      ]
     }
   ],
   "summary": [

@@ -64,6 +64,15 @@
       "items": [
         { "id": "relf", "prompt": "ontem / li / que / o / livro / interessante / era", "words": ["O", "livro", "que", "li", "ontem", "era", "interessante"], "explanation": "Substantivo + pronome relativo + oração + verbo principal + complemento." }
       ]
+    },
+    {
+      "id": "rel-tf",
+      "type": "true-false",
+      "title": "Verdadeiro ou Falso?",
+      "items": [
+        { "id": "relg", "statement": "\"Que\" é o pronome relativo mais comum e nunca muda de forma.", "answer": true, "explanation": "Que é invariável e o mais usado." },
+        { "id": "relh", "statement": "\"Quem\" é usado principalmente antes de uma preposição.", "answer": false, "explanation": "Quem é usado principalmente depois de uma preposição, como \"com quem\"." }
+      ]
     }
   ],
   "summary": [
