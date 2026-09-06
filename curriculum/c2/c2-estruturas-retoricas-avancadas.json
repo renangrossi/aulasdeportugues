@@ -77,6 +77,42 @@
       "items": [
         { "id": "retord", "prompt": "Identifique claramente qual figura você usou em cada frase." }
       ]
+    },
+    {
+      "id": "retor-fill",
+      "type": "fill-blank",
+      "title": "Mais Prática com Figuras de Retórica",
+      "items": [
+        { "id": "retore", "prompt": "\"Chorei rios de lágrimas\" é um exemplo de ___.", "answers": [["hipérbole"]], "explanation": "Exagero deliberado para causar impacto.", "options": ["hipérbole", "eufemismo", "antítese"] },
+        { "id": "retorf", "prompt": "\"Ele sorriu, riu, gargalhou\" é um exemplo de ___.", "answers": [["gradação"]], "explanation": "Sequência em intensidade crescente.", "options": ["gradação", "antítese", "eufemismo"] },
+        { "id": "retorg", "prompt": "\"Ela partiu cedo demais\" (em vez de \"morreu\") é um exemplo de ___.", "answers": [["eufemismo"]], "explanation": "Suaviza uma ideia desagradável.", "options": ["eufemismo", "hipérbole", "anáfora"] },
+        { "id": "retorh", "prompt": "\"Lutamos por respeito. Lutamos por dignidade.\" repete a palavra ___ no início das frases.", "answers": [["Lutamos"]], "explanation": "É a repetição característica da anáfora.", "options": ["Lutamos", "respeito", "dignidade"] },
+        { "id": "retori", "prompt": "\"Pequeno na estatura, gigante na coragem\" é um exemplo de ___.", "answers": [["antítese"]], "explanation": "Aproxima ideias opostas para contraste.", "options": ["antítese", "gradação", "eufemismo"] }
+      ]
+    },
+    {
+      "id": "retor-mc2",
+      "type": "multiple-choice",
+      "title": "Mais Escolhas de Figuras de Retórica",
+      "items": [
+        { "id": "retorj", "prompt": "Qual figura repete a mesma palavra no início de frases consecutivas?", "options": ["anáfora", "antítese", "hipérbole"], "answerIndex": 0, "explanation": "Essa é a definição de anáfora." },
+        { "id": "retork", "prompt": "Qual figura organiza ideias em intensidade crescente?", "options": ["gradação", "eufemismo", "antítese"], "answerIndex": 0, "explanation": "A gradação (clímax) organiza ideias crescentes." },
+        { "id": "retorl", "prompt": "Qual figura suaviza uma ideia desagradável?", "options": ["eufemismo", "hipérbole", "anáfora"], "answerIndex": 0, "explanation": "O eufemismo suaviza ideias delicadas." },
+        { "id": "retorm", "prompt": "Qual figura exagera deliberadamente para causar impacto?", "options": ["hipérbole", "eufemismo", "gradação"], "answerIndex": 0, "explanation": "A hipérbole é o exagero deliberado." },
+        { "id": "retorn", "prompt": "Usar figuras de retórica em toda frase de um texto tende a...", "options": ["tornar o texto artificial/pomposo", "aumentar sempre a clareza", "ser obrigatório em qualquer gênero"], "answerIndex": 0, "explanation": "O uso excessivo perde o efeito e soa artificial." }
+      ]
+    },
+    {
+      "id": "retor-tf",
+      "type": "true-false",
+      "title": "Verdadeiro ou Falso?",
+      "items": [
+        { "id": "retoro", "statement": "A anáfora repete uma palavra especificamente no início de unidades consecutivas.", "answer": true, "explanation": "A posição no início é o que define tecnicamente a anáfora." },
+        { "id": "retorp", "statement": "A antítese aproxima ideias semelhantes, não opostas.", "answer": false, "explanation": "A antítese aproxima ideias opostas para criar contraste." },
+        { "id": "retorq", "statement": "A hipérbole é adequada para relatórios técnicos que exigem precisão.", "answer": false, "explanation": "O exagero deliberado é inadequado em contextos que exigem exatidão." },
+        { "id": "retorr", "statement": "Figuras de retórica devem ser usadas com moderação, em pontos estratégicos.", "answer": true, "explanation": "O uso moderado preserva o efeito da figura." },
+        { "id": "retors", "statement": "A gradação organiza ideias em ordem decrescente de intensidade.", "answer": false, "explanation": "A gradação organiza ideias em ordem crescente, não decrescente." }
+      ]
     }
   ],
   "summary": [
