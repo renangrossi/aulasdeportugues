@@ -77,6 +77,14 @@
         { "id": "futsubf", "incorrect": "Quando você chega, avise-me.", "answer": ["Quando você chegar, avise-me", "Quando você chegar, avise-me."], "explanation": "\"Quando\" referindo-se ao futuro exige o futuro do subjuntivo: chegar." },
         { "id": "futsubg", "incorrect": "Se ele fará isso, eu ajudo.", "answer": ["Se ele fizer isso, eu ajudo", "Se ele fizer isso, eu ajudo."], "explanation": "Depois de \"se\" com condição futura, usa-se o futuro do subjuntivo: fizer, não o futuro simples do indicativo." }
       ]
+    },
+    {
+      "id": "futsub-tf",
+      "type": "true-false",
+      "title": "Verdadeiro ou Falso?",
+      "items": [
+        { "id": "futsubh", "statement": "O futuro do subjuntivo é usado depois de \"se\", \"quando\" e \"assim que\" referindo-se a algo futuro/incerto.", "answer": true, "explanation": "Essa é exatamente sua função." }
+      ]
     }
   ],
   "summary": [

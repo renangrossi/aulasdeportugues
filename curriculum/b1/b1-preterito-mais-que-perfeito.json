@@ -74,6 +74,32 @@
       "items": [
         { "id": "mqpf", "prompt": "saído / já / tinha / quando / cheguei / eu / ela", "words": ["Quando", "eu", "cheguei", "ela", "já", "tinha", "saído"], "explanation": "Oração temporal (quando eu cheguei) + sujeito + advérbio + verbo auxiliar + particípio." }
       ]
+    },
+    {
+      "id": "mqp-fill2",
+      "type": "fill-blank",
+      "title": "Mais Prática com o Mais-Que-Perfeito",
+      "items": [
+        { "id": "mqpg", "prompt": "Eles já ___ ___ (ter + escrever) a carta quando eu telefonei.", "answers": [["tinham"], ["escrito"]], "explanation": "\"Escrever\" tem particípio irregular: escrito.", "options": ["tinham", "escreveram", "escrito", "escrevido"] },
+        { "id": "mqph", "prompt": "Ela ___ ___ (ter + abrir) a loja antes das oito.", "answers": [["tinha"], ["aberto"]], "explanation": "\"Abrir\" tem particípio irregular: aberto.", "options": ["tinha", "abriu", "aberto", "abrido"] }
+      ]
+    },
+    {
+      "id": "mqp-mc2",
+      "type": "multiple-choice",
+      "title": "Mais Escolhas de Particípios",
+      "items": [
+        { "id": "mqpi", "prompt": "Qual é o particípio irregular de \"dizer\"?", "options": ["dito", "dizido", "disse"], "answerIndex": 0, "explanation": "Dizer → dito." },
+        { "id": "mqpj", "prompt": "Qual é o particípio irregular de \"pôr\"?", "options": ["posto", "ponto", "posido"], "answerIndex": 0, "explanation": "Pôr → posto." }
+      ]
+    },
+    {
+      "id": "mqp-tf",
+      "type": "true-false",
+      "title": "Verdadeiro ou Falso?",
+      "items": [
+        { "id": "mqpk", "statement": "O mais-que-perfeito indica uma ação anterior a outra ação já no passado.", "answer": true, "explanation": "É o \"passado do passado\"." }
+      ]
     }
   ],
   "summary": [

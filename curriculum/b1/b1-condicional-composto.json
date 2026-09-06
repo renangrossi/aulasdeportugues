@@ -74,6 +74,15 @@
       "items": [
         { "id": "condcf", "prompt": "mas / eu / teria / não / ajudado / pude", "words": ["Eu", "teria", "ajudado", "mas", "não", "pude"], "explanation": "Sujeito + condicional composto + conjunção + negação + verbo auxiliar." }
       ]
+    },
+    {
+      "id": "condc-tf",
+      "type": "true-false",
+      "title": "Verdadeiro ou Falso?",
+      "items": [
+        { "id": "condcg", "statement": "O condicional composto sempre precisa do particípio depois de \"teria\".", "answer": true, "explanation": "Teria + particípio é a estrutura completa." },
+        { "id": "condch", "statement": "O condicional composto é usado na oração com \"se\", nunca na oração principal.", "answer": false, "explanation": "É o contrário: o condicional composto fica na oração principal; a oração com \"se\" usa o mais-que-perfeito do subjuntivo." }
+      ]
     }
   ],
   "summary": [

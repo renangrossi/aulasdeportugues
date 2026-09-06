@@ -74,6 +74,14 @@
       "items": [
         { "id": "discf", "prompt": "Escreva de 2 a 3 frases começando com \"Ele/ela disse que...\" ou \"Ele/ela perguntou se...\"." }
       ]
+    },
+    {
+      "id": "disc-tf",
+      "type": "true-false",
+      "title": "Verdadeiro ou Falso?",
+      "items": [
+        { "id": "discg", "statement": "No discurso indireto, o presente do indicativo recua para o imperfeito.", "answer": true, "explanation": "Como em \"estou\" → \"estava\"." }
+      ]
     }
   ],
   "summary": [

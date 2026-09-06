@@ -75,6 +75,23 @@
         { "id": "idiomd", "prompt": "Demorei um tempo, mas finalmente a ___ caiu.", "answers": [["ficha"]], "explanation": "\"A ficha caiu\" = finalmente entendi." },
         { "id": "idiome", "prompt": "Ele estava muito animado hoje, chegou com a corda ___.", "answers": [["toda"]], "explanation": "\"Com a corda toda\" = muito animado, cheio de energia." }
       ]
+    },
+    {
+      "id": "idiom-mc2",
+      "type": "multiple-choice",
+      "title": "Mais Escolhas de Expressões",
+      "items": [
+        { "id": "idiomf", "prompt": "\"Engolir sapo\" significa...", "options": ["aceitar algo desagradável", "comer rápido", "ficar com raiva"], "answerIndex": 0, "explanation": "É aceitar algo desagradável sem reclamar." }
+      ]
+    },
+    {
+      "id": "idiom-tf",
+      "type": "true-false",
+      "title": "Verdadeiro ou Falso?",
+      "items": [
+        { "id": "idiomg", "statement": "Expressões idiomáticas quase sempre fazem sentido traduzidas literalmente.", "answer": false, "explanation": "O significado é do conjunto, não das partes traduzidas." },
+        { "id": "idiomh", "statement": "Expressões idiomáticas são majoritariamente de registro informal.", "answer": true, "explanation": "Elas soam deslocadas em textos muito formais." }
+      ]
     }
   ],
   "summary": [
