@@ -76,6 +76,45 @@
       "items": [
         { "id": "n26", "prompt": "andar / no / mora / ela / segundo", "words": ["Ela", "mora", "no", "segundo", "andar"], "explanation": "Sujeito + verbo + preposição/artigo + ordinal + substantivo." }
       ]
+    },
+    {
+      "id": "num2-fill2",
+      "type": "fill-blank",
+      "title": "Mais Números para Praticar",
+      "items": [
+        { "id": "n27", "prompt": "Ela tem ___ (78) anos.", "answers": [["setenta e oito"]], "options": ["setenta e oito", "sessenta e oito", "oitenta e sete"], "explanation": "78 = setenta e oito." },
+        { "id": "n28", "prompt": "O carro custa ___ (1000) reais.", "answers": [["mil"]], "options": ["mil", "um mil", "cento"], "explanation": "Mil nunca leva \"um\" antes." },
+        { "id": "n29", "prompt": "Este é o meu ___ (2º) carro.", "answers": [["segundo"]], "options": ["segundo", "segunda", "dois"], "explanation": "2º, masculino = segundo." },
+        { "id": "n30", "prompt": "Ela mora no ___ (5º) andar.", "answers": [["quinto"]], "options": ["quinto", "quinta", "cinco"], "explanation": "5º, masculino = quinto." },
+        { "id": "n31", "prompt": "O livro custa ___ (115) reais.", "answers": [["cento e quinze"]], "options": ["cento e quinze", "cem e quinze", "um cento quinze"], "explanation": "\"Cento\" aparece antes de outro número." },
+        { "id": "n32", "prompt": "Esta é a ___ (3ª) vez que eu venho aqui.", "answers": [["terceira"]], "options": ["terceira", "terceiro", "três"], "explanation": "3ª, feminino = terceira." }
+      ]
+    },
+    {
+      "id": "num2-mc2",
+      "type": "multiple-choice",
+      "title": "Mais Escolhas de Números",
+      "items": [
+        { "id": "n33", "prompt": "Como se diz 1000 em português?", "options": ["mil", "um mil", "cento"], "answerIndex": 0, "explanation": "Mil não leva artigo nem \"um\" antes." },
+        { "id": "n34", "prompt": "Qual é a forma correta para 100 exato?", "options": ["cem", "cento", "um cem"], "answerIndex": 0, "explanation": "Cem é usado para o valor exato." },
+        { "id": "n35", "prompt": "Qual é a forma feminina de \"primeiro\"?", "options": ["primeira", "primeiro", "prima"], "answerIndex": 0, "explanation": "Ordinais concordam em gênero." },
+        { "id": "n36", "prompt": "Como se escreve 99?", "options": ["noventa e nove", "nove e noventa", "noventa nove"], "answerIndex": 0, "explanation": "Números compostos usam \"e\"." },
+        { "id": "n37", "prompt": "Qual é a forma correta: \"a ___ posição\"?", "options": ["primeira", "primeiro", "um"], "answerIndex": 0, "explanation": "Posição é feminino, então usa-se \"primeira\"." },
+        { "id": "n38", "prompt": "Qual dezena vem depois de \"setenta\"?", "options": ["oitenta", "noventa", "sessenta"], "answerIndex": 0, "explanation": "A sequência é setenta, oitenta, noventa." }
+      ]
+    },
+    {
+      "id": "num2-tf",
+      "type": "true-false",
+      "title": "Verdadeiro ou Falso?",
+      "items": [
+        { "id": "n39", "statement": "\"Mil\" nunca leva \"um\" antes em português.", "answer": true, "explanation": "Diferente do inglês \"one thousand\"." },
+        { "id": "n40", "statement": "\"Cento\" é usado sozinho, sem outro número depois.", "answer": false, "explanation": "Cento aparece seguido de outro número; cem é usado sozinho." },
+        { "id": "n41", "statement": "Ordinais concordam em gênero com o substantivo.", "answer": true, "explanation": "Primeiro/primeira, segundo/segunda, etc." },
+        { "id": "n42", "statement": "Números compostos usam \"e\": vinte e um.", "answer": true, "explanation": "Esse é o padrão de formação." },
+        { "id": "n43", "statement": "\"Cem reais\" é a forma correta para um valor exato de 100.", "answer": true, "explanation": "Cem é usado para o número exato." },
+        { "id": "n44", "statement": "Números cardinais concordam em gênero, assim como os ordinais.", "answer": false, "explanation": "A maioria dos cardinais não concorda em gênero, diferente dos ordinais." }
+      ]
     }
   ],
   "summary": [

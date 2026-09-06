@@ -91,6 +91,50 @@
           { "left": "Ele está nervoso hoje.", "right": "Estado temporário" }
         ], "explanation": "Cada uso de ser/estar corresponde a uma categoria diferente de significado." }
       ]
+    },
+    {
+      "id": "se-fill2",
+      "type": "fill-blank",
+      "title": "Mais Prática com Ser e Estar",
+      "items": [
+        { "id": "se11", "prompt": "Ela ___ dentista.", "answers": [["é"]], "options": ["é", "está"], "explanation": "Profissão usa \"ser\"." },
+        { "id": "se12", "prompt": "Nós ___ com pressa agora.", "answers": [["estamos"]], "options": ["estamos", "somos"], "explanation": "Um estado momentâneo usa \"estar\"." },
+        { "id": "se13", "prompt": "O carro ___ novo.", "answers": [["é"]], "options": ["é", "está"], "explanation": "Característica do carro usa \"ser\"." },
+        { "id": "se14", "prompt": "As crianças ___ com sono.", "answers": [["estão"]], "options": ["estão", "são"], "explanation": "Sono é um estado temporário — usa-se \"estar\"." },
+        { "id": "se15", "prompt": "Eu ___ casado.", "answers": [["sou"]], "options": ["sou", "estou"], "explanation": "Estado civil usa \"ser\"." },
+        { "id": "se16", "prompt": "A sopa ___ quente agora.", "answers": [["está"]], "options": ["está", "é"], "explanation": "A temperatura agora é temporária — usa-se \"estar\"." },
+        { "id": "se17", "prompt": "Nós ___ brasileiros.", "answers": [["somos"]], "options": ["somos", "estamos"], "explanation": "Nacionalidade usa \"ser\"." },
+        { "id": "se18", "prompt": "O hotel ___ cheio hoje.", "answers": [["está"]], "options": ["está", "é"], "explanation": "Uma condição de hoje usa \"estar\"." }
+      ]
+    },
+    {
+      "id": "se-mc2",
+      "type": "multiple-choice",
+      "title": "Mais Escolhas entre Ser e Estar",
+      "items": [
+        { "id": "se19", "prompt": "\"São nove horas\" usa qual verbo e por quê?", "options": ["ser, porque hora é convenção fixa", "estar, porque é temporário", "ambos funcionam igual"], "answerIndex": 0, "explanation": "Horas sempre usam \"ser\"." },
+        { "id": "se20", "prompt": "Qual frase descreve uma característica permanente?", "options": ["Ele é alto.", "Ele está cansado.", "Ele está com fome."], "answerIndex": 0, "explanation": "Altura é uma característica permanente, com \"ser\"." },
+        { "id": "se21", "prompt": "\"Estou feliz hoje\" usa \"estar\" porque...", "options": ["o sentimento é passageiro", "felicidade é sempre permanente", "é uma regra sem exceção"], "answerIndex": 0, "explanation": "Um sentimento de hoje é temporário." },
+        { "id": "se22", "prompt": "Qual verbo se usa para localização?", "options": ["estar", "ser", "nenhum dos dois"], "answerIndex": 0, "explanation": "Localização sempre usa \"estar\"." },
+        { "id": "se23", "prompt": "\"Ele é chato\" vs. \"Ele está chato hoje\" — a diferença é...", "options": ["personalidade permanente vs. comportamento de hoje", "não há diferença", "estar é sempre mais educado"], "answerIndex": 0, "explanation": "Ser marca traço permanente; estar marca algo só de hoje." },
+        { "id": "se24", "prompt": "Qual é a forma de \"estar\" para \"nós\"?", "options": ["estamos", "somos", "está"], "answerIndex": 0, "explanation": "Estamos é a forma de \"nós\" de estar." },
+        { "id": "se25", "prompt": "Qual é a forma de \"ser\" para \"vocês\"?", "options": ["são", "estão", "é"], "answerIndex": 0, "explanation": "São é a forma de \"vocês\" de ser." },
+        { "id": "se26", "prompt": "\"O livro é um presente\" usa \"ser\" porque...", "options": ["define o que o livro é", "descreve localização", "descreve um estado temporário"], "answerIndex": 0, "explanation": "Definir o que algo é usa \"ser\"." }
+      ]
+    },
+    {
+      "id": "se-tf",
+      "type": "true-false",
+      "title": "Verdadeiro ou Falso?",
+      "items": [
+        { "id": "se27", "statement": "\"Ser\" é usado para profissão e nacionalidade.", "answer": true, "explanation": "Ambas são características permanentes." },
+        { "id": "se28", "statement": "\"Estar\" é usado para características permanentes da personalidade.", "answer": false, "explanation": "Características permanentes usam \"ser\", não \"estar\"." },
+        { "id": "se29", "statement": "A pergunta \"Está tudo bem?\" usa o verbo estar.", "answer": true, "explanation": "Está vem de \"estar\"." },
+        { "id": "se30", "statement": "\"Estar\" pode descrever o resultado de uma mudança, como uma porta que ficou aberta.", "answer": true, "explanation": "Estados resultantes de uma mudança usam \"estar\"." },
+        { "id": "se31", "statement": "\"Ser\" é sempre usado para descrever localização.", "answer": false, "explanation": "Localização usa \"estar\", não \"ser\"." },
+        { "id": "se32", "statement": "Cansaço e fome são exemplos de estados temporários que usam \"estar\".", "answer": true, "explanation": "Ambos são estados passageiros." },
+        { "id": "se33", "statement": "\"Somos\" é a forma de \"estar\" para a primeira pessoa do plural.", "answer": false, "explanation": "Somos é a forma de \"ser\"; a forma de \"estar\" é estamos." }
+      ]
     }
   ],
   "summary": [

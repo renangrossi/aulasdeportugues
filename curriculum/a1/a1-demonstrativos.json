@@ -78,6 +78,45 @@
           { "left": "isso", "right": "objeto neutro, não identificado" }
         ], "explanation": "Cada demonstrativo carrega uma noção de distância diferente." }
       ]
+    },
+    {
+      "id": "dem-fill2",
+      "type": "fill-blank",
+      "title": "Mais Prática com Demonstrativos",
+      "items": [
+        { "id": "dm7", "prompt": "___ (this, perto de mim) caneta é minha.", "answers": [["Esta"]], "options": ["Esta", "Essa", "Aquela"], "explanation": "Perto de quem fala usa \"esta\"." },
+        { "id": "dm8", "prompt": "___ (that, perto de você) livro que você segura é interessante.", "answers": [["Esse"]], "options": ["Esse", "Este", "Aquele"], "explanation": "Perto de quem ouve usa \"esse\"." },
+        { "id": "dm9", "prompt": "___ (that, longe) prédio no horizonte é um hotel.", "answers": [["Aquele"]], "options": ["Aquele", "Este", "Esse"], "explanation": "Distante de ambos usa \"aquele\"." },
+        { "id": "dm10", "prompt": "Eu não entendo ___ que ele fez.", "answers": [["aquilo"]], "options": ["aquilo", "isto", "esse"], "explanation": "Referência distante e neutra usa \"aquilo\"." },
+        { "id": "dm11", "prompt": "___ ideia é ótima!", "answers": [["Esta"]], "options": ["Esta", "Isto", "Esse"], "explanation": "Ideia é feminino e próxima de quem fala, então usa \"esta\"." },
+        { "id": "dm12", "prompt": "O que é ___ na minha bolsa?", "answers": [["isto"]], "options": ["isto", "isso", "aquilo"], "explanation": "Objeto neutro perto de quem fala usa \"isto\"." }
+      ]
+    },
+    {
+      "id": "dem-mc2",
+      "type": "multiple-choice",
+      "title": "Mais Escolhas de Demonstrativos",
+      "items": [
+        { "id": "dm13", "prompt": "Qual forma é usada para algo perto de quem ouve?", "options": ["esse", "este", "aquele"], "answerIndex": 0, "explanation": "Esse indica proximidade de quem ouve." },
+        { "id": "dm14", "prompt": "Isto/isso/aquilo têm plural?", "options": ["não, são invariáveis", "sim, sempre", "só isso tem plural"], "answerIndex": 0, "explanation": "As formas neutras não variam." },
+        { "id": "dm15", "prompt": "\"Esta casa\" é correto porque...", "options": ["casa é feminino e está perto de quem fala", "casa é sempre neutro", "não há concordância em português"], "answerIndex": 0, "explanation": "O demonstrativo concorda em gênero com casa." },
+        { "id": "dm16", "prompt": "Qual é o erro em \"isto casa\"?", "options": ["isto não pode acompanhar um substantivo diretamente", "isto é sempre plural", "casa deveria ser masculino"], "answerIndex": 0, "explanation": "As formas neutras são usadas sozinhas, sem substantivo." },
+        { "id": "dm17", "prompt": "\"Esse\" combinado com \"de\" forma qual palavra?", "options": ["desse", "daquele", "deste"], "answerIndex": 0, "explanation": "Esse + de = desse." },
+        { "id": "dm18", "prompt": "No português falado cotidiano, a distinção entre...", "options": ["este e esse é frequentemente relaxada", "isto e isso nunca é usada", "aquele nunca é usado"], "answerIndex": 0, "explanation": "A distinção este/esse é menos rígida na fala do dia a dia." }
+      ]
+    },
+    {
+      "id": "dem-tf",
+      "type": "true-false",
+      "title": "Verdadeiro ou Falso?",
+      "items": [
+        { "id": "dm19", "statement": "\"Este\" indica algo perto de quem fala.", "answer": true, "explanation": "Essa é a função de \"este\"." },
+        { "id": "dm20", "statement": "\"Aquele\" indica algo perto de quem ouve.", "answer": false, "explanation": "Aquele indica distância de ambos; esse indica proximidade de quem ouve." },
+        { "id": "dm21", "statement": "Isto/isso/aquilo são formas neutras, sem gênero.", "answer": true, "explanation": "Elas não variam em gênero nem número." },
+        { "id": "dm22", "statement": "Demonstrativos concordam em gênero e número com o substantivo que acompanham.", "answer": true, "explanation": "Como qualquer outro determinante." },
+        { "id": "dm23", "statement": "O inglês tem três níveis de distância, como o português.", "answer": false, "explanation": "O inglês distingue apenas this/that, dois níveis." },
+        { "id": "dm24", "statement": "\"Daquele\" é a combinação de \"de\" + \"aquele\".", "answer": true, "explanation": "Assim como \"desse\" é de + esse." }
+      ]
     }
   ],
   "summary": [

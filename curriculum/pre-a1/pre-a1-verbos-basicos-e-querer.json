@@ -75,6 +75,14 @@
         { "id": "vb6", "prompt": "Qual frase está correta?", "options": ["Eu preciso de dormir.", "Eu preciso dormir.", "Eu precisar dormir."], "answerIndex": 1, "explanation": "\"Precisar\" + verbo no infinitivo não leva \"de\"." },
         { "id": "vb7", "prompt": "Qual frase está correta?", "options": ["Nós gosta de praia.", "Nós gostamos praia.", "Nós gostamos de praia."], "answerIndex": 2, "explanation": "\"Gostar\" concorda com o sujeito (nós gostamos) e leva \"de\"." }
       ]
+    },
+    {
+      "id": "verb-tf",
+      "type": "true-false",
+      "title": "Verdadeiro ou Falso?",
+      "items": [
+        { "id": "vb8", "statement": "\"Precisar\" nunca leva \"de\" antes de um verbo no infinitivo.", "answer": true, "explanation": "\"Eu preciso estudar\" — sem \"de\" antes do infinitivo." }
+      ]
     }
   ],
   "summary": [

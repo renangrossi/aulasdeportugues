@@ -71,6 +71,78 @@
           { "left": "depois de", "right": "after" }
         ], "explanation": "Cada preposição de lugar/tempo tem um equivalente aproximado em inglês." }
       ]
+    },
+    {
+      "id": "prep-fill2",
+      "type": "fill-blank",
+      "title": "Mais Preposições para Praticar",
+      "items": [
+        { "id": "pl7", "prompt": "O quadro está ___ a parede.", "answers": [["sobre"]], "options": ["sobre", "sob", "entre"], "explanation": "Sobre indica uma superfície." },
+        { "id": "pl8", "prompt": "Os sapatos estão ___ da cama.", "answers": [["embaixo"]], "options": ["embaixo", "sobre", "entre"], "explanation": "Embaixo de indica posição abaixo." },
+        { "id": "pl9", "prompt": "A padaria fica ___ da farmácia.", "answers": [["ao lado"]], "options": ["ao lado", "embaixo", "sobre"], "explanation": "Ao lado de indica proximidade lateral." },
+        { "id": "pl10", "prompt": "Nós vamos estudar ___ da prova.", "answers": [["antes"]], "options": ["antes", "depois", "durante"], "explanation": "Antes de indica sequência temporal." },
+        { "id": "pl11", "prompt": "Ele descansa ___ do trabalho.", "answers": [["depois"]], "options": ["depois", "antes", "desde"], "explanation": "Depois de indica sequência temporal." },
+        { "id": "pl12", "prompt": "Ela mora aqui ___ 2019.", "answers": [["desde"]], "options": ["desde", "até", "durante"], "explanation": "Desde marca o início de um período contínuo." },
+        { "id": "pl13", "prompt": "A loja fica aberta ___ as dez horas.", "answers": [["até"]], "options": ["até", "desde", "entre"], "explanation": "Até marca o fim de um período." },
+        { "id": "pl14", "prompt": "Ele trabalhou ___ toda a noite.", "answers": [["durante"]], "options": ["durante", "desde", "antes"], "explanation": "Durante indica um período de tempo." },
+        { "id": "pl15", "prompt": "O gato dorme ___ o sofá.", "answers": [["sobre", "em cima de"]], "options": ["sobre", "sob", "entre"], "explanation": "Sobre/em cima de indica uma superfície." },
+        { "id": "pl16", "prompt": "A chave está ___ do tapete.", "answers": [["embaixo"]], "options": ["embaixo", "sobre", "entre"], "explanation": "Embaixo de indica posição abaixo." },
+        { "id": "pl17", "prompt": "Eu moro ___ São Paulo.", "answers": [["em"]], "options": ["em", "sobre", "sob"], "explanation": "Em é a preposição geral de localização." },
+        { "id": "pl18", "prompt": "A escola fica ___ o parque e o hospital.", "answers": [["entre"]], "options": ["entre", "sobre", "sob"], "explanation": "Entre pede duas referências." },
+        { "id": "pl19", "prompt": "Nós chegamos ___ do almoço.", "answers": [["antes"]], "options": ["antes", "depois", "durante"], "explanation": "Antes de indica sequência temporal." },
+        { "id": "pl20", "prompt": "Ele estuda ___ do jantar todo dia.", "answers": [["depois"]], "options": ["depois", "antes", "até"], "explanation": "Depois de indica sequência temporal." },
+        { "id": "pl21", "prompt": "A reunião dura ___ duas horas.", "answers": [["durante"]], "options": ["durante", "desde", "até"], "explanation": "Durante indica a duração de um evento." },
+        { "id": "pl22", "prompt": "Ela trabalha aqui ___ cinco anos atrás.", "answers": [["desde"]], "options": ["desde", "há", "até"], "explanation": "Desde marca o ponto de início." },
+        { "id": "pl23", "prompt": "O filme vai ___ as nove horas.", "answers": [["até"]], "options": ["até", "desde", "entre"], "explanation": "Até marca o fim de um período." }
+      ]
+    },
+    {
+      "id": "prep-mc2",
+      "type": "multiple-choice",
+      "title": "Mais Escolhas de Preposições",
+      "items": [
+        { "id": "pl24", "prompt": "Qual preposição indica uma superfície?", "options": ["sobre", "sob", "entre"], "answerIndex": 0, "explanation": "Sobre indica posição em cima de uma superfície." },
+        { "id": "pl25", "prompt": "Qual preposição indica posição abaixo de algo?", "options": ["sob", "sobre", "entre"], "answerIndex": 0, "explanation": "Sob/embaixo de indica posição abaixo." },
+        { "id": "pl26", "prompt": "Qual preposição precisa de pelo menos duas referências?", "options": ["entre", "sobre", "desde"], "answerIndex": 0, "explanation": "Entre sempre pede duas referências." },
+        { "id": "pl27", "prompt": "Qual preposição marca o início de um período contínuo?", "options": ["desde", "até", "durante"], "answerIndex": 0, "explanation": "Desde marca o ponto de início." },
+        { "id": "pl28", "prompt": "Qual preposição marca o fim de um período?", "options": ["até", "desde", "antes"], "answerIndex": 0, "explanation": "Até marca o ponto final." },
+        { "id": "pl29", "prompt": "Qual preposição indica um período de tempo, sem marcar início/fim específicos?", "options": ["durante", "desde", "até"], "answerIndex": 0, "explanation": "Durante indica um período, sem marcar limites exatos." },
+        { "id": "pl30", "prompt": "\"O livro está na mesa\" usa qual contração?", "options": ["em + a", "de + a", "a + a"], "answerIndex": 0, "explanation": "Em + a = na." },
+        { "id": "pl31", "prompt": "Qual é a diferença entre \"desde\" e \"há\"?", "options": ["desde marca o início; há indica duração", "são idênticos", "desde só se usa no plural"], "answerIndex": 0, "explanation": "Desde marca um ponto de início; há marca uma duração." },
+        { "id": "pl32", "prompt": "Qual preposição é mais geral para localização?", "options": ["em", "sobre", "sob"], "answerIndex": 0, "explanation": "Em é a preposição mais geral." },
+        { "id": "pl33", "prompt": "\"Antes de\" e \"depois de\" indicam...", "options": ["sequência no tempo", "localização espacial", "quantidade"], "answerIndex": 0, "explanation": "Ambas indicam ordem temporal." },
+        { "id": "pl34", "prompt": "Qual é o equivalente em inglês de \"embaixo de\"?", "options": ["under", "over", "between"], "answerIndex": 0, "explanation": "Embaixo de = under." },
+        { "id": "pl35", "prompt": "Qual é o equivalente em inglês de \"ao lado de\"?", "options": ["next to", "under", "between"], "answerIndex": 0, "explanation": "Ao lado de = next to." },
+        { "id": "pl36", "prompt": "\"Entre a casa e a rua\" usa \"entre\" para...", "options": ["indicar posição no meio de duas referências", "indicar tempo", "indicar posse"], "answerIndex": 0, "explanation": "Entre localiza algo no meio de duas coisas." },
+        { "id": "pl37", "prompt": "Qual preposição de tempo indica um evento que já começou e continua?", "options": ["desde", "até", "antes"], "answerIndex": 0, "explanation": "Desde indica um início que continua até agora." },
+        { "id": "pl38", "prompt": "\"Eu moro aqui desde 2020\" enfatiza...", "options": ["o ponto de início", "a duração total", "o fim do período"], "answerIndex": 0, "explanation": "Desde marca quando algo começou." },
+        { "id": "pl39", "prompt": "Qual preposição usar para \"o gato está em cima da mesa\"?", "options": ["em cima de", "embaixo de", "entre"], "answerIndex": 0, "explanation": "Em cima de indica posição sobre uma superfície." },
+        { "id": "pl40", "prompt": "Qual é o equivalente em inglês de \"durante\"?", "options": ["during", "before", "after"], "answerIndex": 0, "explanation": "Durante = during." }
+      ]
+    },
+    {
+      "id": "prep-tf",
+      "type": "true-false",
+      "title": "Verdadeiro ou Falso?",
+      "items": [
+        { "id": "pl41", "statement": "\"Em\" é a preposição mais geral para localização.", "answer": true, "explanation": "Em cobre a maioria das localizações gerais." },
+        { "id": "pl42", "statement": "\"Sob\" e \"embaixo de\" têm o mesmo significado.", "answer": true, "explanation": "Ambas indicam posição abaixo de algo." },
+        { "id": "pl43", "statement": "\"Entre\" pode ser usado com apenas um elemento.", "answer": false, "explanation": "Entre sempre pede pelo menos duas referências." },
+        { "id": "pl44", "statement": "\"Desde\" marca o início de um período que continua.", "answer": true, "explanation": "Essa é a função principal de \"desde\"." },
+        { "id": "pl45", "statement": "\"Até\" marca o fim de um período.", "answer": true, "explanation": "Essa é a função principal de \"até\"." },
+        { "id": "pl46", "statement": "\"Durante\" indica quando algo termina, não quando acontece.", "answer": false, "explanation": "Durante indica o período em que algo acontece, não seu fim." },
+        { "id": "pl47", "statement": "\"Sobre\" e \"em cima de\" podem ser usados de forma equivalente.", "answer": true, "explanation": "Ambas indicam posição sobre uma superfície." },
+        { "id": "pl48", "statement": "\"Em\" + \"a\" nunca se contrai.", "answer": false, "explanation": "Em + a sempre se contrai em \"na\"." },
+        { "id": "pl49", "statement": "\"Antes de\" indica sequência temporal.", "answer": true, "explanation": "Antes de situa um evento antes de outro." },
+        { "id": "pl50", "statement": "\"Ao lado de\" indica proximidade lateral.", "answer": true, "explanation": "Essa é exatamente sua função." },
+        { "id": "pl51", "statement": "\"Desde\" e \"há\" significam exatamente a mesma coisa.", "answer": false, "explanation": "Desde marca um início; há marca uma duração." },
+        { "id": "pl52", "statement": "\"Depois de\" indica algo que acontece antes de outro evento.", "answer": false, "explanation": "Depois de indica algo que acontece depois, não antes." },
+        { "id": "pl53", "statement": "\"O gato está embaixo da cama\" usa \"embaixo de\" para indicar posição abaixo.", "answer": true, "explanation": "Essa é a função de \"embaixo de\"." },
+        { "id": "pl54", "statement": "Preposições de tempo e de lugar têm sempre a mesma forma.", "answer": false, "explanation": "Algumas preposições são específicas de tempo ou de lugar, mesmo com sobreposições." },
+        { "id": "pl55", "statement": "\"A loja fica aberta desde as nove até as sete\" marca início e fim de um período.", "answer": true, "explanation": "Desde...até... marca ambos os limites." },
+        { "id": "pl56", "statement": "\"Entre\" localiza algo no meio de duas referências.", "answer": true, "explanation": "Essa é a função central de \"entre\"." },
+        { "id": "pl57", "statement": "Preposições são palavras pequenas mas mudam completamente o sentido da frase.", "answer": true, "explanation": "Essa é a ideia central da introdução desta lição." }
+      ]
     }
   ],
   "summary": [

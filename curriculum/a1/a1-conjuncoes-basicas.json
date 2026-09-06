@@ -74,6 +74,42 @@
       "items": [
         { "id": "cj6", "prompt": "gosto / mas / de / não / café / chá / gosto / de", "words": ["Eu", "gosto", "de", "café", "mas", "não", "gosto", "de", "chá"], "explanation": "Duas orações conectadas por \"mas\", indicando contraste." }
       ]
+    },
+    {
+      "id": "conj-fill2",
+      "type": "fill-blank",
+      "title": "Mais Prática com Conjunções",
+      "items": [
+        { "id": "cj7", "prompt": "Eu gosto de praia ___ de montanha.", "answers": [["e"]], "options": ["e", "mas", "ou"], "explanation": "\"E\" soma duas preferências." },
+        { "id": "cj8", "prompt": "Ele quer sair, ___ está chovendo.", "answers": [["mas"]], "options": ["mas", "e", "ou"], "explanation": "Ideia de contraste — usa-se \"mas\"." },
+        { "id": "cj9", "prompt": "Vocês preferem cinema ___ teatro?", "answers": [["ou"]], "options": ["ou", "e", "mas"], "explanation": "Apresenta uma escolha — usa-se \"ou\"." },
+        { "id": "cj10", "prompt": "Eu não fui trabalhar ___ estava doente.", "answers": [["porque"]], "options": ["porque", "por que", "mas"], "explanation": "Explica a causa — usa-se \"porque\" junto." },
+        { "id": "cj11", "prompt": "___ você não me ligou ontem?", "answers": [["Por que"]], "options": ["Por que", "Porque", "Por quê"], "explanation": "Pergunta — usa-se \"por que\", separado." }
+      ]
+    },
+    {
+      "id": "conj-mc2",
+      "type": "multiple-choice",
+      "title": "Mais Escolhas de Conjunções",
+      "items": [
+        { "id": "cj12", "prompt": "Qual forma é usada no final de uma pergunta, isolada?", "options": ["por quê", "porque", "por que"], "answerIndex": 0, "explanation": "\"Por quê\", com acento, é usado isolado ou no final da pergunta." },
+        { "id": "cj13", "prompt": "\"Porquê\" (junto, com acento) é qual classe gramatical?", "options": ["substantivo", "conjunção", "verbo"], "answerIndex": 0, "explanation": "Porquê é um substantivo que significa \"a razão\"." },
+        { "id": "cj14", "prompt": "Qual conjunção soma ideias?", "options": ["e", "mas", "ou"], "answerIndex": 0, "explanation": "\"E\" soma ideias na mesma direção." },
+        { "id": "cj15", "prompt": "Qual conjunção apresenta uma escolha?", "options": ["ou", "e", "porque"], "answerIndex": 0, "explanation": "\"Ou\" apresenta uma escolha entre opções." },
+        { "id": "cj16", "prompt": "Qual é o erro em \"Porque você chegou tarde?\"", "options": ["deveria ser \"por que\", pois é uma pergunta", "está gramaticalmente perfeito", "deveria ser \"mas\""], "answerIndex": 0, "explanation": "Perguntas usam \"por que\", separado." }
+      ]
+    },
+    {
+      "id": "conj-tf",
+      "type": "true-false",
+      "title": "Verdadeiro ou Falso?",
+      "items": [
+        { "id": "cj17", "statement": "\"Mas\" é usado para contrastar ideias.", "answer": true, "explanation": "Essa é a função de \"mas\"." },
+        { "id": "cj18", "statement": "\"Por que\" (separado, sem acento) é usado para perguntar.", "answer": true, "explanation": "Essa é a forma usada em perguntas." },
+        { "id": "cj19", "statement": "\"Porque\" (junto) é usado para explicar ou responder.", "answer": true, "explanation": "Essa é a forma usada em respostas/explicações." },
+        { "id": "cj20", "statement": "\"E\" é usado para apresentar uma escolha entre duas opções.", "answer": false, "explanation": "\"Ou\" é usado para escolhas; \"e\" soma ideias." },
+        { "id": "cj21", "statement": "\"Porquê\" é um substantivo que significa \"a razão\".", "answer": true, "explanation": "É a quarta forma do quarteto por que/porque/por quê/porquê." }
+      ]
     }
   ],
   "summary": [

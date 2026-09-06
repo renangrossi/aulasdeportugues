@@ -65,6 +65,47 @@
         { "id": "ht6", "statement": "\"Há\" varia entre singular e plural, como \"there is/there are\" em inglês.", "answer": false, "explanation": "\"Há\" não varia — é a mesma forma para singular e plural." },
         { "id": "ht7", "statement": "\"Tem\", usado de forma impessoal, é comum na fala cotidiana do Brasil.", "answer": true, "explanation": "Exatamente — é extremamente frequente no português falado, embora \"há\" seja mais formal." }
       ]
+    },
+    {
+      "id": "hatem-fill2",
+      "type": "fill-blank",
+      "title": "Mais Prática com Há e Tem",
+      "items": [
+        { "id": "ht8", "prompt": "___ um problema com o pedido.", "answers": [["Há", "Tem"]], "options": ["Há", "Tem", "Hão"], "explanation": "Ambas as formas expressam existência." },
+        { "id": "ht9", "prompt": "Nós moramos nesta rua ___ dez anos.", "answers": [["há"]], "options": ["há", "tem", "a"], "explanation": "Tempo decorrido usa especificamente \"há\"." },
+        { "id": "ht10", "prompt": "___ cinco quartos nesta casa.", "answers": [["Há", "Tem"]], "options": ["Há", "Tem", "Hão"], "explanation": "Ambas as formas expressam existência." },
+        { "id": "ht11", "prompt": "Não ___ ninguém no escritório agora.", "answers": [["há", "tem"]], "options": ["há", "hão", "tens"], "explanation": "Ambas as formas expressam existência, mesmo negadas." },
+        { "id": "ht12", "prompt": "Ela estuda português ___ dois meses.", "answers": [["há"]], "options": ["há", "tem", "a"], "explanation": "Tempo decorrido usa especificamente \"há\"." },
+        { "id": "ht13", "prompt": "___ muitos turistas na praia neste verão.", "answers": [["Há", "Tem"]], "options": ["Há", "Tem", "Hão"], "explanation": "Ambas as formas expressam existência." },
+        { "id": "ht14", "prompt": "___ água na geladeira?", "answers": [["Há", "Tem"]], "options": ["Há", "Tem", "Hão"], "explanation": "Ambas as formas expressam existência." }
+      ]
+    },
+    {
+      "id": "hatem-mc2",
+      "type": "multiple-choice",
+      "title": "Mais Escolhas sobre Há e Tem",
+      "items": [
+        { "id": "ht15", "prompt": "Qual verbo dá origem a \"há\"?", "options": ["haver", "ter", "ser"], "answerIndex": 0, "explanation": "Há vem do verbo haver." },
+        { "id": "ht16", "prompt": "\"Tem\", no sentido impessoal, vem de qual verbo?", "options": ["ter", "tem (próprio)", "estar"], "answerIndex": 0, "explanation": "Tem impessoal vem do verbo ter." },
+        { "id": "ht17", "prompt": "Qual forma é mais comum na fala cotidiana do Brasil?", "options": ["tem", "há", "hão"], "answerIndex": 0, "explanation": "Tem é mais informal e mais frequente na fala." },
+        { "id": "ht18", "prompt": "\"Há dois anos\" equivale em inglês a...", "options": ["two years ago / for two years", "in two years", "never"], "answerIndex": 0, "explanation": "Há marca tempo decorrido." },
+        { "id": "ht19", "prompt": "\"Hão dois livros\" está incorreto porque...", "options": ["há não varia no plural", "dois é sempre singular", "livros precisa de outro verbo"], "answerIndex": 0, "explanation": "Há mantém a mesma forma no singular e no plural." },
+        { "id": "ht20", "prompt": "Qual forma é mais formal/escrita?", "options": ["há", "tem", "hão"], "answerIndex": 0, "explanation": "Há é mais formal que tem." },
+        { "id": "ht21", "prompt": "\"Tem\" impessoal não deve ser confundido com...", "options": ["\"tem\" pessoal (você tem, ele tem)", "\"há\" formal", "\"ter\" no infinitivo"], "answerIndex": 0, "explanation": "Os dois usos de \"tem\" são diferentes." }
+      ]
+    },
+    {
+      "id": "hatem-tf2",
+      "type": "true-false",
+      "title": "Mais Verdadeiro ou Falso",
+      "items": [
+        { "id": "ht22", "statement": "\"Há\" e \"tem\" (impessoal) variam no plural, como em inglês.", "answer": false, "explanation": "Nenhum dos dois varia no plural." },
+        { "id": "ht23", "statement": "\"Há\" pode expressar tempo decorrido, equivalente a \"ago\".", "answer": true, "explanation": "Como em \"há dois anos\"." },
+        { "id": "ht24", "statement": "\"Tem\" impessoal é mais formal do que \"há\".", "answer": false, "explanation": "É o contrário: tem é mais informal." },
+        { "id": "ht25", "statement": "\"Hão\" é a forma correta de \"há\" no plural.", "answer": false, "explanation": "Há não varia no plural." },
+        { "id": "ht26", "statement": "\"Eu moro aqui há cinco anos\" expressa tempo decorrido.", "answer": true, "explanation": "Essa é exatamente sua função." },
+        { "id": "ht27", "statement": "\"Há\" e \"a\" são a mesma palavra, apenas com grafias diferentes.", "answer": false, "explanation": "São palavras diferentes: \"a\" é artigo/preposição, \"há\" vem do verbo haver." }
+      ]
     }
   ],
   "summary": [

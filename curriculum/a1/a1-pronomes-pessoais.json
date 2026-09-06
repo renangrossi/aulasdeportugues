@@ -70,6 +70,57 @@
         { "id": "pp5", "prompt": "___ moramos no Rio de Janeiro.", "answers": [["Nós"]], "options": ["Nós", "Eles", "Você"], "explanation": "A forma verbal \"moramos\" combina com o pronome \"nós\"." },
         { "id": "pp6", "prompt": "___ trabalham juntos há cinco anos.", "answers": [["Eles", "Elas"]], "options": ["Eles", "Eu", "Nós"], "explanation": "A terceira pessoa do plural (trabalham) combina com \"eles/elas\"." }
       ]
+    },
+    {
+      "id": "pron-fill2",
+      "type": "fill-blank",
+      "title": "Mais Pronomes para Completar",
+      "items": [
+        { "id": "pp7", "prompt": "___ estuda medicina.", "answers": [["Ele"]], "options": ["Ele", "Eu", "Nós"], "explanation": "Terceira pessoa do singular masculino." },
+        { "id": "pp8", "prompt": "___ trabalham no mesmo escritório.", "answers": [["Elas"]], "options": ["Elas", "Ela", "Vocês"], "explanation": "Terceira pessoa do plural feminino." },
+        { "id": "pp9", "prompt": "___ é meu melhor amigo.", "answers": [["Ele"]], "options": ["Ele", "Eles", "Nós"], "explanation": "Terceira pessoa do singular masculino." },
+        { "id": "pp10", "prompt": "___ moram em Salvador.", "answers": [["Vocês"]], "options": ["Vocês", "Você", "Tu"], "explanation": "Vocês é o plural de você." },
+        { "id": "pp11", "prompt": "No Rio Grande do Sul, muitas pessoas dizem \"___ falas\" em vez de \"você fala\".", "answers": [["tu"]], "options": ["tu", "vós", "nós"], "explanation": "Tu é comum nessa região." },
+        { "id": "pp12", "prompt": "___ somos colegas de trabalho.", "answers": [["Nós"]], "options": ["Nós", "Eles", "Eu"], "explanation": "Primeira pessoa do plural." },
+        { "id": "pp13", "prompt": "___ é professora de português.", "answers": [["Ela"]], "options": ["Ela", "Elas", "Ele"], "explanation": "Terceira pessoa do singular feminino." },
+        { "id": "pp14", "prompt": "___ vão ao cinema hoje à noite?", "answers": [["Vocês"]], "options": ["Vocês", "Nós", "Eles"], "explanation": "Segunda pessoa do plural." },
+        { "id": "pp15", "prompt": "___ gosto muito de música brasileira.", "answers": [["Eu"]], "options": ["Eu", "Ele", "Nós"], "explanation": "Primeira pessoa do singular." },
+        { "id": "pp16", "prompt": "___ estão muito ocupados esta semana.", "answers": [["Eles", "Elas"]], "options": ["Eles", "Você", "Eu"], "explanation": "Terceira pessoa do plural." }
+      ]
+    },
+    {
+      "id": "pron-mc2",
+      "type": "multiple-choice",
+      "title": "Mais Escolhas de Pronomes",
+      "items": [
+        { "id": "pp17", "prompt": "Qual pronome é praticamente extinto no Brasil, usado só em textos formais/religiosos?", "options": ["vós", "vocês", "nós"], "answerIndex": 0, "explanation": "Vós é praticamente extinto no uso cotidiano." },
+        { "id": "pp18", "prompt": "Em qual região \"tu\" é comumente usado no dia a dia?", "options": ["Rio Grande do Sul", "São Paulo capital", "Distrito Federal"], "answerIndex": 0, "explanation": "O Rio Grande do Sul é conhecido pelo uso cotidiano de \"tu\"." },
+        { "id": "pp19", "prompt": "\"Você fala\" usa qual conjugação verbal?", "options": ["terceira pessoa do singular", "primeira pessoa do singular", "segunda pessoa do plural"], "answerIndex": 0, "explanation": "Você usa a conjugação da terceira pessoa." },
+        { "id": "pp20", "prompt": "Por que os pronomes de sujeito são frequentemente omitidos em português?", "options": ["porque a conjugação verbal já indica a pessoa", "porque é uma regra sem exceção", "porque só existem no plural"], "answerIndex": 0, "explanation": "A terminação do verbo já identifica o sujeito." },
+        { "id": "pp21", "prompt": "Qual é o pronome para um grupo misto de homens e mulheres?", "options": ["eles", "elas", "vós"], "answerIndex": 0, "explanation": "Eles cobre grupos mistos ou só masculinos." },
+        { "id": "pp22", "prompt": "\"Vocês\" pode ser usado para...", "options": ["falar com duas ou mais pessoas", "falar com uma só pessoa", "substituir \"eu\""], "answerIndex": 0, "explanation": "Vocês é sempre plural." },
+        { "id": "pp23", "prompt": "Qual pronome corresponde a \"we\" em inglês?", "options": ["nós", "vós", "eles"], "answerIndex": 0, "explanation": "Nós corresponde a \"we\"." },
+        { "id": "pp24", "prompt": "No Brasil, qual pronome é mais recomendado para estudantes de português como língua estrangeira?", "options": ["você", "tu", "vós"], "answerIndex": 0, "explanation": "Você cobre a maioria das situações no Brasil." },
+        { "id": "pp25", "prompt": "\"Eles trabalham juntos\" usa qual pronome?", "options": ["eles", "ele", "nós"], "answerIndex": 0, "explanation": "Eles é a terceira pessoa do plural." },
+        { "id": "pp26", "prompt": "Misturar \"tu\" e \"você\" na mesma frase é considerado...", "options": ["uma inconsistência a evitar", "sempre correto", "obrigatório"], "answerIndex": 0, "explanation": "As duas formas pedem conjugações diferentes." }
+      ]
+    },
+    {
+      "id": "pron-tf",
+      "type": "true-false",
+      "title": "Verdadeiro ou Falso?",
+      "items": [
+        { "id": "pp27", "statement": "\"Vocês\" é sempre plural, mesmo quando \"you\" em inglês seria singular.", "answer": true, "explanation": "Vocês nunca é usado no singular." },
+        { "id": "pp28", "statement": "\"Tu\" é usado em todo o Brasil da mesma forma.", "answer": false, "explanation": "O uso de \"tu\" varia muito por região." },
+        { "id": "pp29", "statement": "\"Vós\" é comum na fala cotidiana brasileira.", "answer": false, "explanation": "Vós é praticamente extinto no uso cotidiano." },
+        { "id": "pp30", "statement": "Pronomes de sujeito podem ser omitidos quando o contexto já é claro.", "answer": true, "explanation": "A conjugação verbal já indica a pessoa." },
+        { "id": "pp31", "statement": "\"Elas\" é usado para um grupo composto só por mulheres.", "answer": true, "explanation": "Elas é exclusivamente feminino." },
+        { "id": "pp32", "statement": "\"Nós\" corresponde à primeira pessoa do plural.", "answer": true, "explanation": "Nós = we." },
+        { "id": "pp33", "statement": "\"Você\" usa a conjugação da terceira pessoa do verbo.", "answer": true, "explanation": "Você fala, ele fala — mesma conjugação." },
+        { "id": "pp34", "statement": "\"Eles\" nunca pode se referir a um grupo misto de homens e mulheres.", "answer": false, "explanation": "Eles cobre tanto grupos masculinos quanto mistos." },
+        { "id": "pp35", "statement": "\"Tu\" pede uma conjugação verbal diferente da de \"você\".", "answer": true, "explanation": "Tu falas vs. você fala." },
+        { "id": "pp36", "statement": "Os pronomes pessoais do sujeito indicam quem pratica a ação do verbo.", "answer": true, "explanation": "Essa é exatamente sua função." }
+      ]
     }
   ],
   "summary": [

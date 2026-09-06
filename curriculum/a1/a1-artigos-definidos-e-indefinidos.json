@@ -75,6 +75,50 @@
         { "id": "at6", "prompt": "amor / é / importante / o", "words": ["O", "amor", "é", "importante"], "explanation": "Artigo definido + substantivo + verbo + adjetivo." },
         { "id": "at7", "prompt": "livro / li / interessante / eu / um", "words": ["Eu", "li", "um", "livro", "interessante"], "explanation": "Sujeito + verbo + artigo indefinido + substantivo + adjetivo." }
       ]
+    },
+    {
+      "id": "art-fill2",
+      "type": "fill-blank",
+      "title": "Mais Prática com Artigos",
+      "items": [
+        { "id": "at8", "prompt": "Ela comprou ___ vestido bonito.", "answers": [["um"]], "options": ["um", "o"], "explanation": "Primeira menção — artigo indefinido." },
+        { "id": "at9", "prompt": "___ vestido que ela comprou é azul.", "answers": [["O"]], "options": ["O", "Um"], "explanation": "Já mencionado — artigo definido." },
+        { "id": "at10", "prompt": "___ felicidade não tem preço.", "answers": [["A"]], "options": ["A", "Uma"], "explanation": "Substantivo abstrato/geral leva artigo definido." },
+        { "id": "at11", "prompt": "Nós temos ___ dúvidas sobre o projeto.", "answers": [["umas"]], "options": ["umas", "as"], "explanation": "Quantidade indefinida — artigo indefinido plural." },
+        { "id": "at12", "prompt": "___ estudantes desta turma são muito dedicados.", "answers": [["Os"]], "options": ["Os", "Uns"], "explanation": "Grupo específico e já conhecido — artigo definido." },
+        { "id": "at13", "prompt": "Eu quero comprar ___ presente para minha mãe.", "answers": [["um"]], "options": ["um", "o"], "explanation": "Algo não específico ainda — artigo indefinido." },
+        { "id": "at14", "prompt": "___ música brasileira é conhecida no mundo todo.", "answers": [["A"]], "options": ["A", "Uma"], "explanation": "Substantivo geral leva artigo definido em português." },
+        { "id": "at15", "prompt": "Ele viu ___ filmes interessantes no festival.", "answers": [["uns"]], "options": ["uns", "os"], "explanation": "Quantidade não específica — artigo indefinido plural." }
+      ]
+    },
+    {
+      "id": "art-mc2",
+      "type": "multiple-choice",
+      "title": "Mais Escolhas de Artigos",
+      "items": [
+        { "id": "at16", "prompt": "Qual artigo equivale a \"the\" em português?", "options": ["definido (o/a/os/as)", "indefinido (um/uma)", "nenhum"], "answerIndex": 0, "explanation": "O artigo definido corresponde a \"the\"." },
+        { "id": "at17", "prompt": "Qual artigo se usa na primeira menção de algo?", "options": ["indefinido", "definido", "nenhum artigo"], "answerIndex": 0, "explanation": "A primeira menção usa o artigo indefinido." },
+        { "id": "at18", "prompt": "\"O tempo é precioso\" usa artigo definido porque...", "options": ["substantivos abstratos levam artigo definido em português", "tempo é sempre específico", "é uma exceção rara"], "answerIndex": 0, "explanation": "Substantivos gerais/abstratos levam artigo definido em português." },
+        { "id": "at19", "prompt": "Qual é o plural de \"uma\"?", "options": ["umas", "uns", "as"], "answerIndex": 0, "explanation": "Uma → umas." },
+        { "id": "at20", "prompt": "Qual é o plural de \"o\"?", "options": ["os", "as", "uns"], "answerIndex": 0, "explanation": "O → os." },
+        { "id": "at21", "prompt": "\"Umas\" e \"algumas\" diferem porque...", "options": ["umas indica quantidade aproximada e não específica", "são idênticas em todo contexto", "umas só existe no masculino"], "answerIndex": 0, "explanation": "Umas é mais vago que algumas." },
+        { "id": "at22", "prompt": "Depois de mencionar algo com \"um/uma\", a próxima menção geralmente usa...", "options": ["o/a", "um/uma de novo", "nenhum artigo"], "answerIndex": 0, "explanation": "A segunda menção usa o artigo definido." },
+        { "id": "at23", "prompt": "Qual artigo é indefinido, plural, feminino?", "options": ["umas", "uns", "as"], "answerIndex": 0, "explanation": "Umas é o indefinido plural feminino." }
+      ]
+    },
+    {
+      "id": "art-tf",
+      "type": "true-false",
+      "title": "Verdadeiro ou Falso?",
+      "items": [
+        { "id": "at24", "statement": "Artigo definido marca algo específico ou já conhecido.", "answer": true, "explanation": "Essa é sua função principal." },
+        { "id": "at25", "statement": "Artigo indefinido marca algo novo ou não específico.", "answer": true, "explanation": "Essa é sua função principal." },
+        { "id": "at26", "statement": "Em português, substantivos abstratos geralmente não levam artigo, como em inglês.", "answer": false, "explanation": "Em português, eles geralmente levam artigo definido, diferente do inglês." },
+        { "id": "at27", "statement": "\"Uns\" é o plural indefinido masculino.", "answer": true, "explanation": "Um → uns." },
+        { "id": "at28", "statement": "\"As\" é o artigo definido plural feminino.", "answer": true, "explanation": "A → as." },
+        { "id": "at29", "statement": "Nomes próprios nunca podem ser precedidos por artigo definido em conversas informais.", "answer": false, "explanation": "\"A Maria chegou\" é comum em conversas informais." },
+        { "id": "at30", "statement": "A regra prática é: primeira menção = indefinido, menções seguintes = definido.", "answer": true, "explanation": "Essa é a regra prática ensinada nesta lição." }
+      ]
     }
   ],
   "summary": [
