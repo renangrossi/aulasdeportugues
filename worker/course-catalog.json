@@ -1,0 +1,515 @@
+{
+  "levels": [
+    {
+      "code": "Pre-A1",
+      "name": "Sobrevivência",
+      "url": "niveis/pre-a1.html"
+    },
+    {
+      "code": "A1",
+      "name": "Iniciante",
+      "url": "niveis/a1.html"
+    },
+    {
+      "code": "A2",
+      "name": "Elementar",
+      "url": "niveis/a2.html"
+    },
+    {
+      "code": "B1",
+      "name": "Intermediário",
+      "url": "niveis/b1.html"
+    },
+    {
+      "code": "B2",
+      "name": "Intermediário Superior",
+      "url": "niveis/b2.html"
+    },
+    {
+      "code": "C1",
+      "name": "Avançado",
+      "url": "niveis/c1.html"
+    },
+    {
+      "code": "C2",
+      "name": "Proficiente",
+      "url": "niveis/c2.html"
+    }
+  ],
+  "resources": [
+    {
+      "level": "Pre-A1",
+      "title": "O Alfabeto e os Sons do Português",
+      "url": "niveis/pre-a1/alfabeto-e-sons.html",
+      "type": "lesson"
+    },
+    {
+      "level": "Pre-A1",
+      "title": "Leitura e Escuta de Sobrevivência",
+      "url": "niveis/pre-a1/leitura-e-escuta-de-sobrevivencia.html",
+      "type": "lesson"
+    },
+    {
+      "level": "Pre-A1",
+      "title": "Linguagem de Sala de Aula",
+      "url": "niveis/pre-a1/linguagem-de-sala-de-aula.html",
+      "type": "lesson"
+    },
+    {
+      "level": "Pre-A1",
+      "title": "Números, Horas e Datas",
+      "url": "niveis/pre-a1/numeros-horas-e-datas.html",
+      "type": "lesson"
+    },
+    {
+      "level": "Pre-A1",
+      "title": "Pessoas e Objetos: O/A, Um/Uma",
+      "url": "niveis/pre-a1/pessoas-e-objetos.html",
+      "type": "lesson"
+    },
+    {
+      "level": "Pre-A1",
+      "title": "Saudações e Apresentações",
+      "url": "niveis/pre-a1/saudacoes-e-apresentacoes.html",
+      "type": "lesson"
+    },
+    {
+      "level": "Pre-A1",
+      "title": "Ser, Estar e os Pronomes",
+      "url": "niveis/pre-a1/ser-estar-e-pronomes.html",
+      "type": "lesson"
+    },
+    {
+      "level": "Pre-A1",
+      "title": "Verbos Básicos: Querer e Precisar",
+      "url": "niveis/pre-a1/verbos-basicos-e-querer.html",
+      "type": "lesson"
+    },
+    {
+      "level": "A1",
+      "title": "Adjetivos e Concordância",
+      "url": "niveis/a1/adjetivos-e-concordancia.html",
+      "type": "lesson"
+    },
+    {
+      "level": "A1",
+      "title": "Artigos Definidos e Indefinidos",
+      "url": "niveis/a1/artigos-definidos-e-indefinidos.html",
+      "type": "lesson"
+    },
+    {
+      "level": "A1",
+      "title": "Conjunções Básicas",
+      "url": "niveis/a1/conjuncoes-basicas.html",
+      "type": "lesson"
+    },
+    {
+      "level": "A1",
+      "title": "Contrações de Preposição e Artigo",
+      "url": "niveis/a1/contracoes-de-preposicao-e-artigo.html",
+      "type": "lesson"
+    },
+    {
+      "level": "A1",
+      "title": "Pronomes Demonstrativos",
+      "url": "niveis/a1/demonstrativos.html",
+      "type": "lesson"
+    },
+    {
+      "level": "A1",
+      "title": "Diminutivos e Aumentativos",
+      "url": "niveis/a1/diminutivos-e-aumentativos.html",
+      "type": "lesson"
+    },
+    {
+      "level": "A1",
+      "title": "Gênero e Número dos Substantivos",
+      "url": "niveis/a1/genero-e-numero-dos-substantivos.html",
+      "type": "lesson"
+    },
+    {
+      "level": "A1",
+      "title": "Há e Tem: Existência",
+      "url": "niveis/a1/ha-e-tem.html",
+      "type": "lesson"
+    },
+    {
+      "level": "A1",
+      "title": "Imperativo Básico",
+      "url": "niveis/a1/imperativo-basico.html",
+      "type": "lesson"
+    },
+    {
+      "level": "A1",
+      "title": "Números Cardinais e Ordinais",
+      "url": "niveis/a1/numeros-cardinais-e-ordinais.html",
+      "type": "lesson"
+    },
+    {
+      "level": "A1",
+      "title": "Palavras Interrogativas",
+      "url": "niveis/a1/palavras-interrogativas.html",
+      "type": "lesson"
+    },
+    {
+      "level": "A1",
+      "title": "Perguntas Sim ou Não",
+      "url": "niveis/a1/perguntas-sim-ou-nao.html",
+      "type": "lesson"
+    },
+    {
+      "level": "A1",
+      "title": "Pronomes Possessivos",
+      "url": "niveis/a1/possessivos.html",
+      "type": "lesson"
+    },
+    {
+      "level": "A1",
+      "title": "Preposições de Lugar e Tempo",
+      "url": "niveis/a1/preposicoes-de-lugar-e-tempo.html",
+      "type": "lesson"
+    },
+    {
+      "level": "A1",
+      "title": "Presente Contínuo",
+      "url": "niveis/a1/presente-continuo.html",
+      "type": "lesson"
+    },
+    {
+      "level": "A1",
+      "title": "Presente do Indicativo: Verbos Regulares",
+      "url": "niveis/a1/presente-do-indicativo-verbos-regulares.html",
+      "type": "lesson"
+    },
+    {
+      "level": "A1",
+      "title": "Pronomes Pessoais",
+      "url": "niveis/a1/pronomes-pessoais.html",
+      "type": "lesson"
+    },
+    {
+      "level": "A1",
+      "title": "Revisão Geral do A1",
+      "url": "niveis/a1/revisao-a1.html",
+      "type": "lesson"
+    },
+    {
+      "level": "A1",
+      "title": "Ser e Estar",
+      "url": "niveis/a1/ser-e-estar.html",
+      "type": "lesson"
+    },
+    {
+      "level": "A1",
+      "title": "Verbos Irregulares no Presente",
+      "url": "niveis/a1/verbos-irregulares-no-presente.html",
+      "type": "lesson"
+    },
+    {
+      "level": "A2",
+      "title": "Advérbios de Frequência e Modo",
+      "url": "niveis/a2/adverbios-de-frequencia-e-modo.html",
+      "type": "lesson"
+    },
+    {
+      "level": "A2",
+      "title": "Comparativos e Superlativos",
+      "url": "niveis/a2/comparativos-e-superlativos.html",
+      "type": "lesson"
+    },
+    {
+      "level": "A2",
+      "title": "Condicional Simples",
+      "url": "niveis/a2/condicional-simples.html",
+      "type": "lesson"
+    },
+    {
+      "level": "A2",
+      "title": "Futuro Simples e Futuro Perto",
+      "url": "niveis/a2/futuro-simples-e-futuro-perto.html",
+      "type": "lesson"
+    },
+    {
+      "level": "A2",
+      "title": "Perfeito vs. Imperfeito",
+      "url": "niveis/a2/perfeito-vs-imperfeito.html",
+      "type": "lesson"
+    },
+    {
+      "level": "A2",
+      "title": "Por e Para: Introdução",
+      "url": "niveis/a2/por-e-para-introducao.html",
+      "type": "lesson"
+    },
+    {
+      "level": "A2",
+      "title": "Preposições de Movimento",
+      "url": "niveis/a2/preposicoes-de-movimento.html",
+      "type": "lesson"
+    },
+    {
+      "level": "A2",
+      "title": "Pretérito Imperfeito",
+      "url": "niveis/a2/preterito-imperfeito.html",
+      "type": "lesson"
+    },
+    {
+      "level": "A2",
+      "title": "Pretérito Perfeito: Verbos Irregulares",
+      "url": "niveis/a2/preterito-perfeito-irregulares.html",
+      "type": "lesson"
+    },
+    {
+      "level": "A2",
+      "title": "Pretérito Perfeito: Verbos Regulares",
+      "url": "niveis/a2/preterito-perfeito-verbos-regulares.html",
+      "type": "lesson"
+    },
+    {
+      "level": "A2",
+      "title": "Pronomes Relativos",
+      "url": "niveis/a2/pronomes-relativos.html",
+      "type": "lesson"
+    },
+    {
+      "level": "A2",
+      "title": "Quantificadores",
+      "url": "niveis/a2/quantificadores.html",
+      "type": "lesson"
+    },
+    {
+      "level": "A2",
+      "title": "Verbos Reflexivos",
+      "url": "niveis/a2/verbos-reflexivos.html",
+      "type": "lesson"
+    },
+    {
+      "level": "B1",
+      "title": "Condicional Composto",
+      "url": "niveis/b1/condicional-composto.html",
+      "type": "lesson"
+    },
+    {
+      "level": "B1",
+      "title": "Discurso Indireto",
+      "url": "niveis/b1/discurso-indireto.html",
+      "type": "lesson"
+    },
+    {
+      "level": "B1",
+      "title": "Expressões Idiomáticas",
+      "url": "niveis/b1/expressoes-idiomaticas.html",
+      "type": "lesson"
+    },
+    {
+      "level": "B1",
+      "title": "Futuro do Subjuntivo",
+      "url": "niveis/b1/futuro-do-subjuntivo.html",
+      "type": "lesson"
+    },
+    {
+      "level": "B1",
+      "title": "Imperativo Completo",
+      "url": "niveis/b1/imperativo-completo.html",
+      "type": "lesson"
+    },
+    {
+      "level": "B1",
+      "title": "Orações Condicionais",
+      "url": "niveis/b1/oracoes-condicionais.html",
+      "type": "lesson"
+    },
+    {
+      "level": "B1",
+      "title": "Por e Para: Aprofundado",
+      "url": "niveis/b1/por-e-para-aprofundado.html",
+      "type": "lesson"
+    },
+    {
+      "level": "B1",
+      "title": "Presente do Subjuntivo: Introdução",
+      "url": "niveis/b1/presente-do-subjuntivo-introducao.html",
+      "type": "lesson"
+    },
+    {
+      "level": "B1",
+      "title": "Pretérito Mais-Que-Perfeito",
+      "url": "niveis/b1/preterito-mais-que-perfeito.html",
+      "type": "lesson"
+    },
+    {
+      "level": "B1",
+      "title": "Pronomes Oblíquos e Colocação Pronominal",
+      "url": "niveis/b1/pronomes-oblicuos-e-colocacao.html",
+      "type": "lesson"
+    },
+    {
+      "level": "B1",
+      "title": "Se Apassivador e Indeterminado",
+      "url": "niveis/b1/se-apassivador-e-indeterminado.html",
+      "type": "lesson"
+    },
+    {
+      "level": "B1",
+      "title": "Voz Passiva",
+      "url": "niveis/b1/voz-passiva.html",
+      "type": "lesson"
+    },
+    {
+      "level": "B2",
+      "title": "Colocação Pronominal Avançada",
+      "url": "niveis/b2/colocacao-pronominal-avancada.html",
+      "type": "lesson"
+    },
+    {
+      "level": "B2",
+      "title": "Conectores Argumentativos",
+      "url": "niveis/b2/conectores-argumentativos.html",
+      "type": "lesson"
+    },
+    {
+      "level": "B2",
+      "title": "Crase Aprofundada",
+      "url": "niveis/b2/crase-aprofundada.html",
+      "type": "lesson"
+    },
+    {
+      "level": "B2",
+      "title": "Discurso Indireto Avançado",
+      "url": "niveis/b2/discurso-indireto-avancado.html",
+      "type": "lesson"
+    },
+    {
+      "level": "B2",
+      "title": "Orações Concessivas, Finais e Consecutivas",
+      "url": "niveis/b2/oracoes-concessivas-finais-consecutivas.html",
+      "type": "lesson"
+    },
+    {
+      "level": "B2",
+      "title": "Regência Verbal e Nominal",
+      "url": "niveis/b2/regencia-verbal-e-nominal.html",
+      "type": "lesson"
+    },
+    {
+      "level": "B2",
+      "title": "Registro Formal e Informal",
+      "url": "niveis/b2/registro-formal-e-informal.html",
+      "type": "lesson"
+    },
+    {
+      "level": "B2",
+      "title": "Subjuntivo: Sistema Completo",
+      "url": "niveis/b2/subjuntivo-sistema-completo.html",
+      "type": "lesson"
+    },
+    {
+      "level": "B2",
+      "title": "Voz Passiva: Alternativas Estilísticas",
+      "url": "niveis/b2/voz-passiva-alternativas-estilisticas.html",
+      "type": "lesson"
+    },
+    {
+      "level": "C1",
+      "title": "Escrita Formal",
+      "url": "niveis/c1/escrita-formal.html",
+      "type": "lesson"
+    },
+    {
+      "level": "C1",
+      "title": "Estruturas Enfáticas e Inversão",
+      "url": "niveis/c1/estruturas-enfaticas-e-inversao.html",
+      "type": "lesson"
+    },
+    {
+      "level": "C1",
+      "title": "Leitura Jornalística e Literária",
+      "url": "niveis/c1/leitura-jornalistica-e-literaria.html",
+      "type": "lesson"
+    },
+    {
+      "level": "C1",
+      "title": "Orações Reduzidas",
+      "url": "niveis/c1/oracoes-reduzidas.html",
+      "type": "lesson"
+    },
+    {
+      "level": "C1",
+      "title": "Subjuntivo em Contextos Complexos",
+      "url": "niveis/c1/subjuntivo-em-contextos-complexos.html",
+      "type": "lesson"
+    },
+    {
+      "level": "C1",
+      "title": "Variação Linguística Regional",
+      "url": "niveis/c1/variacao-linguistica-regional.html",
+      "type": "lesson"
+    },
+    {
+      "level": "C2",
+      "title": "Domínio dos Tempos e Modos",
+      "url": "niveis/c2/dominio-dos-tempos-e-modos.html",
+      "type": "lesson"
+    },
+    {
+      "level": "C2",
+      "title": "Estruturas Retóricas Avançadas",
+      "url": "niveis/c2/estruturas-retoricas-avancadas.html",
+      "type": "lesson"
+    },
+    {
+      "level": "C2",
+      "title": "Ironia, Humor e Ambiguidade",
+      "url": "niveis/c2/ironia-humor-e-ambiguidade.html",
+      "type": "lesson"
+    },
+    {
+      "level": "C2",
+      "title": "Registro Literário e Coloquial",
+      "url": "niveis/c2/registro-literario-e-coloquial.html",
+      "type": "lesson"
+    },
+    {
+      "level": "C2",
+      "title": "Tradução e Transposição de Registro",
+      "url": "niveis/c2/traducao-e-transposicao-de-registro.html",
+      "type": "lesson"
+    },
+    {
+      "level": null,
+      "title": "Exercícios",
+      "url": "exercicios.html",
+      "type": "page"
+    },
+    {
+      "level": null,
+      "title": "Dicionário",
+      "url": "dicionario.html",
+      "type": "page"
+    },
+    {
+      "level": null,
+      "title": "Teste de Nível",
+      "url": "teste-de-nivelamento.html",
+      "type": "page"
+    },
+    {
+      "level": null,
+      "title": "Verbos Irregulares",
+      "url": "verbos-irregulares.html",
+      "type": "page"
+    },
+    {
+      "level": null,
+      "title": "Revisão de Hoje",
+      "url": "revisao-de-hoje.html",
+      "type": "page"
+    },
+    {
+      "level": null,
+      "title": "Meu Progresso",
+      "url": "progresso.html",
+      "type": "page"
+    }
+  ]
+}
