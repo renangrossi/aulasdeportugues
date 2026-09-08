@@ -15,14 +15,16 @@ reconstruída inteiramente para o português.
   100% publicados** — 73 lições, 223 blocos de exercícios, 459 itens
   corrigíveis automaticamente. Nenhuma página de nível mostra mais
   "Em breve".
-- Sem "AI Teacher" (Cloudflare Worker + LLM) — pode ser adicionado
-  depois, do mesmo jeito que no site em inglês, se fizer sentido no
-  futuro.
+- "AI Teacher" (Professor IA): código completo (widget + Cloudflare
+  Worker + catálogo do curso), mas **ainda não implantado** — o botão
+  fica oculto (`AI_TEACHER_ENABLED = False` em `scripts/site_chrome.py`)
+  até que o Worker seja implantado de verdade. Ver `worker/README.md`
+  para o passo a passo de deploy.
 - Sem áudio pré-gravado: os botões de "Ouvir" usam a Web Speech API do
   próprio navegador (`assets/js/listening.js`) — grátis, sem arquivos.
 - Próximos passos naturais (não feitos ainda): mais lições por nível
   (o roteiro atual é uma cobertura sólida, não exaustiva, de cada
-  nível), o "AI Teacher" opcional, e áudio pré-gravado real.
+  nível), implantar o Worker do "AI Teacher", e áudio pré-gravado real.
 
 ## Arquitetura
 
