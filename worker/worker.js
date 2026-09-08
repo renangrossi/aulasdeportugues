@@ -430,10 +430,16 @@ export default {
       .concat([{ role: "user", content: message }]);
 
     // --- Call Groq, with a fallback model if the primary is out of quota
+    // or returns an empty completion (an occasional Groq free-tier
+    // behavior under load: the HTTP call itself succeeds, but the model
+    // produces no usable text). Both cases get exactly one retry on the
+    // fallback model before giving up.
     try {
       var res = await callGroq(env, PRIMARY_MODEL, messages);
+      var usedFallback = false;
       if (res.status === 429) {
         res = await callGroq(env, FALLBACK_MODEL, messages);
+        usedFallback = true;
       }
       if (!res.ok) {
         var errText = await res.text();
@@ -441,9 +447,18 @@ export default {
         return jsonResponse({ error: "AI provider error" }, 502, origin);
       }
       var data = await res.json();
-      var reply = data && data.choices && data.choices[0] && data.choices[0].message
-        ? data.choices[0].message.content
-        : "Desculpe, não consegui gerar uma resposta. Tente novamente, por favor.";
+      var content = data && data.choices && data.choices[0] && data.choices[0].message && data.choices[0].message.content;
+      if (!content && !usedFallback) {
+        res = await callGroq(env, FALLBACK_MODEL, messages);
+        if (!res.ok) {
+          var errText2 = await res.text();
+          console.error("GROQ_BODY: " + res.status + " " + errText2);
+          return jsonResponse({ error: "AI provider error" }, 502, origin);
+        }
+        data = await res.json();
+        content = data && data.choices && data.choices[0] && data.choices[0].message && data.choices[0].message.content;
+      }
+      var reply = content || "Desculpe, não consegui gerar uma resposta. Tente novamente, por favor.";
       return jsonResponse({ reply: reply }, 200, origin);
     } catch (err) {
       console.error("Worker error:", err);
