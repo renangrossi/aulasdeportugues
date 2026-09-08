@@ -1,10 +1,11 @@
 """
 Chrome compartilhado (head/header/nav/overlay de busca/footer) para as
 páginas de lição geradas -- em espírito idêntico ao scripts/site_chrome.py
-do site-irmão em inglês, adaptado inteiramente para português e sem o
-painel "AI Teacher" nem o widget flutuante de dicionário (ver o plano
-de arquitetura em README.md). Só o <main> específico de cada lição
-muda de página a página; ver build_lesson.py.
+do site-irmão em inglês, adaptado inteiramente para português. Ainda
+sem o widget flutuante de dicionário. O painel "AI Teacher" (Professor
+IA) foi adicionado e fica atrás da flag AI_TEACHER_ENABLED abaixo --
+ver worker/README.md para o deploy. Só o <main> específico de cada
+lição muda de página a página; ver build_lesson.py.
 
 REL é o prefixo de caminho relativo do arquivo gerado de volta à raiz
 do repositório, ex.: "../../" para niveis/{nivel}/{licao}.html.
@@ -21,6 +22,21 @@ LEVELS = [
 ]
 
 SITE_URL = "https://renangrossi.github.io/aulasdeportugues/"
+
+# Endpoint do Worker do Professor IA. worker/wrangler.toml nomeia o
+# Worker "ai-teacher-pt"; se implantado na mesma conta Cloudflare dos
+# cursos de inglês/latim/grego antigo/espanhol/italiano (subdomínio
+# "englishclasses"), a URL abaixo já é a correta. Se usar uma conta ou
+# subdomínio diferente, substitua pela URL real impressa por
+# `wrangler deploy` (ver worker/README.md, passo 6) e reconstrua.
+AI_TEACHER_WORKER_URL = "https://ai-teacher-pt.englishclasses.workers.dev"
+
+# O botão/painel do Professor IA só é gerado se isto for True. O
+# Worker ainda não está implantado, então mostrar o botão agora
+# levaria a um chat que nunca responde -- mude para True assim que
+# worker/ estiver implantado com sua própria URL, então reconstrua o
+# site.
+AI_TEACHER_ENABLED = False
 
 
 def nav_levels_html(rel, active_level_code):
@@ -56,6 +72,7 @@ def head(rel, title, description):
 <link rel="stylesheet" href="{rel}assets/css/components.css">
 <link rel="stylesheet" href="{rel}assets/css/layout.css">
 <link rel="stylesheet" href="{rel}assets/css/dark-mode.css">
+<link rel="stylesheet" href="{rel}assets/css/ai-teacher.css">
 <link rel="stylesheet" href="{rel}assets/css/search.css">
 <link rel="stylesheet" href="{rel}assets/css/exercises.css"><link rel="stylesheet" href="{rel}assets/css/lessons.css">
 <script>
@@ -129,6 +146,34 @@ def header(rel, active_level_code, breadcrumb_html):
 
 
 def footer(rel, extra_scripts=""):
+    ai_teacher_widget = f"""<button type="button" class="ai-teacher-toggle" data-ai-teacher-toggle aria-label="Perguntar ao Professor IA" aria-expanded="false" aria-haspopup="dialog">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m22 10-10-5L2 10l10 5 10-5Z"/><path d="M6 12v5c0 1.5 2.5 3 6 3s6-1.5 6-3v-5"/><path d="M22 10v6"/></svg>
+        <span class="ai-teacher-toggle__label">Professor IA</span>
+    </button>
+    <div class="ai-teacher-panel" data-ai-teacher-panel hidden role="dialog" aria-label="Chat com o Professor IA de Português" aria-modal="false">
+        <div class="ai-teacher-panel__bar">
+            <div class="ai-teacher-panel__brand">
+                <svg class="ai-teacher-panel__brand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m22 10-10-5L2 10l10 5 10-5Z"/><path d="M6 12v5c0 1.5 2.5 3 6 3s6-1.5 6-3v-5"/><path d="M22 10v6"/></svg>
+                <div>
+                    <strong>Professor IA de Português</strong>
+                    <span>Pergunte sobre gramática, vocabulário ou exercícios</span>
+                </div>
+            </div>
+            <button type="button" class="ai-teacher-panel__close" data-ai-teacher-close aria-label="Fechar Professor IA"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18"/><path d="M6 6l12 12"/></svg></button>
+        </div>
+        <div class="ai-teacher-panel__messages" data-ai-teacher-messages role="log" aria-live="polite">
+            <div class="ai-teacher-msg ai-teacher-msg--bot">
+                <p>Oi! Posso te ajudar com o português. Pergunte sobre gramática, palavras ou exercícios.<br>Exemplo: <em>&laquo;Explique o pretérito perfeito&raquo;</em> ou <em>&laquo;Me dê um exercício sobre o subjuntivo.&raquo;</em></p>
+            </div>
+        </div>
+        <form class="ai-teacher-panel__form" data-ai-teacher-form>
+            <label for="ai-teacher-input" class="visually-hidden">Sua pergunta</label>
+            <textarea id="ai-teacher-input" data-ai-teacher-input rows="1" maxlength="600" placeholder="Digite sua pergunta&hellip;" required></textarea>
+            <button type="submit" class="ai-teacher-panel__send" data-ai-teacher-send aria-label="Enviar pergunta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg></button>
+        </form>
+        <p class="ai-teacher-panel__hint" data-ai-teacher-hint>As respostas vêm de um modelo de IA e às vezes podem estar erradas &mdash; sempre confira com o material da sua lição. Nada do que você digita é armazenado depois que você fecha esta janela.</p>
+    </div>
+    <script src="{rel}assets/js/ai-teacher.js" data-ai-endpoint="{AI_TEACHER_WORKER_URL}"></script>""" if AI_TEACHER_ENABLED else ""
     return f"""</main>
     <footer class="site-footer">
         <div class="site-footer__inner">
@@ -181,6 +226,7 @@ def footer(rel, extra_scripts=""):
     <button type="button" class="back-to-top" data-back-to-top aria-label="Voltar ao topo">
         <svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5"/><path d="m5 12 7-7 7 7"/></svg>
     </button>
+    {ai_teacher_widget}
     <script src="{rel}assets/js/main.js"></script>
     <script src="{rel}assets/js/search.js"></script>
     <script src="{rel}assets/js/listening.js"></script>
