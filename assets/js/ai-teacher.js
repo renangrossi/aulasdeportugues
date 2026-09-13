@@ -446,6 +446,34 @@
     return html;
   }
 
+  // Scrolls the messages list down by the minimum distance needed to
+  // bring `el` fully into view, plus a small breathing-room gap --
+  // never further than that, and never upward if `el` is already
+  // visible. Used only for the student's own new question and the
+  // typing indicator that follows it (see addMessage()'s "user" branch
+  // and addTypingIndicator() below), specifically so that asking a
+  // question scrolls just enough to keep the question itself on
+  // screen, instead of jumping all the way down once the bot's answer
+  // is appended afterwards -- addMessage()'s "bot" branch deliberately
+  // does not call this, so a long answer never drags the view down to
+  // its last line.
+  var SCROLL_REVEAL_GAP = 12; // px of breathing room kept below the revealed element
+  function scrollToReveal(el) {
+    var boxRect = messagesBox.getBoundingClientRect();
+    var elRect = el.getBoundingClientRect();
+    if (elRect.height > boxRect.height) {
+      // Taller than the whole messages box -- no scroll position shows
+      // all of it, so reveal its start (the more useful end to read
+      // first) rather than chasing its bottom edge.
+      messagesBox.scrollTop += (elRect.top - boxRect.top);
+      return;
+    }
+    var overflowBelow = elRect.bottom + SCROLL_REVEAL_GAP - boxRect.bottom;
+    if (overflowBelow > 0) {
+      messagesBox.scrollTop += overflowBelow;
+    }
+  }
+
   function addMessage(role, text) {
     var msg = document.createElement("div");
     msg.className = "ai-teacher-msg ai-teacher-msg--" + (role === "user" ? "user" : "bot");
@@ -457,7 +485,7 @@
     }
     msg.appendChild(p);
     messagesBox.appendChild(msg);
-    messagesBox.scrollTop = messagesBox.scrollHeight;
+    if (role === "user") scrollToReveal(msg);
     return msg;
   }
 
@@ -466,7 +494,7 @@
     msg.className = "ai-teacher-msg ai-teacher-msg--bot ai-teacher-msg--typing";
     msg.innerHTML = "<p><span></span><span></span><span></span></p>";
     messagesBox.appendChild(msg);
-    messagesBox.scrollTop = messagesBox.scrollHeight;
+    scrollToReveal(msg);
     return msg;
   }
 
