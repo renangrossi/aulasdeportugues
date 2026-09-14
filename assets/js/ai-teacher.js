@@ -446,32 +446,26 @@
     return html;
   }
 
-  // Scrolls the messages list down by the minimum distance needed to
-  // bring `el` fully into view, plus a small breathing-room gap --
-  // never further than that, and never upward if `el` is already
-  // visible. Used only for the student's own new question and the
-  // typing indicator that follows it (see addMessage()'s "user" branch
-  // and addTypingIndicator() below), specifically so that asking a
-  // question scrolls just enough to keep the question itself on
-  // screen, instead of jumping all the way down once the bot's answer
-  // is appended afterwards -- addMessage()'s "bot" branch deliberately
-  // does not call this, so a long answer never drags the view down to
-  // its last line.
-  var SCROLL_REVEAL_GAP = 12; // px of breathing room kept below the revealed element
+  // Scrolls the messages list so `el` sits at the top of the box --
+  // right where the very first message would normally rest, just
+  // below the box's own top padding. This is the ceiling: it's as far
+  // as a new message is ever allowed to scroll, and nothing scrolls
+  // any further afterward. Used only for the student's own new
+  // question (see addMessage()'s "user" branch below), so that asking
+  // a question pins it to the top of the messages box, leaving the
+  // rest of the box free for the bot's reply to render into below it,
+  // with no further auto-scroll. addMessage()'s "bot" branch, and the
+  // typing indicator in between, never call this, so a long answer
+  // never drags the view down past the question. If there isn't
+  // enough conversation yet to scroll that far (an early, short
+  // exchange), the browser simply clamps the scroll at 0 -- the
+  // question still ends up fully visible, just not literally flush
+  // with the top.
   function scrollToReveal(el) {
     var boxRect = messagesBox.getBoundingClientRect();
     var elRect = el.getBoundingClientRect();
-    if (elRect.height > boxRect.height) {
-      // Taller than the whole messages box -- no scroll position shows
-      // all of it, so reveal its start (the more useful end to read
-      // first) rather than chasing its bottom edge.
-      messagesBox.scrollTop += (elRect.top - boxRect.top);
-      return;
-    }
-    var overflowBelow = elRect.bottom + SCROLL_REVEAL_GAP - boxRect.bottom;
-    if (overflowBelow > 0) {
-      messagesBox.scrollTop += overflowBelow;
-    }
+    var topPadding = parseFloat(getComputedStyle(messagesBox).paddingTop) || 0;
+    messagesBox.scrollTop += (elRect.top - boxRect.top - topPadding);
   }
 
   function addMessage(role, text) {
@@ -494,7 +488,6 @@
     msg.className = "ai-teacher-msg ai-teacher-msg--bot ai-teacher-msg--typing";
     msg.innerHTML = "<p><span></span><span></span><span></span></p>";
     messagesBox.appendChild(msg);
-    scrollToReveal(msg);
     return msg;
   }
 
