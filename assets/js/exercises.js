@@ -1343,7 +1343,7 @@
   function buildExerciseSummaryNode(ex) {
     var block = el("div", { class: "exercise-block saved-summary-block" });
     var typeLabel = TYPE_LABELS[ex.type] ? TYPE_LABELS[ex.type] + " — " : "";
-    block.appendChild(el("h3", { class: "exercise-block__title", text: typeLabel + (ex.title || "Exercise") }));
+    block.appendChild(el("h3", { class: "exercise-block__title", text: typeLabel + (ex.title || "Exercício") }));
     if (ex.instructions) block.appendChild(el("p", { class: "exercise-block__instructions", text: ex.instructions }));
     var list = el("div", { class: "saved-summary-list" });
     ex.items.forEach(function (entry) { list.appendChild(buildResultItemNode(entry)); });
